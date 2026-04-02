@@ -1,0 +1,24 @@
+"T":
+  name: "Total"
+  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
+"M":
+  name: "Males"
+  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
+"F":
+  name: "Females"
+  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
+"DIFF":
+  name: "Absolute difference between males and females"
+  annotation_text: "Code not associated with the concept of the code list, but following Eurostat Standard Code List Guidelines"
+"NAP":
+  name: "Not applicable"
+  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
+"NRP":
+  name: "No response"
+  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
+"UNK":
+  name: "Unknown"
+  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
+"-":
+  name: "Wildcard"
+  annotation_text: ""
