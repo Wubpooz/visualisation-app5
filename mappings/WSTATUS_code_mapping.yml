@@ -1,0 +1,1106 @@
+schema_version: '1.0'
+generated_at_utc: '2026-04-02T15:27:38.174690+00:00'
+source:
+  file: untitled:Untitled-3
+  codelist_id: WSTATUS
+  agency_id: ESTAT
+  version: '12.0'
+  urn: urn:sdmx:org.sdmx.infomodel.codelist.Codelist=ESTAT:WSTATUS(12.0)
+  name:
+    en: Labour force and employment status
+    de: Erwerbsbevölkerung und Beschäftigungsstatus
+    fr: Forces de travail et statut d'emploi
+  description:
+    en: This code list describes the activity and working status of individuals. It contains information on their position in relation to the labour market (employed, unemployed, or inactive), their professional status (based on the ICSE classification), their working time (full-time or part-time). It also provides information on special sub-groups of the previously described population (e.g. farm labour force, retired persons, students, disabled persons, etc.).
+code_count: 91
+codes:
+  TOTAL:
+    kind: status_code
+    level: total
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).TOTAL
+    name:
+      en: Total
+      de: Insgesamt
+      fr: Total
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  POP:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).POP
+    name:
+      en: Population
+      de: Bevölkerung
+      fr: Population
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  ACT_INAC:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).ACT_INAC
+    name:
+      en: Persons in- and outside the labour force
+      de: Erwerbs- und Nichterwerbspersonen
+      fr: Personnes actives et inactives
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  ACT:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).ACT
+    name:
+      en: Persons in the labour force
+      de: Erwerbspersonen
+      fr: Personnes comprises dans les forces de travail
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  EMP_W:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).EMP_W
+    name:
+      en: Persons employed or previously employed
+      de: Erwerbstätige, zuvor gearbeitet
+      fr: Personnes employées actuellement et auparavant
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  EMP:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).EMP
+    name:
+      en: Employed persons
+      de: Erwerbstätige
+      fr: Personnes occupées
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  EMP_FT:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).EMP_FT
+    name:
+      en: Employed persons working full-time
+      de: Vollzeitbeschäftigte
+      fr: Personnes occupées à plein temps
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  EMP_PT:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).EMP_PT
+    name:
+      en: Employed persons working part-time
+      de: Teilzeitbeschäftigte
+      fr: Personnes occupées à temps partiel
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  EMP_TEMP:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).EMP_TEMP
+    name:
+      en: Employed persons with temporary contract
+      de: Beschäftigte mit befristetem Vertrag
+      fr: Personnes occupées avec contrat temporaire
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  LEAV:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).LEAV
+    name:
+      en: Employed persons on temporary leave from work
+      de: Vorübergehend beurlaubte Erwerbstätige
+      fr: Personnes occupées en congé temporaire
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  SAL_SCTR:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).SAL_SCTR
+    name:
+      en: Employees and subcontractors
+      de: Arbeitnehmer und Subunternehmer
+      fr: Salariés et sous-traitants
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  SAL:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).SAL
+    name:
+      en: Employees
+      de: Arbeitnehmer
+      fr: Salariés
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  SAL_PERM:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).SAL_PERM
+    name:
+      en: Employees with a permanent job
+      de: Arbeitnehmer mit einer unbefristeten Arbeitsstelle
+      fr: Salariés avec un emploi permanent
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  SAL_TEMP:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).SAL_TEMP
+    name:
+      en: Employees with a temporary job
+      de: Arbeitnehmer mit einer befristeten Arbeitsstelle
+      fr: Salariés avec un emploi temporaire
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  MW_IS:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).MW_IS
+    name:
+      en: Manual workers in industry and services
+      de: Arbeiter in der Industrie und im Dienstleistungsbereich
+      fr: Ouvriers dans l'industrie et les services
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NMW_IS:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NMW_IS
+    name:
+      en: Non-manual workers in industry and services
+      de: Angestellte in der Industrie und im Dienstleistungsbereich
+      fr: Employés dans l'industrie et les services
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NSAL:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NSAL
+    name:
+      en: Employed persons except employees
+      de: Erwerbstätige ausgenommen Arbeitnehmer
+      fr: Personnes occupées sauf salariés
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  SELF_COWN:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).SELF_COWN
+    name:
+      en: Self-employed persons and co-owner
+      de: Selbstständige und Miteigentümer
+      fr: Travailleurs indépendants et copropriétaire
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  SELF:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).SELF
+    name:
+      en: Self-employed persons
+      de: Selbstständige
+      fr: Travailleurs indépendants
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  SELF_S:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).SELF_S
+    name:
+      en: Self-employed persons with employees (employers)
+      de: Selbständige mit Arbeitnehmern (Arbeitgeber)
+      fr: Travailleurs indépendants avec salariés (employeurs)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  SELF_NS:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).SELF_NS
+    name:
+      en: Self-employed persons without employees (own-account workers)
+      de: Selbständige, die keine Arbeitnehmer beschäftigen
+      fr: Travailleurs indépendants sans salariés
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  SELF_I_NS:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).SELF_I_NS
+    name:
+      en: Independent self-employed without employees (own-account workers)
+      de: Unabhängige Selbständige, die keine Arbeitnehmer beschäftigen
+      fr: Travailleurs indépendants économiquement indépendants sans salariés
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  SELF_D_NS:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).SELF_D_NS
+    name:
+      en: Dependent self-employed without employees (own-account workers)
+      de: Abhängige Selbständige, die keine Arbeitnehmer beschäftigen
+      fr: Travailleurs indépendants économiquement dépendants sans salariés
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  SELF_NS_D_UNK:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).SELF_NS_D_UNK
+    name:
+      en: Self-employed without employees (own-account workers), dependency not known
+      de: Selbständige, die keine Arbeitnehmer beschäftigen, Abhängigkeit unbekannt
+      fr: Travailleurs indépendants sans salariés, dépendance économique inconnue
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  CFAM_COOP:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).CFAM_COOP
+    name:
+      en: Contributing family workers and members of producers' cooperatives
+      de: Mithelfende Familienangehörige und Mitglieder von Erzeugergenossenschaften
+      fr: Travailleurs familiaux collaborant à l'entreprise familiale et membres de coopératives de producteurs
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  CFAM:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).CFAM
+    name:
+      en: Contributing family workers
+      de: Mithelfende Familienangehörige
+      fr: Travailleurs familiaux collaborant à l'entreprise familiale
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NCFAM:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NCFAM
+    name:
+      en: Employed persons except contributing family workers
+      de: Erwerbstätige ausgenommen mithelfende Familienangehörige
+      fr: Personnes occupées sauf travailleurs familiaux collaborant à l'entreprise familiale
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  COOP:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).COOP
+    name:
+      en: Members of producers' cooperatives
+      de: Mitglieder von Erzeugergenossenschaften
+      fr: Membres de coopératives de producteurs
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  EMP_OTH:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).EMP_OTH
+    name:
+      en: Other employed persons
+      de: Sonstige Erwerbstätige
+      fr: Autres personnes occupées
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  EMP_UNK:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).EMP_UNK
+    name:
+      en: Employed persons - unknown
+      de: Erwerbstätige - unbekannt
+      fr: Personnes occupées - inconnu
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  FLF_D:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).FLF_D
+    name:
+      en: Farm labour force, directly employed by the farm on a regular or non-regular basis
+      de: Landwirtschaftliche Arbeitskräfte, die direkt vom landwirtschaftlichem Betrieb beschäftigt sind auf regelmäßiger oder nicht regelmäßiger Basis
+      fr: Main-d'oeuvre agricole, directement employée par l'exploitation agricole régulièrement ou non régulièrement
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  FLF_D_R:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).FLF_D_R
+    name:
+      en: Farm labour force, directly employed by the farm on a regular basis
+      de: Landwirtschaftliche Arbeitskräfte, die direkt vom landwirtschaftlichem Betrieb beschäftigt sind auf regelmäßiger Basis
+      fr: Main-d'oeuvre agricole, directement employée par l'exploitation agricole de manière régulière
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  FLF_D_RFAM:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).FLF_D_RFAM
+    name:
+      en: Family farm labour force directly employed by the farm
+      de: Familiäre landwirtschaftliche Arbeitskräfte, die direkt vom landwirtschaftlichem Betrieb beschäftigt sind
+      fr: Main-d'oeuvre agricole familiale directement employée par l'exploitation agricole
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  FLF_D_RFAM_HLD:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).FLF_D_RFAM_HLD
+    name:
+      en: Sole holder directly employed by the farm
+      de: Alleiniger Betriebsinhaber, der direkt vom landwirtschaftlichem Betrieb beschäftigt ist
+      fr: Exploitant individuel directement employé par l'exploitation agricole
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  FLF_D_RFAMXHLD:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).FLF_D_RFAMXHLD
+    name:
+      en: Members of sole holders' family, excluding the holder, directly employed by the farm
+      de: Familienmitglieder der alleinigen Betriebsinhaber, ausschließlich des Inhabers, die direkt vom landwirtschaftlichem Betrieb beschäftigt sind
+      fr: Membres de la famille de l'exploitant individuel, sauf l'exploitant, directement employés par l'exploitation agricole
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  FLF_D_RFAM_SPOU:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).FLF_D_RFAM_SPOU
+    name:
+      en: Spouse of sole holder directly employed by the farm
+      de: Ehepartner des alleinigen Betriebsinhabers, der direkt vom landwirtschaftlichem Betrieb beschäftigt ist
+      fr: Conjoint de l'exploitant individuel directement employé par l'exploitation agricole
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  FLF_D_RFAM_OTH:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).FLF_D_RFAM_OTH
+    name:
+      en: Other members of sole holder's family directly employed by the farm
+      de: Andere Familienmitglieder des alleinigen Betriebsinhabers, die direkt vom landwirtschaftlichem Betrieb beschäftigt sind
+      fr: Autres membres de la famille de l'exploitant individuel directement employés par l'exploitation agricole
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  FLF_D_RNFAM:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).FLF_D_RNFAM
+    name:
+      en: Non-family farm labour force, directly employed by the farm on a regular basis
+      de: Familienfremde landwirtschaftliche Arbeitskräfte, die direkt vom landwirtschaftlichem Betrieb beschäftigt sind auf regelmäßiger Basis
+      fr: Main-d'oeuvre agricole non-familiale, directement employée par l'exploitation agricole de manière régulière
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  FLF_D_NR:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).FLF_D_NR
+    name:
+      en: Farm labour force, directly employed by the farm on a non-regular basis
+      de: Landwirtschaftliche Arbeitskräfte, die direkt vom landwirtschaftlichem Betrieb beschäftigt sind auf nicht regelmäßiger Basis
+      fr: Main-d'oeuvre agricole, directement employée par l'exploitation agricole de manière non régulière
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  FLF_ND:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).FLF_ND
+    name:
+      en: Farm labour force, not directly employed by the farm
+      de: Landwirtschaftliche Arbeitskräfte, die nicht direkt vom landwirtschaftlichen Betrieb beschäftigt sind
+      fr: Main-d'oeuvre agricole, non directement employée par l'exploitation agricole
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  FLF_HLD:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).FLF_HLD
+    name:
+      en: Holder
+      de: Betriebsinhaber
+      fr: Exploitant
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  FLF_GRP:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).FLF_GRP
+    name:
+      en: Group holders
+      de: Gruppenbetriebsinhaber
+      fr: Groupement d'exploitants
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  FLF_MAN:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).FLF_MAN
+    name:
+      en: Farm manager
+      de: Leiter von landwirtschaftlichen Betriebs
+      fr: Chef d'exploitation agricole
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  FLF_MANXGRP:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).FLF_MANXGRP
+    name:
+      en: Farm managers, excluding group holding
+      de: Leiter von landwirtschaftlichen Betrieben, ausschließlich Gruppenbetriebsinhaber
+      fr: Chefs d'exploitations agricoles, sauf groupement d'exploitations
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NEW_FLF_GT40:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NEW_FLF_GT40
+    name:
+      en: New farm managers older than 40 years old
+      de: Neue Betriebsleiter älter als 40 Jahre
+      fr: Nouveaux chefs d'exploitations agricoles de plus de 40 ans
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NEW_FLF_LE40:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NEW_FLF_LE40
+    name:
+      en: New farm managers younger or equal 40 years old
+      de: Neue Betriebsleiter jünger oder gleich 40 Jahre alt
+      fr: Nouveaux chefs d'exploitations agricoles âgés de moins de 40 ans ou égales
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NEMP:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NEMP
+    name:
+      en: Not employed persons
+      de: Nicht erwerbstätige Personen
+      fr: Personnes non occupées
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  UEMP_PT:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).UEMP_PT
+    name:
+      en: Underemployed persons working part-time
+      de: Teilzeitbeschäftigte Unterbeschäftigte
+      fr: Personnes sous-employées travaillant à temps partiel
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  UNE:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).UNE
+    name:
+      en: Unemployed persons
+      de: Erwerbslose
+      fr: Chômeurs
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  ACT_UNK:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).ACT_UNK
+    name:
+      en: Persons in the labour force - unknown
+      de: Erwerbsbevölkerung - unbekannt
+      fr: Population active - inconnu
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  INAC:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).INAC
+    name:
+      en: Persons outside the labour force
+      de: Nicht-Erwerbspersonen
+      fr: Personnes non comprises dans les forces de travail
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  SLACK:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).SLACK
+    name:
+      en: Labour market slack
+      de: Unausgeschöpftes Arbeitskräftepotential
+      fr: Capacités excédentaires sur le marché du travail
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  EDUC:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).EDUC
+    name:
+      en: Students
+      de: Studenten
+      fr: Étudiants
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  HOME:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).HOME
+    name:
+      en: Homemakers
+      de: Hausfrauen und -männer
+      fr: Personnes s'occupant du foyer
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  B_AGE_MIN:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).B_AGE_MIN
+    name:
+      en: Persons below the national minimum age for economic activity
+      de: Personen unter dem nationalen Mindestalter für eine Erwerbstätigkeit
+      fr: Personnes en dessous de l'âge minimum national pour l'activité économique
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  INC:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).INC
+    name:
+      en: Retired persons and capital income recipients
+      de: Rentner und Empfänger von Kapitalerträgen
+      fr: Retraités et rentiers
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  RET:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).RET
+    name:
+      en: Retired persons
+      de: Rentner
+      fr: Retraités
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  INAC_OTH:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).INAC_OTH
+    name:
+      en: Other persons outside the labour force
+      de: Sonstige Nichterwerbspersonen
+      fr: Autres personnes inactives
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  INAC_UNK:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).INAC_UNK
+    name:
+      en: Persons outside the labour force - unknown
+      de: Nichterwerbspersonen - unbekannt
+      fr: Personnes inactives - inconnu
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  COWN:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).COWN
+    name:
+      en: Co-owner
+      de: Miteigentümer
+      fr: Copropriétaire
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  CLIENT:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).CLIENT
+    name:
+      en: Clients
+      de: Kunden
+      fr: Clients
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  SCTR:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).SCTR
+    name:
+      en: Subcontractors
+      de: Subunternehmer
+      fr: Sous-traitants
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NONE:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NONE
+    name:
+      en: None
+      de: Kein
+      fr: Aucun
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NCHG:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NCHG
+    name:
+      en: No change
+      de: Keine Änderung
+      fr: Aucun changement
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  WANT:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).WANT
+    name:
+      en: Persons would like to work (seeking employment or not)
+      de: Personen, die arbeiten möchten (suchen Arbeit oder nicht)
+      fr: Personnes souhaitant travailler (cherchant ou non un emploi)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NWANT:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NWANT
+    name:
+      en: Persons do not want to work
+      de: Personen, die nicht arbeiten möchten
+      fr: Personnes ne voulant pas travailler
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  WANTW:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).WANTW
+    name:
+      en: Persons want to work but not seeking or available
+      de: Personen, die arbeiten möchten aber weder suchen noch verfügbar sind
+      fr: Personnes souhaitant travailler qui ne sont pas disponibles pour travailler et qui ne recherchent pas un emploi
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  SEEK_NAVL:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).SEEK_NAVL
+    name:
+      en: Persons seeking work but not immediately available
+      de: Personen, die eine Arbeit suchen, aber kurzfristig nicht verfügbar sind
+      fr: Personnes recherchant un emploi mais temporairement indisponibles
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NSEEK_AVL:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NSEEK_AVL
+    name:
+      en: Persons available to work but not seeking
+      de: Personen, die für eine Arbeit verfügbar sind, aber nicht suchen
+      fr: Personnes disponibles pour travailler mais ne recherchant pas un emploi
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NSEEK_WANT:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NSEEK_WANT
+    name:
+      en: Persons not seeking employment but would like to work
+      de: Personen, die keine Arbeit suchen aber arbeiten möchten
+      fr: Personnes ne recherchant pas un emploi mais souhaitant travailler
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NSEEK_NWANT:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NSEEK_NWANT
+    name:
+      en: Persons not seeking employment and do not want to work
+      de: Personen, die keine Arbeit suchen und nicht arbeiten möchten
+      fr: Personnes ne recherchant pas un emploi et ne voulant pas travailler
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  PRACT:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).PRACT
+    name:
+      en: Practising
+      de: Praktizierend
+      fr: Exerçant leur profession
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  PACT:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).PACT
+    name:
+      en: Professionally active
+      de: Fachlich aktiv
+      fr: Professionnellement actifs
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  LIC:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).LIC
+    name:
+      en: Licensed to practice
+      de: Approbiert
+      fr: Habilité à exercer
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  STOP_WRK:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).STOP_WRK
+    name:
+      en: Stopped working
+      de: Erwerbstätigkeit eingestellt
+      fr: A cessé de travailler
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  STOP_WRK_NRENT:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).STOP_WRK_NRENT
+    name:
+      en: Stopped working and did not re-enter the labour market
+      de: Erwerbstätigkeit eingestellt und kein Wiedereintritt in den Arbeitsmarkt
+      fr: A cessé de travailler et n'a pas réintégré le marché du travail
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  CN_WRK_RENT:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).CN_WRK_RENT
+    name:
+      en: Continued working or re-entered the labour market
+      de: Weitergearbeitet oder Wiedereintritt in den Arbeitsmarkt
+      fr: A continué de travailler ou a réintégré le marché du travail
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  CN_WRK_NCHG:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).CN_WRK_NCHG
+    name:
+      en: Continued working without changes
+      de: Unverändert weitergearbeitet
+      fr: A continué de travailler de manière inchangée
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  CN_WRK_WCHG:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).CN_WRK_WCHG
+    name:
+      en: Continued working with changes
+      de: Mit Veränderungen weitergearbeitet
+      fr: A continué de travailler avec des changements
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  WRK:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).WRK
+    name:
+      en: Working
+      de: Arbeitend
+      fr: Travaille
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  WRK_FT:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).WRK_FT
+    name:
+      en: Working full-time
+      de: Vollzeit arbeitend
+      fr: Travaille à temps plein
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  GE1_WRK_PT_OTH_FT:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).GE1_WRK_PT_OTH_FT
+    name:
+      en: At least one adult working part-time, all others full-time
+      de: Mindestens ein Teilzeit arbeitender Erwachsener, alle anderen Erwachsene arbeiten Vollzeit
+      fr: Au moins un adulte travaille à temps partiel, tous les autres à temps plein
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  GE1_WRK_A1_NWRK:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).GE1_WRK_A1_NWRK
+    name:
+      en: At least one adult working and one not
+      de: Mindestens ein arbeitender Erwachsener und ein nicht arbeitender Erwachsener
+      fr: Au moins un adulte travaille et un pas
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NWRK:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NWRK
+    name:
+      en: Not working (for any reason)
+      de: Nicht gearbeitet (aus jeglichem Grund)
+      fr: Ne travaillait pas (pour quelque raison que ce soit)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NWRK_X_EDUC:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NWRK_X_EDUC
+    name:
+      en: Not working (excluding households composed solely of students)
+      de: Nicht arbeitend (ohne Haushalte, die nur aus Studenten bestehen)
+      fr: Ne travaille pas (à l'exclusion des ménages composés uniquement d'étudiants)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NWRK_X_EDUC_INAC_GE65:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NWRK_X_EDUC_INAC_GE65
+    name:
+      en: Not working (excluding households composed solely of students or solely persons outside the labour force aged 65 or over)
+      de: Nicht arbeitend (ohne Haushalte, die nur aus Studenten bestehen oder aus Nichterwerbstätigen 65 Jahre oder älter)
+      fr: Ne travaille pas (à l'exclusion des ménages composés uniquement d'étudiants ou uniquement de personnes non comprises dans les forces de travail âgées de 65 ans et plus)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  OTH:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).OTH
+    name:
+      en: Others
+      de: Sonstige
+      fr: Autres
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NAP:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NAP
+    name:
+      en: Not applicable
+      de: Nicht anwendbar
+      fr: Non applicable
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NRP:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NRP
+    name:
+      en: No response
+      de: Ohne Antwort
+      fr: Sans réponse
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  UNK:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).UNK
+    name:
+      en: Unknown
+      de: Unbekannt
+      fr: Inconnu
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  '-':
+    kind: status_code
+    level: wildcard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Codelist=ESTAT:WSTATUS(12.0).-
+    name:
+      en: Wildcard
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
