@@ -1,12 +1,14 @@
 # visualisation-app5
+[Hugging Face Dataset](https://huggingface.co/datasets/Bluefir/hetus-time-use)
+
 [HETUS Metadata](https://ec.europa.eu/eurostat/cache/metadata/en/tus_20_esms.htm)  
 [HETUS Database](https://ec.europa.eu/eurostat/web/time-use-surveys/database)  
 [HETUS Data Browser](https://ec.europa.eu/eurostat/databrowser/explore/all/popul?sort=category&lang=en&subtheme=livcon.tus.tus_20&display=list)  
 
 ## Database Reference
-[HETUS guidelines](https://ec.europa.eu/eurostat/documents/9986036/16055682/HETUS+wave+2020+-+Data+delivery+guidelines.pdf/a549a7cf-695a-2415-f990-61b302dab9fc?t=1675438030799)  
+[HETUS Guidelines 2020](https://ec.europa.eu/eurostat/documents/3859598/11597606/KS-GQ-20-011-EN-N.pdf/2567be02-f395-f1d0-d64d-d375192d6f10?t=1607360062000)  
+[HETUS data delivery guidelines 2020](https://ec.europa.eu/eurostat/documents/9986036/16055682/HETUS+wave+2020+-+Data+delivery+guidelines.pdf/a549a7cf-695a-2415-f990-61b302dab9fc?t=1675438030799)  
 [HETUS Data Delivery Guidelines](https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/KS-GQ-20-011)  
-[HETUS Guidelines](https://ec.europa.eu/eurostat/documents/3859598/11597606/KS-GQ-20-011-EN-N.pdf/2567be02-f395-f1d0-d64d-d375192d6f10?t=1607360062000)  
 
 
 ## Animation Reference
@@ -51,3 +53,16 @@
     ```bash
     python -c "from datasets import load_dataset; print(load_dataset('Wupbooz/hetus-time-use', 'observations', split='train'))"
     ```
+
+## Quick chart: time by age/category/year
+
+Generate a small graph from the published HF dataset (`observations` config):
+
+```bash
+python .\plot_hf_age_category_year.py --repo-id Wupbooz/hetus-time-use --geo DE --sex T --unit TIME_SP --max-categories 4 --output .\hf_export\age_category_by_year.png
+```
+
+Notes:
+- `--geo DE` is a good default for full 2000/2010/2020 coverage.
+- For a private dataset repo, set `HF_TOKEN` in `.env` (or environment).
+- You can also run against local exported data with `--local-dataset-dir .\hf_export\hf_dataset`.
