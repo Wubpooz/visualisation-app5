@@ -1,339 +1,1258 @@
-"TOTAL":
-  name: "All ISCED 2011 levels"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED0-8":
-  name: "Early childhood to tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED0-4":
-  name: "Less than primary, primary, secondary and post-secondary non-tertiary education (levels 0-4)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED0-2":
-  name: "Less than primary, primary and lower secondary education (levels 0-2)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED0":
-  name: "Early childhood education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED01":
-  name: "Early childhood educational development"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED02-8":
-  name: "Pre-primary to tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED02":
-  name: "Pre-primary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED1-4":
-  name: "Primary, lower secondary, upper secondary and post-secondary non-tertiary education (levels 1-4)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED1-3":
-  name: "Primary and secondary education (levels 1-3)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED1_2":
-  name: "Primary and lower secondary education (levels 1 and 2)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED1":
-  name: "Primary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED2-4":
-  name: "Lower secondary, upper secondary and post-secondary non-tertiary education (levels 2-4)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED2_3":
-  name: "Secondary education (levels 2 and 3)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED2":
-  name: "Lower secondary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED24":
-  name: "Lower secondary education - general"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED25_35_45":
-  name: "Lower secondary, upper secondary and post-secondary non-tertiary education - vocational (levels 25, 35 and 45)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED25":
-  name: "Lower secondary education - vocational"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED3-8":
-  name: "Upper secondary, post-secondary non-tertiary and tertiary education (levels 3-8)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED3_4":
-  name: "Upper secondary and post-secondary non-tertiary education (levels 3 and 4)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED3_4GEN":
-  name: "Upper secondary and post-secondary non-tertiary education (levels 3 and 4) - general"
-  annotation_text: "Obsolete code, to be removed from dissemination"
-"ED3_4VOC":
-  name: "Upper secondary and post-secondary non-tertiary education (levels 3 and 4) - vocational"
-  annotation_text: "Obsolete code, to be removed from dissemination"
-"ED3_4UNK":
-  name: "Upper secondary and post-secondary non-tertiary education (levels 3 and 4) - orientation unknown"
-  annotation_text: "Code not associated with the concept of the code list, but following Eurostat Standard Code List Guidelines"
-"ED3":
-  name: "Upper secondary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED3SW":
-  name: "Upper secondary education - school and work-based vocational programmes"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED34_44":
-  name: "Upper secondary and post-secondary non-tertiary education - general (levels 34 and 44)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED34_44_ONL":
-  name: "Upper secondary and post-secondary non-tertiary education - general (levels 34 and 44) (only)"
-  annotation_text: "Code not associated with the concept of the code list, but following Eurostat Standard Code List Guidelines"
-"ED34":
-  name: "Upper secondary education - general"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED341":
-  name: "Upper secondary education - general, insufficient for level completion or partial level completion, without direct access to tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED342_352":
-  name: "Upper secondary education - all programmes, sufficient for partial level completion, without direct access to tertiary education (levels 342 and 352)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED342":
-  name: "Upper secondary education - general, sufficient for partial level completion, without direct access to tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED343_353":
-  name: "Upper secondary education - all programmes, sufficient for level completion, without direct access to tertiary education (levels 343 and 353)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED343":
-  name: "Upper secondary education - general, sufficient for level completion, without direct access to tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED344_354":
-  name: "Upper secondary education - all programmes, sufficient for level completion, with direct access to tertiary education (levels 344 and 354)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED344":
-  name: "Upper secondary education - general, sufficient for level completion, with direct access to tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED35_45":
-  name: "Upper secondary and post-secondary non-tertiary education - vocational (levels 35 and 45)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED35_45_GE1":
-  name: "Upper secondary and post-secondary non-tertiary education - vocational (levels 35 and 45) (at least one)"
-  annotation_text: "Code not associated with the concept of the code list, but following Eurostat Standard Code List Guidelines"
-"ED35":
-  name: "Upper secondary education - vocational"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED351":
-  name: "Upper secondary education - vocational, insufficient for level completion or partial level completion, without direct access to tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED352":
-  name: "Upper secondary education - vocational, sufficient for partial level completion, without direct access to tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED353":
-  name: "Upper secondary education - vocational, sufficient for level completion, without direct access to tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED354":
-  name: "Upper secondary education - vocational, sufficient for level completion, with direct access to tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED4":
-  name: "Post-secondary non-tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED4SW":
-  name: "Post-secondary non-tertiary education - school and work-based vocational programmes"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED44":
-  name: "Post-secondary non-tertiary education - general"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED441":
-  name: "Post-secondary non-tertiary education - general, insufficient for level completion, without direct access to tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED443_453":
-  name: "Post-secondary non-tertiary education - all programmes, sufficient for level completion, without direct access to tertiary education (levels 443 and 453)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED443":
-  name: "Post-secondary non-tertiary education - general, sufficient for level completion, without direct access to tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED444_454":
-  name: "Post-secondary non-tertiary education - all programmes, sufficient for level completion, with direct access to tertiary education (levels 444 and 454)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED444":
-  name: "Post-secondary non-tertiary education - general, sufficient for level completion, with direct access to tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED45":
-  name: "Post-secondary non-tertiary education - vocational"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED451":
-  name: "Post-secondary non-tertiary education - vocational, insufficient for level completion, without direct access to tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED453":
-  name: "Post-secondary non-tertiary education - vocational, sufficient for level completion, without direct access to tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED454":
-  name: "Post-secondary non-tertiary education - vocational, sufficient for level completion, with direct access to tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED5-8":
-  name: "Tertiary education (levels 5-8)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED5-7":
-  name: "Tertiary education excluding doctoral or equivalent level (levels 5-7)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED5_6":
-  name: "Short-cycle tertiary education and Bachelor\u0027s or equivalent level (levels 5 and 6)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED5":
-  name: "Short-cycle tertiary education"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED5SW":
-  name: "Short-cycle tertiary education - school and work-based vocational programmes"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED54":
-  name: "Short-cycle tertiary education - general/academic"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED541":
-  name: "Short-cycle tertiary education - general/academic, insufficient for level completion"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED544":
-  name: "Short-cycle tertiary education - general/academic, sufficient for level completion"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED55":
-  name: "Short-cycle tertiary education - vocational/professional"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED551":
-  name: "Short-cycle tertiary education - vocational/professional, insufficient for level completion"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED554":
-  name: "Short-cycle tertiary education - vocational/professional, sufficient for level completion"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED6-8":
-  name: "Tertiary education excluding short-cycle tertiary education (levels 6-8)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED6":
-  name: "Bachelor\u0027s or equivalent level"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED64":
-  name: "Bachelor\u0027s or equivalent level - academic"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED641_651_661":
-  name: "Bachelors\u0027s or equivalent level - all programmes, insufficient for level completion (levels 641, 651 and 661)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED641":
-  name: "Bachelor\u0027s or equivalent level - academic, insufficient for level completion"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED645_655_665":
-  name: "Bachelors\u0027s or equivalent level - all programmes, first degree (3-4 years) (levels 645, 655 and 665)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED645":
-  name: "Bachelor\u0027s or equivalent level - academic, first degree (3-4 years)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED646_656_666":
-  name: "Bachelors\u0027s or equivalent level - all programmes, long first degree (more than 4 years) (levels 646, 656 and 666)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED646":
-  name: "Bachelor\u0027s or equivalent level - academic, long first degree (more than 4 years)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED647_657_667":
-  name: "Bachelors\u0027s or equivalent level - all programmes, second or further degree (following a Bachelor\u0027s or equivalent programme) (levels 647, 657 and 667)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED647":
-  name: "Bachelor\u0027s or equivalent level - academic, second or further degree (following a Bachelor\u0027s or equivalent programme)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED65":
-  name: "Bachelor\u0027s or equivalent level - professional"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED651":
-  name: "Bachelor\u0027s or equivalent level - professional, insufficient for level completion"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED655":
-  name: "Bachelor\u0027s or equivalent level - professional, first degree (3-4 years)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED656":
-  name: "Bachelor\u0027s or equivalent level - professional, long first degree (more than 4 years)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED657":
-  name: "Bachelor\u0027s or equivalent level - professional, second or further degree (following a Bachelor\u0027s or equivalent programme)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED66":
-  name: "Bachelor\u0027s or equivalent level - orientation unspecified"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED661":
-  name: "Bachelor\u0027s or equivalent level - orientation unspecified, insufficient for level completion"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED665":
-  name: "Bachelor\u0027s or equivalent level - orientation unspecified, first degree (3-4 years)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED666":
-  name: "Bachelor\u0027s or equivalent level - orientation unspecified, long first degree (more than 4 years)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED667":
-  name: "Bachelor\u0027s or equivalent level - orientation unspecified, second or further degree (following a Bachelor\u0027s or equivalent programme)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED7_8":
-  name: "Master\u0027s and Doctoral or equivalent level (levels 7 and 8)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED7":
-  name: "Master\u0027s or equivalent level"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED74":
-  name: "Master\u0027s or equivalent level - academic"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED741_751_761":
-  name: "Master\u0027s or equivalent level - all programmes, insufficient for level completion (levels 741, 751 and 761)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED741":
-  name: "Master\u0027s or equivalent level - academic, insufficient for level completion"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED746_756_766":
-  name: "Master\u0027s or equivalent level - all programmes, long first degree (at least 5 years) (levels 746, 756 and 766)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED746":
-  name: "Master\u0027s or equivalent level - academic, long first degree (at least 5 years)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED747_757_767":
-  name: "Master\u0027s or equivalent level - all programmes, second or further degree (following a Bachelor\u0027s or equivalent programme) (levels 747, 757 and 767)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED747":
-  name: "Master\u0027s or equivalent level - academic, second or further degree (following a Bachelor\u0027s or equivalent programme)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED748_758_768":
-  name: "Master\u0027s or equivalent level - all programmes, second or further degree (following a Master\u0027s or equivalent programme) (levels 748, 758 and 768)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED748":
-  name: "Master\u0027s or equivalent level - academic, second or further degree (following a Master\u0027s or equivalent programme)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED75":
-  name: "Master\u0027s or equivalent level - professional"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED751":
-  name: "Master\u0027s or equivalent level - professional, insufficient for level completion"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED756":
-  name: "Master\u0027s or equivalent level - professional, long first degree (at least 5 years)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED757":
-  name: "Master\u0027s or equivalent level - professional, second or further degree (following a Bachelor\u0027s or equivalent programme)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED758":
-  name: "Master\u0027s or equivalent level - professional, second or further degree (following a Master\u0027s or equivalent programme)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED76":
-  name: "Master\u0027s or equivalent level - orientation unspecified"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED761":
-  name: "Master\u0027s or equivalent level - orientation unspecified, insufficient for level completion"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED766":
-  name: "Master\u0027s or equivalent level - orientation unspecified, long first degree (at least 5 years)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED767":
-  name: "Master\u0027s or equivalent level - orientation unspecified, second or further degree (following a Bachelor\u0027s or equivalent programme)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED768":
-  name: "Master\u0027s or equivalent level - orientation unspecified, second or further degree (following a Master\u0027s or equivalent programme)"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED8":
-  name: "Doctoral or equivalent level"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"ED9":
-  name: "Not elsewhere classified"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"NAP":
-  name: "Not applicable"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"NRP":
-  name: "No response"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"UNK":
-  name: "Unknown"
-  annotation_text: "Standard code, follows Eurostat Standard Code List Guidelines"
-"-":
-  name: "Wildcard"
-  annotation_text: ""
+schema_version: '1.0'
+generated_at_utc: '2026-04-02T15:45:18.158417+00:00'
+source:
+  file: mappings/ISCED11_education.yml
+  codelist_id: ISCED11
+  agency_id: ESTAT
+  version: '3.0'
+  urn: urn:sdmx:org.sdmx.infomodel.codelist.Codelist=ESTAT:ISCED11(3.0)
+  name:
+    en: International Standard Classification of Education (ISCED 2011)
+    de: Internationale Standardklassifikation des Bildungswesens (ISCED 2011)
+    fr: Classification internationale type de l'éducation (CITE 2011)
+  description:
+    en: ISCED is the reference classification for organizing education programmes and related qualifications by education levels and fields.
+code_count: 113
+codes:
+  TOTAL:
+    kind: education_code
+    level: total
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).TOTAL
+    name:
+      en: All ISCED 2011 levels
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED0-8:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED0-8
+    name:
+      en: Early childhood to tertiary education
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED0-4:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED0-4
+    name:
+      en: Less than primary, primary, secondary and post-secondary non-tertiary education (levels 0-4)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED0-2:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED0-2
+    name:
+      en: Less than primary, primary and lower secondary education (levels 0-2)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED0:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED0
+    name:
+      en: Early childhood education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED01:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED01
+    name:
+      en: Early childhood educational development
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED02-8:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED02-8
+    name:
+      en: Pre-primary to tertiary education
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED02:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED02
+    name:
+      en: Pre-primary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED1-4:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED1-4
+    name:
+      en: Primary, lower secondary, upper secondary and post-secondary non-tertiary education (levels 1-4)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED1-3:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED1-3
+    name:
+      en: Primary and secondary education (levels 1-3)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED1_2:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED1_2
+    name:
+      en: Primary and lower secondary education (levels 1 and 2)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED1:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED1
+    name:
+      en: Primary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED2-4:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED2-4
+    name:
+      en: Lower secondary, upper secondary and post-secondary non-tertiary education (levels 2-4)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED2_3:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED2_3
+    name:
+      en: Secondary education (levels 2 and 3)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED2:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED2
+    name:
+      en: Lower secondary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED24:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED24
+    name:
+      en: Lower secondary education - general
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED25_35_45:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED25_35_45
+    name:
+      en: Lower secondary, upper secondary and post-secondary non-tertiary education - vocational (levels 25, 35 and 45)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED25:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED25
+    name:
+      en: Lower secondary education - vocational
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED3-8:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED3-8
+    name:
+      en: Upper secondary, post-secondary non-tertiary and tertiary education (levels 3-8)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED3_4:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED3_4
+    name:
+      en: Upper secondary and post-secondary non-tertiary education (levels 3 and 4)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED3_4GEN:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED3_4GEN
+    name:
+      en: Upper secondary and post-secondary non-tertiary education (levels 3 and 4) - general
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Obsolete code, to be removed from dissemination
+  ED3_4VOC:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED3_4VOC
+    name:
+      en: Upper secondary and post-secondary non-tertiary education (levels 3 and 4) - vocational
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Obsolete code, to be removed from dissemination
+  ED3_4UNK:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED3_4UNK
+    name:
+      en: Upper secondary and post-secondary non-tertiary education (levels 3 and 4) - orientation unknown
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Code not associated with the concept of the code list, but following Eurostat Standard Code List Guidelines
+  ED3:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED3
+    name:
+      en: Upper secondary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED3SW:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED3SW
+    name:
+      en: Upper secondary education - school and work-based vocational programmes
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED34_44:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED34_44
+    name:
+      en: Upper secondary and post-secondary non-tertiary education - general (levels 34 and 44)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED34_44_ONL:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED34_44_ONL
+    name:
+      en: Upper secondary and post-secondary non-tertiary education - general (levels 34 and 44) (only)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Code not associated with the concept of the code list, but following Eurostat Standard Code List Guidelines
+  ED34:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED34
+    name:
+      en: Upper secondary education - general
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED341:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED341
+    name:
+      en: Upper secondary education - general, insufficient for level completion or partial level completion, without direct access to tertiary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED342_352:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED342_352
+    name:
+      en: Upper secondary education - all programmes, sufficient for partial level completion, without direct access to tertiary education (levels 342 and 352)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED342:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED342
+    name:
+      en: Upper secondary education - general, sufficient for partial level completion, without direct access to tertiary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED343_353:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED343_353
+    name:
+      en: Upper secondary education - all programmes, sufficient for level completion, without direct access to tertiary education (levels 343 and 353)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED343:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED343
+    name:
+      en: Upper secondary education - general, sufficient for level completion, without direct access to tertiary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED344_354:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED344_354
+    name:
+      en: Upper secondary education - all programmes, sufficient for level completion, with direct access to tertiary education (levels 344 and 354)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED344:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED344
+    name:
+      en: Upper secondary education - general, sufficient for level completion, with direct access to tertiary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED35_45:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED35_45
+    name:
+      en: Upper secondary and post-secondary non-tertiary education - vocational (levels 35 and 45)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED35_45_GE1:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED35_45_GE1
+    name:
+      en: Upper secondary and post-secondary non-tertiary education - vocational (levels 35 and 45) (at least one)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Code not associated with the concept of the code list, but following Eurostat Standard Code List Guidelines
+  ED35:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED35
+    name:
+      en: Upper secondary education - vocational
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED351:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED351
+    name:
+      en: Upper secondary education - vocational, insufficient for level completion or partial level completion, without direct access to tertiary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED352:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED352
+    name:
+      en: Upper secondary education - vocational, sufficient for partial level completion, without direct access to tertiary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED353:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED353
+    name:
+      en: Upper secondary education - vocational, sufficient for level completion, without direct access to tertiary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED354:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED354
+    name:
+      en: Upper secondary education - vocational, sufficient for level completion, with direct access to tertiary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED4:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED4
+    name:
+      en: Post-secondary non-tertiary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED4SW:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED4SW
+    name:
+      en: Post-secondary non-tertiary education - school and work-based vocational programmes
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED44:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED44
+    name:
+      en: Post-secondary non-tertiary education - general
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED441:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED441
+    name:
+      en: Post-secondary non-tertiary education - general, insufficient for level completion, without direct access to tertiary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED443_453:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED443_453
+    name:
+      en: Post-secondary non-tertiary education - all programmes, sufficient for level completion, without direct access to tertiary education (levels 443 and 453)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED443:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED443
+    name:
+      en: Post-secondary non-tertiary education - general, sufficient for level completion, without direct access to tertiary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED444_454:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED444_454
+    name:
+      en: Post-secondary non-tertiary education - all programmes, sufficient for level completion, with direct access to tertiary education (levels 444 and 454)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED444:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED444
+    name:
+      en: Post-secondary non-tertiary education - general, sufficient for level completion, with direct access to tertiary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED45:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED45
+    name:
+      en: Post-secondary non-tertiary education - vocational
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED451:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED451
+    name:
+      en: Post-secondary non-tertiary education - vocational, insufficient for level completion, without direct access to tertiary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED453:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED453
+    name:
+      en: Post-secondary non-tertiary education - vocational, sufficient for level completion, without direct access to tertiary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED454:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED454
+    name:
+      en: Post-secondary non-tertiary education - vocational, sufficient for level completion, with direct access to tertiary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED5-8:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED5-8
+    name:
+      en: Tertiary education (levels 5-8)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED5-7:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED5-7
+    name:
+      en: Tertiary education excluding doctoral or equivalent level (levels 5-7)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED5_6:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED5_6
+    name:
+      en: Short-cycle tertiary education and Bachelor's or equivalent level (levels 5 and 6)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED5:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED5
+    name:
+      en: Short-cycle tertiary education
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED5SW:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED5SW
+    name:
+      en: Short-cycle tertiary education - school and work-based vocational programmes
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED54:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED54
+    name:
+      en: Short-cycle tertiary education - general/academic
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED541:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED541
+    name:
+      en: Short-cycle tertiary education - general/academic, insufficient for level completion
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED544:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED544
+    name:
+      en: Short-cycle tertiary education - general/academic, sufficient for level completion
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED55:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED55
+    name:
+      en: Short-cycle tertiary education - vocational/professional
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED551:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED551
+    name:
+      en: Short-cycle tertiary education - vocational/professional, insufficient for level completion
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED554:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED554
+    name:
+      en: Short-cycle tertiary education - vocational/professional, sufficient for level completion
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED6-8:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED6-8
+    name:
+      en: Tertiary education excluding short-cycle tertiary education (levels 6-8)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED6:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED6
+    name:
+      en: Bachelor's or equivalent level
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED64:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED64
+    name:
+      en: Bachelor's or equivalent level - academic
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED641_651_661:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED641_651_661
+    name:
+      en: Bachelors's or equivalent level - all programmes, insufficient for level completion (levels 641, 651 and 661)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED641:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED641
+    name:
+      en: Bachelor's or equivalent level - academic, insufficient for level completion
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED645_655_665:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED645_655_665
+    name:
+      en: Bachelors's or equivalent level - all programmes, first degree (3-4 years) (levels 645, 655 and 665)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED645:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED645
+    name:
+      en: Bachelor's or equivalent level - academic, first degree (3-4 years)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED646_656_666:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED646_656_666
+    name:
+      en: Bachelors's or equivalent level - all programmes, long first degree (more than 4 years) (levels 646, 656 and 666)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED646:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED646
+    name:
+      en: Bachelor's or equivalent level - academic, long first degree (more than 4 years)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED647_657_667:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED647_657_667
+    name:
+      en: Bachelors's or equivalent level - all programmes, second or further degree (following a Bachelor's or equivalent programme) (levels 647, 657 and 667)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED647:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED647
+    name:
+      en: Bachelor's or equivalent level - academic, second or further degree (following a Bachelor's or equivalent programme)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED65:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED65
+    name:
+      en: Bachelor's or equivalent level - professional
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED651:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED651
+    name:
+      en: Bachelor's or equivalent level - professional, insufficient for level completion
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED655:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED655
+    name:
+      en: Bachelor's or equivalent level - professional, first degree (3-4 years)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED656:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED656
+    name:
+      en: Bachelor's or equivalent level - professional, long first degree (more than 4 years)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED657:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED657
+    name:
+      en: Bachelor's or equivalent level - professional, second or further degree (following a Bachelor's or equivalent programme)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED66:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED66
+    name:
+      en: Bachelor's or equivalent level - orientation unspecified
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED661:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED661
+    name:
+      en: Bachelor's or equivalent level - orientation unspecified, insufficient for level completion
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED665:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED665
+    name:
+      en: Bachelor's or equivalent level - orientation unspecified, first degree (3-4 years)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED666:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED666
+    name:
+      en: Bachelor's or equivalent level - orientation unspecified, long first degree (more than 4 years)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED667:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED667
+    name:
+      en: Bachelor's or equivalent level - orientation unspecified, second or further degree (following a Bachelor's or equivalent programme)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED7_8:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED7_8
+    name:
+      en: Master's and Doctoral or equivalent level (levels 7 and 8)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED7:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED7
+    name:
+      en: Master's or equivalent level
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED74:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED74
+    name:
+      en: Master's or equivalent level - academic
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED741_751_761:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED741_751_761
+    name:
+      en: Master's or equivalent level - all programmes, insufficient for level completion (levels 741, 751 and 761)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED741:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED741
+    name:
+      en: Master's or equivalent level - academic, insufficient for level completion
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED746_756_766:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED746_756_766
+    name:
+      en: Master's or equivalent level - all programmes, long first degree (at least 5 years) (levels 746, 756 and 766)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED746:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED746
+    name:
+      en: Master's or equivalent level - academic, long first degree (at least 5 years)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED747_757_767:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED747_757_767
+    name:
+      en: Master's or equivalent level - all programmes, second or further degree (following a Bachelor's or equivalent programme) (levels 747, 757 and 767)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED747:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED747
+    name:
+      en: Master's or equivalent level - academic, second or further degree (following a Bachelor's or equivalent programme)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED748_758_768:
+    kind: education_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED748_758_768
+    name:
+      en: Master's or equivalent level - all programmes, second or further degree (following a Master's or equivalent programme) (levels 748, 758 and 768)
+    is_aggregate: true
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED748:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED748
+    name:
+      en: Master's or equivalent level - academic, second or further degree (following a Master's or equivalent programme)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED75:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED75
+    name:
+      en: Master's or equivalent level - professional
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED751:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED751
+    name:
+      en: Master's or equivalent level - professional, insufficient for level completion
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED756:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED756
+    name:
+      en: Master's or equivalent level - professional, long first degree (at least 5 years)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED757:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED757
+    name:
+      en: Master's or equivalent level - professional, second or further degree (following a Bachelor's or equivalent programme)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED758:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED758
+    name:
+      en: Master's or equivalent level - professional, second or further degree (following a Master's or equivalent programme)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED76:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED76
+    name:
+      en: Master's or equivalent level - orientation unspecified
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED761:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED761
+    name:
+      en: Master's or equivalent level - orientation unspecified, insufficient for level completion
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED766:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED766
+    name:
+      en: Master's or equivalent level - orientation unspecified, long first degree (at least 5 years)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED767:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED767
+    name:
+      en: Master's or equivalent level - orientation unspecified, second or further degree (following a Bachelor's or equivalent programme)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED768:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED768
+    name:
+      en: Master's or equivalent level - orientation unspecified, second or further degree (following a Master's or equivalent programme)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED8:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED8
+    name:
+      en: Doctoral or equivalent level
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  ED9:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).ED9
+    name:
+      en: Not elsewhere classified
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  NAP:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).NAP
+    name:
+      en: Not applicable
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  NRP:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).NRP
+    name:
+      en: No response
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  UNK:
+    kind: education_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).UNK
+    name:
+      en: Unknown
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Standard code, follows Eurostat Standard Code List Guidelines
+  '-':
+    kind: education_code
+    level: wildcard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ISCED11(3.0).-
+    name:
+      en: Wildcard
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}

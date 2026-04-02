@@ -1,507 +1,523 @@
-EU:
-  name: "European Union (EU6-1958, EU9-1973, EU10-1981, EU12-1986, EU15-1995, EU25-2004, EU27-2007, EU28-2013, EU27-2020)"
-EA:
-  name: "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)"
-BE:
-  name: "Belgium"
-BG:
-  name: "Bulgaria"
-CZ:
-  name: "Czechia"
-DK:
-  name: "Denmark"
-DE:
-  name: "Germany"
-EE:
-  name: "Estonia"
-IE:
-  name: "Ireland"
-EL:
-  name: "Greece"
-ES:
-  name: "Spain"
-FR:
-  name: "France"
-FX:
-  name: "Metropolitan France"
-YT:
-  name: "Mayotte (FR - part of EU as of 01.01.2014)"
-  description: "Obsolete code, to be removed from dissemination"
-HR:
-  name: "Croatia"
-IT:
-  name: "Italy"
-CY:
-  name: "Cyprus"
-LV:
-  name: "Latvia"
-LT:
-  name: "Lithuania"
-LU:
-  name: "Luxembourg"
-HU:
-  name: "Hungary"
-MT:
-  name: "Malta"
-NL:
-  name: "Netherlands"
-AT:
-  name: "Austria"
-PL:
-  name: "Poland"
-PT:
-  name: "Portugal"
-RO:
-  name: "Romania"
-SI:
-  name: "Slovenia"
-SK:
-  name: "Slovakia"
-FI:
-  name: "Finland"
-SE:
-  name: "Sweden"
-IS:
-  name: "Iceland"
-LI:
-  name: "Liechtenstein"
-NO:
-  name: "Norway"
-CH:
-  name: "Switzerland"
-UK:
-  name: "United Kingdom"
-BA:
-  name: "Bosnia and Herzegovina"
-ME:
-  name: "Montenegro"
-MD:
-  name: "Moldova"
-MK:
-  name: "North Macedonia"
-GE:
-  name: "Georgia"
-AL:
-  name: "Albania"
-RS:
-  name: "Serbia"
-TR:
-  name: "Türkiye"
-UA:
-  name: "Ukraine"
-XK:
-  name: "Kosovo*"
-AD:
-  name: "Andorra"
-BY:
-  name: "Belarus"
-GG:
-  name: "Guernsey"
-JE:
-  name: "Jersey"
-CQ:
-  name: "Sark"
-FO:
-  name: "Faroes"
-GI:
-  name: "Gibraltar"
-VA:
-  name: "Holy See"
-IM:
-  name: "Isle of Man"
-MC:
-  name: "Monaco"
-RU:
-  name: "Russia"
-SM:
-  name: "San Marino"
-SJ:
-  name: "Svalbard and Jan Mayen"
-AO:
-  name: "Angola"
-CM:
-  name: "Cameroon"
-CF:
-  name: "Central African Republic"
-TD:
-  name: "Chad"
-CG:
-  name: "Congo"
-CD:
-  name: "Democratic Republic of the Congo"
-GQ:
-  name: "Equatorial Guinea"
-GA:
-  name: "Gabon"
-ST:
-  name: "São Tomé and Príncipe"
-BI:
-  name: "Burundi"
-KM:
-  name: "Comoros"
-DJ:
-  name: "Djibouti"
-ER:
-  name: "Eritrea"
-ET:
-  name: "Ethiopia"
-KE:
-  name: "Kenya"
-MG:
-  name: "Madagascar"
-MW:
-  name: "Malawi"
-MU:
-  name: "Mauritius"
-MZ:
-  name: "Mozambique"
-RW:
-  name: "Rwanda"
-SC:
-  name: "Seychelles"
-SO:
-  name: "Somalia"
-UG:
-  name: "Uganda"
-TZ:
-  name: "Tanzania"
-ZM:
-  name: "Zambia"
-ZW:
-  name: "Zimbabwe"
-DZ:
-  name: "Algeria"
-EG:
-  name: "Egypt"
-LY:
-  name: "Libya"
-MA:
-  name: "Morocco"
-SS:
-  name: "South Sudan"
-SD:
-  name: "Sudan"
-TN:
-  name: "Tunisia"
-EH:
-  name: "Western Sahara"
-BW:
-  name: "Botswana"
-LS:
-  name: "Lesotho"
-NA:
-  name: "Namibia"
-ZA:
-  name: "South Africa"
-SZ:
-  name: "Eswatini"
-BJ:
-  name: "Benin"
-BF:
-  name: "Burkina Faso"
-CV:
-  name: "Cabo Verde"
-CI:
-  name: "Côte d’Ivoire"
-GM:
-  name: "Gambia, The"
-GH:
-  name: "Ghana"
-GN:
-  name: "Guinea"
-GW:
-  name: "Guinea-Bissau"
-LR:
-  name: "Liberia"
-ML:
-  name: "Mali"
-MR:
-  name: "Mauritania"
-NE:
-  name: "Niger"
-NG:
-  name: "Nigeria"
-SH:
-  name: "Saint Helena, Ascension and Tristan da Cunha"
-SN:
-  name: "Senegal"
-SL:
-  name: "Sierra Leone"
-TG:
-  name: "Togo"
-BM:
-  name: "Bermuda"
-CA:
-  name: "Canada"
-GL:
-  name: "Greenland"
-PM:
-  name: "Saint Pierre and Miquelon"
-US:
-  name: "United States"
-AI:
-  name: "Anguilla"
-AG:
-  name: "Antigua and Barbuda"
-AW:
-  name: "Aruba"
-BS:
-  name: "Bahamas"
-BB:
-  name: "Barbados"
-BQ:
-  name: "Bonaire, Saint Eustatius and Saba"
-VG:
-  name: "British Virgin Islands"
-KY:
-  name: "Cayman Islands"
-CU:
-  name: "Cuba"
-CW:
-  name: "Curaçao"
-DM:
-  name: "Dominica"
-DO:
-  name: "Dominican Republic"
-GD:
-  name: "Grenada"
-HT:
-  name: "Haiti"
-JM:
-  name: "Jamaica"
-MS:
-  name: "Montserrat"
-AN:
-  name: "Netherlands Antilles"
-PR:
-  name: "Puerto Rico"
-BL:
-  name: "Saint Barthélemy"
-KN:
-  name: "Saint Kitts and Nevis"
-LC:
-  name: "Saint Lucia"
-MF:
-  name: "Saint Martin"
-VC:
-  name: "Saint Vincent and the Grenadines"
-SX:
-  name: "Sint Maarten"
-TT:
-  name: "Trinidad and Tobago"
-TC:
-  name: "Turks and Caicos Islands"
-VI:
-  name: "US Virgin Islands"
-BZ:
-  name: "Belize"
-CP:
-  name: "Clipperton"
-CR:
-  name: "Costa Rica"
-SV:
-  name: "El Salvador"
-GT:
-  name: "Guatemala"
-HN:
-  name: "Honduras"
-MX:
-  name: "Mexico"
-NI:
-  name: "Nicaragua"
-PA:
-  name: "Panama"
-AR:
-  name: "Argentina"
-BO:
-  name: "Bolivia"
-BR:
-  name: "Brazil"
-CL:
-  name: "Chile"
-CO:
-  name: "Colombia"
-EC:
-  name: "Ecuador"
-FK:
-  name: "Falkland Islands"
-GY:
-  name: "Guyana"
-PY:
-  name: "Paraguay"
-PE:
-  name: "Peru"
-SR:
-  name: "Suriname"
-UY:
-  name: "Uruguay"
-VE:
-  name: "Venezuela"
-KZ:
-  name: "Kazakhstan"
-KG:
-  name: "Kyrgyzstan"
-TJ:
-  name: "Tajikistan"
-TM:
-  name: "Turkmenistan"
-UZ:
-  name: "Uzbekistan"
-CN:
-  name: "China"
-HK:
-  name: "Hong Kong"
-MO:
-  name: "Macao"
-JP:
-  name: "Japan"
-MN:
-  name: "Mongolia"
-KP:
-  name: "North Korea"
-KR:
-  name: "South Korea"
-TW:
-  name: "Taiwan"
-AF:
-  name: "Afghanistan"
-BD:
-  name: "Bangladesh"
-BT:
-  name: "Bhutan"
-IO:
-  name: "British Indian Ocean Territory"
-IN:
-  name: "India"
-IR:
-  name: "Iran"
-MV:
-  name: "Maldives"
-NP:
-  name: "Nepal"
-PK:
-  name: "Pakistan"
-LK:
-  name: "Sri Lanka"
-BN:
-  name: "Brunei Darussalam"
-KH:
-  name: "Cambodia"
-ID:
-  name: "Indonesia"
-LA:
-  name: "Laos"
-MY:
-  name: "Malaysia"
-MM:
-  name: "Myanmar/Burma"
-PH:
-  name: "Philippines"
-SG:
-  name: "Singapore"
-TH:
-  name: "Thailand"
-TL:
-  name: "Timor-Leste"
-VN:
-  name: "Viet Nam"
-AM:
-  name: "Armenia"
-AZ:
-  name: "Azerbaijan"
-BH:
-  name: "Bahrain"
-IQ:
-  name: "Iraq"
-IL:
-  name: "Israel"
-JO:
-  name: "Jordan"
-KW:
-  name: "Kuwait"
-LB:
-  name: "Lebanon"
-PS:
-  name: "Palestine*"
-OM:
-  name: "Oman"
-QA:
-  name: "Qatar"
-SA:
-  name: "Saudi Arabia"
-SY:
-  name: "Syria"
-AE:
-  name: "United Arab Emirates"
-YE:
-  name: "Yemen"
-AU:
-  name: "Australia"
-CX:
-  name: "Christmas Island"
-CC:
-  name: "Cocos (Keeling) Islands"
-HM:
-  name: "Heard Island and McDonald Islands"
-NF:
-  name: "Norfolk Island"
-NZ:
-  name: "New Zealand"
-FJ:
-  name: "Fiji"
-NC:
-  name: "New Caledonia"
-PG:
-  name: "Papua New Guinea"
-SB:
-  name: "Solomon Islands"
-VU:
-  name: "Vanuatu"
-GU:
-  name: "Guam"
-KI:
-  name: "Kiribati"
-MH:
-  name: "Marshall Islands"
-FM:
-  name: "Federated States of Micronesia"
-NR:
-  name: "Nauru"
-MP:
-  name: "Northern Mariana Islands"
-PW:
-  name: "Palau"
-AS:
-  name: "American Samoa"
-CK:
-  name: "Cook Islands"
-PF:
-  name: "French Polynesia"
-NU:
-  name: "Niue"
-PN:
-  name: "Pitcairn Islands"
-WS:
-  name: "Samoa"
-TK:
-  name: "Tokelau"
-TO:
-  name: "Tonga"
-TV:
-  name: "Tuvalu"
-WF:
-  name: "Wallis and Futuna"
-UM:
-  name: "United States Minor Outlying Islands"
-AQ:
-  name: "Antarctica"
-BV:
-  name: "Bouvet Island"
-GS:
-  name: "South Georgia and the South Sandwich Islands"
-TF:
-  name: "French Southern and Antarctic Lands"
-FZ:
-  name: "Franc Zone"
-IF:
-  name: "Investment Facility"
+schema_version: '1.0'
+generated_at_utc: '2026-04-02T16:55:00+00:00'
+source:
+  file: mappings/pays.yml
+  codelist_id: GEO
+  agency_id: ESTAT
+  version: '25.2'
+  urn: urn:sdmx:org.sdmx.infomodel.codelist.Codelist=ESTAT:GEO(25.2)
+  name:
+    en: Geopolitical entity (reporting)
+    de: Geopolitische Meldeeinheit
+    fr: Entité géopolitique (déclarante)
+  description:
+    en: This code list defines the reporting geopolitical entities.
+code_count: 253
+codes:
+  EU:
+    name: "European Union (EU6-1958, EU9-1973, EU10-1981, EU12-1986, EU15-1995, EU25-2004, EU27-2007, EU28-2013, EU27-2020)"
+  EA:
+    name: "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)"
+  BE:
+    name: "Belgium"
+  BG:
+    name: "Bulgaria"
+  CZ:
+    name: "Czechia"
+  DK:
+    name: "Denmark"
+  DE:
+    name: "Germany"
+  EE:
+    name: "Estonia"
+  IE:
+    name: "Ireland"
+  EL:
+    name: "Greece"
+  ES:
+    name: "Spain"
+  FR:
+    name: "France"
+  FX:
+    name: "Metropolitan France"
+  YT:
+    name: "Mayotte (FR - part of EU as of 01.01.2014)"
+    description: "Obsolete code, to be removed from dissemination"
+  HR:
+    name: "Croatia"
+  IT:
+    name: "Italy"
+  CY:
+    name: "Cyprus"
+  LV:
+    name: "Latvia"
+  LT:
+    name: "Lithuania"
+  LU:
+    name: "Luxembourg"
+  HU:
+    name: "Hungary"
+  MT:
+    name: "Malta"
+  NL:
+    name: "Netherlands"
+  AT:
+    name: "Austria"
+  PL:
+    name: "Poland"
+  PT:
+    name: "Portugal"
+  RO:
+    name: "Romania"
+  SI:
+    name: "Slovenia"
+  SK:
+    name: "Slovakia"
+  FI:
+    name: "Finland"
+  SE:
+    name: "Sweden"
+  IS:
+    name: "Iceland"
+  LI:
+    name: "Liechtenstein"
+  NO:
+    name: "Norway"
+  CH:
+    name: "Switzerland"
+  UK:
+    name: "United Kingdom"
+  BA:
+    name: "Bosnia and Herzegovina"
+  ME:
+    name: "Montenegro"
+  MD:
+    name: "Moldova"
+  MK:
+    name: "North Macedonia"
+  GE:
+    name: "Georgia"
+  AL:
+    name: "Albania"
+  RS:
+    name: "Serbia"
+  TR:
+    name: "Türkiye"
+  UA:
+    name: "Ukraine"
+  XK:
+    name: "Kosovo*"
+  AD:
+    name: "Andorra"
+  BY:
+    name: "Belarus"
+  GG:
+    name: "Guernsey"
+  JE:
+    name: "Jersey"
+  CQ:
+    name: "Sark"
+  FO:
+    name: "Faroes"
+  GI:
+    name: "Gibraltar"
+  VA:
+    name: "Holy See"
+  IM:
+    name: "Isle of Man"
+  MC:
+    name: "Monaco"
+  RU:
+    name: "Russia"
+  SM:
+    name: "San Marino"
+  SJ:
+    name: "Svalbard and Jan Mayen"
+  AO:
+    name: "Angola"
+  CM:
+    name: "Cameroon"
+  CF:
+    name: "Central African Republic"
+  TD:
+    name: "Chad"
+  CG:
+    name: "Congo"
+  CD:
+    name: "Democratic Republic of the Congo"
+  GQ:
+    name: "Equatorial Guinea"
+  GA:
+    name: "Gabon"
+  ST:
+    name: "São Tomé and Príncipe"
+  BI:
+    name: "Burundi"
+  KM:
+    name: "Comoros"
+  DJ:
+    name: "Djibouti"
+  ER:
+    name: "Eritrea"
+  ET:
+    name: "Ethiopia"
+  KE:
+    name: "Kenya"
+  MG:
+    name: "Madagascar"
+  MW:
+    name: "Malawi"
+  MU:
+    name: "Mauritius"
+  MZ:
+    name: "Mozambique"
+  RW:
+    name: "Rwanda"
+  SC:
+    name: "Seychelles"
+  SO:
+    name: "Somalia"
+  UG:
+    name: "Uganda"
+  TZ:
+    name: "Tanzania"
+  ZM:
+    name: "Zambia"
+  ZW:
+    name: "Zimbabwe"
+  DZ:
+    name: "Algeria"
+  EG:
+    name: "Egypt"
+  LY:
+    name: "Libya"
+  MA:
+    name: "Morocco"
+  SS:
+    name: "South Sudan"
+  SD:
+    name: "Sudan"
+  TN:
+    name: "Tunisia"
+  EH:
+    name: "Western Sahara"
+  BW:
+    name: "Botswana"
+  LS:
+    name: "Lesotho"
+  NA:
+    name: "Namibia"
+  ZA:
+    name: "South Africa"
+  SZ:
+    name: "Eswatini"
+  BJ:
+    name: "Benin"
+  BF:
+    name: "Burkina Faso"
+  CV:
+    name: "Cabo Verde"
+  CI:
+    name: "Côte d’Ivoire"
+  GM:
+    name: "Gambia, The"
+  GH:
+    name: "Ghana"
+  GN:
+    name: "Guinea"
+  GW:
+    name: "Guinea-Bissau"
+  LR:
+    name: "Liberia"
+  ML:
+    name: "Mali"
+  MR:
+    name: "Mauritania"
+  NE:
+    name: "Niger"
+  NG:
+    name: "Nigeria"
+  SH:
+    name: "Saint Helena, Ascension and Tristan da Cunha"
+  SN:
+    name: "Senegal"
+  SL:
+    name: "Sierra Leone"
+  TG:
+    name: "Togo"
+  BM:
+    name: "Bermuda"
+  CA:
+    name: "Canada"
+  GL:
+    name: "Greenland"
+  PM:
+    name: "Saint Pierre and Miquelon"
+  US:
+    name: "United States"
+  AI:
+    name: "Anguilla"
+  AG:
+    name: "Antigua and Barbuda"
+  AW:
+    name: "Aruba"
+  BS:
+    name: "Bahamas"
+  BB:
+    name: "Barbados"
+  BQ:
+    name: "Bonaire, Saint Eustatius and Saba"
+  VG:
+    name: "British Virgin Islands"
+  KY:
+    name: "Cayman Islands"
+  CU:
+    name: "Cuba"
+  CW:
+    name: "Curaçao"
+  DM:
+    name: "Dominica"
+  DO:
+    name: "Dominican Republic"
+  GD:
+    name: "Grenada"
+  HT:
+    name: "Haiti"
+  JM:
+    name: "Jamaica"
+  MS:
+    name: "Montserrat"
+  AN:
+    name: "Netherlands Antilles"
+  PR:
+    name: "Puerto Rico"
+  BL:
+    name: "Saint Barthélemy"
+  KN:
+    name: "Saint Kitts and Nevis"
+  LC:
+    name: "Saint Lucia"
+  MF:
+    name: "Saint Martin"
+  VC:
+    name: "Saint Vincent and the Grenadines"
+  SX:
+    name: "Sint Maarten"
+  TT:
+    name: "Trinidad and Tobago"
+  TC:
+    name: "Turks and Caicos Islands"
+  VI:
+    name: "US Virgin Islands"
+  BZ:
+    name: "Belize"
+  CP:
+    name: "Clipperton"
+  CR:
+    name: "Costa Rica"
+  SV:
+    name: "El Salvador"
+  GT:
+    name: "Guatemala"
+  HN:
+    name: "Honduras"
+  MX:
+    name: "Mexico"
+  NI:
+    name: "Nicaragua"
+  PA:
+    name: "Panama"
+  AR:
+    name: "Argentina"
+  BO:
+    name: "Bolivia"
+  BR:
+    name: "Brazil"
+  CL:
+    name: "Chile"
+  CO:
+    name: "Colombia"
+  EC:
+    name: "Ecuador"
+  FK:
+    name: "Falkland Islands"
+  GY:
+    name: "Guyana"
+  PY:
+    name: "Paraguay"
+  PE:
+    name: "Peru"
+  SR:
+    name: "Suriname"
+  UY:
+    name: "Uruguay"
+  VE:
+    name: "Venezuela"
+  KZ:
+    name: "Kazakhstan"
+  KG:
+    name: "Kyrgyzstan"
+  TJ:
+    name: "Tajikistan"
+  TM:
+    name: "Turkmenistan"
+  UZ:
+    name: "Uzbekistan"
+  CN:
+    name: "China"
+  HK:
+    name: "Hong Kong"
+  MO:
+    name: "Macao"
+  JP:
+    name: "Japan"
+  MN:
+    name: "Mongolia"
+  KP:
+    name: "North Korea"
+  KR:
+    name: "South Korea"
+  TW:
+    name: "Taiwan"
+  AF:
+    name: "Afghanistan"
+  BD:
+    name: "Bangladesh"
+  BT:
+    name: "Bhutan"
+  IO:
+    name: "British Indian Ocean Territory"
+  IN:
+    name: "India"
+  IR:
+    name: "Iran"
+  MV:
+    name: "Maldives"
+  NP:
+    name: "Nepal"
+  PK:
+    name: "Pakistan"
+  LK:
+    name: "Sri Lanka"
+  BN:
+    name: "Brunei Darussalam"
+  KH:
+    name: "Cambodia"
+  ID:
+    name: "Indonesia"
+  LA:
+    name: "Laos"
+  MY:
+    name: "Malaysia"
+  MM:
+    name: "Myanmar/Burma"
+  PH:
+    name: "Philippines"
+  SG:
+    name: "Singapore"
+  TH:
+    name: "Thailand"
+  TL:
+    name: "Timor-Leste"
+  VN:
+    name: "Viet Nam"
+  AM:
+    name: "Armenia"
+  AZ:
+    name: "Azerbaijan"
+  BH:
+    name: "Bahrain"
+  IQ:
+    name: "Iraq"
+  IL:
+    name: "Israel"
+  JO:
+    name: "Jordan"
+  KW:
+    name: "Kuwait"
+  LB:
+    name: "Lebanon"
+  PS:
+    name: "Palestine*"
+  OM:
+    name: "Oman"
+  QA:
+    name: "Qatar"
+  SA:
+    name: "Saudi Arabia"
+  SY:
+    name: "Syria"
+  AE:
+    name: "United Arab Emirates"
+  YE:
+    name: "Yemen"
+  AU:
+    name: "Australia"
+  CX:
+    name: "Christmas Island"
+  CC:
+    name: "Cocos (Keeling) Islands"
+  HM:
+    name: "Heard Island and McDonald Islands"
+  NF:
+    name: "Norfolk Island"
+  NZ:
+    name: "New Zealand"
+  FJ:
+    name: "Fiji"
+  NC:
+    name: "New Caledonia"
+  PG:
+    name: "Papua New Guinea"
+  SB:
+    name: "Solomon Islands"
+  VU:
+    name: "Vanuatu"
+  GU:
+    name: "Guam"
+  KI:
+    name: "Kiribati"
+  MH:
+    name: "Marshall Islands"
+  FM:
+    name: "Federated States of Micronesia"
+  NR:
+    name: "Nauru"
+  MP:
+    name: "Northern Mariana Islands"
+  PW:
+    name: "Palau"
+  AS:
+    name: "American Samoa"
+  CK:
+    name: "Cook Islands"
+  PF:
+    name: "French Polynesia"
+  NU:
+    name: "Niue"
+  PN:
+    name: "Pitcairn Islands"
+  WS:
+    name: "Samoa"
+  TK:
+    name: "Tokelau"
+  TO:
+    name: "Tonga"
+  TV:
+    name: "Tuvalu"
+  WF:
+    name: "Wallis and Futuna"
+  UM:
+    name: "United States Minor Outlying Islands"
+  AQ:
+    name: "Antarctica"
+  BV:
+    name: "Bouvet Island"
+  GS:
+    name: "South Georgia and the South Sandwich Islands"
+  TF:
+    name: "French Southern and Antarctic Lands"
+  FZ:
+    name: "Franc Zone"
+  IF:
+    name: "Investment Facility"
