@@ -1,0 +1,2843 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<m:Structure xmlns:m="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+  xmlns:s="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure"
+  xmlns:c="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <m:Header>
+    <m:ID>DS-ACL181757929822156</m:ID>
+    <m:Test>false</m:Test>
+    <m:Prepared>2025-09-15T09:50:22.156Z</m:Prepared>
+    <m:Sender id="ESTAT">
+      <c:Name xml:lang="de">Statistische Amt der Europäischen Union (Eurostat)</c:Name>
+      <c:Name xml:lang="en">Statistical Office of the European Union (Eurostat)</c:Name>
+      <c:Name xml:lang="fr">Office de statistique de l'Union européenne (Eurostat)</c:Name>
+    </m:Sender>
+    <m:Receiver id="unknown" />
+  </m:Header>
+  <m:Structures>
+    <s:Codelists>
+      <s:Codelist agencyID="ESTAT" id="ACL18" isFinal="true"
+        urn="urn:sdmx:org.sdmx.infomodel.codelist.Codelist=ESTAT:ACL18(5.1)" version="5.1">
+        <c:Annotations>
+          <c:Annotation>
+            <c:AnnotationTitle>2025-09-15T23:00:00+0200</c:AnnotationTitle>
+            <c:AnnotationType>LAST_UPDATED</c:AnnotationType>
+          </c:Annotation>
+          <c:Annotation>
+            <c:AnnotationTitle>Y</c:AnnotationTitle>
+            <c:AnnotationType>IS_STANDARD_CODE_LIST</c:AnnotationType>
+            <c:AnnotationText xml:lang="en">Standard code list</c:AnnotationText>
+          </c:Annotation>
+          <c:Annotation>
+            <c:AnnotationType>ARTEFACT_SOURCE</c:AnnotationType>
+            <c:AnnotationText xml:lang="en">Eurostat Standard Code Lists</c:AnnotationText>
+          </c:Annotation>
+          <c:Annotation>
+            <c:AnnotationTitle>N</c:AnnotationTitle>
+            <c:AnnotationType>DERIVED</c:AnnotationType>
+            <c:AnnotationText xml:lang="en">Not derived</c:AnnotationText>
+          </c:Annotation>
+        </c:Annotations>
+        <c:Name xml:lang="en">Classification of activities for time use - 2018</c:Name>
+        <c:Name xml:lang="de">Klassifikation der Aktivitäten für Zeitverwendungen - 2018</c:Name>
+        <c:Name xml:lang="fr">Classification des activités pour l'emploi du temps - 2018</c:Name>
+        <c:Description xml:lang="en">This code list is based on the classification of activities for
+          time use. It is a three-level hierarchical classification, composed of major divisions,
+          divisions and groups of all possible activities undertaken by the general population
+          during the 24 hours that make up the day. It is used in the Harmonised European Time Use
+          Surveys (HETUS) to quantify how much time people spend on various activities.</c:Description>
+        <s:Code id="TOTAL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).TOTAL">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Total</c:Name>
+          <c:Name xml:lang="de">Insgesamt</c:Name>
+          <c:Name xml:lang="fr">Total</c:Name>
+        </s:Code>
+        <s:Code id="AC0_X_021"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC0_X_021">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 011, 012, 031,
+                032, 039</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Personal care except eating</c:Name>
+          <c:Name xml:lang="de">Körperpflege außer Essen</c:Name>
+          <c:Name xml:lang="fr">Soins personnels à l’exception des repas</c:Name>
+        </s:Code>
+        <s:Code id="AC0" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC0">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 011, 012, 021,
+                031, 032, 039</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Personal care</c:Name>
+          <c:Name xml:lang="de">Körperpflege</c:Name>
+          <c:Name xml:lang="fr">Soins personnels</c:Name>
+        </s:Code>
+        <s:Code id="AC01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC01">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 011, 012</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Sleeping</c:Name>
+          <c:Name xml:lang="de">Schlafen</c:Name>
+          <c:Name xml:lang="fr">Sommeil</c:Name>
+        </s:Code>
+        <s:Code id="AC011" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC011">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Sleeping</c:Name>
+          <c:Name xml:lang="de">Schlafen</c:Name>
+          <c:Name xml:lang="fr">Sommeil</c:Name>
+        </s:Code>
+        <s:Code id="AC012" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC012">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Sick in bed</c:Name>
+          <c:Name xml:lang="de">Krank im Bett</c:Name>
+          <c:Name xml:lang="fr">Malade au lit</c:Name>
+        </s:Code>
+        <s:Code id="AC02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC02">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Eating</c:Name>
+          <c:Name xml:lang="de">Essen</c:Name>
+          <c:Name xml:lang="fr">Repas</c:Name>
+        </s:Code>
+        <s:Code id="AC021" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC021">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Eating</c:Name>
+          <c:Name xml:lang="de">Essen</c:Name>
+          <c:Name xml:lang="fr">Repas</c:Name>
+        </s:Code>
+        <s:Code id="AC03" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC03">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 031, 032, 039</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other personal care</c:Name>
+          <c:Name xml:lang="de">Sonstige Körperpflege</c:Name>
+          <c:Name xml:lang="fr">Autres soins personnels</c:Name>
+        </s:Code>
+        <s:Code id="AC031" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC031">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Washing and dressing</c:Name>
+          <c:Name xml:lang="de">Waschen und Anziehen</c:Name>
+          <c:Name xml:lang="fr">Lavage et habillage</c:Name>
+        </s:Code>
+        <s:Code id="AC032" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC032">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Personal care services</c:Name>
+          <c:Name xml:lang="de">Körperpflegedienstleistungen</c:Name>
+          <c:Name xml:lang="fr">Services de soins personnels</c:Name>
+        </s:Code>
+        <s:Code id="AC039" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC039">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified personal care</c:Name>
+          <c:Name xml:lang="de">Sonstige oder nicht spezifizierte Körperpflege</c:Name>
+          <c:Name xml:lang="fr">Autres ou soins personnels non spécifiés</c:Name>
+        </s:Code>
+        <s:Code id="AC1_2" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC1_2">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 111, 121, 129,
+                211, 212, 213, 214, 215, 219, 221</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Employment and study</c:Name>
+          <c:Name xml:lang="de">Anstellung und Aus- und Weiterbildung</c:Name>
+          <c:Name xml:lang="fr">Emploi et étude</c:Name>
+        </s:Code>
+        <s:Code id="AC1" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC1">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Employment</c:Name>
+          <c:Name xml:lang="de">Anstellung</c:Name>
+          <c:Name xml:lang="fr">Emploi</c:Name>
+        </s:Code>
+        <s:Code id="AC11-12"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC11-12">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 111, 121, 129</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Employment, related activities and travel as part of/during main and
+            second job</c:Name>
+          <c:Name xml:lang="de">Beschäftigung, damit verbundene Tätigkeiten und Reisen im Rahmen der
+            Haupt- und Nebentätigkeit</c:Name>
+          <c:Name xml:lang="fr">Emploi, activités connexes et déplacements dans le cadre de l’emploi
+            principal et de l'emploi secondaire</c:Name>
+        </s:Code>
+        <s:Code id="AC11" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC11">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Main job and second job</c:Name>
+          <c:Name xml:lang="de">Haupt- und Nebentätigkeit</c:Name>
+          <c:Name xml:lang="fr">Emploi principal et secondaire</c:Name>
+        </s:Code>
+        <s:Code id="AC111" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC111">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Working time in main and second job (including short breaks and
+            travel at work)</c:Name>
+          <c:Name xml:lang="de">Arbeitszeit in der Haupt- und Nebentätigkeit (einschließlich
+            Kurzpausen und Arbeitswege)</c:Name>
+          <c:Name xml:lang="fr">Temps de travail dans l’emploi principal et secondaire, y compris
+            les pauses courtes et les déplacements</c:Name>
+        </s:Code>
+        <s:Code id="AC12" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC12">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 121, 129</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Activities related to employment</c:Name>
+          <c:Name xml:lang="de">Tätigkeiten im Zusammenhang mit der Erwerbstätigkeit</c:Name>
+          <c:Name xml:lang="fr">Activités liées à l'emploi</c:Name>
+        </s:Code>
+        <s:Code id="AC121" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC121">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Lunch break in main and second jobs</c:Name>
+          <c:Name xml:lang="de">Mittagspause in Haupt- und Nebentätigkeiten</c:Name>
+          <c:Name xml:lang="fr">Pause repas dans les emplois principaux et secondaires</c:Name>
+        </s:Code>
+        <s:Code id="AC129" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC129">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified activities related to employment</c:Name>
+          <c:Name xml:lang="de">Sonstige oder nicht näher bezeichnete berufsbezogene Tätigkeiten</c:Name>
+          <c:Name xml:lang="fr">Autres activités liées à l’emploi ou non spécifiées</c:Name>
+        </s:Code>
+        <s:Code id="AC2" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC2">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 211, 212, 213,
+                214, 215, 219, 221</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Study</c:Name>
+          <c:Name xml:lang="de">Aus- und Weiterbildung</c:Name>
+          <c:Name xml:lang="fr">Étude</c:Name>
+        </s:Code>
+        <s:Code id="AC21_X_212"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC21_X_212">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 211, 213, 214,
+                215, 219 except the group 212</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">School or university except homework</c:Name>
+          <c:Name xml:lang="de">Schule oder Universität außer Hausaufgaben</c:Name>
+          <c:Name xml:lang="fr">École ou université à l’exception des devoirs</c:Name>
+        </s:Code>
+        <s:Code id="AC21" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC21">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">School or university</c:Name>
+          <c:Name xml:lang="de">Schule oder Universität</c:Name>
+          <c:Name xml:lang="fr">École ou université</c:Name>
+        </s:Code>
+        <s:Code id="AC211" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC211">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Classes and lectures</c:Name>
+          <c:Name xml:lang="de">Kurse und Konferenzen</c:Name>
+          <c:Name xml:lang="fr">Cours et conférences</c:Name>
+        </s:Code>
+        <s:Code id="AC212" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC212">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Homework</c:Name>
+          <c:Name xml:lang="de">Hausaufgaben</c:Name>
+          <c:Name xml:lang="fr">Devoirs</c:Name>
+        </s:Code>
+        <s:Code id="AC213" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC213">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Internship</c:Name>
+          <c:Name xml:lang="de">Praktikum</c:Name>
+          <c:Name xml:lang="fr">Stage</c:Name>
+        </s:Code>
+        <s:Code id="AC214" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC214">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Breaks at school/ university</c:Name>
+          <c:Name xml:lang="de">Pausen an der Schule/Universität</c:Name>
+          <c:Name xml:lang="fr">Pauses à l'école/université</c:Name>
+        </s:Code>
+        <s:Code id="AC215" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC215">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Extracurricular classes</c:Name>
+          <c:Name xml:lang="de">Außerschulische Kurse</c:Name>
+          <c:Name xml:lang="fr">Cours extrascolaires</c:Name>
+        </s:Code>
+        <s:Code id="AC219" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC219">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other/ unspecified activities related to study</c:Name>
+          <c:Name xml:lang="de">Sonstige/ nicht näher bezeichnete Aktivitäten im Zusammenhang mit
+            dem Studium</c:Name>
+          <c:Name xml:lang="fr">Autres activités liées à l’étude ou non spécifiées</c:Name>
+        </s:Code>
+        <s:Code id="AC22" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC22">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Free time study</c:Name>
+          <c:Name xml:lang="de">Aus- und Weiterbildung in der Freizeit</c:Name>
+          <c:Name xml:lang="fr">Étude pendant le temps libre</c:Name>
+        </s:Code>
+        <s:Code id="AC221" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC221">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Free time study</c:Name>
+          <c:Name xml:lang="de">Aus- und Weiterbildung in der Freizeit</c:Name>
+          <c:Name xml:lang="fr">Étude pendant le temps libre</c:Name>
+        </s:Code>
+        <s:Code id="AC3_713"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC3_713">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 300, 311, 312,
+                313, 321, 322, 323, 324, 325, 329, 331, 332, 339, 341, 342, 343, 344, 349, 351, 352,
+                353, 354, 359, 361, 362, 369, 371, 381, 382, 383, 384, 389, 391, 392, 713</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Household and family care and making handicraft products</c:Name>
+          <c:Name xml:lang="de">Haushaltsführung und Familienversorgung und Herstellung von
+            Handwerksprodukten</c:Name>
+          <c:Name xml:lang="fr">Tâches ménagères et familiales et fabrication de produits artisanaux</c:Name>
+        </s:Code>
+        <s:Code id="AC3_713_X_38"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC3_713_X_38">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 300, 311, 312,
+                313, 321, 322, 323, 324, 325, 329, 331, 332, 713, 339, 341, 342, 343, 344, 349, 351,
+                352, 353, 354, 359, 361, 362, 369, 371, 391, 392</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Household and family care and making handicraft products except
+            childcare</c:Name>
+          <c:Name xml:lang="de">Haushaltsführung und Familienversorgung und Herstellung von
+            Handwerksprodukten außer Kinderbetreuung</c:Name>
+          <c:Name xml:lang="fr">Tâches ménagères et familiales et fabrication de produits artisanaux
+            à l’exception de la garde d'enfants</c:Name>
+        </s:Code>
+        <s:Code id="AC3_713_936-980"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC3_713_936-980">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 300, 311, 312,
+                313, 321, 322, 323, 324, 325, 329, 331, 332, 339, 341, 342, 343, 344, 349, 351, 352,
+                353, 354, 359, 361, 362, 369, 371, 381, 382, 383, 384, 389, 391, 392, 713, 936, 938,
+                939, 940, 950, 960, 980</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Household and family care and related travel and making handicraft
+            products</c:Name>
+          <c:Name xml:lang="de">Haushaltsführung und Familienversorgung, zugehörige Reisen und
+            Herstellung von Handwerksprodukten</c:Name>
+          <c:Name xml:lang="fr">Tâches ménagères et familiales, déplacements associés et fabrication
+            de produits artisanaux</c:Name>
+        </s:Code>
+        <s:Code id="AC3" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC3">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Household and family care</c:Name>
+          <c:Name xml:lang="de">Haushaltsführung und Familienversorgung</c:Name>
+          <c:Name xml:lang="fr">Tâches ménagères et familiales</c:Name>
+        </s:Code>
+        <s:Code id="AC30" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC30">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Unspecified household and family care</c:Name>
+          <c:Name xml:lang="de">Nicht spezifiziert Haushaltsführung und Familienversorgung</c:Name>
+          <c:Name xml:lang="fr">Tâches ménagères et familiales non spécifiées</c:Name>
+        </s:Code>
+        <s:Code id="AC300_371"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC300_371">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 300, 371</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Household management and unspecified household and family care</c:Name>
+          <c:Name xml:lang="de">Haushaltsführung und nicht näher bezeichnete Haushalts- und
+            Familienversorgung</c:Name>
+          <c:Name xml:lang="fr">Gestion des tâches ménagères et soins non spécifiés du ménage et de
+            la famille</c:Name>
+        </s:Code>
+        <s:Code id="AC300" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC300">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Unspecified household and family care</c:Name>
+          <c:Name xml:lang="de">Nicht spezifiziert Haushaltsführung und Familienversorgung</c:Name>
+          <c:Name xml:lang="fr">Tâches ménagères et familiales non spécifiées</c:Name>
+        </s:Code>
+        <s:Code id="AC31_X_312"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC31_X_312">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 311, 313</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Food management except dish washing</c:Name>
+          <c:Name xml:lang="de">Essenszubereitung außer Geschirr spülen</c:Name>
+          <c:Name xml:lang="fr">Activités pour l'alimentation à l’exception du lavage de vaisselle</c:Name>
+        </s:Code>
+        <s:Code id="AC31" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC31">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Food management</c:Name>
+          <c:Name xml:lang="de">Essenszubereitung</c:Name>
+          <c:Name xml:lang="fr">Activités pour l'alimentation</c:Name>
+        </s:Code>
+        <s:Code id="AC311" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC311">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Food preparation and baking</c:Name>
+          <c:Name xml:lang="de">Speisenzubereitung und Backen</c:Name>
+          <c:Name xml:lang="fr">Activités pour la préparation des aliments et de pâtisserie</c:Name>
+        </s:Code>
+        <s:Code id="AC312" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC312">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Dish washing</c:Name>
+          <c:Name xml:lang="de">Geschirr spülen</c:Name>
+          <c:Name xml:lang="fr">Lavage de vaisselle</c:Name>
+        </s:Code>
+        <s:Code id="AC313" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC313">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Storing, arranging, preserving food stocks</c:Name>
+          <c:Name xml:lang="de">Lebensmittelvorräte lagern, anordnen, konservieren</c:Name>
+          <c:Name xml:lang="fr">Stocker, ranger, conserver les stocks alimentaires</c:Name>
+        </s:Code>
+        <s:Code id="AC32_X_321"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC32_X_321">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 322, 323, 324,
+                325, 329</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Household upkeep except cleaning dwelling</c:Name>
+          <c:Name xml:lang="de">Haushalt instand halten außer Reinigung der Wohnung</c:Name>
+          <c:Name xml:lang="fr">Entretien ménager à l’exception du nettoyage du logement</c:Name>
+        </s:Code>
+        <s:Code id="AC32" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC32">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Household upkeep</c:Name>
+          <c:Name xml:lang="de">Haushalt instand halten</c:Name>
+          <c:Name xml:lang="fr">Entretien ménager</c:Name>
+        </s:Code>
+        <s:Code id="AC321" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC321">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Cleaning dwelling</c:Name>
+          <c:Name xml:lang="de">Reinigung der Wohnung</c:Name>
+          <c:Name xml:lang="fr">Nettoyage du logement</c:Name>
+        </s:Code>
+        <s:Code id="AC322" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC322">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Cleaning garden</c:Name>
+          <c:Name xml:lang="de">Reinigung des Gartens</c:Name>
+          <c:Name xml:lang="fr">Nettoyage du jardin</c:Name>
+        </s:Code>
+        <s:Code id="AC323" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC323">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Heating dwelling and water</c:Name>
+          <c:Name xml:lang="de">Wasser-Heizung</c:Name>
+          <c:Name xml:lang="fr">Activité de chauffage et d’eau</c:Name>
+        </s:Code>
+        <s:Code id="AC324" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC324">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Arranging household goods and materials</c:Name>
+          <c:Name xml:lang="de">Anordnen von Haushaltswaren und -materialien</c:Name>
+          <c:Name xml:lang="fr">Ranger les biens et les matériaux ménagers</c:Name>
+        </s:Code>
+        <s:Code id="AC325" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC325">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Recycling and disposal of waste</c:Name>
+          <c:Name xml:lang="de">Recycling und Entsorgung von Abfällen</c:Name>
+          <c:Name xml:lang="fr">Recyclage et élimination des déchets</c:Name>
+        </s:Code>
+        <s:Code id="AC329" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC329">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified household upkeep</c:Name>
+          <c:Name xml:lang="de">Sonstige oder nicht näher bezeichnete Haushaltsführung</c:Name>
+          <c:Name xml:lang="fr">Autres travaux d'entretien ménager ou non spécifiés</c:Name>
+        </s:Code>
+        <s:Code id="AC33" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC33">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Care for textiles</c:Name>
+          <c:Name xml:lang="de">Pflege von Textilien</c:Name>
+          <c:Name xml:lang="fr">Entretien des textiles</c:Name>
+        </s:Code>
+        <s:Code id="AC331" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC331">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Laundry</c:Name>
+          <c:Name xml:lang="de">Wäsche waschen</c:Name>
+          <c:Name xml:lang="fr">Lessive</c:Name>
+        </s:Code>
+        <s:Code id="AC332" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC332">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Ironing</c:Name>
+          <c:Name xml:lang="de">Wäsche bügeln</c:Name>
+          <c:Name xml:lang="fr">Repassage</c:Name>
+        </s:Code>
+        <s:Code id="AC339_713"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC339_713">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 713, 339</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified textile care and making handicraft products</c:Name>
+          <c:Name xml:lang="de">Sonstige oder nicht näher bezeichnete Textilpflege und Herstellung
+            von Handwerksprodukten</c:Name>
+          <c:Name xml:lang="fr">Entretien textile autre ou non spécifié et fabrication de produits
+            artisanaux</c:Name>
+        </s:Code>
+        <s:Code id="AC339" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC339">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified textile care</c:Name>
+          <c:Name xml:lang="de">Sonstige oder nicht näher bezeichnete Textilpflege</c:Name>
+          <c:Name xml:lang="fr">Entretien textile autre ou non spécifié</c:Name>
+        </s:Code>
+        <s:Code id="AC34" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC34">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Gardening and pet care</c:Name>
+          <c:Name xml:lang="de">Gartenarbeit und Tierpflege</c:Name>
+          <c:Name xml:lang="fr">Jardinage et soins animaliers</c:Name>
+        </s:Code>
+        <s:Code id="AC341_349"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC341_349">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 341, 349</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Gardening and other or unspecified gardening and pet care</c:Name>
+          <c:Name xml:lang="de">Gartenarbeit und sonstige oder nicht näher bezeichnete
+            Gartenarbeiten und Tierpflege</c:Name>
+          <c:Name xml:lang="fr">Jardinage et autres soins de jardinage et d’animaux de compagnie ou
+            non spécifiés</c:Name>
+        </s:Code>
+        <s:Code id="AC341" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC341">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Gardening</c:Name>
+          <c:Name xml:lang="de">Gartenarbeit</c:Name>
+          <c:Name xml:lang="fr">Jardinage</c:Name>
+        </s:Code>
+        <s:Code id="AC342" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC342">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Tending domestic animals</c:Name>
+          <c:Name xml:lang="de">Haustiere hüten</c:Name>
+          <c:Name xml:lang="fr">Garde d'animaux domestiques</c:Name>
+        </s:Code>
+        <s:Code id="AC343" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC343">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Caring for pets</c:Name>
+          <c:Name xml:lang="de">Haustierpflege</c:Name>
+          <c:Name xml:lang="fr">Soins aux animaux</c:Name>
+        </s:Code>
+        <s:Code id="AC344" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC344">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Walking the dog</c:Name>
+          <c:Name xml:lang="de">Mit dem Hund spazieren gehen</c:Name>
+          <c:Name xml:lang="fr">Promener le chien</c:Name>
+        </s:Code>
+        <s:Code id="AC349" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC349">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified gardening and pet care</c:Name>
+          <c:Name xml:lang="de">Sonstige oder nicht näher bezeichnete Gartenarbeiten und Tierpflege</c:Name>
+          <c:Name xml:lang="fr">Autres soins de jardinage et d’animaux de compagnie ou non spécifiés</c:Name>
+        </s:Code>
+        <s:Code id="AC35" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC35">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 351, 352, 353,
+                354, 359</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Construction and repairs</c:Name>
+          <c:Name xml:lang="de">Bau und Reparaturen</c:Name>
+          <c:Name xml:lang="fr">Construction et réparations</c:Name>
+        </s:Code>
+        <s:Code id="AC351" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC351">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">House construction and renovation</c:Name>
+          <c:Name xml:lang="de">Hausbau und Renovierung</c:Name>
+          <c:Name xml:lang="fr">Construction et rénovation de maisons</c:Name>
+        </s:Code>
+        <s:Code id="AC352" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC352">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Repairs to dwelling</c:Name>
+          <c:Name xml:lang="de">Reparaturen von Wohnungen</c:Name>
+          <c:Name xml:lang="fr">Réparation de logements</c:Name>
+        </s:Code>
+        <s:Code id="AC353" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC353">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Making, repairing and maintaining equipment</c:Name>
+          <c:Name xml:lang="de">Herstellung, Reparatur und Wartung von Geräten</c:Name>
+          <c:Name xml:lang="fr">Fabrication, réparation et entretien des équipements</c:Name>
+        </s:Code>
+        <s:Code id="AC354" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC354">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Vehicle maintenance</c:Name>
+          <c:Name xml:lang="de">Fahrzeugwartung</c:Name>
+          <c:Name xml:lang="fr">Entretien de véhicules</c:Name>
+        </s:Code>
+        <s:Code id="AC359" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC359">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified construction and repairs</c:Name>
+          <c:Name xml:lang="de">Sonstige oder nicht spezifizierte Bau- und Reparaturarbeiten</c:Name>
+          <c:Name xml:lang="fr">Construction et réparations autres ou non spécifiées</c:Name>
+        </s:Code>
+        <s:Code id="AC36" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC36">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 361, 362, 369</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Shopping and services</c:Name>
+          <c:Name xml:lang="de">Einkaufen und Dienstleistungen</c:Name>
+          <c:Name xml:lang="fr">Achats et services</c:Name>
+        </s:Code>
+        <s:Code id="AC361" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC361">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Shopping (including online/ e-shopping)</c:Name>
+          <c:Name xml:lang="de">Einkaufen (einschließlich online/ e-shopping)</c:Name>
+          <c:Name xml:lang="fr">Shopping (y compris les achats en ligne/e-shopping)</c:Name>
+        </s:Code>
+        <s:Code id="AC362" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC362">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Commercial and administrative services</c:Name>
+          <c:Name xml:lang="de">Kommerzielle und administrative Dienstleistungen</c:Name>
+          <c:Name xml:lang="fr">Services commerciaux et administratifs</c:Name>
+        </s:Code>
+        <s:Code id="AC369" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC369">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified shopping and services</c:Name>
+          <c:Name xml:lang="de">Sonstige oder nicht näher bezeichnete Käufe und Dienstleistungen</c:Name>
+          <c:Name xml:lang="fr">Achats et services autres ou non spécifiés</c:Name>
+        </s:Code>
+        <s:Code id="AC37" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC37">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Household management</c:Name>
+          <c:Name xml:lang="de">Haushaltsplanung und -organisation</c:Name>
+          <c:Name xml:lang="fr">Gestion du ménage</c:Name>
+        </s:Code>
+        <s:Code id="AC371" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC371">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Household management</c:Name>
+          <c:Name xml:lang="de">Haushaltsplanung und -organisation</c:Name>
+          <c:Name xml:lang="fr">Gestion du ménage</c:Name>
+        </s:Code>
+        <s:Code id="AC38_X_382-383"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC38_X_382-383">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 381, 384, 389</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Childcare, except teaching, reading, playing and talking</c:Name>
+          <c:Name xml:lang="de">Kinderbetreuung außer Bildung, Lesen, Spielen und Sprechen</c:Name>
+          <c:Name xml:lang="fr">Garde d'enfants, à l’exception de l'enseignement, de la lecture, du
+            jeu et de la conversation</c:Name>
+        </s:Code>
+        <s:Code id="AC38" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC38">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 381, 382, 383,
+                384, 389</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Childcare</c:Name>
+          <c:Name xml:lang="de">Kinderbetreuung</c:Name>
+          <c:Name xml:lang="fr">Garde d'enfants</c:Name>
+        </s:Code>
+        <s:Code id="AC381" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC381">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Physical care and supervision of child</c:Name>
+          <c:Name xml:lang="de">Körperliche Pflege und Beaufsichtigung des Kindes</c:Name>
+          <c:Name xml:lang="fr">Soins physiques et surveillance de l'enfant</c:Name>
+        </s:Code>
+        <s:Code id="AC382_383"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC382_383">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 382, 383</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Teaching, reading, playing and talking with child</c:Name>
+          <c:Name xml:lang="de">Bildung für das Kind, Lesen, Spielen und Sprechen mit einem Kind</c:Name>
+          <c:Name xml:lang="fr">Enseignement, lecture, jeu et conversation avec un enfant</c:Name>
+        </s:Code>
+        <s:Code id="AC382" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC382">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Teaching the child</c:Name>
+          <c:Name xml:lang="de">Bildung für das Kind</c:Name>
+          <c:Name xml:lang="fr">Enseignement de l’enfant</c:Name>
+        </s:Code>
+        <s:Code id="AC383" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC383">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Reading, playing and talking with child</c:Name>
+          <c:Name xml:lang="de">Lesen, Spielen und Sprechen mit einem Kind</c:Name>
+          <c:Name xml:lang="fr">Lecture, jeu et conversation avec un enfant</c:Name>
+        </s:Code>
+        <s:Code id="AC384" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC384">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Accompanying child</c:Name>
+          <c:Name xml:lang="de">Begleitung des Kindes</c:Name>
+          <c:Name xml:lang="fr">Accompagnement de l'enfant</c:Name>
+        </s:Code>
+        <s:Code id="AC389" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC389">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified childcare</c:Name>
+          <c:Name xml:lang="de">Sonstige oder nicht näher bezeichnete Kinderbetreuung</c:Name>
+          <c:Name xml:lang="fr">Garde d'enfants autre ou non spécifiée</c:Name>
+        </s:Code>
+        <s:Code id="AC39" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC39">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 391, 392</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Help to an adult household member</c:Name>
+          <c:Name xml:lang="de">Hilfe für ein erwachsenes Haushaltsmitglied</c:Name>
+          <c:Name xml:lang="fr">Aide à un membre adulte du ménage</c:Name>
+        </s:Code>
+        <s:Code id="AC391" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC391">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Physical care of an adult household member</c:Name>
+          <c:Name xml:lang="de">Körperliche Pflege eines erwachsenen Haushaltsmitglieds</c:Name>
+          <c:Name xml:lang="fr">Soins physiques d'un membre adulte du ménage</c:Name>
+        </s:Code>
+        <s:Code id="AC392" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC392">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other support to an adult household member</c:Name>
+          <c:Name xml:lang="de">Sonstige Unterstützung für ein erwachsenes Haushaltsmitglied</c:Name>
+          <c:Name xml:lang="fr">Autre soutien à un membre adulte du ménage</c:Name>
+        </s:Code>
+        <s:Code id="AC4-8_998_X_713"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC4-8_998_X_713">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 411, 421, 422,
+                423, 424, 425, 429, 431, 432, 433, 439, 511, 512, 513, 514, 515, 516, 519, 521, 522,
+                523, 524, 525, 526, 529, 531, 611, 612, 613, 614, 615, 616, 619, 621, 631, 711, 712,
+                719, 721, 722, 729, 731, 732, 733, 734, 735, 739, 811, 812, 819, 821, 831, 998</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Leisure, social and associative life, except making handicraft
+            products</c:Name>
+          <c:Name xml:lang="de">Freizeit, geselliges und vereinsmäßiges Leben außer Herstellung von
+            Handwerksprodukten</c:Name>
+          <c:Name xml:lang="fr">Loisirs, vie sociale et associative, à l’exception de la fabrication
+            de produits artisanaux</c:Name>
+        </s:Code>
+        <s:Code id="AC4-8_998_X_713_821"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC4-8_998_X_713_821">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 411, 421, 422,
+                423, 424, 425, 429, 431, 432, +433, 439, 511, 512, 513, 514, 515, 516, 519, 521,
+                522, 523, 524, 525, 526, 529, 531, 611, 612, 613, 614, 615, 616, 619, 621, 631, 711,
+                712, 719, 721, 722, 729, 731, 732, 733, 734, 735, 739, 811, 812, 819, 831, 998</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Leisure, social and associative life except making handicraft
+            products and TV and video</c:Name>
+          <c:Name xml:lang="de">Freizeit, geselliges und vereinsmäßiges Leben außer Herstellung von
+            Handwerksprodukten und Fernsehen, Video oder DVD ansehen</c:Name>
+          <c:Name xml:lang="fr">Loisirs, vie sociale et associative, à l’exception de la fabrication
+            de produits artisanaux et de regarder la TV, une vidéo ou un DVD</c:Name>
+        </s:Code>
+        <s:Code id="AC4" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC4">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Voluntary work and meetings</c:Name>
+          <c:Name xml:lang="de">Freiwillige Arbeit und Treffen</c:Name>
+          <c:Name xml:lang="fr">Travail bénévole et réunions</c:Name>
+        </s:Code>
+        <s:Code id="AC41" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC41">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Organisational work</c:Name>
+          <c:Name xml:lang="de">Arbeit für eine Organisation</c:Name>
+          <c:Name xml:lang="fr">Travail pour une organisation</c:Name>
+        </s:Code>
+        <s:Code id="AC411" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC411">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Organisational work (work for or through an organisation)</c:Name>
+          <c:Name xml:lang="de">Organisationsarbeit (Arbeit für oder durch eine Organisation)</c:Name>
+          <c:Name xml:lang="fr">Travail pour une organisation (travail pour ou par l'intermédiaire
+            d'une organisation)</c:Name>
+        </s:Code>
+        <s:Code id="AC42" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC42">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 421, 422, 423,
+                424, 425, 429</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Informal help to other households</c:Name>
+          <c:Name xml:lang="de">Informelle Hilfe für andere Haushalte</c:Name>
+          <c:Name xml:lang="fr">Aide informelle aux autres ménages</c:Name>
+        </s:Code>
+        <s:Code id="AC421" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC421">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Construction and repairs as help</c:Name>
+          <c:Name xml:lang="de">Bau und Reparaturen als Hilfe</c:Name>
+          <c:Name xml:lang="fr">Construction et réparations comme aide</c:Name>
+        </s:Code>
+        <s:Code id="AC422" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC422">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Help in employment and farming</c:Name>
+          <c:Name xml:lang="de">Beihilfen für Beschäftigung und Landwirtschaft</c:Name>
+          <c:Name xml:lang="fr">Aide à l’emploi et à l’agriculture</c:Name>
+        </s:Code>
+        <s:Code id="AC423" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC423">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Care of own children living in another household</c:Name>
+          <c:Name xml:lang="de">Betreuung eigener Kinder, die in einem anderen Haushalt leben</c:Name>
+          <c:Name xml:lang="fr">Soins aux propres enfants vivant dans un autre foyer</c:Name>
+        </s:Code>
+        <s:Code id="AC424" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC424">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Childcare as help to another household</c:Name>
+          <c:Name xml:lang="de">Kinderbetreuung als Hilfe für einen anderen Haushalt</c:Name>
+          <c:Name xml:lang="fr">Garde d'enfants comme aide à un autre ménage</c:Name>
+        </s:Code>
+        <s:Code id="AC425" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC425">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Help to an adult person of another household</c:Name>
+          <c:Name xml:lang="de">Hilfe für einen Erwachsenen aus einem anderen Haushalt</c:Name>
+          <c:Name xml:lang="fr">Aide à un adulte d’un autre ménage</c:Name>
+        </s:Code>
+        <s:Code id="AC429" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC429">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other/ unspecified informal help to another household</c:Name>
+          <c:Name xml:lang="de">Sonstige/nicht näher bezeichnete informelle Hilfe für einen anderen
+            Haushalt</c:Name>
+          <c:Name xml:lang="fr">Autre/aide informelle non spécifiée à un autre ménage</c:Name>
+        </s:Code>
+        <s:Code id="AC43" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC43">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 431, 432, 433,
+                439</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Participatory and religious activities</c:Name>
+          <c:Name xml:lang="de">Teilnehmende und Religiösen Aktivitäten</c:Name>
+          <c:Name xml:lang="fr">Activités de participation et religieuses</c:Name>
+        </s:Code>
+        <s:Code id="AC431" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC431">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Meetings</c:Name>
+          <c:Name xml:lang="de">Sitzungen</c:Name>
+          <c:Name xml:lang="fr">Réunions</c:Name>
+        </s:Code>
+        <s:Code id="AC432" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC432">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Religious activities</c:Name>
+          <c:Name xml:lang="de">Religiösen Aktivitäten</c:Name>
+          <c:Name xml:lang="fr">Activités religieuses</c:Name>
+        </s:Code>
+        <s:Code id="AC433" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC433">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Visits to cemetery and grave care</c:Name>
+          <c:Name xml:lang="de">Friedhofsbesuche und Grabpflege</c:Name>
+          <c:Name xml:lang="fr">Visites au cimetière et entretien des tombes</c:Name>
+        </s:Code>
+        <s:Code id="AC439" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC439">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified participatory activities</c:Name>
+          <c:Name xml:lang="de">Sonstige oder nicht näher bezeichnete partizipatorische Aktivitäten</c:Name>
+          <c:Name xml:lang="fr">Autres activités participatives ou non spécifiées</c:Name>
+        </s:Code>
+        <s:Code id="AC5" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC5">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Social life and entertainment</c:Name>
+          <c:Name xml:lang="de">Sozialleben und Unterhaltung</c:Name>
+          <c:Name xml:lang="fr">Vie sociale et divertissement</c:Name>
+        </s:Code>
+        <s:Code id="AC51" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC51">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Social life</c:Name>
+          <c:Name xml:lang="de">Sozialleben</c:Name>
+          <c:Name xml:lang="fr">Vie sociale</c:Name>
+        </s:Code>
+        <s:Code id="AC511" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC511">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Socialising with family</c:Name>
+          <c:Name xml:lang="de">Ausgehen mit der Familie</c:Name>
+          <c:Name xml:lang="fr">Socialiser avec la famille</c:Name>
+        </s:Code>
+        <s:Code id="AC512_513_519"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC512_513_519">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 512, 513, 519</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Socialising with others (visits, celebrations and other)</c:Name>
+          <c:Name xml:lang="de">Geselligkeit mit anderen (Besuche, Feste und sonstiges)</c:Name>
+          <c:Name xml:lang="fr">Socialiser avec les autres (visites, fêtes et autres)</c:Name>
+        </s:Code>
+        <s:Code id="AC512" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC512">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Visiting and receiving visitors</c:Name>
+          <c:Name xml:lang="de">Besuch und Empfang der Besucher</c:Name>
+          <c:Name xml:lang="fr">Visite et accueil des visiteurs</c:Name>
+        </s:Code>
+        <s:Code id="AC513" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC513">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Celebrations</c:Name>
+          <c:Name xml:lang="de">Feste</c:Name>
+          <c:Name xml:lang="fr">Fêtes</c:Name>
+        </s:Code>
+        <s:Code id="AC514-516"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC514-516">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 514, 515, 516</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Virtual social life</c:Name>
+          <c:Name xml:lang="de">Virtuelles Sozialleben</c:Name>
+          <c:Name xml:lang="fr">Vie sociale virtuelle</c:Name>
+        </s:Code>
+        <s:Code id="AC514" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC514">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Audio and video conversation</c:Name>
+          <c:Name xml:lang="de">Audio- und Videogespräche</c:Name>
+          <c:Name xml:lang="fr">Conversation audio et vidéo</c:Name>
+        </s:Code>
+        <s:Code id="AC515" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC515">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Communication by text messaging (SMS, instant messages, email, etc.)</c:Name>
+          <c:Name xml:lang="de">Kommunikation per Textnachrichten (SMS, Instant Messages, E-Mail
+            usw.)</c:Name>
+          <c:Name xml:lang="fr">Communication par messagerie texte (SMS, messages instantanés,
+            e-mail, etc.)</c:Name>
+        </s:Code>
+        <s:Code id="AC516" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC516">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Time spent on social media</c:Name>
+          <c:Name xml:lang="de">Zeit in sozialen Medien</c:Name>
+          <c:Name xml:lang="fr">Temps passé sur les réseaux sociaux</c:Name>
+        </s:Code>
+        <s:Code id="AC519" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC519">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified social life</c:Name>
+          <c:Name xml:lang="de">Sonstiges oder nicht näher bezeichnetes soziales Leben</c:Name>
+          <c:Name xml:lang="fr">Autre vie sociale ou non spécifiée</c:Name>
+        </s:Code>
+        <s:Code id="AC52" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC52">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 521, 522, 523,
+                524, 525, 526, 529</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Entertainment and culture</c:Name>
+          <c:Name xml:lang="de">Unterhaltung und Kultur</c:Name>
+          <c:Name xml:lang="fr">Divertissement et culture</c:Name>
+        </s:Code>
+        <s:Code id="AC521" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC521">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Cinema</c:Name>
+          <c:Name xml:lang="de">Kino</c:Name>
+          <c:Name xml:lang="fr">Cinéma</c:Name>
+        </s:Code>
+        <s:Code id="AC522" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC522">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Theatre and concerts</c:Name>
+          <c:Name xml:lang="de">Theater und Konzerte</c:Name>
+          <c:Name xml:lang="fr">Théâtre et concerts</c:Name>
+        </s:Code>
+        <s:Code id="AC523" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC523">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Art exhibitions and museums</c:Name>
+          <c:Name xml:lang="de">Ausstellungen von Kunst und Museen</c:Name>
+          <c:Name xml:lang="fr">Expositions d’art et musées</c:Name>
+        </s:Code>
+        <s:Code id="AC524" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC524">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Library</c:Name>
+          <c:Name xml:lang="de">Bibliothek</c:Name>
+          <c:Name xml:lang="fr">Bibliothèque</c:Name>
+        </s:Code>
+        <s:Code id="AC525" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC525">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Attending live sports events</c:Name>
+          <c:Name xml:lang="de">Teilnahme an Live-Sportveranstaltungen</c:Name>
+          <c:Name xml:lang="fr">Assister à des événements sportifs en direct</c:Name>
+        </s:Code>
+        <s:Code id="AC526" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC526">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Zoos, botanical gardens, natural reserves, etc.</c:Name>
+          <c:Name xml:lang="de">Zoos, botanische Gärten, Naturschutzgebiete usw.</c:Name>
+          <c:Name xml:lang="fr">Zoos, jardins botaniques, réserves naturelles, etc.</c:Name>
+        </s:Code>
+        <s:Code id="AC529" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC529">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified entertainment and culture</c:Name>
+          <c:Name xml:lang="de">Sonstige oder nicht spezifizierte Unterhaltung und Kultur</c:Name>
+          <c:Name xml:lang="fr">Autres divertissements et activités culturelles non spécifiés</c:Name>
+        </s:Code>
+        <s:Code id="AC53" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC53">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Resting - time out</c:Name>
+          <c:Name xml:lang="de">Ruhe - Inaktivität</c:Name>
+          <c:Name xml:lang="fr">Repos - inactivité</c:Name>
+        </s:Code>
+        <s:Code id="AC531" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC531">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Resting - time out</c:Name>
+          <c:Name xml:lang="de">Ruhe - Inaktivität</c:Name>
+          <c:Name xml:lang="fr">Repos - inactivité</c:Name>
+        </s:Code>
+        <s:Code id="AC6_X_611"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC6_X_611">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 612, 613, 614,
+                615, 616, 619, 621, 631</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Sports and outdoor activities except walking and hiking</c:Name>
+          <c:Name xml:lang="de">Sport und Aktivitäten im Freien außer spazieren gehen und wandern</c:Name>
+          <c:Name xml:lang="fr">Sports et activités extérieures à l’exception de la marche et de la
+            randonnée</c:Name>
+        </s:Code>
+        <s:Code id="AC6" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC6">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Sports and outdoor activities</c:Name>
+          <c:Name xml:lang="de">Sport und Aktivitäten im Freien</c:Name>
+          <c:Name xml:lang="fr">Sports et activités extérieures</c:Name>
+        </s:Code>
+        <s:Code id="AC61" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC61">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Physical exercise</c:Name>
+          <c:Name xml:lang="de">Körperliche Betätigung</c:Name>
+          <c:Name xml:lang="fr">Exercice physique</c:Name>
+        </s:Code>
+        <s:Code id="AC611" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC611">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Walking and hiking</c:Name>
+          <c:Name xml:lang="de">Spazieren gehen und wandern</c:Name>
+          <c:Name xml:lang="fr">Marche et randonnée</c:Name>
+        </s:Code>
+        <s:Code id="AC612" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC612">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Jogging and running</c:Name>
+          <c:Name xml:lang="de">Joggen und Laufen</c:Name>
+          <c:Name xml:lang="fr">Jogging et course à pied</c:Name>
+        </s:Code>
+        <s:Code id="AC613" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC613">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Cycling, skiing and skating</c:Name>
+          <c:Name xml:lang="de">Radfahren, Skifahren und Skaten</c:Name>
+          <c:Name xml:lang="fr">Vélo, ski et patinage</c:Name>
+        </s:Code>
+        <s:Code id="AC614" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC614">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Ball games</c:Name>
+          <c:Name xml:lang="de">Ballspiele</c:Name>
+          <c:Name xml:lang="fr">Jeux de balle</c:Name>
+        </s:Code>
+        <s:Code id="AC615" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC615">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Gymnastics and fitness</c:Name>
+          <c:Name xml:lang="de">Gymnastik und Fitness</c:Name>
+          <c:Name xml:lang="fr">Gymnastique et fitness</c:Name>
+        </s:Code>
+        <s:Code id="AC616" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC616">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Water sports</c:Name>
+          <c:Name xml:lang="de">Wassersport</c:Name>
+          <c:Name xml:lang="fr">Sports aqautiques</c:Name>
+        </s:Code>
+        <s:Code id="AC619" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC619">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified sports or outdoor activities</c:Name>
+          <c:Name xml:lang="de">Sonstige oder nicht näher bezeichnete Sport- oder Aktivitäten im
+            Freien</c:Name>
+          <c:Name xml:lang="fr">Autres sports ou activités extérieures non spécifiés</c:Name>
+        </s:Code>
+        <s:Code id="AC62" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC62">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Productive exercise</c:Name>
+          <c:Name xml:lang="de">Produktive Übung</c:Name>
+          <c:Name xml:lang="fr">Exercice productif</c:Name>
+        </s:Code>
+        <s:Code id="AC621" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC621">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Productive exercise (e.g. hunting, fishing, picking berries,
+            mushrooms or herbs)</c:Name>
+          <c:Name xml:lang="de">Produktive Übung (z. B. Jagd, Angeln, Beeren, Pilze oder Kräuter
+            pflücken)</c:Name>
+          <c:Name xml:lang="fr">Exercice productif (p. ex., chasse, pêche, cueillette de baies,
+            champignons ou herbes)</c:Name>
+        </s:Code>
+        <s:Code id="AC63" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC63">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Sports related activities</c:Name>
+          <c:Name xml:lang="de">Sportbezogene Aktivitäten</c:Name>
+          <c:Name xml:lang="fr">Activités liées au sport</c:Name>
+        </s:Code>
+        <s:Code id="AC631" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC631">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Sports related activities</c:Name>
+          <c:Name xml:lang="de">Sportbezogene Aktivitäten</c:Name>
+          <c:Name xml:lang="fr">Activités liées au sport</c:Name>
+        </s:Code>
+        <s:Code id="AC711_712_719_731_732_739"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC711_712_719_731_732_739">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 711, 712, 719,
+                731, 732, 739</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Arts and hobbies (except making handicraft products), and games
+            (except computer, console, mobile games)</c:Name>
+          <c:Name xml:lang="de">Kunst und Hobbys (außer Herstellung von Handwerksprodukten), und
+            Spiele (außer Computerspiele, Konsolenspiele und Mobile Spiele)</c:Name>
+          <c:Name xml:lang="fr">Arts et loisirs (à l’exception de la fabrication de produits
+            artisanaux) et jeux (à l’exception des jeux électroniques, jeux de console et jeux
+            mobiles)</c:Name>
+        </s:Code>
+        <s:Code id="AC7" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC7">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Hobbies</c:Name>
+          <c:Name xml:lang="de">Hobbys</c:Name>
+          <c:Name xml:lang="fr">Loisirs</c:Name>
+        </s:Code>
+        <s:Code id="AC71" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC71">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Arts and hobbies</c:Name>
+          <c:Name xml:lang="de">Kunst und Hobbys</c:Name>
+          <c:Name xml:lang="fr">Arts et loisirs</c:Name>
+        </s:Code>
+        <s:Code id="AC711" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC711">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Arts (visual, performing, literary)</c:Name>
+          <c:Name xml:lang="de">Künste (bildende, darstellende und literarische Kunst)</c:Name>
+          <c:Name xml:lang="fr">Arts (visuels, spectacles, littérature)</c:Name>
+        </s:Code>
+        <s:Code id="AC712" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC712">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Collecting</c:Name>
+          <c:Name xml:lang="de">Sammeln</c:Name>
+          <c:Name xml:lang="fr">Collection</c:Name>
+        </s:Code>
+        <s:Code id="AC713" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC713">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Making handicraft products</c:Name>
+          <c:Name xml:lang="de">Herstellung von Handwerksprodukten</c:Name>
+          <c:Name xml:lang="fr">Fabrication de produits artisanaux</c:Name>
+        </s:Code>
+        <s:Code id="AC719" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC719">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified hobbies</c:Name>
+          <c:Name xml:lang="de">Sonstige oder nicht spezifizierte Hobbys</c:Name>
+          <c:Name xml:lang="fr">Autres loisirs ou non spécifiés</c:Name>
+        </s:Code>
+        <s:Code id="AC72" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC72">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 721, 722, 729</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Computing</c:Name>
+          <c:Name xml:lang="de">Computing</c:Name>
+          <c:Name xml:lang="fr">Informatique</c:Name>
+        </s:Code>
+        <s:Code id="AC721" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC721">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Computing</c:Name>
+          <c:Name xml:lang="de">Computing</c:Name>
+          <c:Name xml:lang="fr">Informatique</c:Name>
+        </s:Code>
+        <s:Code id="AC722" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC722">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Information search using internet</c:Name>
+          <c:Name xml:lang="de">Informationssuche über das Internet</c:Name>
+          <c:Name xml:lang="fr">Recherche d’informations sur Internet</c:Name>
+        </s:Code>
+        <s:Code id="AC729" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC729">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified computing</c:Name>
+          <c:Name xml:lang="de">Sonstige oder nicht spezifizierte Computing</c:Name>
+          <c:Name xml:lang="fr">Autre informatique ou non spécifiée</c:Name>
+        </s:Code>
+        <s:Code id="AC73" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC73">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Games</c:Name>
+          <c:Name xml:lang="de">Spiele</c:Name>
+          <c:Name xml:lang="fr">Jeux</c:Name>
+        </s:Code>
+        <s:Code id="AC731" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC731">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Solo games and play, gambling</c:Name>
+          <c:Name xml:lang="de">Solo Spiele und spielen, Glücksspiel</c:Name>
+          <c:Name xml:lang="fr">Jeux en solo et en groupe, jeux de hasard</c:Name>
+        </s:Code>
+        <s:Code id="AC732" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC732">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Parlour games and play</c:Name>
+          <c:Name xml:lang="de">Salon Spiele und spielen</c:Name>
+          <c:Name xml:lang="fr">Jeux de société</c:Name>
+        </s:Code>
+        <s:Code id="AC733-735"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC733-735">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 733, 734, 735</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Computer games, console games (on home console) and mobile games (on
+            handheld device/ smartphone)</c:Name>
+          <c:Name xml:lang="de">Computerspiele, Konsolenspiele (auf der Heimkonsole) und Mobile
+            Spiele (auf Handheld/ Smartphone)</c:Name>
+          <c:Name xml:lang="fr">Jeux électroniques, jeux de console (sur la console d’accueil) et
+            jeux mobiles (sur un appareil portable / smartphone)</c:Name>
+        </s:Code>
+        <s:Code id="AC733" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC733">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Computer games</c:Name>
+          <c:Name xml:lang="de">Computerspiele</c:Name>
+          <c:Name xml:lang="fr">Jeux électroniques</c:Name>
+        </s:Code>
+        <s:Code id="AC734" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC734">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Console games (on home console)</c:Name>
+          <c:Name xml:lang="de">Konsolenspiele (auf der Heimkonsole)</c:Name>
+          <c:Name xml:lang="fr">Jeux de console (sur la console d’accueil)</c:Name>
+        </s:Code>
+        <s:Code id="AC735" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC735">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Mobile games (on handheld device/ smartphone)</c:Name>
+          <c:Name xml:lang="de">Mobile Spiele (auf Handheld/ Smartphone)</c:Name>
+          <c:Name xml:lang="fr">Jeux mobiles (sur un appareil portable / smartphone)</c:Name>
+        </s:Code>
+        <s:Code id="AC739" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC739">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified games</c:Name>
+          <c:Name xml:lang="de">Sonstige oder nicht spezifizierte Spiele</c:Name>
+          <c:Name xml:lang="fr">Autres jeux ou non spécifiés</c:Name>
+        </s:Code>
+        <s:Code id="AC8" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC8">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Mass media</c:Name>
+          <c:Name xml:lang="de">Massenmedien</c:Name>
+          <c:Name xml:lang="fr">Médias de masse</c:Name>
+        </s:Code>
+        <s:Code id="AC81_X_812"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC81_X_812">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 811, 819</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Reading, except reading books</c:Name>
+          <c:Name xml:lang="de">Lesen außer Bücher lesen</c:Name>
+          <c:Name xml:lang="fr">Lecture à l’exception de la lecture de livres</c:Name>
+        </s:Code>
+        <s:Code id="AC81" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC81">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 811, 812, 819</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Reading</c:Name>
+          <c:Name xml:lang="de">Lesen</c:Name>
+          <c:Name xml:lang="fr">Lecture</c:Name>
+        </s:Code>
+        <s:Code id="AC811" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC811">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Reading periodicals</c:Name>
+          <c:Name xml:lang="de">Lesen von Zeitschriften</c:Name>
+          <c:Name xml:lang="fr">Lecture de périodiques</c:Name>
+        </s:Code>
+        <s:Code id="AC812" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC812">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Reading books</c:Name>
+          <c:Name xml:lang="de">Bücher lesen</c:Name>
+          <c:Name xml:lang="fr">Lecture de livres</c:Name>
+        </s:Code>
+        <s:Code id="AC819" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC819">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified reading</c:Name>
+          <c:Name xml:lang="de">Sonstige oder nicht spezifizierte Lesen</c:Name>
+          <c:Name xml:lang="fr">Autre lecture ou non spécifiée</c:Name>
+        </s:Code>
+        <s:Code id="AC82" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC82">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">TV, video and DVD</c:Name>
+          <c:Name xml:lang="de">TV, Video und DVD</c:Name>
+          <c:Name xml:lang="fr">TV, vidéo et DVD</c:Name>
+        </s:Code>
+        <s:Code id="AC821" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC821">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Watching TV, video or DVD</c:Name>
+          <c:Name xml:lang="de">Fernsehen, Video oder DVD ansehen</c:Name>
+          <c:Name xml:lang="fr">Regarder la TV, une vidéo ou un DVD</c:Name>
+        </s:Code>
+        <s:Code id="AC83" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC83">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Radio and recordings</c:Name>
+          <c:Name xml:lang="de">Radio und Tonaufnahmen</c:Name>
+          <c:Name xml:lang="fr">Radio et enregistrements</c:Name>
+        </s:Code>
+        <s:Code id="AC831" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC831">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Listening to radio or recordings</c:Name>
+          <c:Name xml:lang="de">Hören von Radio oder Aufnahmen</c:Name>
+          <c:Name xml:lang="fr">Écouter la radio ou des enregistrements</c:Name>
+        </s:Code>
+        <s:Code id="AC9_X_910"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC9_X_910">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 900, 910, 920,
+                936, 938, 939, 940, 950, 960, 980</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Travel except travel related to/from work</c:Name>
+          <c:Name xml:lang="de">Reisen außer Wege zur/von der Arbeit</c:Name>
+          <c:Name xml:lang="fr">Voyage à l’exception du trajet pour se rendre/revenir du travail</c:Name>
+        </s:Code>
+        <s:Code id="AC9" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC9">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Travel and unspecified time use - travel by purpose</c:Name>
+          <c:Name xml:lang="de">Reisen und Zeitplan nicht angegeben - Reisen mit Ziel</c:Name>
+          <c:Name xml:lang="fr">Voyage et emploi du temps non spécifiés - voyage par objectif</c:Name>
+        </s:Code>
+        <s:Code id="AC910_920"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC910_920">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Travel to/from work/study</c:Name>
+          <c:Name xml:lang="de">Wege zur/von der Arbeit/ - Aus- und Weiterbildung</c:Name>
+          <c:Name xml:lang="fr">Déplacements vers/depuis le travail/les études</c:Name>
+        </s:Code>
+        <s:Code id="AC910" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC910">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Travel to/ from work</c:Name>
+          <c:Name xml:lang="de">Wege zur/von der Arbeit</c:Name>
+          <c:Name xml:lang="fr">Déplacements vers/depuis le travail</c:Name>
+        </s:Code>
+        <s:Code id="AC920" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC920">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Travel related to study</c:Name>
+          <c:Name xml:lang="de">Wege - Aus- und Weiterbildung</c:Name>
+          <c:Name xml:lang="fr">Voyage lié aux études</c:Name>
+        </s:Code>
+        <s:Code id="AC936" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC936">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Travel related to shopping and services</c:Name>
+          <c:Name xml:lang="de">Wege - Einkaufen und Dienstleistungen</c:Name>
+          <c:Name xml:lang="fr">Voyage lié aux achats ou services</c:Name>
+        </s:Code>
+        <s:Code id="AC938_939"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC938_939">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Travel related to childcare and to other household care</c:Name>
+          <c:Name xml:lang="de">Reisen im Zusammenhang mit der Kinderbetreuung und anderen
+            Pflegeleistungen im Haushalt</c:Name>
+          <c:Name xml:lang="fr">Déplacements liés à la garde d’enfants et aux autres soins à
+            domicile</c:Name>
+        </s:Code>
+        <s:Code id="AC938" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC938">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Travel related to childcare</c:Name>
+          <c:Name xml:lang="de">Reisen zur Kinderbetreuung</c:Name>
+          <c:Name xml:lang="fr">Déplacements liés à la garde d’enfants</c:Name>
+        </s:Code>
+        <s:Code id="AC939" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC939">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Travel related to other household care</c:Name>
+          <c:Name xml:lang="de">Reisen im Zusammenhang mit anderer häuslicher Pflege</c:Name>
+          <c:Name xml:lang="fr">Déplacements liés aux autres soins à domicile</c:Name>
+        </s:Code>
+        <s:Code id="AC940-980"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC940-980">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 940, 950, 960,
+                980</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Travel related to leisure, social and associative life</c:Name>
+          <c:Name xml:lang="de">Déplacements liés aux loisirs, à la vie sociale et associative</c:Name>
+          <c:Name xml:lang="fr">Déplacements liés aux loisirs, à la vie sociale et associative</c:Name>
+        </s:Code>
+        <s:Code id="AC940" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC940">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Travel related to voluntary work and meetings</c:Name>
+          <c:Name xml:lang="de">Reisen im Zusammenhang mit Freiwilligenarbeit und Treffen</c:Name>
+          <c:Name xml:lang="fr">Déplacements liés au travail bénévole et aux réunions</c:Name>
+        </s:Code>
+        <s:Code id="AC950" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC950">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Travel related to social life</c:Name>
+          <c:Name xml:lang="de">Reisen im Zusammenhang mit sozialen Leben</c:Name>
+          <c:Name xml:lang="fr">Voyage lié à la vie sociale</c:Name>
+        </s:Code>
+        <s:Code id="AC960" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC960">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Travel related to other leisure</c:Name>
+          <c:Name xml:lang="de">Reisen im Zusammenhang mit anderen Freizeitaktivitäten</c:Name>
+          <c:Name xml:lang="fr">Voyages liés à d'autres loisirs</c:Name>
+        </s:Code>
+        <s:Code id="AC980" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC980">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Travel related to changing locality</c:Name>
+          <c:Name xml:lang="de">Reisen im Zusammenhang mit Ortswechsel</c:Name>
+          <c:Name xml:lang="fr">Voyage lié au changement de localité</c:Name>
+        </s:Code>
+        <s:Code id="AC900-980"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC900-980">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 900, 910, 920,
+                936, 938, 939, 940, 950, 960, 980</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Travel by purpose</c:Name>
+          <c:Name xml:lang="de">Reisen mit Ziel</c:Name>
+          <c:Name xml:lang="fr">Voyage par objectif</c:Name>
+        </s:Code>
+        <s:Code id="AC900_995_999"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC900_995_999">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 900, 995, 999</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified travel purpose, filling in the time use diary
+            and other unspecified time use</c:Name>
+          <c:Name xml:lang="de">Nicht spezifizierter oder anderer Zweck der Reise, Ausfüllen des
+            Tagebuchs für die Zeitnutzung und sonstige nicht näher bezeichnete Zeitnutzung</c:Name>
+          <c:Name xml:lang="fr">Objet du voyage autre ou non spécifié, remplir le journal
+            d’utilisation du temps et autre emploi du temps non spécifié</c:Name>
+        </s:Code>
+        <s:Code id="AC900" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC900">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other or unspecified travel purpose</c:Name>
+          <c:Name xml:lang="de">Nicht spezifizierter oder anderer Zweck der Reise</c:Name>
+          <c:Name xml:lang="fr">Objet du voyage autre ou non spécifié</c:Name>
+        </s:Code>
+        <s:Code id="AC995_999"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC995_999">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 995, 999</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Filling in the time use diary and other unspecified time use</c:Name>
+          <c:Name xml:lang="de">Ausfüllen des Tagebuchs für die Zeitnutzung und sonstige nicht näher
+            bezeichnete Zeitnutzung</c:Name>
+          <c:Name xml:lang="fr">Remplir le journal d’utilisation du temps et autre emploi du temps
+            non spécifié</c:Name>
+        </s:Code>
+        <s:Code id="AC995-999"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC995-999">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+            <c:Annotation>
+              <c:AnnotationType>EXPLAN_LABEL</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">This aggregate includes the ACL groups 995, 998, 999</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Filling in the time use diary, unspecified leisure time and other
+            unspecified time use</c:Name>
+          <c:Name xml:lang="de">Ausfüllen des Tagebuchs für die Zeitnutzung, Unbestimmte Freizeit
+            und sonstige nicht näher bezeichnete Zeitnutzung</c:Name>
+          <c:Name xml:lang="fr">Remplir le journal d’utilisation du temps, temps libre non spécifié
+            et autre emploi du temps non spécifié</c:Name>
+        </s:Code>
+        <s:Code id="AC995" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC995">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Filling in the time use diary</c:Name>
+          <c:Name xml:lang="de">Ausfüllen des Tagebuchs für die Zeitnutzung</c:Name>
+          <c:Name xml:lang="fr">Remplir le journal d’utilisation du temps</c:Name>
+        </s:Code>
+        <s:Code id="AC998" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC998">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Unspecified leisure time</c:Name>
+          <c:Name xml:lang="de">Unbestimmte Freizeit</c:Name>
+          <c:Name xml:lang="fr">Temps libre non spécifié</c:Name>
+        </s:Code>
+        <s:Code id="AC999" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC999">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>Y</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Standard code, follows Eurostat Standard Code List
+                Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Other unspecified time use</c:Name>
+          <c:Name xml:lang="de">Sonstige nicht näher bezeichnete Zeitnutzung</c:Name>
+          <c:Name xml:lang="fr">Autre emploi du temps non spécifié</c:Name>
+        </s:Code>
+        <s:Code id="AC_PNP_MAIN"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC_PNP_MAIN">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>M</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Code not associated with the concept of the code list,
+                but following Eurostat Standard Code List Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Productive paid and unpaid main activities</c:Name>
+          <c:Name xml:lang="de">Produktive bezahlte und unbezahlte Hauptaktivitäten</c:Name>
+          <c:Name xml:lang="fr">Activités productives principales rémunérées et non rémunérées</c:Name>
+        </s:Code>
+        <s:Code id="AC_NP_TOT"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC_NP_TOT">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>M</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Code not associated with the concept of the code list,
+                but following Eurostat Standard Code List Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Productive unpaid main and secondary activities</c:Name>
+          <c:Name xml:lang="de">Produktive unbezahlte Haupt- und Nebentätigkeiten</c:Name>
+          <c:Name xml:lang="fr">Activités productives principales et secondaires non rémunérées</c:Name>
+        </s:Code>
+        <s:Code id="AC_NP_MAIN"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC_NP_MAIN">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>M</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Code not associated with the concept of the code list,
+                but following Eurostat Standard Code List Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Productive unpaid main activities</c:Name>
+          <c:Name xml:lang="de">Produktive unbezahlte Hauptaktivitäten</c:Name>
+          <c:Name xml:lang="fr">Activités productives principales non rémunérées</c:Name>
+        </s:Code>
+        <s:Code id="AC_NP_SEC"
+          urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC_NP_SEC">
+          <c:Annotations>
+            <c:Annotation>
+              <c:AnnotationTitle>M</c:AnnotationTitle>
+              <c:AnnotationType>IS_STANDARD_CODE</c:AnnotationType>
+              <c:AnnotationText xml:lang="en">Code not associated with the concept of the code list,
+                but following Eurostat Standard Code List Guidelines</c:AnnotationText>
+            </c:Annotation>
+          </c:Annotations>
+          <c:Name xml:lang="en">Productive unpaid secondary activities</c:Name>
+          <c:Name xml:lang="de">Produktive unbezahlte Nebentätigkeiten</c:Name>
+          <c:Name xml:lang="fr">Activités productives secondaires non rémunérées</c:Name>
+        </s:Code>
+      </s:Codelist>
+    </s:Codelists>
+  </m:Structures>
+</m:Structure>

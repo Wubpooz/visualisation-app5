@@ -1,0 +1,2743 @@
+schema_version: '1.0'
+generated_at_utc: '2026-04-02T14:41:20.968000+00:00'
+source:
+  file: docs/ESTAT_ACL18_5.1.xml
+  codelist_id: ACL18
+  agency_id: ESTAT
+  version: '5.1'
+  urn: urn:sdmx:org.sdmx.infomodel.codelist.Codelist=ESTAT:ACL18(5.1)
+  name:
+    en: Classification of activities for time use - 2018
+    de: Klassifikation der Aktivitäten für Zeitverwendungen - 2018
+    fr: Classification des activités pour l'emploi du temps - 2018
+  description:
+    en: This code list is based on the classification of activities for time use. It is a three-level hierarchical classification, composed of major divisions, divisions and groups of all possible activities undertaken by the general population during the 24 hours that make up the day. It is used in the Harmonised European Time Use Surveys (HETUS) to quantify how much time people spend on various activities.
+code_count: 193
+codes:
+  TOTAL:
+    kind: activity_code
+    level: total
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).TOTAL
+    name:
+      en: Total
+      de: Insgesamt
+      fr: Total
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC0_X_021:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC0_X_021
+    name:
+      en: Personal care except eating
+      de: Körperpflege außer Essen
+      fr: Soins personnels à l’exception des repas
+    is_aggregate: true
+    aggregate_components:
+    - AC011
+    - AC012
+    - AC031
+    - AC032
+    - AC039
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 011, 012, 031, 032, 039
+  AC0:
+    kind: activity_code
+    level: major_division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC0
+    name:
+      en: Personal care
+      de: Körperpflege
+      fr: Soins personnels
+    is_aggregate: true
+    aggregate_components:
+    - AC011
+    - AC012
+    - AC021
+    - AC031
+    - AC032
+    - AC039
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 011, 012, 021, 031, 032, 039
+  AC01:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC01
+    name:
+      en: Sleeping
+      de: Schlafen
+      fr: Sommeil
+    is_aggregate: true
+    aggregate_components:
+    - AC011
+    - AC012
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 011, 012
+  AC011:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC011
+    name:
+      en: Sleeping
+      de: Schlafen
+      fr: Sommeil
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC012:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC012
+    name:
+      en: Sick in bed
+      de: Krank im Bett
+      fr: Malade au lit
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC02:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC02
+    name:
+      en: Eating
+      de: Essen
+      fr: Repas
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC021:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC021
+    name:
+      en: Eating
+      de: Essen
+      fr: Repas
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC03:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC03
+    name:
+      en: Other personal care
+      de: Sonstige Körperpflege
+      fr: Autres soins personnels
+    is_aggregate: true
+    aggregate_components:
+    - AC031
+    - AC032
+    - AC039
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 031, 032, 039
+  AC031:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC031
+    name:
+      en: Washing and dressing
+      de: Waschen und Anziehen
+      fr: Lavage et habillage
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC032:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC032
+    name:
+      en: Personal care services
+      de: Körperpflegedienstleistungen
+      fr: Services de soins personnels
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC039:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC039
+    name:
+      en: Other or unspecified personal care
+      de: Sonstige oder nicht spezifizierte Körperpflege
+      fr: Autres ou soins personnels non spécifiés
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC1_2:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC1_2
+    name:
+      en: Employment and study
+      de: Anstellung und Aus- und Weiterbildung
+      fr: Emploi et étude
+    is_aggregate: true
+    aggregate_components:
+    - AC111
+    - AC121
+    - AC129
+    - AC211
+    - AC212
+    - AC213
+    - AC214
+    - AC215
+    - AC219
+    - AC221
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 111, 121, 129, 211, 212, 213, 214, 215, 219, 221
+  AC1:
+    kind: activity_code
+    level: major_division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC1
+    name:
+      en: Employment
+      de: Anstellung
+      fr: Emploi
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC11-12:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC11-12
+    name:
+      en: Employment, related activities and travel as part of/during main and second job
+      de: Beschäftigung, damit verbundene Tätigkeiten und Reisen im Rahmen der Haupt- und Nebentätigkeit
+      fr: Emploi, activités connexes et déplacements dans le cadre de l’emploi principal et de l'emploi secondaire
+    is_aggregate: true
+    aggregate_components:
+    - AC111
+    - AC121
+    - AC129
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 111, 121, 129
+  AC11:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC11
+    name:
+      en: Main job and second job
+      de: Haupt- und Nebentätigkeit
+      fr: Emploi principal et secondaire
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC111:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC111
+    name:
+      en: Working time in main and second job (including short breaks and travel at work)
+      de: Arbeitszeit in der Haupt- und Nebentätigkeit (einschließlich Kurzpausen und Arbeitswege)
+      fr: Temps de travail dans l’emploi principal et secondaire, y compris les pauses courtes et les déplacements
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC12:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC12
+    name:
+      en: Activities related to employment
+      de: Tätigkeiten im Zusammenhang mit der Erwerbstätigkeit
+      fr: Activités liées à l'emploi
+    is_aggregate: true
+    aggregate_components:
+    - AC121
+    - AC129
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 121, 129
+  AC121:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC121
+    name:
+      en: Lunch break in main and second jobs
+      de: Mittagspause in Haupt- und Nebentätigkeiten
+      fr: Pause repas dans les emplois principaux et secondaires
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC129:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC129
+    name:
+      en: Other or unspecified activities related to employment
+      de: Sonstige oder nicht näher bezeichnete berufsbezogene Tätigkeiten
+      fr: Autres activités liées à l’emploi ou non spécifiées
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC2:
+    kind: activity_code
+    level: major_division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC2
+    name:
+      en: Study
+      de: Aus- und Weiterbildung
+      fr: Étude
+    is_aggregate: true
+    aggregate_components:
+    - AC211
+    - AC212
+    - AC213
+    - AC214
+    - AC215
+    - AC219
+    - AC221
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 211, 212, 213, 214, 215, 219, 221
+  AC21_X_212:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC21_X_212
+    name:
+      en: School or university except homework
+      de: Schule oder Universität außer Hausaufgaben
+      fr: École ou université à l’exception des devoirs
+    is_aggregate: true
+    aggregate_components:
+    - AC211
+    - AC213
+    - AC214
+    - AC215
+    - AC219
+    aggregate_exclusions:
+    - AC212
+    explan_label:
+      en: This aggregate includes the ACL groups 211, 213, 214, 215, 219 except the group 212
+  AC21:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC21
+    name:
+      en: School or university
+      de: Schule oder Universität
+      fr: École ou université
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC211:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC211
+    name:
+      en: Classes and lectures
+      de: Kurse und Konferenzen
+      fr: Cours et conférences
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC212:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC212
+    name:
+      en: Homework
+      de: Hausaufgaben
+      fr: Devoirs
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC213:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC213
+    name:
+      en: Internship
+      de: Praktikum
+      fr: Stage
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC214:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC214
+    name:
+      en: Breaks at school/ university
+      de: Pausen an der Schule/Universität
+      fr: Pauses à l'école/université
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC215:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC215
+    name:
+      en: Extracurricular classes
+      de: Außerschulische Kurse
+      fr: Cours extrascolaires
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC219:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC219
+    name:
+      en: Other/ unspecified activities related to study
+      de: Sonstige/ nicht näher bezeichnete Aktivitäten im Zusammenhang mit dem Studium
+      fr: Autres activités liées à l’étude ou non spécifiées
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC22:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC22
+    name:
+      en: Free time study
+      de: Aus- und Weiterbildung in der Freizeit
+      fr: Étude pendant le temps libre
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC221:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC221
+    name:
+      en: Free time study
+      de: Aus- und Weiterbildung in der Freizeit
+      fr: Étude pendant le temps libre
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC3_713:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC3_713
+    name:
+      en: Household and family care and making handicraft products
+      de: Haushaltsführung und Familienversorgung und Herstellung von Handwerksprodukten
+      fr: Tâches ménagères et familiales et fabrication de produits artisanaux
+    is_aggregate: true
+    aggregate_components:
+    - AC300
+    - AC311
+    - AC312
+    - AC313
+    - AC321
+    - AC322
+    - AC323
+    - AC324
+    - AC325
+    - AC329
+    - AC331
+    - AC332
+    - AC339
+    - AC341
+    - AC342
+    - AC343
+    - AC344
+    - AC349
+    - AC351
+    - AC352
+    - AC353
+    - AC354
+    - AC359
+    - AC361
+    - AC362
+    - AC369
+    - AC371
+    - AC381
+    - AC382
+    - AC383
+    - AC384
+    - AC389
+    - AC391
+    - AC392
+    - AC713
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 300, 311, 312, 313, 321, 322, 323, 324, 325, 329, 331, 332, 339, 341, 342, 343, 344, 349, 351, 352, 353, 354, 359, 361, 362, 369, 371, 381, 382, 383, 384, 389, 391, 392, 713
+  AC3_713_X_38:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC3_713_X_38
+    name:
+      en: Household and family care and making handicraft products except childcare
+      de: Haushaltsführung und Familienversorgung und Herstellung von Handwerksprodukten außer Kinderbetreuung
+      fr: Tâches ménagères et familiales et fabrication de produits artisanaux à l’exception de la garde d'enfants
+    is_aggregate: true
+    aggregate_components:
+    - AC300
+    - AC311
+    - AC312
+    - AC313
+    - AC321
+    - AC322
+    - AC323
+    - AC324
+    - AC325
+    - AC329
+    - AC331
+    - AC332
+    - AC713
+    - AC339
+    - AC341
+    - AC342
+    - AC343
+    - AC344
+    - AC349
+    - AC351
+    - AC352
+    - AC353
+    - AC354
+    - AC359
+    - AC361
+    - AC362
+    - AC369
+    - AC371
+    - AC391
+    - AC392
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 300, 311, 312, 313, 321, 322, 323, 324, 325, 329, 331, 332, 713, 339, 341, 342, 343, 344, 349, 351, 352, 353, 354, 359, 361, 362, 369, 371, 391, 392
+  AC3_713_936-980:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC3_713_936-980
+    name:
+      en: Household and family care and related travel and making handicraft products
+      de: Haushaltsführung und Familienversorgung, zugehörige Reisen und Herstellung von Handwerksprodukten
+      fr: Tâches ménagères et familiales, déplacements associés et fabrication de produits artisanaux
+    is_aggregate: true
+    aggregate_components:
+    - AC300
+    - AC311
+    - AC312
+    - AC313
+    - AC321
+    - AC322
+    - AC323
+    - AC324
+    - AC325
+    - AC329
+    - AC331
+    - AC332
+    - AC339
+    - AC341
+    - AC342
+    - AC343
+    - AC344
+    - AC349
+    - AC351
+    - AC352
+    - AC353
+    - AC354
+    - AC359
+    - AC361
+    - AC362
+    - AC369
+    - AC371
+    - AC381
+    - AC382
+    - AC383
+    - AC384
+    - AC389
+    - AC391
+    - AC392
+    - AC713
+    - AC936
+    - AC938
+    - AC939
+    - AC940
+    - AC950
+    - AC960
+    - AC980
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 300, 311, 312, 313, 321, 322, 323, 324, 325, 329, 331, 332, 339, 341, 342, 343, 344, 349, 351, 352, 353, 354, 359, 361, 362, 369, 371, 381, 382, 383, 384, 389, 391, 392, 713, 936, 938, 939, 940, 950, 960, 980
+  AC3:
+    kind: activity_code
+    level: major_division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC3
+    name:
+      en: Household and family care
+      de: Haushaltsführung und Familienversorgung
+      fr: Tâches ménagères et familiales
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC30:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC30
+    name:
+      en: Unspecified household and family care
+      de: Nicht spezifiziert Haushaltsführung und Familienversorgung
+      fr: Tâches ménagères et familiales non spécifiées
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC300_371:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC300_371
+    name:
+      en: Household management and unspecified household and family care
+      de: Haushaltsführung und nicht näher bezeichnete Haushalts- und Familienversorgung
+      fr: Gestion des tâches ménagères et soins non spécifiés du ménage et de la famille
+    is_aggregate: true
+    aggregate_components:
+    - AC300
+    - AC371
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 300, 371
+  AC300:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC300
+    name:
+      en: Unspecified household and family care
+      de: Nicht spezifiziert Haushaltsführung und Familienversorgung
+      fr: Tâches ménagères et familiales non spécifiées
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC31_X_312:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC31_X_312
+    name:
+      en: Food management except dish washing
+      de: Essenszubereitung außer Geschirr spülen
+      fr: Activités pour l'alimentation à l’exception du lavage de vaisselle
+    is_aggregate: true
+    aggregate_components:
+    - AC311
+    - AC313
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 311, 313
+  AC31:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC31
+    name:
+      en: Food management
+      de: Essenszubereitung
+      fr: Activités pour l'alimentation
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC311:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC311
+    name:
+      en: Food preparation and baking
+      de: Speisenzubereitung und Backen
+      fr: Activités pour la préparation des aliments et de pâtisserie
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC312:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC312
+    name:
+      en: Dish washing
+      de: Geschirr spülen
+      fr: Lavage de vaisselle
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC313:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC313
+    name:
+      en: Storing, arranging, preserving food stocks
+      de: Lebensmittelvorräte lagern, anordnen, konservieren
+      fr: Stocker, ranger, conserver les stocks alimentaires
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC32_X_321:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC32_X_321
+    name:
+      en: Household upkeep except cleaning dwelling
+      de: Haushalt instand halten außer Reinigung der Wohnung
+      fr: Entretien ménager à l’exception du nettoyage du logement
+    is_aggregate: true
+    aggregate_components:
+    - AC322
+    - AC323
+    - AC324
+    - AC325
+    - AC329
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 322, 323, 324, 325, 329
+  AC32:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC32
+    name:
+      en: Household upkeep
+      de: Haushalt instand halten
+      fr: Entretien ménager
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC321:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC321
+    name:
+      en: Cleaning dwelling
+      de: Reinigung der Wohnung
+      fr: Nettoyage du logement
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC322:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC322
+    name:
+      en: Cleaning garden
+      de: Reinigung des Gartens
+      fr: Nettoyage du jardin
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC323:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC323
+    name:
+      en: Heating dwelling and water
+      de: Wasser-Heizung
+      fr: Activité de chauffage et d’eau
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC324:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC324
+    name:
+      en: Arranging household goods and materials
+      de: Anordnen von Haushaltswaren und -materialien
+      fr: Ranger les biens et les matériaux ménagers
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC325:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC325
+    name:
+      en: Recycling and disposal of waste
+      de: Recycling und Entsorgung von Abfällen
+      fr: Recyclage et élimination des déchets
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC329:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC329
+    name:
+      en: Other or unspecified household upkeep
+      de: Sonstige oder nicht näher bezeichnete Haushaltsführung
+      fr: Autres travaux d'entretien ménager ou non spécifiés
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC33:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC33
+    name:
+      en: Care for textiles
+      de: Pflege von Textilien
+      fr: Entretien des textiles
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC331:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC331
+    name:
+      en: Laundry
+      de: Wäsche waschen
+      fr: Lessive
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC332:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC332
+    name:
+      en: Ironing
+      de: Wäsche bügeln
+      fr: Repassage
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC339_713:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC339_713
+    name:
+      en: Other or unspecified textile care and making handicraft products
+      de: Sonstige oder nicht näher bezeichnete Textilpflege und Herstellung von Handwerksprodukten
+      fr: Entretien textile autre ou non spécifié et fabrication de produits artisanaux
+    is_aggregate: true
+    aggregate_components:
+    - AC713
+    - AC339
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 713, 339
+  AC339:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC339
+    name:
+      en: Other or unspecified textile care
+      de: Sonstige oder nicht näher bezeichnete Textilpflege
+      fr: Entretien textile autre ou non spécifié
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC34:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC34
+    name:
+      en: Gardening and pet care
+      de: Gartenarbeit und Tierpflege
+      fr: Jardinage et soins animaliers
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC341_349:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC341_349
+    name:
+      en: Gardening and other or unspecified gardening and pet care
+      de: Gartenarbeit und sonstige oder nicht näher bezeichnete Gartenarbeiten und Tierpflege
+      fr: Jardinage et autres soins de jardinage et d’animaux de compagnie ou non spécifiés
+    is_aggregate: true
+    aggregate_components:
+    - AC341
+    - AC349
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 341, 349
+  AC341:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC341
+    name:
+      en: Gardening
+      de: Gartenarbeit
+      fr: Jardinage
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC342:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC342
+    name:
+      en: Tending domestic animals
+      de: Haustiere hüten
+      fr: Garde d'animaux domestiques
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC343:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC343
+    name:
+      en: Caring for pets
+      de: Haustierpflege
+      fr: Soins aux animaux
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC344:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC344
+    name:
+      en: Walking the dog
+      de: Mit dem Hund spazieren gehen
+      fr: Promener le chien
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC349:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC349
+    name:
+      en: Other or unspecified gardening and pet care
+      de: Sonstige oder nicht näher bezeichnete Gartenarbeiten und Tierpflege
+      fr: Autres soins de jardinage et d’animaux de compagnie ou non spécifiés
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC35:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC35
+    name:
+      en: Construction and repairs
+      de: Bau und Reparaturen
+      fr: Construction et réparations
+    is_aggregate: true
+    aggregate_components:
+    - AC351
+    - AC352
+    - AC353
+    - AC354
+    - AC359
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 351, 352, 353, 354, 359
+  AC351:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC351
+    name:
+      en: House construction and renovation
+      de: Hausbau und Renovierung
+      fr: Construction et rénovation de maisons
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC352:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC352
+    name:
+      en: Repairs to dwelling
+      de: Reparaturen von Wohnungen
+      fr: Réparation de logements
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC353:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC353
+    name:
+      en: Making, repairing and maintaining equipment
+      de: Herstellung, Reparatur und Wartung von Geräten
+      fr: Fabrication, réparation et entretien des équipements
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC354:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC354
+    name:
+      en: Vehicle maintenance
+      de: Fahrzeugwartung
+      fr: Entretien de véhicules
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC359:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC359
+    name:
+      en: Other or unspecified construction and repairs
+      de: Sonstige oder nicht spezifizierte Bau- und Reparaturarbeiten
+      fr: Construction et réparations autres ou non spécifiées
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC36:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC36
+    name:
+      en: Shopping and services
+      de: Einkaufen und Dienstleistungen
+      fr: Achats et services
+    is_aggregate: true
+    aggregate_components:
+    - AC361
+    - AC362
+    - AC369
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 361, 362, 369
+  AC361:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC361
+    name:
+      en: Shopping (including online/ e-shopping)
+      de: Einkaufen (einschließlich online/ e-shopping)
+      fr: Shopping (y compris les achats en ligne/e-shopping)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC362:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC362
+    name:
+      en: Commercial and administrative services
+      de: Kommerzielle und administrative Dienstleistungen
+      fr: Services commerciaux et administratifs
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC369:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC369
+    name:
+      en: Other or unspecified shopping and services
+      de: Sonstige oder nicht näher bezeichnete Käufe und Dienstleistungen
+      fr: Achats et services autres ou non spécifiés
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC37:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC37
+    name:
+      en: Household management
+      de: Haushaltsplanung und -organisation
+      fr: Gestion du ménage
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC371:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC371
+    name:
+      en: Household management
+      de: Haushaltsplanung und -organisation
+      fr: Gestion du ménage
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC38_X_382-383:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC38_X_382-383
+    name:
+      en: Childcare, except teaching, reading, playing and talking
+      de: Kinderbetreuung außer Bildung, Lesen, Spielen und Sprechen
+      fr: Garde d'enfants, à l’exception de l'enseignement, de la lecture, du jeu et de la conversation
+    is_aggregate: true
+    aggregate_components:
+    - AC381
+    - AC384
+    - AC389
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 381, 384, 389
+  AC38:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC38
+    name:
+      en: Childcare
+      de: Kinderbetreuung
+      fr: Garde d'enfants
+    is_aggregate: true
+    aggregate_components:
+    - AC381
+    - AC382
+    - AC383
+    - AC384
+    - AC389
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 381, 382, 383, 384, 389
+  AC381:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC381
+    name:
+      en: Physical care and supervision of child
+      de: Körperliche Pflege und Beaufsichtigung des Kindes
+      fr: Soins physiques et surveillance de l'enfant
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC382_383:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC382_383
+    name:
+      en: Teaching, reading, playing and talking with child
+      de: Bildung für das Kind, Lesen, Spielen und Sprechen mit einem Kind
+      fr: Enseignement, lecture, jeu et conversation avec un enfant
+    is_aggregate: true
+    aggregate_components:
+    - AC382
+    - AC383
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 382, 383
+  AC382:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC382
+    name:
+      en: Teaching the child
+      de: Bildung für das Kind
+      fr: Enseignement de l’enfant
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC383:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC383
+    name:
+      en: Reading, playing and talking with child
+      de: Lesen, Spielen und Sprechen mit einem Kind
+      fr: Lecture, jeu et conversation avec un enfant
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC384:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC384
+    name:
+      en: Accompanying child
+      de: Begleitung des Kindes
+      fr: Accompagnement de l'enfant
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC389:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC389
+    name:
+      en: Other or unspecified childcare
+      de: Sonstige oder nicht näher bezeichnete Kinderbetreuung
+      fr: Garde d'enfants autre ou non spécifiée
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC39:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC39
+    name:
+      en: Help to an adult household member
+      de: Hilfe für ein erwachsenes Haushaltsmitglied
+      fr: Aide à un membre adulte du ménage
+    is_aggregate: true
+    aggregate_components:
+    - AC391
+    - AC392
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 391, 392
+  AC391:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC391
+    name:
+      en: Physical care of an adult household member
+      de: Körperliche Pflege eines erwachsenen Haushaltsmitglieds
+      fr: Soins physiques d'un membre adulte du ménage
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC392:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC392
+    name:
+      en: Other support to an adult household member
+      de: Sonstige Unterstützung für ein erwachsenes Haushaltsmitglied
+      fr: Autre soutien à un membre adulte du ménage
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC4-8_998_X_713:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC4-8_998_X_713
+    name:
+      en: Leisure, social and associative life, except making handicraft products
+      de: Freizeit, geselliges und vereinsmäßiges Leben außer Herstellung von Handwerksprodukten
+      fr: Loisirs, vie sociale et associative, à l’exception de la fabrication de produits artisanaux
+    is_aggregate: true
+    aggregate_components:
+    - AC411
+    - AC421
+    - AC422
+    - AC423
+    - AC424
+    - AC425
+    - AC429
+    - AC431
+    - AC432
+    - AC433
+    - AC439
+    - AC511
+    - AC512
+    - AC513
+    - AC514
+    - AC515
+    - AC516
+    - AC519
+    - AC521
+    - AC522
+    - AC523
+    - AC524
+    - AC525
+    - AC526
+    - AC529
+    - AC531
+    - AC611
+    - AC612
+    - AC613
+    - AC614
+    - AC615
+    - AC616
+    - AC619
+    - AC621
+    - AC631
+    - AC711
+    - AC712
+    - AC719
+    - AC721
+    - AC722
+    - AC729
+    - AC731
+    - AC732
+    - AC733
+    - AC734
+    - AC735
+    - AC739
+    - AC811
+    - AC812
+    - AC819
+    - AC821
+    - AC831
+    - AC998
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 411, 421, 422, 423, 424, 425, 429, 431, 432, 433, 439, 511, 512, 513, 514, 515, 516, 519, 521, 522, 523, 524, 525, 526, 529, 531, 611, 612, 613, 614, 615, 616, 619, 621, 631, 711, 712, 719, 721, 722, 729, 731, 732, 733, 734, 735, 739, 811, 812, 819, 821, 831, 998
+  AC4-8_998_X_713_821:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC4-8_998_X_713_821
+    name:
+      en: Leisure, social and associative life except making handicraft products and TV and video
+      de: Freizeit, geselliges und vereinsmäßiges Leben außer Herstellung von Handwerksprodukten und Fernsehen, Video oder DVD ansehen
+      fr: Loisirs, vie sociale et associative, à l’exception de la fabrication de produits artisanaux et de regarder la TV, une vidéo ou un DVD
+    is_aggregate: true
+    aggregate_components:
+    - AC411
+    - AC421
+    - AC422
+    - AC423
+    - AC424
+    - AC425
+    - AC429
+    - AC431
+    - AC432
+    - AC433
+    - AC439
+    - AC511
+    - AC512
+    - AC513
+    - AC514
+    - AC515
+    - AC516
+    - AC519
+    - AC521
+    - AC522
+    - AC523
+    - AC524
+    - AC525
+    - AC526
+    - AC529
+    - AC531
+    - AC611
+    - AC612
+    - AC613
+    - AC614
+    - AC615
+    - AC616
+    - AC619
+    - AC621
+    - AC631
+    - AC711
+    - AC712
+    - AC719
+    - AC721
+    - AC722
+    - AC729
+    - AC731
+    - AC732
+    - AC733
+    - AC734
+    - AC735
+    - AC739
+    - AC811
+    - AC812
+    - AC819
+    - AC831
+    - AC998
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 411, 421, 422, 423, 424, 425, 429, 431, 432, +433, 439, 511, 512, 513, 514, 515, 516, 519, 521, 522, 523, 524, 525, 526, 529, 531, 611, 612, 613, 614, 615, 616, 619, 621, 631, 711, 712, 719, 721, 722, 729, 731, 732, 733, 734, 735, 739, 811, 812, 819, 831, 998
+  AC4:
+    kind: activity_code
+    level: major_division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC4
+    name:
+      en: Voluntary work and meetings
+      de: Freiwillige Arbeit und Treffen
+      fr: Travail bénévole et réunions
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC41:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC41
+    name:
+      en: Organisational work
+      de: Arbeit für eine Organisation
+      fr: Travail pour une organisation
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC411:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC411
+    name:
+      en: Organisational work (work for or through an organisation)
+      de: Organisationsarbeit (Arbeit für oder durch eine Organisation)
+      fr: Travail pour une organisation (travail pour ou par l'intermédiaire d'une organisation)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC42:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC42
+    name:
+      en: Informal help to other households
+      de: Informelle Hilfe für andere Haushalte
+      fr: Aide informelle aux autres ménages
+    is_aggregate: true
+    aggregate_components:
+    - AC421
+    - AC422
+    - AC423
+    - AC424
+    - AC425
+    - AC429
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 421, 422, 423, 424, 425, 429
+  AC421:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC421
+    name:
+      en: Construction and repairs as help
+      de: Bau und Reparaturen als Hilfe
+      fr: Construction et réparations comme aide
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC422:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC422
+    name:
+      en: Help in employment and farming
+      de: Beihilfen für Beschäftigung und Landwirtschaft
+      fr: Aide à l’emploi et à l’agriculture
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC423:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC423
+    name:
+      en: Care of own children living in another household
+      de: Betreuung eigener Kinder, die in einem anderen Haushalt leben
+      fr: Soins aux propres enfants vivant dans un autre foyer
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC424:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC424
+    name:
+      en: Childcare as help to another household
+      de: Kinderbetreuung als Hilfe für einen anderen Haushalt
+      fr: Garde d'enfants comme aide à un autre ménage
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC425:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC425
+    name:
+      en: Help to an adult person of another household
+      de: Hilfe für einen Erwachsenen aus einem anderen Haushalt
+      fr: Aide à un adulte d’un autre ménage
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC429:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC429
+    name:
+      en: Other/ unspecified informal help to another household
+      de: Sonstige/nicht näher bezeichnete informelle Hilfe für einen anderen Haushalt
+      fr: Autre/aide informelle non spécifiée à un autre ménage
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC43:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC43
+    name:
+      en: Participatory and religious activities
+      de: Teilnehmende und Religiösen Aktivitäten
+      fr: Activités de participation et religieuses
+    is_aggregate: true
+    aggregate_components:
+    - AC431
+    - AC432
+    - AC433
+    - AC439
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 431, 432, 433, 439
+  AC431:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC431
+    name:
+      en: Meetings
+      de: Sitzungen
+      fr: Réunions
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC432:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC432
+    name:
+      en: Religious activities
+      de: Religiösen Aktivitäten
+      fr: Activités religieuses
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC433:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC433
+    name:
+      en: Visits to cemetery and grave care
+      de: Friedhofsbesuche und Grabpflege
+      fr: Visites au cimetière et entretien des tombes
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC439:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC439
+    name:
+      en: Other or unspecified participatory activities
+      de: Sonstige oder nicht näher bezeichnete partizipatorische Aktivitäten
+      fr: Autres activités participatives ou non spécifiées
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC5:
+    kind: activity_code
+    level: major_division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC5
+    name:
+      en: Social life and entertainment
+      de: Sozialleben und Unterhaltung
+      fr: Vie sociale et divertissement
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC51:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC51
+    name:
+      en: Social life
+      de: Sozialleben
+      fr: Vie sociale
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC511:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC511
+    name:
+      en: Socialising with family
+      de: Ausgehen mit der Familie
+      fr: Socialiser avec la famille
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC512_513_519:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC512_513_519
+    name:
+      en: Socialising with others (visits, celebrations and other)
+      de: Geselligkeit mit anderen (Besuche, Feste und sonstiges)
+      fr: Socialiser avec les autres (visites, fêtes et autres)
+    is_aggregate: true
+    aggregate_components:
+    - AC512
+    - AC513
+    - AC519
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 512, 513, 519
+  AC512:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC512
+    name:
+      en: Visiting and receiving visitors
+      de: Besuch und Empfang der Besucher
+      fr: Visite et accueil des visiteurs
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC513:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC513
+    name:
+      en: Celebrations
+      de: Feste
+      fr: Fêtes
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC514-516:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC514-516
+    name:
+      en: Virtual social life
+      de: Virtuelles Sozialleben
+      fr: Vie sociale virtuelle
+    is_aggregate: true
+    aggregate_components:
+    - AC514
+    - AC515
+    - AC516
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 514, 515, 516
+  AC514:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC514
+    name:
+      en: Audio and video conversation
+      de: Audio- und Videogespräche
+      fr: Conversation audio et vidéo
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC515:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC515
+    name:
+      en: Communication by text messaging (SMS, instant messages, email, etc.)
+      de: Kommunikation per Textnachrichten (SMS, Instant Messages, E-Mail usw.)
+      fr: Communication par messagerie texte (SMS, messages instantanés, e-mail, etc.)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC516:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC516
+    name:
+      en: Time spent on social media
+      de: Zeit in sozialen Medien
+      fr: Temps passé sur les réseaux sociaux
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC519:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC519
+    name:
+      en: Other or unspecified social life
+      de: Sonstiges oder nicht näher bezeichnetes soziales Leben
+      fr: Autre vie sociale ou non spécifiée
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC52:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC52
+    name:
+      en: Entertainment and culture
+      de: Unterhaltung und Kultur
+      fr: Divertissement et culture
+    is_aggregate: true
+    aggregate_components:
+    - AC521
+    - AC522
+    - AC523
+    - AC524
+    - AC525
+    - AC526
+    - AC529
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 521, 522, 523, 524, 525, 526, 529
+  AC521:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC521
+    name:
+      en: Cinema
+      de: Kino
+      fr: Cinéma
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC522:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC522
+    name:
+      en: Theatre and concerts
+      de: Theater und Konzerte
+      fr: Théâtre et concerts
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC523:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC523
+    name:
+      en: Art exhibitions and museums
+      de: Ausstellungen von Kunst und Museen
+      fr: Expositions d’art et musées
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC524:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC524
+    name:
+      en: Library
+      de: Bibliothek
+      fr: Bibliothèque
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC525:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC525
+    name:
+      en: Attending live sports events
+      de: Teilnahme an Live-Sportveranstaltungen
+      fr: Assister à des événements sportifs en direct
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC526:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC526
+    name:
+      en: Zoos, botanical gardens, natural reserves, etc.
+      de: Zoos, botanische Gärten, Naturschutzgebiete usw.
+      fr: Zoos, jardins botaniques, réserves naturelles, etc.
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC529:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC529
+    name:
+      en: Other or unspecified entertainment and culture
+      de: Sonstige oder nicht spezifizierte Unterhaltung und Kultur
+      fr: Autres divertissements et activités culturelles non spécifiés
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC53:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC53
+    name:
+      en: Resting - time out
+      de: Ruhe - Inaktivität
+      fr: Repos - inactivité
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC531:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC531
+    name:
+      en: Resting - time out
+      de: Ruhe - Inaktivität
+      fr: Repos - inactivité
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC6_X_611:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC6_X_611
+    name:
+      en: Sports and outdoor activities except walking and hiking
+      de: Sport und Aktivitäten im Freien außer spazieren gehen und wandern
+      fr: Sports et activités extérieures à l’exception de la marche et de la randonnée
+    is_aggregate: true
+    aggregate_components:
+    - AC612
+    - AC613
+    - AC614
+    - AC615
+    - AC616
+    - AC619
+    - AC621
+    - AC631
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 612, 613, 614, 615, 616, 619, 621, 631
+  AC6:
+    kind: activity_code
+    level: major_division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC6
+    name:
+      en: Sports and outdoor activities
+      de: Sport und Aktivitäten im Freien
+      fr: Sports et activités extérieures
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC61:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC61
+    name:
+      en: Physical exercise
+      de: Körperliche Betätigung
+      fr: Exercice physique
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC611:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC611
+    name:
+      en: Walking and hiking
+      de: Spazieren gehen und wandern
+      fr: Marche et randonnée
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC612:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC612
+    name:
+      en: Jogging and running
+      de: Joggen und Laufen
+      fr: Jogging et course à pied
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC613:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC613
+    name:
+      en: Cycling, skiing and skating
+      de: Radfahren, Skifahren und Skaten
+      fr: Vélo, ski et patinage
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC614:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC614
+    name:
+      en: Ball games
+      de: Ballspiele
+      fr: Jeux de balle
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC615:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC615
+    name:
+      en: Gymnastics and fitness
+      de: Gymnastik und Fitness
+      fr: Gymnastique et fitness
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC616:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC616
+    name:
+      en: Water sports
+      de: Wassersport
+      fr: Sports aqautiques
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC619:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC619
+    name:
+      en: Other or unspecified sports or outdoor activities
+      de: Sonstige oder nicht näher bezeichnete Sport- oder Aktivitäten im Freien
+      fr: Autres sports ou activités extérieures non spécifiés
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC62:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC62
+    name:
+      en: Productive exercise
+      de: Produktive Übung
+      fr: Exercice productif
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC621:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC621
+    name:
+      en: Productive exercise (e.g. hunting, fishing, picking berries, mushrooms or herbs)
+      de: Produktive Übung (z. B. Jagd, Angeln, Beeren, Pilze oder Kräuter pflücken)
+      fr: Exercice productif (p. ex., chasse, pêche, cueillette de baies, champignons ou herbes)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC63:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC63
+    name:
+      en: Sports related activities
+      de: Sportbezogene Aktivitäten
+      fr: Activités liées au sport
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC631:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC631
+    name:
+      en: Sports related activities
+      de: Sportbezogene Aktivitäten
+      fr: Activités liées au sport
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC711_712_719_731_732_739:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC711_712_719_731_732_739
+    name:
+      en: Arts and hobbies (except making handicraft products), and games (except computer, console, mobile games)
+      de: Kunst und Hobbys (außer Herstellung von Handwerksprodukten), und Spiele (außer Computerspiele, Konsolenspiele und Mobile Spiele)
+      fr: Arts et loisirs (à l’exception de la fabrication de produits artisanaux) et jeux (à l’exception des jeux électroniques, jeux de console et jeux mobiles)
+    is_aggregate: true
+    aggregate_components:
+    - AC711
+    - AC712
+    - AC719
+    - AC731
+    - AC732
+    - AC739
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 711, 712, 719, 731, 732, 739
+  AC7:
+    kind: activity_code
+    level: major_division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC7
+    name:
+      en: Hobbies
+      de: Hobbys
+      fr: Loisirs
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC71:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC71
+    name:
+      en: Arts and hobbies
+      de: Kunst und Hobbys
+      fr: Arts et loisirs
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC711:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC711
+    name:
+      en: Arts (visual, performing, literary)
+      de: Künste (bildende, darstellende und literarische Kunst)
+      fr: Arts (visuels, spectacles, littérature)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC712:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC712
+    name:
+      en: Collecting
+      de: Sammeln
+      fr: Collection
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC713:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC713
+    name:
+      en: Making handicraft products
+      de: Herstellung von Handwerksprodukten
+      fr: Fabrication de produits artisanaux
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC719:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC719
+    name:
+      en: Other or unspecified hobbies
+      de: Sonstige oder nicht spezifizierte Hobbys
+      fr: Autres loisirs ou non spécifiés
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC72:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC72
+    name:
+      en: Computing
+      de: Computing
+      fr: Informatique
+    is_aggregate: true
+    aggregate_components:
+    - AC721
+    - AC722
+    - AC729
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 721, 722, 729
+  AC721:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC721
+    name:
+      en: Computing
+      de: Computing
+      fr: Informatique
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC722:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC722
+    name:
+      en: Information search using internet
+      de: Informationssuche über das Internet
+      fr: Recherche d’informations sur Internet
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC729:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC729
+    name:
+      en: Other or unspecified computing
+      de: Sonstige oder nicht spezifizierte Computing
+      fr: Autre informatique ou non spécifiée
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC73:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC73
+    name:
+      en: Games
+      de: Spiele
+      fr: Jeux
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC731:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC731
+    name:
+      en: Solo games and play, gambling
+      de: Solo Spiele und spielen, Glücksspiel
+      fr: Jeux en solo et en groupe, jeux de hasard
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC732:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC732
+    name:
+      en: Parlour games and play
+      de: Salon Spiele und spielen
+      fr: Jeux de société
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC733-735:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC733-735
+    name:
+      en: Computer games, console games (on home console) and mobile games (on handheld device/ smartphone)
+      de: Computerspiele, Konsolenspiele (auf der Heimkonsole) und Mobile Spiele (auf Handheld/ Smartphone)
+      fr: Jeux électroniques, jeux de console (sur la console d’accueil) et jeux mobiles (sur un appareil portable / smartphone)
+    is_aggregate: true
+    aggregate_components:
+    - AC733
+    - AC734
+    - AC735
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 733, 734, 735
+  AC733:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC733
+    name:
+      en: Computer games
+      de: Computerspiele
+      fr: Jeux électroniques
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC734:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC734
+    name:
+      en: Console games (on home console)
+      de: Konsolenspiele (auf der Heimkonsole)
+      fr: Jeux de console (sur la console d’accueil)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC735:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC735
+    name:
+      en: Mobile games (on handheld device/ smartphone)
+      de: Mobile Spiele (auf Handheld/ Smartphone)
+      fr: Jeux mobiles (sur un appareil portable / smartphone)
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC739:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC739
+    name:
+      en: Other or unspecified games
+      de: Sonstige oder nicht spezifizierte Spiele
+      fr: Autres jeux ou non spécifiés
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC8:
+    kind: activity_code
+    level: major_division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC8
+    name:
+      en: Mass media
+      de: Massenmedien
+      fr: Médias de masse
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC81_X_812:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC81_X_812
+    name:
+      en: Reading, except reading books
+      de: Lesen außer Bücher lesen
+      fr: Lecture à l’exception de la lecture de livres
+    is_aggregate: true
+    aggregate_components:
+    - AC811
+    - AC819
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 811, 819
+  AC81:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC81
+    name:
+      en: Reading
+      de: Lesen
+      fr: Lecture
+    is_aggregate: true
+    aggregate_components:
+    - AC811
+    - AC812
+    - AC819
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 811, 812, 819
+  AC811:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC811
+    name:
+      en: Reading periodicals
+      de: Lesen von Zeitschriften
+      fr: Lecture de périodiques
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC812:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC812
+    name:
+      en: Reading books
+      de: Bücher lesen
+      fr: Lecture de livres
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC819:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC819
+    name:
+      en: Other or unspecified reading
+      de: Sonstige oder nicht spezifizierte Lesen
+      fr: Autre lecture ou non spécifiée
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC82:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC82
+    name:
+      en: TV, video and DVD
+      de: TV, Video und DVD
+      fr: TV, vidéo et DVD
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC821:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC821
+    name:
+      en: Watching TV, video or DVD
+      de: Fernsehen, Video oder DVD ansehen
+      fr: Regarder la TV, une vidéo ou un DVD
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC83:
+    kind: activity_code
+    level: division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC83
+    name:
+      en: Radio and recordings
+      de: Radio und Tonaufnahmen
+      fr: Radio et enregistrements
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC831:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC831
+    name:
+      en: Listening to radio or recordings
+      de: Hören von Radio oder Aufnahmen
+      fr: Écouter la radio ou des enregistrements
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC9_X_910:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC9_X_910
+    name:
+      en: Travel except travel related to/from work
+      de: Reisen außer Wege zur/von der Arbeit
+      fr: Voyage à l’exception du trajet pour se rendre/revenir du travail
+    is_aggregate: true
+    aggregate_components:
+    - AC900
+    - AC910
+    - AC920
+    - AC936
+    - AC938
+    - AC939
+    - AC940
+    - AC950
+    - AC960
+    - AC980
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 900, 910, 920, 936, 938, 939, 940, 950, 960, 980
+  AC9:
+    kind: activity_code
+    level: major_division
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC9
+    name:
+      en: Travel and unspecified time use - travel by purpose
+      de: Reisen und Zeitplan nicht angegeben - Reisen mit Ziel
+      fr: Voyage et emploi du temps non spécifiés - voyage par objectif
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC910_920:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC910_920
+    name:
+      en: Travel to/from work/study
+      de: Wege zur/von der Arbeit/ - Aus- und Weiterbildung
+      fr: Déplacements vers/depuis le travail/les études
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC910:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC910
+    name:
+      en: Travel to/ from work
+      de: Wege zur/von der Arbeit
+      fr: Déplacements vers/depuis le travail
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC920:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC920
+    name:
+      en: Travel related to study
+      de: Wege - Aus- und Weiterbildung
+      fr: Voyage lié aux études
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC936:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC936
+    name:
+      en: Travel related to shopping and services
+      de: Wege - Einkaufen und Dienstleistungen
+      fr: Voyage lié aux achats ou services
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC938_939:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC938_939
+    name:
+      en: Travel related to childcare and to other household care
+      de: Reisen im Zusammenhang mit der Kinderbetreuung und anderen Pflegeleistungen im Haushalt
+      fr: Déplacements liés à la garde d’enfants et aux autres soins à domicile
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC938:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC938
+    name:
+      en: Travel related to childcare
+      de: Reisen zur Kinderbetreuung
+      fr: Déplacements liés à la garde d’enfants
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC939:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC939
+    name:
+      en: Travel related to other household care
+      de: Reisen im Zusammenhang mit anderer häuslicher Pflege
+      fr: Déplacements liés aux autres soins à domicile
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC940-980:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC940-980
+    name:
+      en: Travel related to leisure, social and associative life
+      de: Déplacements liés aux loisirs, à la vie sociale et associative
+      fr: Déplacements liés aux loisirs, à la vie sociale et associative
+    is_aggregate: true
+    aggregate_components:
+    - AC940
+    - AC950
+    - AC960
+    - AC980
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 940, 950, 960, 980
+  AC940:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC940
+    name:
+      en: Travel related to voluntary work and meetings
+      de: Reisen im Zusammenhang mit Freiwilligenarbeit und Treffen
+      fr: Déplacements liés au travail bénévole et aux réunions
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC950:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC950
+    name:
+      en: Travel related to social life
+      de: Reisen im Zusammenhang mit sozialen Leben
+      fr: Voyage lié à la vie sociale
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC960:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC960
+    name:
+      en: Travel related to other leisure
+      de: Reisen im Zusammenhang mit anderen Freizeitaktivitäten
+      fr: Voyages liés à d'autres loisirs
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC980:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC980
+    name:
+      en: Travel related to changing locality
+      de: Reisen im Zusammenhang mit Ortswechsel
+      fr: Voyage lié au changement de localité
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC900-980:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC900-980
+    name:
+      en: Travel by purpose
+      de: Reisen mit Ziel
+      fr: Voyage par objectif
+    is_aggregate: true
+    aggregate_components:
+    - AC900
+    - AC910
+    - AC920
+    - AC936
+    - AC938
+    - AC939
+    - AC940
+    - AC950
+    - AC960
+    - AC980
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 900, 910, 920, 936, 938, 939, 940, 950, 960, 980
+  AC900_995_999:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC900_995_999
+    name:
+      en: Other or unspecified travel purpose, filling in the time use diary and other unspecified time use
+      de: Nicht spezifizierter oder anderer Zweck der Reise, Ausfüllen des Tagebuchs für die Zeitnutzung und sonstige nicht näher bezeichnete Zeitnutzung
+      fr: Objet du voyage autre ou non spécifié, remplir le journal d’utilisation du temps et autre emploi du temps non spécifié
+    is_aggregate: true
+    aggregate_components:
+    - AC900
+    - AC995
+    - AC999
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 900, 995, 999
+  AC900:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC900
+    name:
+      en: Other or unspecified travel purpose
+      de: Nicht spezifizierter oder anderer Zweck der Reise
+      fr: Objet du voyage autre ou non spécifié
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC995_999:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC995_999
+    name:
+      en: Filling in the time use diary and other unspecified time use
+      de: Ausfüllen des Tagebuchs für die Zeitnutzung und sonstige nicht näher bezeichnete Zeitnutzung
+      fr: Remplir le journal d’utilisation du temps et autre emploi du temps non spécifié
+    is_aggregate: true
+    aggregate_components:
+    - AC995
+    - AC999
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 995, 999
+  AC995-999:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC995-999
+    name:
+      en: Filling in the time use diary, unspecified leisure time and other unspecified time use
+      de: Ausfüllen des Tagebuchs für die Zeitnutzung, Unbestimmte Freizeit und sonstige nicht näher bezeichnete Zeitnutzung
+      fr: Remplir le journal d’utilisation du temps, temps libre non spécifié et autre emploi du temps non spécifié
+    is_aggregate: true
+    aggregate_components:
+    - AC995
+    - AC998
+    - AC999
+    aggregate_exclusions: []
+    explan_label:
+      en: This aggregate includes the ACL groups 995, 998, 999
+  AC995:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC995
+    name:
+      en: Filling in the time use diary
+      de: Ausfüllen des Tagebuchs für die Zeitnutzung
+      fr: Remplir le journal d’utilisation du temps
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC998:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC998
+    name:
+      en: Unspecified leisure time
+      de: Unbestimmte Freizeit
+      fr: Temps libre non spécifié
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC999:
+    kind: activity_code
+    level: group
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC999
+    name:
+      en: Other unspecified time use
+      de: Sonstige nicht näher bezeichnete Zeitnutzung
+      fr: Autre emploi du temps non spécifié
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC_PNP_MAIN:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC_PNP_MAIN
+    name:
+      en: Productive paid and unpaid main activities
+      de: Produktive bezahlte und unbezahlte Hauptaktivitäten
+      fr: Activités productives principales rémunérées et non rémunérées
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC_NP_TOT:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC_NP_TOT
+    name:
+      en: Productive unpaid main and secondary activities
+      de: Produktive unbezahlte Haupt- und Nebentätigkeiten
+      fr: Activités productives principales et secondaires non rémunérées
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC_NP_MAIN:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC_NP_MAIN
+    name:
+      en: Productive unpaid main activities
+      de: Produktive unbezahlte Hauptaktivitäten
+      fr: Activités productives principales non rémunérées
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  AC_NP_SEC:
+    kind: activity_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:ACL18(5.1).AC_NP_SEC
+    name:
+      en: Productive unpaid secondary activities
+      de: Produktive unbezahlte Nebentätigkeiten
+      fr: Activités productives secondaires non rémunérées
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
