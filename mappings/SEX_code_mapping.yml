@@ -1,0 +1,111 @@
+schema_version: '1.0'
+generated_at_utc: '2026-04-02T00:00:00+00:00'
+source:
+  file: 'untitled:Untitled-2'
+  codelist_id: SEX
+  agency_id: ESTAT
+  version: '1.13'
+  urn: urn:sdmx:org.sdmx.infomodel.codelist.Codelist=ESTAT:SEX(1.13)
+  name:
+    en: Sex
+    de: Geschlecht
+    fr: Sexe
+  description:
+    en: This code list provides information about the state of being male or female and refers to their biological and physiological characteristics.
+code_count: 8
+codes:
+  T:
+    kind: sex_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:SEX(1.13).T
+    name:
+      en: Total
+      de: Insgesamt
+      fr: Total
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  M:
+    kind: sex_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:SEX(1.13).M
+    name:
+      en: Males
+      de: Männer
+      fr: Hommes
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  F:
+    kind: sex_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:SEX(1.13).F
+    name:
+      en: Females
+      de: Frauen
+      fr: Femmes
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  DIFF:
+    kind: sex_code
+    level: aggregate_or_special
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:SEX(1.13).DIFF
+    name:
+      en: Absolute difference between males and females
+      de: Absolute Differenz zwischen Männern und Frauen
+      fr: Différence absolue entre hommes et femmes
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label:
+      en: Code not associated with the concept of the code list, but following Eurostat Standard Code List Guidelines
+  NAP:
+    kind: sex_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:SEX(1.13).NAP
+    name:
+      en: Not applicable
+      de: Nicht anwendbar
+      fr: Non applicable
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  NRP:
+    kind: sex_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:SEX(1.13).NRP
+    name:
+      en: No response
+      de: Keine Antwort
+      fr: Sans réponse
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  UNK:
+    kind: sex_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:SEX(1.13).UNK
+    name:
+      en: Unknown
+      de: Unbekannt
+      fr: Inconnu
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
+  '-':
+    kind: sex_code
+    level: wildcard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Codelist=ESTAT:SEX(1.13).-
+    name:
+      en: Wildcard
+    is_aggregate: false
+    aggregate_components: []
+    aggregate_exclusions: []
+    explan_label: {}
