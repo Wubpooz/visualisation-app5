@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GenericMetadata xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v3_0/message" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v3_0/common" xmlns:generic="http://www.sdmx.org/resources/sdmxml/schemas/v3_0/metadata/generic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Header>
+        <ID>TUS_ESMS_A</ID>
+        <Test>false</Test>
+        <Prepared>2026-02-09T10:20:54</Prepared>
+        <Sender id="4D0">
+            <Contact/>
+        </Sender>
+        <common:Name>TUS_ESMS_A_4D_2016_0000 (tus_00_esms)</common:Name>
+        <Structure structureID="TUS_ESMS_A_1_0">
+            <common:StructureUsage>urn:sdmx:org.sdmx.infomodel.metadatastructure.Metadataflow=ESTAT:TUS_ESMS_A(1.0)</common:StructureUsage>
+        </Structure>
+        <DataSetAction>Delete</DataSetAction>
+        <DataSetID>TUS_ESMS_A_1770628855845</DataSetID>
+    </Header>
+    <MetadataSet id="ESMS_MSD" agencyID="ESTAT" version="3.0">
+        <common:Annotations>
+            <common:Annotation>
+                <common:AnnotationType>REFERENCE_PERIOD</common:AnnotationType>
+                <common:AnnotationText>A0</common:AnnotationText>
+            </common:Annotation>
+            <common:Annotation>
+                <common:AnnotationType>FOR_PUBLICATION</common:AnnotationType>
+                <common:AnnotationText>YES</common:AnnotationText>
+            </common:Annotation>
+        </common:Annotations>
+        <common:Name></common:Name>
+        <generic:Metadataflow>urn:sdmx:org.sdmx.infomodel.metadatastructure.Metadataflow=ESTAT:TUS_ESMS_A(1.0)</generic:Metadataflow>
+        <generic:Target>urn:sdmx:org.sdmx.infomodel.base.DataProvider=ESTAT:DATA_PROVIDERS(1.0).4D0</generic:Target>
+        <generic:Target>urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:TUS_ESMS_A(1.0)</generic:Target>
+        <generic:Attribute id="CONTACT">
+            <common:Annotations>
+                <common:Annotation>
+                    <common:AnnotationType>EDITABLE</common:AnnotationType>
+                    <common:AnnotationText>NO</common:AnnotationText>
+                </common:Annotation>
+            </common:Annotations>
+            <generic:Value></generic:Value>
+            <generic:Attribute id="CONTACT_ORGANISATION">
+                <generic:Value>&lt;p&gt;Eurostat, the statistical office of the European Union&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="ORGANISATION_UNIT">
+                <generic:Value>&lt;p&gt;Eurostat, Unit F4: Income and Living Conditions; Quality of life&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="CONTACT_NAME">
+                <common:Annotations>
+                    <common:Annotation>
+                        <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                        <common:AnnotationText>YES</common:AnnotationText>
+                    </common:Annotation>
+                </common:Annotations>
+                <generic:Value>Confidential because of GDPR</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="CONTACT_FUNCT">
+                <common:Annotations>
+                    <common:Annotation>
+                        <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                        <common:AnnotationText>YES</common:AnnotationText>
+                    </common:Annotation>
+                </common:Annotations>
+                <generic:Value>Confidential because of GDPR</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="CONTACT_MAIL">
+                <generic:Value>&lt;p&gt;European Commission&lt;/p&gt;
+&lt;p&gt;DG Eurostat&lt;/p&gt;
+&lt;p&gt;5, Rue Alphonse Weicker&lt;br /&gt;L-2920 Luxembourg&lt;/p&gt;
+&lt;p&gt;LUXEMBOURG&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="CONTACT_EMAIL">
+                <common:Annotations>
+                    <common:Annotation>
+                        <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                        <common:AnnotationText>YES</common:AnnotationText>
+                    </common:Annotation>
+                </common:Annotations>
+                <generic:Value>Confidential because of GDPR</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="CONTACT_PHONE">
+                <common:Annotations>
+                    <common:Annotation>
+                        <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                        <common:AnnotationText>YES</common:AnnotationText>
+                    </common:Annotation>
+                </common:Annotations>
+                <generic:Value>Confidential because of GDPR</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="CONTACT_FAX">
+                <common:Annotations>
+                    <common:Annotation>
+                        <common:AnnotationType>RESTRICTED_FOR_PUBLICATION</common:AnnotationType>
+                        <common:AnnotationText>YES</common:AnnotationText>
+                    </common:Annotation>
+                </common:Annotations>
+                <generic:Value>Confidential because of GDPR</generic:Value>
+            </generic:Attribute>
+        </generic:Attribute>
+        <generic:Attribute id="META_UPDATE">
+            <common:Annotations>
+                <common:Annotation>
+                    <common:AnnotationType>EDITABLE</common:AnnotationType>
+                    <common:AnnotationText>NO</common:AnnotationText>
+                </common:Annotation>
+            </common:Annotations>
+            <generic:Value></generic:Value>
+            <generic:Attribute id="META_CERTIFIED">
+                <generic:Value>2019-11-12</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="META_POSTED">
+                <generic:Value>2019-11-12</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="META_LAST_UPDATE">
+                <generic:Value>2024-04-24</generic:Value>
+            </generic:Attribute>
+        </generic:Attribute>
+        <generic:Attribute id="STAT_PRES">
+            <common:Annotations>
+                <common:Annotation>
+                    <common:AnnotationType>EDITABLE</common:AnnotationType>
+                    <common:AnnotationText>NO</common:AnnotationText>
+                </common:Annotation>
+            </common:Annotations>
+            <generic:Value></generic:Value>
+            <generic:Attribute id="DATA_DESCR">
+                <generic:Value>&lt;p style="text-align: justify;"&gt;Time use surveys (TUS) measure the amount of time people spend doing various activities, such as paid work, household and family care, personal care, voluntary work, social life, travel, and leisure activities. The survey consists of a household interview, a personal interview, a weekday diary and a weekend diary. Time use surveys are used to support equality, family, social, transport and cultural policies and to measure the value of household production and for international comparisons. Data are acquired by interviewing the sampled individuals directly and letting them fill in the diary.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;This Eurobase domain presents results from waves 1 and 2 of the Harmonised European time use surveys (HETUS). Wave 1, i.e. HETUS 2000, had been carried out by 15 European countries between 1998 and 2006. The results were harmonised by Statistics Finland and Statistics Sweden with the financial support of Eurostat. Wave 2, i.e. HETUS 2010, had been carried out by 18 European countries between 2008 and 2015. The results were harmonised by Statistics Finland with the financial support of Eurostat.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;HETUS 2000 and 2010 results are organised in 19 tables in Eurobase. The first ten tables are providing information on the time spent, participation time and participation rate by sex and different characteristics (age group, professional status, month, day of the week, etc.). Another table shows the participation rate in the main activity by the time of the day; six other tables are on the time spent for different important activities (eating, providing childcare, travelliing, watching TV and other media, unpaid work, total work). One more table is about the time spent alone and another table is about when more than one acitivity was undertaken simultaneously by respondents.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="CLASS_SYSTEM">
+                <common:Annotations>
+                    <common:Annotation>
+                        <common:AnnotationTitle>HETUS 2008 Guidelines (HETUS wave 2010)</common:AnnotationTitle>
+                        <common:AnnotationType>URL</common:AnnotationType>
+                        <common:AnnotationURL>https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-ra-08-014</common:AnnotationURL>
+                    </common:Annotation>
+                    <common:Annotation>
+                        <common:AnnotationTitle>HETUS 2000 Guidelines (HETUS wave 2000)</common:AnnotationTitle>
+                        <common:AnnotationType>URL</common:AnnotationType>
+                        <common:AnnotationURL>https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-cc-04-007</common:AnnotationURL>
+                    </common:Annotation>
+                </common:Annotations>
+                <generic:Value>&lt;p style="text-align: justify;"&gt;The main classification system used in the Harmonised European time use surveys (HETUS) is the "Activity coding list" (ACL). The ACL assigns a code to the activities (primary and secondary) that the person is doing during the day. For that purpose the 24 hours of the day are split in 144 slots of 10-minutes and ACL codes are given to each of the 10-minutes slots. The activities described by the respondents themselves are coded according to the 108 category classification of activities that are reduced to 51 categories in the harmonisation processes of the database.&lt;/p&gt;
+&lt;p&gt;Other classifications used&amp;nbsp;are the "Location" where the time is spent (including the modes of transport) and "With whom" the time is spent. Please note that the tables currently shown in this domain do not contain information on these variables.&lt;/p&gt;
+&lt;p&gt;Further classifications used in HETUS 2010 wave are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2-digit level of NUTS (Nomenclature of Territorial Units for Statistics)&lt;/li&gt;
+&lt;li&gt;Statistical Classification of Economic Activities (NACE Rev. 2)&lt;/li&gt;
+&lt;li&gt;3 digits of the ISCO classification (ISCO-88(COM) or ISCO-08) ISCO-88: International Standard Classification of Occupations&lt;/li&gt;
+&lt;li&gt;ISCED — International Standard Classification of Education — UNESCO 1997.&lt;/li&gt;
+&lt;/ul&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="COVERAGE_SECTOR">
+                <generic:Value>&lt;p&gt;Living conditions, time use, working time, travel, leisure, social statistics; all economic sectors are covered.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="STAT_CONC_DEF">
+                <generic:Value>&lt;p&gt;This domain provides population estimates for activities according to the HETUS-ACL (see section 3.2 Classification system, above) for three main indicators:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Time spent: mean time spent on the activities by all individuals;&lt;/li&gt;
+&lt;li&gt;Participation time: mean time spent in the activities by those individuals who took part in the activity; and&lt;/li&gt;
+&lt;li&gt;Participation rate: the proportion of the individuals that spent some time doing the activities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;HETUS provide information on the main activity and on the secondary or parallel activity the individuals are doing during each of the 144 slots of 10-minutes of which a day consists of. It is the respondent who decides which is the main and which is the secondary activity.&lt;/p&gt;
+&lt;p&gt;Data presented here refer to the main activity only.&lt;/p&gt;
+&lt;p&gt;The three indicators are compiled by sex and&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;age group&lt;/li&gt;
+&lt;li&gt;household composition&lt;/li&gt;
+&lt;li&gt;highest level of education attained (according to ISCED-97)&lt;/li&gt;
+&lt;li&gt;self-declared labour status, i.e. according to the information on labour status as perceived by the respondent&lt;/li&gt;
+&lt;li&gt;professional status, according to the ILO definition of employment, unemployment and not in the labour force&lt;/li&gt;
+&lt;li&gt;day of the week&lt;/li&gt;
+&lt;li&gt;month of the year&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The participation rate is also presented by sex and&amp;nbsp;time of the day.&lt;/p&gt;
+&lt;p&gt;For further details see &lt;a href="https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-ra-08-014" target="_blank"&gt;HETUS 2008 Guidelines&lt;/a&gt; (HETUS wave 2010) and &lt;a href="https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-cc-04-007"&gt;HETUS 2000 Guidelines&lt;/a&gt; (HETUS wave 2000).&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="STAT_UNIT">
+                <generic:Value>&lt;p&gt;Persons, households and time; household, 10 year old or older individuals, diary, 10 minutes time slot; exception: in Austria, 15 minutes time slots were used.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="STAT_POP">
+                <generic:Value>&lt;p style="text-align: justify;"&gt;According to the HETUS 2008 and 2018 guidelines, the survey should cover all persons living in private households aged 10+ (if this is not possible, it is aged 15+). Individuals living in institutions (nursing homes, homes for the elderly, children's homes, rehabilitation centers and penitentiary) are excluded from the survey population.&lt;/p&gt;
+&lt;p&gt;It is important to remark that the tables presented here in Eurobase refer to the population 20 to 74 years old only (except the first table tus_00age that contains all respondents aged 15+, and the table tus_00age2&amp;nbsp;that contains all respondents aged 15+ for wave 2010 only).&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="REF_AREA">
+                <generic:Value>&lt;p&gt;Data collection period of the 15 European countries participating in HETUS wave 2000:&lt;/p&gt;
+&lt;p&gt;1998-1999: France&lt;/p&gt;
+&lt;p&gt;1999-2000: Estonia, Finland&lt;/p&gt;
+&lt;p&gt;2000-2001: Slovenia, Sweden, United Kingdom, Norway&lt;/p&gt;
+&lt;p&gt;2001-2002: Bulgaria, Germany&lt;/p&gt;
+&lt;p&gt;2002-2003: Spain, Italy&lt;/p&gt;
+&lt;p&gt;2003: Latvia, Lithuania&lt;/p&gt;
+&lt;p&gt;2003-2004: Poland&lt;/p&gt;
+&lt;p&gt;2005-2006: Belgium&lt;/p&gt;
+&lt;p&gt;Data collection period of the 18 European countries participating in HETUS wave 2010:&lt;/p&gt;
+&lt;p&gt;2008-2009: Italy, Austria&lt;/p&gt;
+&lt;p&gt;2009-2010: Estonia, Spain, France, Hungary, Finland&lt;/p&gt;
+&lt;p&gt;2010-2011: Romania, Norway, Serbia&lt;/p&gt;
+&lt;p&gt;2011-2012: Netherlands&lt;/p&gt;
+&lt;p&gt;2012-2013: Belgium, Germany, Poland&lt;/p&gt;
+&lt;p&gt;2013-2014: Greece&lt;/p&gt;
+&lt;p&gt;2014-2015: United Kingdom, Luxembourg, Turkey&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="COVERAGE_TIME">
+                <generic:Value>&lt;p&gt;HETUS wave 2000, for reference periods between 1998 and 2006; for details see section 3.7. Reference area, above.&lt;/p&gt;
+&lt;p&gt;HETUS wave 2010, for reference periods between 2008 and 2015; for details see section 3.7. Reference area, above.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="BASE_PER">
+                <generic:Value>&lt;p&gt;Not applicable.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+        </generic:Attribute>
+        <generic:Attribute id="UNIT_MEASURE">
+            <generic:Value>&lt;p&gt;Time spent, participation time and participation rate, see also section 3.4 Statistical concepts and definitions, above.&lt;/p&gt;</generic:Value>
+        </generic:Attribute>
+        <generic:Attribute id="REF_PERIOD">
+            <generic:Value>&lt;p&gt;HETUS should cover a full 12 months period, i.e. 365 consecutive days. Each respondent should fill in the diary for two days, one weekday (Monday to Friday) and one weekend day (Saturday, Sunday).&lt;/p&gt;</generic:Value>
+        </generic:Attribute>
+        <generic:Attribute id="INST_MANDATE">
+            <common:Annotations>
+                <common:Annotation>
+                    <common:AnnotationType>EDITABLE</common:AnnotationType>
+                    <common:AnnotationText>NO</common:AnnotationText>
+                </common:Annotation>
+            </common:Annotations>
+            <generic:Value></generic:Value>
+            <generic:Attribute id="INST_MAN_LA_OA">
+                <generic:Value>&lt;p&gt;The data were collected on the basis of a&amp;nbsp;gentlemen's agreement between participating countries and Eurostat.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="INST_MAN_SHAR">
+                <generic:Value>&lt;p&gt;The HETUS 2000 and 2010 data are available at&amp;nbsp;&lt;a href="https://ec.europa.eu/eurostat/web/time-use-surveys/database"&gt;Database - Eurostat (europa.eu)&lt;/a&gt;&lt;a href="https://ec.europa.eu/eurostat/web/time-use-surveys/database"&gt;&lt;br /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span lang="EN-US"&gt;Universities and certified research centres can apply for access to TUS microdata for scientific purposes.&lt;/span&gt;&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+        </generic:Attribute>
+        <generic:Attribute id="CONF">
+            <common:Annotations>
+                <common:Annotation>
+                    <common:AnnotationType>EDITABLE</common:AnnotationType>
+                    <common:AnnotationText>NO</common:AnnotationText>
+                </common:Annotation>
+            </common:Annotations>
+            <generic:Value></generic:Value>
+            <generic:Attribute id="CONF_POLICY">
+                <generic:Value>&lt;p style="text-align: justify;"&gt;&lt;a href="http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2009:087:0164:0173:En:PDF" target="_blank"&gt;Regulation (EC) No 223/2009 on European statistics&lt;/a&gt; (recital 24 and Article 20(4)) of 11 March 2009 (OJ L 87, p. 164), stipulates the need to establish common principles and guidelines ensuring the confidentiality of data used for the production of European statistics and the access to those confidential data with due account for technical developments and the requirements of users in a democratic society.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="CONF_DATA_TR">
+                <generic:Value>&lt;p style="text-align: justify;"&gt;HETUS microdata as received by Eurostat do not contain any administrative information such as names or addresses that would allow direct identification. Access to the microdata is nevertheless strictly controlled and limited to specified Eurostat staff. After data treatment, records are aggregated for all further use.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+        </generic:Attribute>
+        <generic:Attribute id="REL_POLICY">
+            <common:Annotations>
+                <common:Annotation>
+                    <common:AnnotationType>EDITABLE</common:AnnotationType>
+                    <common:AnnotationText>NO</common:AnnotationText>
+                </common:Annotation>
+            </common:Annotations>
+            <generic:Value></generic:Value>
+            <generic:Attribute id="REL_CAL_POLICY">
+                <generic:Value>&lt;p&gt;No release calendar.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="REL_CAL_ACCESS">
+                <generic:Value>&lt;p&gt;Not applicable.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="REL_POL_US_AC">
+                <generic:Value>&lt;p style="text-align: justify;"&gt;In line with the Community legal framework and the &lt;a href="http://ec.europa.eu/eurostat/documents/4031688/8971242/KS-02-18-142-EN-N.pdf/e7f85f07-91db-4312-8118-f729c75878c7" target="_blank"&gt;European Statistics Code of Practice&lt;/a&gt; Eurostat disseminates European statistics on Eurostat's website (see item 10 - 'Accessibility and clarity') respecting professional independence and in an objective, professional and transparent manner in which all users are treated equitably. The detailed arrangements are governed by the &lt;a href="https://ec.europa.eu/eurostat/about-us/impartiality-protocol" target="_blank"&gt;Eurostat protocol on impartial access to Eurostat data for users&lt;/a&gt;.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+        </generic:Attribute>
+        <generic:Attribute id="FREQ_DISS">
+            <generic:Value>&lt;p&gt;Currently, only data for HETUS 2000 round for 14 countries and HETUS 2010 round for 18 countries are disseminated by Eurostat.&lt;/p&gt;
+&lt;p&gt;The general recommendation is to carry out TUS every 5-10 years. Several countries are participating or plan to participate in the HETUS 2020 round.&lt;/p&gt;</generic:Value>
+        </generic:Attribute>
+        <generic:Attribute id="ACCESSIBILITY_CLARITY">
+            <common:Annotations>
+                <common:Annotation>
+                    <common:AnnotationType>EDITABLE</common:AnnotationType>
+                    <common:AnnotationText>NO</common:AnnotationText>
+                </common:Annotation>
+            </common:Annotations>
+            <generic:Value></generic:Value>
+            <generic:Attribute id="NEWS_REL">
+                <generic:Value>&lt;p&gt;Not available. Eurostat publishes the results calculated from the database.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="PUBLICATIONS">
+                <generic:Value>&lt;p&gt;Not available. Eurostat publishes the results calculated from the database.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="ONLINE_DB">
+                <generic:Value>&lt;p&gt;See detailed description of HETUS wave 2000 and wave 2010 tables presented online (Eurostat website / Eurobase) in paragraph 3.1 above.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="MICRO_DAT_ACC">
+                <generic:Value>&lt;p&gt;Microdata for the HETUS 2010 wave are available through the Eurostat microdata access service:&amp;nbsp;&lt;a href="https://ec.europa.eu/eurostat/web/microdata/harmonised-european-time-use-surveys"&gt;Harmonised European time use surveys - Eurostat (europa.eu)&lt;/a&gt;&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="DISS_OTHER">
+                <generic:Value>&lt;p&gt;Not available.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="DOC_METHOD">
+                <generic:Value>&lt;p&gt;There are three versions of HETUS Guidelines to be mentioned:&lt;/p&gt;
+&lt;p&gt;HETUS 2000:&amp;nbsp;&lt;a href="https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-cc-04-007"&gt;Guidelines on harmonised European Time Use surveys (2004 edition)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;HETUS 2010:&amp;nbsp;&lt;a href="https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-ra-08-014"&gt;Harmonised European time use Surveys - 2008 Guidelines (2009 edition)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;HETUS 2020: &lt;a title="HETUS 2020: Harmonised European Time Use Surveys (HETUS) — 2018 guidelines — Re-edition" href="https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-gq-20-011"&gt;Harmonised European Time Use Surveys (HETUS) — 2018 guidelines — Re-edition&lt;/a&gt;&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="QUALITY_DOC">
+                <generic:Value>&lt;p&gt;Data are accompanied with quality reports analysing the accuracy, coherence and comparability of the data.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+        </generic:Attribute>
+        <generic:Attribute id="QUALITY_MGMNT">
+            <common:Annotations>
+                <common:Annotation>
+                    <common:AnnotationType>EDITABLE</common:AnnotationType>
+                    <common:AnnotationText>NO</common:AnnotationText>
+                </common:Annotation>
+            </common:Annotations>
+            <generic:Value></generic:Value>
+            <generic:Attribute id="QUALITY_ASSURE">
+                <generic:Value>&lt;p style="text-align: justify;"&gt;The countries participating in the&amp;nbsp;2000 and 2010 waves took the HETUS 2000 and 2010 guidelines into account and data were carefully validated at national level. Statistics Finland (2000 and 2010) and Statistics Sweden (2000) further harmonised the data allowing the presentation of data which is comparable for the countries that participated in&amp;nbsp;the two rounds.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="QUALITY_ASSMNT">
+                <generic:Value>&lt;p style="text-align: justify;"&gt;Time use statistics have overall good quality. National Time Use Surveys are considered as reliable sources applying high standards with regard to the methodology. However, the TUS, like any survey, is based upon a sample of the population. The results are therefore subject to the usual types of errors associated with random sampling. To avoid publication of figures that are unreliable all estimations based on a sample size lower than 25 observations should be substituted by the flag ":u".&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+        </generic:Attribute>
+        <generic:Attribute id="RELEVANCE">
+            <common:Annotations>
+                <common:Annotation>
+                    <common:AnnotationType>EDITABLE</common:AnnotationType>
+                    <common:AnnotationText>NO</common:AnnotationText>
+                </common:Annotation>
+            </common:Annotations>
+            <generic:Value></generic:Value>
+            <generic:Attribute id="USER_NEEDS">
+                <generic:Value>&lt;p style="text-align: justify;"&gt;Time use data are used by policy makers and by researchers, e.g. to answer questions on the following topics: how much time is spent in paid work compared to unpaid work, and how is this different for women and men? Is housework fairly distributed between women and men? How much time do people spend to travel to and from work? How much time do people spend on care activities? How much time do people spend on volunteering? What activities do people carry out in their leisure time?&lt;/p&gt;
+&lt;p&gt;Time use data also provide&amp;nbsp;the basic data to produce household satellite accounts.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="USER_SAT">
+                <generic:Value>&lt;p style="text-align: justify;"&gt;User satisfaction is not measured. Some countries have organized meetings, seminars and workshops for data users, where the preliminary results were reported. Principal data users were asked to supervise the survey planning, data collection and data analysis.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="COMPLETENESS">
+                <generic:Value>&lt;p&gt;Data completeness rates varies from one country to another. In general, completeness rates were not reported.&amp;nbsp;&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+        </generic:Attribute>
+        <generic:Attribute id="ACCURACY">
+            <common:Annotations>
+                <common:Annotation>
+                    <common:AnnotationType>EDITABLE</common:AnnotationType>
+                    <common:AnnotationText>NO</common:AnnotationText>
+                </common:Annotation>
+            </common:Annotations>
+            <generic:Value></generic:Value>
+            <generic:Attribute id="ACCURACY_OVERALL">
+                <common:Annotations>
+                    <common:Annotation>
+                        <common:AnnotationTitle>Statistics Finland: Final report on TUS data processing and dissemination (HETUS 2010)</common:AnnotationTitle>
+                        <common:AnnotationType>FILE</common:AnnotationType>
+                        <common:AnnotationText>Annexes/tus_00_esms_an_1.pdf</common:AnnotationText>
+                    </common:Annotation>
+                </common:Annotations>
+                <generic:Value>&lt;p style="text-align: justify;"&gt;Accuracy depends on the sample size, sampling design effects and the structure of the population under study. In addition, sampling errors and non-sampling errors need to be taken into account. Sampling error refers to the variability that occurs at random because of the use of a sample rather than a census, while non-sampling errors are errors that occur in all phases of the data collection and production process. The NSIs decided on the sampling design from their own precision needs. That is why the sampling designs and sample sizes differs from one country to another.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Weight calculation methods differ between countries. Calibration techniques or post stratification were used. In general, calibration vectors were not identified or post-stratification variables were not reported. Two weights were included in the database first, diary day weight (marked by variable name WGHT1 and second. individual weight (marked by variable WGHT2). The sums of these weights should be the same but they differ in some countries and the reason was not reported in the Metadata Handler or the differences were not corrected in spite of a notification during the harmonisation phase.&lt;/p&gt;
+&lt;p&gt;For details, see Statistics Finland: Final Report of 28 February 2017 in Annex, below.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="SAMPLING_ERR">
+                <generic:Value>&lt;p&gt;The sampling error is measured by standard errors and Kish’s design effects. The national metadata files included these indicators for the most part of activities.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;In general, sampling errors were small because of large sampling sizes. Non-response errors may be greater than random errors caused by sampling. More interesting is Kish’s design effect (Deff) which describes the efficiency of the sampling design. Cluster sampling, household as selection units and two diaries from one individual adds intra-class correlation and decreases the efficiency of sampling design.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="NONSAMPLING_ERR">
+                <generic:Value>&lt;p&gt;Non-sampling error consists of three elements: Coverage error, measurment error and non-response error.&lt;/p&gt;
+&lt;p&gt;Coverage error (overcoverage) was identified in the data collection and dropped from the sample. Under coverage might be more serious, because it is not known.&lt;/p&gt;
+&lt;p&gt;Some countries reported efforts to reduce measurement error.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;Non-response error occurs in four different types in the household sample of the TUS. First, cluster non-response, where all persons are missing in a household; second, unit non-response, where some persons in a household are missing but the household is, nevertheless, included in the survey. The third type of non-response is missing diaries, where one or both diaries are missing. The fourth type is item non-response, where answers to one or more variables are missing at the household or individual levels, or a diary is only partially filled in. Unit non-response is measured by its ratio to the final sample. The non-response error depends on the distribution and quantity of non-response. Demographic background and education influence the social behavior of people and their activities. In literature, there are studies in which demographic background, education and income have skew distributions according to non-response. The NSI of Germany used quota sampling and they did not report non-response rates or the number of households or individuals that they had tried to contact. If we have high non-response rates, the estimates based on respondents may be biased and this should be taken into account when making comparisons between countries.&lt;br /&gt;The national response and nonresponse rates can be found in the national metadata files.&lt;/p&gt;
+&lt;p style="text-align: justify;"&gt;&lt;br /&gt;Only very few NSIs reported item non-response rates. In the diaries, an episode is defined as a time slot denoted by the same code. Missing episodes are difficult to observe because respondents record activities and their duration into diaries by themselves. Unobserved item non-response arises when a respondent forgets to record an activity in the diary, and this situation occurs when, for instance, a person travels home from work and stops for shopping. If the shopping stop is not recorded then the number of episodes is too low. The average episode numbers then describes some kind of filling intensity of diary keeping and missing episodes are unobserved item non-response.&lt;/p&gt;
+&lt;p&gt;In general, processing errors are not identified but there are some countries that analysed and reported processing errors.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+        </generic:Attribute>
+        <generic:Attribute id="TIMELINESS_PUNCT">
+            <common:Annotations>
+                <common:Annotation>
+                    <common:AnnotationType>EDITABLE</common:AnnotationType>
+                    <common:AnnotationText>NO</common:AnnotationText>
+                </common:Annotation>
+            </common:Annotations>
+            <generic:Value></generic:Value>
+            <generic:Attribute id="TIMELINESS">
+                <generic:Value>&lt;p&gt;Not applicable (data are transmitted to Eurostat on the basis of an agreement).&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="PUNCTUALITY">
+                <generic:Value>&lt;p&gt;Not applicable.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+        </generic:Attribute>
+        <generic:Attribute id="COHER_COMPAR">
+            <common:Annotations>
+                <common:Annotation>
+                    <common:AnnotationType>EDITABLE</common:AnnotationType>
+                    <common:AnnotationText>NO</common:AnnotationText>
+                </common:Annotation>
+            </common:Annotations>
+            <generic:Value></generic:Value>
+            <generic:Attribute id="COMPAR_GEO">
+                <generic:Value>&lt;p&gt;Participating countries followed the HETUS 2000 and 2010 guidelines with harmonised survey design and classifications. Therefore the data should be largely comparable between countries.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="COMPAR_TIME">
+                <generic:Value>&lt;p style="text-align: justify;"&gt;Cross-time comparability is aimed at by keeping as much survey elements as possible comparable over time. So, in general, the HETUS round 2010 should be comparable with the previous round 2000. On the other hand, it is also obvious that for a survey which describes most detailed activities of people's social life and which is executed only every ten years this is a big challenge.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="COHER_X_DOM">
+                <generic:Value>&lt;p&gt;Working hours in Labour Force Statistics should be reconcilable with those obtained from the Time Use Survey.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="COHER_INTERNAL">
+                <generic:Value>&lt;p&gt;HETUS estimates have full internal coherence, as they are all based on the same corpus of microdata and they are calculated using the same estimation methods. Arithmetic and accounting identities in the production of TUS datasets are observed.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+        </generic:Attribute>
+        <generic:Attribute id="COST_BURDEN">
+            <generic:Value>&lt;p style="text-align: justify;"&gt;No detailed information available. In general TUS are considered to be relatively costly and burdensome, both for the respondents (filling in detailed diaries as well as individual and household questionnaires) as well as for the statistical offices (coding of diaries, treatment and validation of data and compilation of aggregated results).&lt;/p&gt;</generic:Value>
+        </generic:Attribute>
+        <generic:Attribute id="DATA_REV">
+            <common:Annotations>
+                <common:Annotation>
+                    <common:AnnotationType>EDITABLE</common:AnnotationType>
+                    <common:AnnotationText>NO</common:AnnotationText>
+                </common:Annotation>
+            </common:Annotations>
+            <generic:Value></generic:Value>
+            <generic:Attribute id="REV_POLICY">
+                <generic:Value>&lt;p&gt;The&amp;nbsp;&lt;a href="https://ec.europa.eu/eurostat/web/main/data/data-revision-policy" target="_blank"&gt;general Eurostat revision policy&lt;/a&gt;&amp;nbsp;applies to this domain.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="REV_PRACTICE">
+                <generic:Value>&lt;p&gt;All reported errors (once validated) result in corrections of the disseminated data.&lt;/p&gt;
+&lt;p&gt;Reported errors are corrected in the disseminated data as soon as the correct data have been validated.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Data may be published even if they are missing for certain countries, or flagged as provisional or of low reliability for certain countries. They are replaced with final data once transmitted and validated.&lt;/p&gt;
+&lt;p&gt;Whenever new data are provided and validated, the already disseminated data are updated. There is no specific updating schedule for incorporating ‘spontaneously’ provided new data.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+        </generic:Attribute>
+        <generic:Attribute id="STAT_PROCESS">
+            <common:Annotations>
+                <common:Annotation>
+                    <common:AnnotationType>EDITABLE</common:AnnotationType>
+                    <common:AnnotationText>NO</common:AnnotationText>
+                </common:Annotation>
+            </common:Annotations>
+            <generic:Value></generic:Value>
+            <generic:Attribute id="SOURCE_TYPE">
+                <generic:Value>&lt;p&gt;Data files from national time use surveys, consisting of diaries, individual questionnaires and household questionnaires, see also &lt;a href="https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-ra-08-014" target="_blank"&gt;HETUS 2008 Guidelines (HETUS wave 2010)&lt;/a&gt;&amp;nbsp;and &lt;a href="https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-gq-20-011"&gt;HETUS 2018 Guidelines&lt;/a&gt; (HETUS wave 2020)&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="FREQ_COLL">
+                <generic:Value>&lt;p&gt;The general recommendation is to collect TUS every 5-10 years. Currently only data for the HETUS 2000 and 2010 rounds are available at European level.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="COLL_METHOD">
+                <generic:Value>&lt;p&gt;Data are acquired by interviewing the sampled individuals directly and letting them fill in the diary, see also &lt;a href="https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-ra-08-014" target="_blank"&gt;HETUS 2008 Guidelines (HETUS wave 2010)&lt;/a&gt;. and &lt;a href="https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-gq-20-011"&gt;HETUS 2018 Guidelines&lt;/a&gt; (HETUS wave 2020)&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="DATA_VALIDATION">
+                <generic:Value>&lt;p&gt;Prior to the dissemination of the national data, Statistics Finland (for 2000 and 2010) and Statistics Sweden (for 2000) checked the data quality and consistency. The results were then validated by the Member States.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="DATA_COMP">
+                <generic:Value>&lt;p&gt;Individual replies are aggregated in order to show results for different population groups (by age, by sex, by highest level of education attained, by professional status, etc.).&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+            <generic:Attribute id="ADJUSTMENT">
+                <generic:Value>&lt;p&gt;None.&lt;/p&gt;</generic:Value>
+            </generic:Attribute>
+        </generic:Attribute>
+        <generic:Attribute id="COMMENT_DSET">
+            <generic:Value>&lt;p&gt;None.&lt;/p&gt;</generic:Value>
+        </generic:Attribute>
+    </MetadataSet>
+</GenericMetadata>

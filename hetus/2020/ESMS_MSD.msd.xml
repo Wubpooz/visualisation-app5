@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mes:Structure xmlns:mes="http://www.sdmx.org/resources/sdmxml/schemas/v3_0/message" xmlns:com="http://www.sdmx.org/resources/sdmxml/schemas/v3_0/common" xmlns:str="http://www.sdmx.org/resources/sdmxml/schemas/v3_0/structure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <mes:Header>
+        <mes:ID>IREF515006</mes:ID>
+        <mes:Test>false</mes:Test>
+        <mes:Prepared>2025-02-12T09:11:40Z</mes:Prepared>
+        <mes:Sender id="ESTAT"/>
+        <mes:Receiver id="not_supplied"/>
+    </mes:Header>
+    <mes:Structures>
+        <str:AgencySchemes>
+            <str:AgencyScheme agencyID="SDMX" id="AGENCIES" isExternalReference="false" urn="urn:sdmx:org.sdmx.infomodel.base.AgencyScheme=SDMX:AGENCIES(1.0)">
+                <com:Name xml:lang="en">SDMX Agency Scheme</com:Name>
+                <str:Agency id="SDMX" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).SDMX">
+                    <com:Name xml:lang="en">SDMX</com:Name>
+                    <com:Description xml:lang="en">SDMX is an initiative to foster standards for the exchange of statistical information. It is sponsored by the Bank for International Settlements (BIS), the European Central Bank (ECB), the Statistical Office of the European Union (Eurostat), the International Monetary Fund (IMF), the Organization for Economic Co-Operation and Development (OECD), the United Nations (UN) and the World Bank.</com:Description>
+                    <str:Contact>
+                        <com:Name xml:lang="en">SDMX Secretariat</com:Name>
+                        <str:Department xml:lang="en">SDMX Secretariat</str:Department>
+                        <str:Role xml:lang="en">Single entry point for external inquiries</str:Role>
+                        <str:URI>http://sdmx.org</str:URI>
+                        <str:Email>secretariat@sdmx.org</str:Email>
+                    </str:Contact>
+                </str:Agency>
+                <str:Agency id="IMF" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).IMF">
+                    <com:Name xml:lang="en">International Monetary Fund (IMF)</com:Name>
+                    <com:Description xml:lang="en">The IMF works to foster global growth and economic stability. It provides policy advice and financing to members in economic difficulties and also works with developing nations to help them achieve macroeconomic stability and reduce poverty.</com:Description>
+                    <str:Contact>
+                        <com:Name xml:lang="en">Single point of contact for external inquiries</com:Name>
+                        <str:Department xml:lang="en">Statistics Department</str:Department>
+                        <str:Role xml:lang="en">Single point of contact for external inquiries</str:Role>
+                        <str:URI>http://www.imf.org</str:URI>
+                        <str:Email>StatisticsQuery@imf.org</str:Email>
+                    </str:Contact>
+                </str:Agency>
+                <str:Agency id="ESTAT" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).ESTAT">
+                    <com:Name xml:lang="en">Statistical Office of the European Union (Eurostat)</com:Name>
+                    <com:Description xml:lang="en">Eurostat is the statistical office of the European Union situated in Luxembourg. Its task is to provide the European Union with high quality statistics at European level that enable comparisons between countries and regions. Website: http://ec.europa.eu/eurostat/.</com:Description>
+                    <str:Contact>
+                        <com:Name xml:lang="en">SDMX Support</com:Name>
+                        <str:Department xml:lang="en">Various units involved in SDMX</str:Department>
+                        <str:Role xml:lang="en">SDMX Support</str:Role>
+                        <str:URI>http://ec.europa.eu/eurostat/</str:URI>
+                        <str:Email>estat-support-sdmx@ec.europa.eu</str:Email>
+                    </str:Contact>
+                </str:Agency>
+                <str:Agency id="UIS" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).UIS">
+                    <com:Name xml:lang="en">UNESCO Institute for Statistics (UIS)</com:Name>
+                    <com:Description xml:lang="en">The UNESCO Institute for Statistics (UIS) is the statistical office of the United Nations Educational, Scientific and Cultural Organization (UNESCO). The Institute produces the data and methodologies to monitor trends at national and international levels. It delivers comparative data for countries at all stages of development to provide a global perspective on education, science and technology, culture, and communication. The UIS is the official source for the indicators needed to achieve SDG 4–Education 2030 and key targets in science and innovation, culture and communication.</com:Description>
+                    <str:Contact>
+                        <com:Name xml:lang="en">UNESCO Institute for Statistics (UIS)</com:Name>
+                        <str:Department xml:lang="en">UNESCO Institute for Statistics (UIS)</str:Department>
+                        <str:Role xml:lang="en">Single entry point for external inquiries</str:Role>
+                        <str:URI>http://uis.unesco.org</str:URI>
+                        <str:Email>uis.datarequests@unesco.org</str:Email>
+                    </str:Contact>
+                </str:Agency>
+                <str:Agency id="OECD" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).OECD">
+                    <com:Name xml:lang="en">Organisation for Economic Co-operation and Development (OECD)</com:Name>
+                    <com:Description xml:lang="en">The mission of the Organisation for Economic Co-operation and Development (OECD) is to promote policies that will improve the economic and social well-being of people around the world.
+
+The OECD provides a forum in which governments can work together to share experiences and seek solutions to common problems. We work with governments to understand what drives economic, social and environmental change. We measure productivity and global flows of trade and investment. We analyse and compare data to predict future trends. We set international standards on a wide range of things, from agriculture and tax to the safety of chemicals.
+
+We look, too, at issues that directly affect the lives of ordinary people, like how much they pay in taxes and social security, and how much leisure time they can take. We compare how different countries’ school systems are readying their young people for modern life, and how different countries’ pension systems will look after their citizens in old age.
+
+Drawing on facts and real-life experience, we recommend policies designed to make the lives of ordinary people better. We work with business, through the Business and Industry Advisory Committee to the OECD, and with labour, through the Trade Union Advisory Committee. We have active contacts as well with other civil society organisations. The common thread of our work is a shared commitment to market economies backed by democratic institutions and focused on the wellbeing of all citizens. Along the way, we also set out to make life harder for the terrorists, tax dodgers, crooked businessmen and others whose actions undermine a fair and open society.</com:Description>
+                </str:Agency>
+                <str:Agency id="METATECH" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).METATECH">
+                    <com:Name xml:lang="en">Metadata Technology</com:Name>
+                    <com:Description xml:lang="en">Provider of consultancy, software, and services to the SDMX community.</com:Description>
+                    <str:Contact>
+                        <com:Name xml:lang="en">Chris Nelson</com:Name>
+                        <str:Department xml:lang="en">Standards</str:Department>
+                        <str:Role xml:lang="en">Standards Consultant</str:Role>
+                        <str:Telephone>+44 1483 418058</str:Telephone>
+                        <str:URI>http://www.metadatatechnology.com</str:URI>
+                        <str:URI>http://www.sdmxfusion.com</str:URI>
+                        <str:URI>http://registry.sdmxcloud.org</str:URI>
+                        <str:URI>http://data.sdmxcloud.org</str:URI>
+                        <str:Email>chris.nelson@metadatatechnology.com</str:Email>
+                    </str:Contact>
+                    <str:Contact>
+                        <com:Name xml:lang="en">Matthew Nelson</com:Name>
+                        <str:Department xml:lang="en">IT</str:Department>
+                        <str:Role xml:lang="en">Software Architect</str:Role>
+                        <str:Telephone>+44 1483 418058</str:Telephone>
+                        <str:URI>http://sdmxsource.org</str:URI>
+                        <str:Email>matt.nelson@metadatatechnology.com</str:Email>
+                    </str:Contact>
+                </str:Agency>
+                <str:Agency id="ILO" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).ILO">
+                    <com:Name xml:lang="en">International Labour Organization</com:Name>
+                    <com:Description xml:lang="en">The ILO was founded in 1919, in the wake of a destructive war, to pursue a vision based on the premise that universal, lasting peace can be established only if it is based on social justice. The ILO became the first specialized agency of the UN in 1946.
+
+The main aims of the ILO are to promote rights at work, encourage decent employment opportunities, enhance social protection and strengthen dialogue on work-related issues.</com:Description>
+                </str:Agency>
+                <str:Agency id="IBGE" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).IBGE">
+                    <com:Name xml:lang="en">Brazilian Institute of Geography and Statistics (IBGE)</com:Name>
+                    <com:Name xml:lang="br">Instituto Brasileiro de Geografia e Estatística</com:Name>
+                </str:Agency>
+                <str:Agency id="NG_NSB" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).NG_NSB">
+                    <com:Name xml:lang="en">Nigerian National Bureau of Statistics (NBS)</com:Name>
+                    <com:Description xml:lang="en">The National Bureau of Statistics Nigeria as the mandate to generate, on a continuous and sustainable basis, socio-economic statistics on all facets of development in Nigeria.</com:Description>
+                    <str:Contact>
+                        <com:Name xml:lang="en">Lucky OGIDAN</com:Name>
+                        <str:Department xml:lang="en">Information and Communication Technology Department</str:Department>
+                        <str:Role xml:lang="en">Web Application Manager</str:Role>
+                        <str:URI>http://www.nigerianstat.gov.ng</str:URI>
+                        <str:Email>feedback@nigerianstat.gov.ng</str:Email>
+                        <str:Email>laogidan@nigerianstat.gov.ng</str:Email>
+                    </str:Contact>
+                </str:Agency>
+                <str:Agency id="GW_INE" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).GW_INE">
+                    <com:Name xml:lang="en">National Statistical Institute of Guinea-Bissau - Instituto Nacional de Estatística da Guiné-Bissau (INE)</com:Name>
+                </str:Agency>
+                <str:Agency id="BT_NSB" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).BT_NSB">
+                    <com:Name xml:lang="en">Bhutan National Statistics Bureau (NSB)</com:Name>
+                </str:Agency>
+                <str:Agency id="BOI" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).BOI">
+                    <com:Name xml:lang="en">Bank of Israel (BOI)</com:Name>
+                    <com:Description xml:lang="en">The Bank of Israel is the central bank of the State of Israel. 
+The main objectives of the Bank are listed and prioritized in the Bank of Israel Law : To maintain price stability; to support other objectives of the Government's economic policy, especially growth, employment, and reducing social gaps; and supporting the stability of the financial system.</com:Description>
+                    <str:Contact>
+                        <com:Name xml:lang="en">Head of BI unit</com:Name>
+                        <str:Department xml:lang="en">Information and Statistics Dept.</str:Department>
+                        <str:Role xml:lang="en">Head of BI unit</str:Role>
+                        <str:URI>https://www.boi.org.il/en/Pages/Default.aspx</str:URI>
+                        <str:Email>nir.israeli@boi.org.il</str:Email>
+                    </str:Contact>
+                </str:Agency>
+                <str:Agency id="UNSD" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).UNSD">
+                    <com:Name xml:lang="en">United Nations Statistics Division (UNSD)</com:Name>
+                    <com:Description xml:lang="en">The Statistics Division of the Department of Economic and Social Affairs of the United Nations Secretariat (UNSD) is committed to the advancement of the global statistical system. UNSD compiles and disseminates global statistical information, develops standards and norms for statistical activities, and supports countries' efforts to strengthen their national statistical systems. UNSD facilitates the coordination of international statistical activities and supports the functioning of the United Nations Statistical Commission as the apex entity of the global statistical system.</com:Description>
+                    <str:Contact>
+                        <com:Name xml:lang="en">Govindaraj Rangaraj</com:Name>
+                        <str:URI>http://unstats.un.org</str:URI>
+                        <str:Email>rangaraj@un.org</str:Email>
+                    </str:Contact>
+                </str:Agency>
+                <str:Agency id="IAEG-SDGs" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).IAEG-SDGs">
+                    <com:Name xml:lang="en">Inter-agency and Expert Group on SDG Indicators (IAEG-SDGs)</com:Name>
+                    <com:Description xml:lang="en">The United Nations Statistical Commission created the Inter-agency and Expert Group on SDG Indicators (IAEG-SDGs), composed of Member States and including regional and international agencies as observers. The IAEG-SDGs was tasked to develop and implement the global indicator framework for the Goals and targets of the 2030 Agenda. The global indicator framework was developed by the IAEG-SDGs and agreed upon, including refinements on several indicators, at the 48th session of the United Nations Statistical Commission held in March 2017. The global indicator framework was subsequently adopted by the General Assembly on 6 July 2017 and is contained in the Resolution adopted by the General Assembly on Work of the Statistical Commission pertaining to the 2030 Agenda for Sustainable Development (A/RES/71/313)</com:Description>
+                    <str:Contact>
+                        <com:Name xml:lang="en">Abdulla Gozalov</com:Name>
+                        <str:URI>https://unstats.un.org/sdgs/iaeg-sdgs/</str:URI>
+                        <str:Email>gozalov@un.org</str:Email>
+                    </str:Contact>
+                </str:Agency>
+                <str:Agency id="RU1" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).RU1">
+                    <com:Name xml:lang="en">Federal State Statistics Service (Rosstat) (Russia)</com:Name>
+                </str:Agency>
+                <str:Agency id="SMARTX" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).SMARTX">
+                    <com:Name xml:lang="en">SmartXdata.com</com:Name>
+                </str:Agency>
+                <str:Agency id="UNESCO" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).UNESCO">
+                    <com:Name xml:lang="en">United Nations Organization for Education, Science and Culture (UNESCO)</com:Name>
+                    <com:Description xml:lang="en">UNESCO strives to build networks among nations that enable humanity's moral and intellectual solidarity, by:• Mobilizing for education: so that every child, boy or girl, has access to quality education as a fundamental human right and as a prerequisite for human development.• Building intercultural understanding: through protection of heritage and support for cultural diversity. UNESCO created the idea of World Heritage to protect sites of outstanding universal value.• Pursuing scientific cooperation: such as early warning systems for tsunamis or trans-boundary water management agreements, to strengthen ties between nations and societies.• Protecting freedom of expression: an essential condition for democracy, development and human dignity.Source: http://en.unesco.org/about-us/introducing-unescoThe UNESCO Institute for Statistics (UIS) is the statistical branch of the United Nations Educational, Scientific and Cultural Organisation (UNESCO). The Institute produces the data and methodologies to monitor trends at national and international levels. It delivers comparative data for countries at all stages of development to provide a global perspective on education, science and technology, culture, and communication.Source: http://www.uis.unesco.org/AboutUIS/Pages/default.aspx</com:Description>
+                    <str:Contact>
+                        <com:Name xml:lang="en">UNESCO Institute for Statistics (UIS)</com:Name>
+                        <str:Department xml:lang="en">Requests for information</str:Department>
+                        <str:Role xml:lang="en">Contact</str:Role>
+                        <str:URI>www.uis.unesco.org</str:URI>
+                        <str:Email>uis.datarequests@unesco.org</str:Email>
+                    </str:Contact>
+                </str:Agency>
+                <str:Agency id="WB" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).WB">
+                    <com:Name xml:lang="en">World Bank</com:Name>
+                    <str:Contact>
+                        <com:Name xml:lang="en">Demo Contact</com:Name>
+                        <str:Department xml:lang="en">IT</str:Department>
+                        <str:Role xml:lang="en">IT Officer</str:Role>
+                        <str:Telephone>+00 111 222 333</str:Telephone>
+                        <str:Email>demo@democontact.com</str:Email>
+                    </str:Contact>
+                </str:Agency>
+                <str:Agency id="IAEG" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).IAEG">
+                    <com:Name xml:lang="en">Inter Agency Group</com:Name>
+                </str:Agency>
+                <str:Agency id="BIS" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).BIS">
+                    <com:Name xml:lang="en">Bank for International Settlements</com:Name>
+                </str:Agency>
+                <str:Agency id="ONS" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).ONS">
+                    <com:Name xml:lang="en">Office for National Statistics</com:Name>
+                    <str:Contact>
+                        <com:Name xml:lang="en">Demo Contact</com:Name>
+                        <str:Department xml:lang="en">Statistics</str:Department>
+                        <str:Role xml:lang="en">Statistics Officer</str:Role>
+                        <str:Telephone>+44 111 222 333</str:Telephone>
+                        <str:URI>http://metadatatechnology.com</str:URI>
+                        <str:Email>demo@democontact.com</str:Email>
+                    </str:Contact>
+                </str:Agency>
+                <str:Agency id="ECB" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).ECB">
+                    <com:Name xml:lang="en">European Central Bank</com:Name>
+                </str:Agency>
+                <str:Agency id="EUROSTAT" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).EUROSTAT">
+                    <com:Name xml:lang="en">Eurostat</com:Name>
+                </str:Agency>
+                <str:Agency id="MT" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).MT">
+                    <com:Name xml:lang="en">Metadata Technology</com:Name>
+                    <com:Description xml:lang="en">Metadata Technology</com:Description>
+                </str:Agency>
+                <str:Agency id="GCCSTAT" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).GCCSTAT">
+                    <com:Name xml:lang="en">Statistical Centre for the Cooperation Council for the Arab Countries of the Gulf</com:Name>
+                    <com:Description xml:lang="en">Statistical Centre for the Cooperation Council for the Arab Countries of the Gulf</com:Description>
+                </str:Agency>
+                <str:Agency id="ECFIN" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).ECFIN">
+                    <com:Name xml:lang="en">ECFIN</com:Name>
+                </str:Agency>
+                <str:Agency id="AGENCY" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).AGENCY">
+                    <com:Name xml:lang="en">AGENCY</com:Name>
+                </str:Agency>
+                <str:Agency id="ESTAT_ECB" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).ESTAT_ECB">
+                    <com:Name xml:lang="en">Joint Eurostat - ECB maintenance agency role</com:Name>
+                </str:Agency>
+                <str:Agency id="FAO" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).FAO">
+                    <com:Name xml:lang="en">Food and Agriculture Organization of the United Nations</com:Name>
+                </str:Agency>
+                <str:Agency id="IMF2" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).IMF2">
+                    <com:Name xml:lang="en">International Monetary Fund (PULL)</com:Name>
+                </str:Agency>
+                <str:Agency id="DE_BBK" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).DE_BBK">
+                    <com:Name xml:lang="en">Bundesbank</com:Name>
+                </str:Agency>
+                <str:Agency id="OECD2" urn="urn:sdmx:org.sdmx.infomodel.base.Agency=SDMX:AGENCIES(1.0).OECD2">
+                    <com:Name xml:lang="en">Organisation for Economic Co-operation and Development (PULL)</com:Name>
+                </str:Agency>
+            </str:AgencyScheme>
+        </str:AgencySchemes>
+        <str:ConceptSchemes>
+            <str:ConceptScheme agencyID="ESTAT" id="ESTAT_ADD_CONCEPTS" version="3.0">
+                <com:Name xml:lang="en">Eurostat (additional) concepts</com:Name>
+                <com:Description xml:lang="en">These concepts are defined in order to be used in Euro-SDMX MSD due to the fact that no relevant concept is defined in the Cross-Domain Concepts Scheme (CDC).</com:Description>
+                <str:Concept id="ACCESSIBILITY_CLARITY">
+                    <com:Name xml:lang="en">Accessibility and clarity</com:Name>
+                    <com:Description xml:lang="en">The conditions and modalities by which users can obtain, use and interpret data.</com:Description>
+                </str:Concept>
+                <str:Concept id="ACCESS_DOC">
+                    <com:Name xml:lang="en">Accessibility of documentation</com:Name>
+                    <com:Description xml:lang="en">Accessibility of documentation</com:Description>
+                </str:Concept>
+                <str:Concept id="ACCURACY_RELIABILITY">
+                    <com:Name xml:lang="en">Accuracy and reliability</com:Name>
+                    <com:Description xml:lang="en">Accuracy: closeness of computations or estimates to the exact or true values that the statistics were intended to measure Reliability: closeness of the initial estimated value to the subsequent value.</com:Description>
+                </str:Concept>
+                <str:Concept id="ASYMMETRY_COEFF">
+                    <com:Name xml:lang="en">Asymmetry for mirror flow statistics - coefficient</com:Name>
+                    <com:Description xml:lang="en">The difference or the absolute difference of inbound and outbound flows between a pair of countries divided by the average of these two values.</com:Description>
+                </str:Concept>
+                <str:Concept id="COHER_COMPAR">
+                    <com:Name xml:lang="en">Coherence and comparability</com:Name>
+                    <com:Description xml:lang="en">COHERANCE - Adequacy of statistics to be combined in different ways and for various uses. COMPARABILITY - The extent to which differences between statistics can be attributed to differences        between the true values of the statistical characteristics.</com:Description>
+                </str:Concept>
+                <str:Concept id="COHER_FREQSTAT">
+                    <com:Name xml:lang="en">Coherence - sub annual and annual statistics</com:Name>
+                    <com:Description xml:lang="en">The extent to which statistics of different frequencies are reconcilable</com:Description>
+                </str:Concept>
+                <str:Concept id="COHER_NATACCOUNTS">
+                    <com:Name xml:lang="en">Coherence - National Accounts</com:Name>
+                    <com:Description xml:lang="en">The extent to which statistics are reconcilable with National Accounts.</com:Description>
+                </str:Concept>
+                <str:Concept id="COMMON_UNIT_SHARE">
+                    <com:Name xml:lang="en">Common units - proportion</com:Name>
+                    <com:Description xml:lang="en">The proportion of common units covered by both the survey and the administrative sources in relation to the total number of units in the survey.</com:Description>
+                </str:Concept>
+                <str:Concept id="COMPAR_DOMAIN">
+                    <com:Name xml:lang="en">Comparability - domain</com:Name>
+                    <com:Description xml:lang="en">The extent to which statistics are comparable between statistical domains.</com:Description>
+                </str:Concept>
+                <str:Concept id="COMPAR_LENGTH">
+                    <com:Name xml:lang="en">Length of comparable time series</com:Name>
+                    <com:Description xml:lang="en">The number of reference periods in time series from last break.</com:Description>
+                </str:Concept>
+                <str:Concept id="COMPLETENESS_RATE">
+                    <com:Name xml:lang="en">Data completeness - rate</com:Name>
+                    <com:Description xml:lang="en">The ratio of the number of data cells provided to the number of data cells required.</com:Description>
+                </str:Concept>
+                <str:Concept id="COVERAGRE_ERR">
+                    <com:Name xml:lang="en">Coverage error</com:Name>
+                    <com:Description xml:lang="en">Divergence between the frame population and the target population.</com:Description>
+                </str:Concept>
+                <str:Concept id="DATATABLE_CONSULT">
+                    <com:Name xml:lang="en">Data tables - consultations</com:Name>
+                    <com:Description xml:lang="en">Number of consultations of data tables within a statistical domain for a given time period displayed in a graph.</com:Description>
+                </str:Concept>
+                <str:Concept id="DATA_REV_AVGSIZE">
+                    <com:Name xml:lang="en">Data revision - average size</com:Name>
+                    <com:Description xml:lang="en">The average over a time period of the revisions of a key item. The 'revision' is defined as the difference between a later and an earlier estimate of the key item.</com:Description>
+                </str:Concept>
+                <str:Concept id="IMPUTATION_RATE">
+                    <com:Name xml:lang="en">Imputation - rate</com:Name>
+                    <com:Description xml:lang="en">The ratio of the number of replaced values to the total number of values for a given variable.</com:Description>
+                </str:Concept>
+                <str:Concept id="INTRODUCTION">
+                    <com:Name xml:lang="en">Introduction</com:Name>
+                    <com:Description xml:lang="en">A general description of the statistical process and its outputs, and their evolution over time.</com:Description>
+                </str:Concept>
+                <str:Concept id="ITEM_NONRESPONSE_RATE">
+                    <com:Name xml:lang="en">Item non-response - rate</com:Name>
+                    <com:Description xml:lang="en">The ratio of the in-scope (eligible) units which have not responded to a particular item and the in-scope units that are required to respond to that particular item</com:Description>
+                </str:Concept>
+                <str:Concept id="MEASUREMENT_ERR">
+                    <com:Name xml:lang="en">Measurement error</com:Name>
+                    <com:Description xml:lang="en">Error in reading, calculating or recording numerical value.</com:Description>
+                </str:Concept>
+                <str:Concept id="METADATA_COMPLETE">
+                    <com:Name xml:lang="en">Metadata completeness - rate</com:Name>
+                    <com:Description xml:lang="en">The ratio of the number of metadata elements provided to the total number of metadata elements applicable.</com:Description>
+                </str:Concept>
+                <str:Concept id="METADATA_CONSULT">
+                    <com:Name xml:lang="en">Metadata - consultations</com:Name>
+                    <com:Description xml:lang="en">Number of consultations within a statistical domain for a given time period.</com:Description>
+                </str:Concept>
+                <str:Concept id="MODEL_ASSUMP_ERR">
+                    <com:Name xml:lang="en">Model assumption error</com:Name>
+                    <com:Description xml:lang="en">Error due to domain specific models needed to define the target of estimation.</com:Description>
+                </str:Concept>
+                <str:Concept id="NONRESPONSE_ERR">
+                    <com:Name xml:lang="en">Non response error</com:Name>
+                    <com:Description xml:lang="en">The difference between the statistics computed from the collected data and those that would be computed if there were no missing values.</com:Description>
+                </str:Concept>
+                <str:Concept id="OVERCOVERAGE_RATE">
+                    <com:Name xml:lang="en">Over-coverage - rate</com:Name>
+                    <com:Description xml:lang="en">The proportion of units accessible via the frame that do not belong to the target population.</com:Description>
+                </str:Concept>
+                <str:Concept id="PROCESSING_ERR">
+                    <com:Name xml:lang="en">Processing error</com:Name>
+                    <com:Description xml:lang="en">The error in final data collection process results arising from the faulty implementation of correctly planned information methods.</com:Description>
+                </str:Concept>
+                <str:Concept id="PUNCTUALITY_RELEASE">
+                    <com:Name xml:lang="en">Punctuality - delivery and publication</com:Name>
+                    <com:Description xml:lang="en">The number of days between the delivery/release date of data and the target date on which they were scheduled for delivery/release.</com:Description>
+                </str:Concept>
+                <str:Concept id="SAMPLING_ERR_IND">
+                    <com:Name xml:lang="en">Sampling error - indicators</com:Name>
+                    <com:Description xml:lang="en">Precision measures for estimating the random variation of an estimator due to sampling.</com:Description>
+                </str:Concept>
+                <str:Concept id="SEASONAL_ADJ">
+                    <com:Name xml:lang="en">Seasonal adjustment</com:Name>
+                    <com:Description xml:lang="en">The statistical technique used to remove the effects of seasonal calendar influences operating on a series.</com:Description>
+                </str:Concept>
+                <str:Concept id="STAT_PRES">
+                    <com:Name xml:lang="en">Statistical presentation</com:Name>
+                    <com:Description xml:lang="en">Statistical presentation</com:Description>
+                </str:Concept>
+                <str:Concept id="STAT_PROCESS">
+                    <com:Name xml:lang="en">Statistical processing</com:Name>
+                    <com:Description xml:lang="en">Statistical processing</com:Description>
+                </str:Concept>
+                <str:Concept id="TIMELAG_FINAL">
+                    <com:Name xml:lang="en">Time lag - final result</com:Name>
+                    <com:Description xml:lang="en">The number of days (or weeks or months) from the last day of the reference period to the day of publication of complete and final results.</com:Description>
+                </str:Concept>
+                <str:Concept id="TIMELAG_FIRST">
+                    <com:Name xml:lang="en">Time lag - first result</com:Name>
+                    <com:Description xml:lang="en">The number of days (or weeks or months) from the last day of the reference period to the day of publication of first results.</com:Description>
+                </str:Concept>
+                <str:Concept id="TIMELINESS_PUNCT">
+                    <com:Name xml:lang="en">Timeliness and punctuality</com:Name>
+                    <com:Description xml:lang="en">Timeliness and punctuality</com:Description>
+                </str:Concept>
+                <str:Concept id="UNIT_NONRESPONSE_RATE">
+                    <com:Name xml:lang="en">Unit non-response - rate</com:Name>
+                    <com:Description xml:lang="en">The ratio of the number of units with no information or not usable information to the total number of in-scope (eligible) units.</com:Description>
+                </str:Concept>
+            </str:ConceptScheme>
+            <str:ConceptScheme agencyID="ESTAT" id="SDMX_CDC" version="3.0">
+                <com:Name xml:lang="en">Cross Domain Metadata Concepts</com:Name>
+                <com:Description xml:lang="en">Cross-domain concepts in the SDMX framework describe metadata concepts relevant to many statistical domains. SDMX recommends use of the concepts outlined below whenever feasible to promote re-usability and exchange of statistical information and their related metadata between national and international organisations.</com:Description>
+                <str:Concept id="ACCURACY">
+                    <com:Name xml:lang="en">Accuracy</com:Name>
+                    <com:Description xml:lang="en">Closeness of computations or estimates to the exact or true values that the statistics were intended to measure.</com:Description>
+                </str:Concept>
+                <str:Concept id="ACCURACY_OVERALL">
+                    <com:Name xml:lang="en">Accuracy - overall</com:Name>
+                    <com:Description xml:lang="en">Assessment of accuracy, linked to a certain data set or domain, which is summarising the various components into one single measure.</com:Description>
+                </str:Concept>
+                <str:Concept id="ADJUSTMENT">
+                    <com:Name xml:lang="en">Adjustment</com:Name>
+                    <com:Description xml:lang="en">The set of procedures employed to modify statistical data to enable it to conform to national or international standards or to address data quality differences when compiling specific data sets.</com:Description>
+                </str:Concept>
+                <str:Concept id="ADJUST_CODED">
+                    <com:Name xml:lang="en">Adjustment - coded</com:Name>
+                    <com:Description xml:lang="en">Type of adjustment used, represented by a code.</com:Description>
+                </str:Concept>
+                <str:Concept id="ADJUST_DETAIL">
+                    <com:Name xml:lang="en">Adjustment - detail</com:Name>
+                    <com:Description xml:lang="en">Textual description of the type of adjustment used.</com:Description>
+                </str:Concept>
+                <str:Concept id="ADV_NOTICE">
+                    <com:Name xml:lang="en">Advance notice of changes in methodology</com:Name>
+                    <com:Description xml:lang="en">Policy on notifying the public of changes in methodology, indicating whether the public is notified before a methodological change affects disseminated data and, if so, how long before.</com:Description>
+                </str:Concept>
+                <str:Concept id="AGE">
+                    <com:Name xml:lang="en">Age</com:Name>
+                    <com:Description xml:lang="en">The length of time that a person has lived or a thing has existed.</com:Description>
+                </str:Concept>
+                <str:Concept id="BASE_PER">
+                    <com:Name xml:lang="en">Base period</com:Name>
+                    <com:Description xml:lang="en">The period of time used as the base of an index number, or to which a constant series refers.</com:Description>
+                </str:Concept>
+                <str:Concept id="CIVIL_STATUS">
+                    <com:Name xml:lang="en">Civil status</com:Name>
+                    <com:Description xml:lang="en">Legal, conjugal status of each individual in relation to the marriage laws or customs of the country.</com:Description>
+                </str:Concept>
+                <str:Concept id="CLASS_SYSTEM">
+                    <com:Name xml:lang="en">Classification system</com:Name>
+                    <com:Description xml:lang="en">Arrangement or division of objects into groups based on characteristics which the objects have in common.</com:Description>
+                </str:Concept>
+                <str:Concept id="COHERENCE">
+                    <com:Name xml:lang="en">Coherence</com:Name>
+                    <com:Description xml:lang="en">Adequacy of statistics to be combined in different ways and for various uses.</com:Description>
+                </str:Concept>
+                <str:Concept id="COHER_INTERNAL">
+                    <com:Name xml:lang="en">Coherence - internal</com:Name>
+                    <com:Description xml:lang="en">Extent to which statistics are consistent within a given data set.</com:Description>
+                </str:Concept>
+                <str:Concept id="COHER_X_DOM">
+                    <com:Name xml:lang="en">Coherence - cross domain</com:Name>
+                    <com:Description xml:lang="en">Extent to which statistics are reconcilable with those obtained through other data sources or statistical domains.</com:Description>
+                </str:Concept>
+                <str:Concept id="COLL_METHOD">
+                    <com:Name xml:lang="en">Data collection</com:Name>
+                    <com:Description xml:lang="en">Systematic process of gathering data for official statistics.</com:Description>
+                </str:Concept>
+                <str:Concept id="COMMENT_AG">
+                    <com:Name xml:lang="en">Provision Agreement Comment</com:Name>
+                    <com:Description xml:lang="en">Supplementary descriptive text.</com:Description>
+                </str:Concept>
+                <str:Concept id="COMMENT_DFL">
+                    <com:Name xml:lang="en">Dataflow Comment</com:Name>
+                    <com:Description xml:lang="en">Supplementary descriptive text.</com:Description>
+                </str:Concept>
+                <str:Concept id="COMMENT_DSET">
+                    <com:Name xml:lang="en">Comment</com:Name>
+                    <com:Description xml:lang="en">Supplementary descriptive text which can be attached to data or metadata</com:Description>
+                </str:Concept>
+                <str:Concept id="COMMENT_GRP">
+                    <com:Name xml:lang="en">Group Comment</com:Name>
+                    <com:Description xml:lang="en">Supplementary descriptive text.</com:Description>
+                </str:Concept>
+                <str:Concept id="COMMENT_OBS">
+                    <com:Name xml:lang="en">Observation Comment</com:Name>
+                    <com:Description xml:lang="en">Supplementary descriptive text.</com:Description>
+                </str:Concept>
+                <str:Concept id="COMMENT_TS">
+                    <com:Name xml:lang="en">Time-Series Comment</com:Name>
+                    <com:Description xml:lang="en">Supplementary descriptive text.</com:Description>
+                </str:Concept>
+                <str:Concept id="COMPARABILITY">
+                    <com:Name xml:lang="en">Comparability</com:Name>
+                    <com:Description xml:lang="en">The extent to which differences between statistics can be attributed to differences between the true values of the statistical characteristics.</com:Description>
+                </str:Concept>
+                <str:Concept id="COMPAR_GEO">
+                    <com:Name xml:lang="en">Comparability - geographical</com:Name>
+                    <com:Description xml:lang="en">Extent to which statistics are comparable between geographical areas.</com:Description>
+                </str:Concept>
+                <str:Concept id="COMPAR_TIME">
+                    <com:Name xml:lang="en">Comparability - over time</com:Name>
+                    <com:Description xml:lang="en">Extent to which statistics are comparable or reconcilable over time.</com:Description>
+                </str:Concept>
+                <str:Concept id="COMPLETENESS">
+                    <com:Name xml:lang="en">Completeness</com:Name>
+                    <com:Description xml:lang="en">The extent to which all statistics that are needed are available.</com:Description>
+                </str:Concept>
+                <str:Concept id="COMP_AGENCY">
+                    <com:Name xml:lang="en">Data compiling agency</com:Name>
+                    <com:Description xml:lang="en">The administrative unit compiling the data.</com:Description>
+                </str:Concept>
+                <str:Concept id="CONF">
+                    <com:Name xml:lang="en">Confidentiality</com:Name>
+                    <com:Description xml:lang="en">A property of data indicating the extent to which their unauthorised disclosure could be prejudicial or harmful to the interest of the source or other relevant parties.</com:Description>
+                </str:Concept>
+                <str:Concept id="CONF_XXX">
+                    <com:Name xml:lang="en">Confidentiality - status</com:Name>
+                    <com:Description xml:lang="en">Information about the confidentiality status of the object to which this attribute is attached.</com:Description>
+                </str:Concept>
+                <str:Concept id="CONF_DATA_TR">
+                    <com:Name xml:lang="en">Confidentiality - data treatment</com:Name>
+                    <com:Description xml:lang="en">Rules applied for treating the data set to ensure statistical confidentiality and prevent unauthorised disclosure.</com:Description>
+                </str:Concept>
+                <str:Concept id="CONF_POLICY">
+                    <com:Name xml:lang="en">Confidentiality - policy</com:Name>
+                    <com:Description xml:lang="en">Legislative measures or other formal procedures which prevent unauthorised disclosure of data that identify a person or economic entity either directly or indirectly.</com:Description>
+                </str:Concept>
+                <str:Concept id="CONTACT">
+                    <com:Name xml:lang="en">Contact</com:Name>
+                    <com:Description xml:lang="en">Individual or organisational contact points for the data or metadata, including information on how to reach the contact points.</com:Description>
+                </str:Concept>
+                <str:Concept id="CONTACT_EMAIL">
+                    <com:Name xml:lang="en">Contact email address</com:Name>
+                    <com:Description xml:lang="en">E-mail address of the contact points for the data or metadata</com:Description>
+                </str:Concept>
+                <str:Concept id="CONTACT_FAX">
+                    <com:Name xml:lang="en">Contact fax number</com:Name>
+                    <com:Description xml:lang="en">Fax number of the contact points for the data or metadata.</com:Description>
+                </str:Concept>
+                <str:Concept id="CONTACT_FUNCT">
+                    <com:Name xml:lang="en">Contact person function</com:Name>
+                    <com:Description xml:lang="en">The area of technical responsibility of the contact, such as "methodology", "database management" or "dissemination".</com:Description>
+                </str:Concept>
+                <str:Concept id="CONTACT_MAIL">
+                    <com:Name xml:lang="en">Contact mail address</com:Name>
+                    <com:Description xml:lang="en">The postal address of the contact points for the data or metadata.</com:Description>
+                </str:Concept>
+                <str:Concept id="CONTACT_NAME">
+                    <com:Name xml:lang="en">Contact name</com:Name>
+                    <com:Description xml:lang="en">The name of the contact points for the data or metadata.</com:Description>
+                </str:Concept>
+                <str:Concept id="CONTACT_ORGANISATION">
+                    <com:Name xml:lang="en">Contact organisation</com:Name>
+                    <com:Description xml:lang="en">The name of the organisation of the contact points for the data or metadata.</com:Description>
+                </str:Concept>
+                <str:Concept id="CONTACT_PHONE">
+                    <com:Name xml:lang="en">Contact phone number</com:Name>
+                    <com:Description xml:lang="en">The telephone number of the contact points for the data or metadata.</com:Description>
+                </str:Concept>
+                <str:Concept id="COST_BURDEN">
+                    <com:Name xml:lang="en">Cost and Burden</com:Name>
+                    <com:Description xml:lang="en">Cost associated with the collection and production of a statistical product and burden on respondents.</com:Description>
+                </str:Concept>
+                <str:Concept id="COST_BURDEN_EFF">
+                    <com:Name xml:lang="en">Cost and Burden - Efficiency management</com:Name>
+                    <com:Description xml:lang="en">Cost benefit analysis, effectiveness of execution of medium term statistical programs, and ensuring efficient use of resources.</com:Description>
+                </str:Concept>
+                <str:Concept id="COST_BURDEN_RES">
+                    <com:Name xml:lang="en">Cost and Burden - Resources</com:Name>
+                    <com:Description xml:lang="en">Staff, facilities, computing resources, and financing to undertake statistical production.</com:Description>
+                </str:Concept>
+                <str:Concept id="COVERAGE">
+                    <com:Name xml:lang="en">Coverage</com:Name>
+                    <com:Description xml:lang="en">The definition of the population that statistics aim to cover.</com:Description>
+                </str:Concept>
+                <str:Concept id="COVERAGE_SECTOR">
+                    <com:Name xml:lang="en">Coverage - sector</com:Name>
+                    <com:Description xml:lang="en">Main economic or other sectors covered by the statistics.</com:Description>
+                </str:Concept>
+                <str:Concept id="COVERAGE_TIME">
+                    <com:Name xml:lang="en">Coverage - Time</com:Name>
+                    <com:Description xml:lang="en">The length of time for which data are available.</com:Description>
+                </str:Concept>
+                <str:Concept id="CURRENCY">
+                    <com:Name xml:lang="en">Currency</com:Name>
+                    <com:Description xml:lang="en">Monetary denomination of the object being measured.</com:Description>
+                </str:Concept>
+                <str:Concept id="DATA_COMP">
+                    <com:Name xml:lang="en">Data compilation</com:Name>
+                    <com:Description xml:lang="en">Operations performed on data to derive new information according to a given set of rules.</com:Description>
+                </str:Concept>
+                <str:Concept id="DATA_DESCR">
+                    <com:Name xml:lang="en">Data description</com:Name>
+                    <com:Description xml:lang="en">Main characteristics of the data set described in an easily understandable manner, referring to the data and indicators disseminated.</com:Description>
+                </str:Concept>
+                <str:Concept id="DATA_PRES">
+                    <com:Name xml:lang="en">Data presentation</com:Name>
+                    <com:Description xml:lang="en">Description of the disseminated data.</com:Description>
+                </str:Concept>
+                <str:Concept id="DATA_REV">
+                    <com:Name xml:lang="en">Data revision</com:Name>
+                    <com:Description xml:lang="en">Any change in a value of a statistic released to the public.</com:Description>
+                </str:Concept>
+                <str:Concept id="DATA_UPDATE">
+                    <com:Name xml:lang="en">Data update</com:Name>
+                    <com:Description xml:lang="en">The last date on which the data element was inserted or modified in the database.</com:Description>
+                </str:Concept>
+                <str:Concept id="DATA_VALIDATION">
+                    <com:Name xml:lang="en">Data validation</com:Name>
+                    <com:Description xml:lang="en">Process of monitoring the results of data compilation and ensuring the quality of the statistical results.</com:Description>
+                </str:Concept>
+                <str:Concept id="DATA_VAL_INTER">
+                    <com:Name xml:lang="en">Data validation - intermediate</com:Name>
+                    <com:Description xml:lang="en">Validation that intermediate calculations leading to statistical outputs have been correctly done.</com:Description>
+                </str:Concept>
+                <str:Concept id="DATA_VAL_OUTPUT">
+                    <com:Name xml:lang="en">Data validation - output</com:Name>
+                    <com:Description xml:lang="en">Assessment of discrepancies and other problems in statistical outputs.</com:Description>
+                </str:Concept>
+                <str:Concept id="DATA_VAL_SOURCE">
+                    <com:Name xml:lang="en">Data validation - source</com:Name>
+                    <com:Description xml:lang="en">Assessment of discrepancies and other problems related to source data.</com:Description>
+                </str:Concept>
+                <str:Concept id="DECIMALS">
+                    <com:Name xml:lang="en">Decimals</com:Name>
+                    <com:Description xml:lang="en">The number of digits of an observation to the right of a decimal point.</com:Description>
+                </str:Concept>
+                <str:Concept id="DISS_AGENCY">
+                    <com:Name xml:lang="en">Data dissemination agency</com:Name>
+                    <com:Description xml:lang="en">The administrative unit that disseminates the data.</com:Description>
+                </str:Concept>
+                <str:Concept id="DISS_DET">
+                    <com:Name xml:lang="en">Data presentation - disseminated detail</com:Name>
+                    <com:Description xml:lang="en">Disseminated subdomain, measure, and time period breakdowns of statistics in the dataset.</com:Description>
+                </str:Concept>
+                <str:Concept id="DISS_FORMAT">
+                    <com:Name xml:lang="en">Dissemination format</com:Name>
+                    <com:Description xml:lang="en">Media by which statistical data and metadata are disseminated.</com:Description>
+                </str:Concept>
+                <str:Concept id="DISS_OTHER">
+                    <com:Name xml:lang="en">Dissemination format - other</com:Name>
+                    <com:Description xml:lang="en">References to the most important other data dissemination done.</com:Description>
+                </str:Concept>
+                <str:Concept id="DOC_METHOD">
+                    <com:Name xml:lang="en">Documentation on methodology</com:Name>
+                    <com:Description xml:lang="en">Descriptive text and references to methodological documents available.</com:Description>
+                </str:Concept>
+                <str:Concept id="EDUCATION_LEV">
+                    <com:Name xml:lang="en">Education level</com:Name>
+                    <com:Description xml:lang="en">The highest level of an educational programme the person has successfully completed.</com:Description>
+                </str:Concept>
+                <str:Concept id="EMBARGO_TIME">
+                    <com:Name xml:lang="en">Embargo time</com:Name>
+                    <com:Description xml:lang="en">The exact time at which the data could be made available to the public.</com:Description>
+                </str:Concept>
+                <str:Concept id="FREQ">
+                    <com:Name xml:lang="en">Frequency</com:Name>
+                    <com:Description xml:lang="en">The time interval at which observations occur over a given time period.</com:Description>
+                </str:Concept>
+                <str:Concept id="FREQ_COLL">
+                    <com:Name xml:lang="en">Frequency of data collection</com:Name>
+                    <com:Description xml:lang="en">Frequency with which the source data are collected.</com:Description>
+                </str:Concept>
+                <str:Concept id="FREQ_DETAIL">
+                    <com:Name xml:lang="en">Frequency detail</com:Name>
+                    <com:Description xml:lang="en">A further specification of the frequency to include more detailed information about the type of frequency and frequencies not commonly used.</com:Description>
+                </str:Concept>
+                <str:Concept id="FREQ_DISS">
+                    <com:Name xml:lang="en">Frequency of dissemination</com:Name>
+                    <com:Description xml:lang="en">The time interval at which the statistics are disseminated over a given time period.</com:Description>
+                </str:Concept>
+                <str:Concept id="GROSS_NET">
+                    <com:Name xml:lang="en">Grossing / Netting</com:Name>
+                    <com:Description xml:lang="en">Form of consolidation used in presenting the data.</com:Description>
+                </str:Concept>
+                <str:Concept id="IND_TYPE">
+                    <com:Name xml:lang="en">Index type</com:Name>
+                    <com:Description xml:lang="en">The type of index number used in the statistical production process.</com:Description>
+                </str:Concept>
+                <str:Concept id="INST_MANDATE">
+                    <com:Name xml:lang="en">Institutional Mandate</com:Name>
+                    <com:Description xml:lang="en">Set of rules or other formal set of instructions assigning responsibility as well as the authority to an organisation for the collection, processing, and dissemination of statistics.</com:Description>
+                </str:Concept>
+                <str:Concept id="INST_MAN_LA_OA">
+                    <com:Name xml:lang="en">Institutional Mandate - legal acts and other agreements</com:Name>
+                    <com:Description xml:lang="en">Legal acts or other formal or informal agreements that assign responsibility as well as the authority to an agency for the collection, processing, and dissemination of statistics.</com:Description>
+                </str:Concept>
+                <str:Concept id="INST_MAN_SHAR">
+                    <com:Name xml:lang="en">Institutional Mandate - data sharing</com:Name>
+                    <com:Description xml:lang="en">Arrangements or procedures for data sharing and coordination between data producing agencies.</com:Description>
+                </str:Concept>
+                <str:Concept id="I_M_RES_REL">
+                    <com:Name xml:lang="en">Institutional Mandate - respondent relations</com:Name>
+                    <com:Description xml:lang="en">Measures to encourage statistical reporting and/or to sanction non-reporting.</com:Description>
+                </str:Concept>
+                <str:Concept id="META_CERTIFIED">
+                    <com:Name xml:lang="en">Metadata last certified</com:Name>
+                    <com:Description xml:lang="en">Date of the latest certification provided by the domain manager to confirm that the metadata posted are still up-to-date, even if the content has not been amended.</com:Description>
+                </str:Concept>
+                <str:Concept id="META_LAST_UPDATE">
+                    <com:Name xml:lang="en">Metadata last update</com:Name>
+                    <com:Description xml:lang="en">Date of last update of the content of the metadata.</com:Description>
+                </str:Concept>
+                <str:Concept id="META_POSTED">
+                    <com:Name xml:lang="en">Metadata last posted</com:Name>
+                    <com:Description xml:lang="en">Date of the latest dissemination of the metadata.</com:Description>
+                </str:Concept>
+                <str:Concept id="META_UPDATE">
+                    <com:Name xml:lang="en">Metadata update</com:Name>
+                    <com:Description xml:lang="en">The date on which the metadata element was inserted or modified in the database.</com:Description>
+                </str:Concept>
+                <str:Concept id="MICRO_DAT_ACC">
+                    <com:Name xml:lang="en">Dissemination format - microdata access</com:Name>
+                    <com:Description xml:lang="en">Information on whether micro-data are also disseminated.</com:Description>
+                </str:Concept>
+                <str:Concept id="M_AGENCY">
+                    <com:Name xml:lang="en">Maintenance Agency</com:Name>
+                    <com:Description xml:lang="en">The agency that maintains domain-specific data structure and metadata structure definitions.</com:Description>
+                </str:Concept>
+                <str:Concept id="NEWS_REL">
+                    <com:Name xml:lang="en">Dissemination format - News release</com:Name>
+                    <com:Description xml:lang="en">Regular or ad-hoc press releases linked to the data.</com:Description>
+                </str:Concept>
+                <str:Concept id="NONSAMPLING_ERR">
+                    <com:Name xml:lang="en">Non-sampling error</com:Name>
+                    <com:Description xml:lang="en">Error in sample estimates which cannot be attributed to sampling fluctuations.</com:Description>
+                </str:Concept>
+                <str:Concept id="OBS_PRE_BREAK">
+                    <com:Name xml:lang="en">Observation Pre-break Value</com:Name>
+                    <com:Description xml:lang="en">The observation, at a time series break period, that was calculated using the old methodology.</com:Description>
+                </str:Concept>
+                <str:Concept id="OBS_STATUS">
+                    <com:Name xml:lang="en">Observation Status</com:Name>
+                    <com:Description xml:lang="en">Information on the quality of a value or an unusual or missing value.</com:Description>
+                </str:Concept>
+                <str:Concept id="OBS_VALUE">
+                    <com:Name xml:lang="en">Observation Value</com:Name>
+                    <com:Description xml:lang="en">The value, at a particular period, of a particular variable.</com:Description>
+                </str:Concept>
+                <str:Concept id="OCCUPATION">
+                    <com:Name xml:lang="en">Occupation</com:Name>
+                    <com:Description xml:lang="en">The definition of an occupation covers various jobs or positions which are held by individual workers who perform one or another of the possible combinations of the tasks described.</com:Description>
+                </str:Concept>
+                <str:Concept id="ONLINE_DB">
+                    <com:Name xml:lang="en">Dissemination format - online database</com:Name>
+                    <com:Description xml:lang="en">Information about on-line databases in which the disseminated data can be accessed.</com:Description>
+                </str:Concept>
+                <str:Concept id="ORGANISATION_UNIT">
+                    <com:Name xml:lang="en">Contact organisation unit</com:Name>
+                    <com:Description xml:lang="en">An addressable subdivision of an organisation</com:Description>
+                </str:Concept>
+                <str:Concept id="ORIG_DATA_ID">
+                    <com:Name xml:lang="en">Originator Data identifier</com:Name>
+                    <com:Description xml:lang="en">The data identifier as found in the originating database.</com:Description>
+                </str:Concept>
+                <str:Concept id="PROF">
+                    <com:Name xml:lang="en">Professionalism</com:Name>
+                    <com:Description xml:lang="en">Standard expected from a person who is well trained in a particular job.</com:Description>
+                </str:Concept>
+                <str:Concept id="PROF_COND">
+                    <com:Name xml:lang="en">Professionalism - code of conduct</com:Name>
+                    <com:Description xml:lang="en">Provision for assuring the qualifications of staff and allowing staff to perform their functions without intervention motivated by non-statistical objectives.</com:Description>
+                </str:Concept>
+                <str:Concept id="PROF_IMP">
+                    <com:Name xml:lang="en">Professionalism - impartiality</com:Name>
+                    <com:Description xml:lang="en">Description of the elements providing assurances that statistics are produced on an impartial basis.</com:Description>
+                </str:Concept>
+                <str:Concept id="PROF_METH">
+                    <com:Name xml:lang="en">Professionalism - methodology</com:Name>
+                    <com:Description xml:lang="en">Describes the elements providing assurances that the choices of sources and statistical techniques as well as decisions about dissemination are informed solely by statistical considerations.</com:Description>
+                </str:Concept>
+                <str:Concept id="PROF_STAT_COM">
+                    <com:Name xml:lang="en">Professionalism - statistical commentary</com:Name>
+                    <com:Description xml:lang="en">Describes the elements providing assurances that the statistical entity is entitled to comment on erroneous interpretation and misuse of statistics.</com:Description>
+                </str:Concept>
+                <str:Concept id="PUBLICATIONS">
+                    <com:Name xml:lang="en">Dissemination format - Publications</com:Name>
+                    <com:Description xml:lang="en">Regular or ad-hoc publications in which the data are made available to the public.</com:Description>
+                </str:Concept>
+                <str:Concept id="PUNCTUALITY">
+                    <com:Name xml:lang="en">Punctuality</com:Name>
+                    <com:Description xml:lang="en">Time lag between the actual delivery of the data and the target date when it should have been delivered.</com:Description>
+                </str:Concept>
+                <str:Concept id="QUALITY_ASSMNT">
+                    <com:Name xml:lang="en">Quality management - assessment</com:Name>
+                    <com:Description xml:lang="en">Overall assessment of data quality, based on standard quality criteria.</com:Description>
+                </str:Concept>
+                <str:Concept id="QUALITY_ASSURE">
+                    <com:Name xml:lang="en">Quality assurance</com:Name>
+                    <com:Description xml:lang="en">Guidelines focusing on quality in general and dealing with quality of statistical programmes, including measures for ensuring the efficient use of resources.</com:Description>
+                </str:Concept>
+                <str:Concept id="QUALITY_DOC">
+                    <com:Name xml:lang="en">Quality management - documentation</com:Name>
+                    <com:Description xml:lang="en">Documentation on procedures applied for quality management and quality assessment.</com:Description>
+                </str:Concept>
+                <str:Concept id="QUALITY_MGMNT">
+                    <com:Name xml:lang="en">Quality management</com:Name>
+                    <com:Description xml:lang="en">Systems and frameworks in place within an organisation to manage the quality of statistical products and processes.</com:Description>
+                </str:Concept>
+                <str:Concept id="RECORDING">
+                    <com:Name xml:lang="en">Recording basis</com:Name>
+                    <com:Description xml:lang="en">Processes and standards employed in calculating statistical aggregates.</com:Description>
+                </str:Concept>
+                <str:Concept id="REF_AREA">
+                    <com:Name xml:lang="en">Reference area</com:Name>
+                    <com:Description xml:lang="en">The country or geographic area to which the measured statistical phenomenon relates.</com:Description>
+                </str:Concept>
+                <str:Concept id="REF_COLLECT">
+                    <com:Name xml:lang="en">Reference period - Collection</com:Name>
+                    <com:Description xml:lang="en">Dates or periods during which observations have been collected (such as middle, average or end of period) to compile the indicator for the target reference period.</com:Description>
+                </str:Concept>
+                <str:Concept id="REF_PERIOD">
+                    <com:Name xml:lang="en">Reference Period</com:Name>
+                    <com:Description xml:lang="en">The period of time or point in time to which the measured observation is intended to refer.</com:Description>
+                </str:Concept>
+                <str:Concept id="REF_PER_TARGET">
+                    <com:Name xml:lang="en">Reference period - Target</com:Name>
+                    <com:Description xml:lang="en">The period that the data is designed to represent.</com:Description>
+                </str:Concept>
+                <str:Concept id="REF_PER_WGTS">
+                    <com:Name xml:lang="en">Reference period - Weights</com:Name>
+                    <com:Description xml:lang="en">Dates or periods to which the observations used to compile the weights refer.</com:Description>
+                </str:Concept>
+                <str:Concept id="RELEVANCE">
+                    <com:Name xml:lang="en">Relevance</com:Name>
+                    <com:Description xml:lang="en">The degree to which statistical information meets the real or perceived needs of clients.</com:Description>
+                </str:Concept>
+                <str:Concept id="REL_CAL_ACCESS">
+                    <com:Name xml:lang="en">Release calendar access</com:Name>
+                    <com:Description xml:lang="en">Access to the release calendar information.</com:Description>
+                </str:Concept>
+                <str:Concept id="REL_CAL_POLICY">
+                    <com:Name xml:lang="en">Release calendar</com:Name>
+                    <com:Description xml:lang="en">The schedule of statistical release dates.</com:Description>
+                </str:Concept>
+                <str:Concept id="REL_COMMENT">
+                    <com:Name xml:lang="en">Release policy - policy commentary</com:Name>
+                    <com:Description xml:lang="en">Whether or not ministerial commentary is provided on the occasion of statistical release.</com:Description>
+                </str:Concept>
+                <str:Concept id="REL_POLICY">
+                    <com:Name xml:lang="en">Release policy</com:Name>
+                    <com:Description xml:lang="en">Rules for disseminating statistical data to interested parties.</com:Description>
+                </str:Concept>
+                <str:Concept id="REL_POL_LEG_ACTS">
+                    <com:Name xml:lang="en">Release policy - legal acts and other agreements</com:Name>
+                    <com:Description xml:lang="en">Legal acts and other agreements pertaining to data access.</com:Description>
+                </str:Concept>
+                <str:Concept id="REL_POL_TRA">
+                    <com:Name xml:lang="en">Release policy - transparency</com:Name>
+                    <com:Description xml:lang="en">Dissemination of the release policy to the public.</com:Description>
+                </str:Concept>
+                <str:Concept id="REL_POL_US_AC">
+                    <com:Name xml:lang="en">Release policy - user access</com:Name>
+                    <com:Description xml:lang="en">The policy for release of the data to users, the scope of dissemination (eg, to the public), how users are informed that the data are being released, and whether the policy provides for the dissemination of statistical data to all users at the same time. It also describes the policy for briefing the press in advance of the release of the data.</com:Description>
+                </str:Concept>
+                <str:Concept id="REP_AGENCY">
+                    <com:Name xml:lang="en">Reporting agency</com:Name>
+                    <com:Description xml:lang="en">The administrative unit that supplies the data for a given  instance of the statistics.</com:Description>
+                </str:Concept>
+                <str:Concept id="REV_POLICY">
+                    <com:Name xml:lang="en">Data revision - policy</com:Name>
+                    <com:Description xml:lang="en">Policy aimed at ensuring the transparency of disseminated data, whereby preliminary data are compiled that are later revised.</com:Description>
+                </str:Concept>
+                <str:Concept id="REV_PRACTICE">
+                    <com:Name xml:lang="en">Data revision - practice</com:Name>
+                    <com:Description xml:lang="en">Information on the data revision practice.</com:Description>
+                </str:Concept>
+                <str:Concept id="REV_STUDY">
+                    <com:Name xml:lang="en">Data revision - studies</com:Name>
+                    <com:Description xml:lang="en">Information about data revision studies and analyses.</com:Description>
+                </str:Concept>
+                <str:Concept id="SAMPLING">
+                    <com:Name xml:lang="en">Sampling</com:Name>
+                    <com:Description xml:lang="en">The process of selecting a number of cases from all the cases in a particular group or universe.</com:Description>
+                </str:Concept>
+                <str:Concept id="SAMPLING_ERR">
+                    <com:Name xml:lang="en">Sampling error</com:Name>
+                    <com:Description xml:lang="en">That part of the difference between a population value and an estimate thereof, derived from a random sample, which is due to the fact that only a subset of the population is enumerated.</com:Description>
+                </str:Concept>
+                <str:Concept id="SEX">
+                    <com:Name xml:lang="en">Sex</com:Name>
+                    <com:Description xml:lang="en">This concept is applied if data needs to be categorised by sex, where sex is "the state of being male or female".</com:Description>
+                </str:Concept>
+                <str:Concept id="SOURCE_TYPE">
+                    <com:Name xml:lang="en">Source data</com:Name>
+                    <com:Description xml:lang="en">Characteristics and components of the raw statistical data used for compiling statistical aggregates.</com:Description>
+                </str:Concept>
+                <str:Concept id="STAT_CONC_DEF">
+                    <com:Name xml:lang="en">Statistical concepts and definitions</com:Name>
+                    <com:Description xml:lang="en">Statistical characteristics of statistical observations.</com:Description>
+                </str:Concept>
+                <str:Concept id="STAT_POP">
+                    <com:Name xml:lang="en">Statistical population</com:Name>
+                    <com:Description xml:lang="en">The total membership or population or "universe" of a defined class of people, objects or events.</com:Description>
+                </str:Concept>
+                <str:Concept id="STAT_UNIT">
+                    <com:Name xml:lang="en">Statistical unit</com:Name>
+                    <com:Description xml:lang="en">Entity for which information is sought and for which statistics are ultimately compiled.</com:Description>
+                </str:Concept>
+                <str:Concept id="SUPPL_DATA">
+                    <com:Name xml:lang="en">Supplementary data</com:Name>
+                    <com:Description xml:lang="en">Data not routinely disseminated that are made available to users upon request.</com:Description>
+                </str:Concept>
+                <str:Concept id="TIMELINESS">
+                    <com:Name xml:lang="en">Timeliness</com:Name>
+                    <com:Description xml:lang="en">Length of time between data availability and the event or phenomenon they describe</com:Description>
+                </str:Concept>
+                <str:Concept id="TIME_FORMAT">
+                    <com:Name xml:lang="en">Time format</com:Name>
+                    <com:Description xml:lang="en">Technical format in which time is represented for the measured phenomenon.</com:Description>
+                </str:Concept>
+                <str:Concept id="TIME_OUTPUT">
+                    <com:Name xml:lang="en">Timeliness - Output</com:Name>
+                    <com:Description xml:lang="en">The lapse of time between the end of a reference period (or a reference date) and dissemination of the data.</com:Description>
+                </str:Concept>
+                <str:Concept id="TIME_PERIOD">
+                    <com:Name xml:lang="en">Time period</com:Name>
+                    <com:Description xml:lang="en">The period of time or point in time to which the measured observation refers.</com:Description>
+                </str:Concept>
+                <str:Concept id="TIME_SOURCE">
+                    <com:Name xml:lang="en">Timeliness - Source data</com:Name>
+                    <com:Description xml:lang="en">The time between the end of a reference period (or a reference date) and actual receipt of the data by the compiling agency.</com:Description>
+                </str:Concept>
+                <str:Concept id="TITLE_XXX">
+                    <com:Name xml:lang="en">Title</com:Name>
+                    <com:Description xml:lang="en">Textual label used as identification of a statistical object.</com:Description>
+                </str:Concept>
+                <str:Concept id="UNIT_MEASURE">
+                    <com:Name xml:lang="en">Unit of measure</com:Name>
+                    <com:Description xml:lang="en">The unit in which the data values are measured.</com:Description>
+                </str:Concept>
+                <str:Concept id="UNIT_MEAS_DETAIL">
+                    <com:Name xml:lang="en">Unit of measure detail</com:Name>
+                    <com:Description xml:lang="en">Additional textual information on the unit of measure.</com:Description>
+                </str:Concept>
+                <str:Concept id="UNIT_MULT">
+                    <com:Name xml:lang="en">Unit Multiplier</com:Name>
+                    <com:Description xml:lang="en">Exponent in base 10 specified so that multiplying the observation numeric values by 10^UNIT_MULT gives a value expressed in the UNIT.</com:Description>
+                </str:Concept>
+                <str:Concept id="USER_NEEDS">
+                    <com:Name xml:lang="en">Relevance - User Needs</com:Name>
+                    <com:Description xml:lang="en">Description of users and their respective needs with respect to the statistical data.</com:Description>
+                </str:Concept>
+                <str:Concept id="USER_SAT">
+                    <com:Name xml:lang="en">Relevance - User Satisfaction</com:Name>
+                    <com:Description xml:lang="en">Measures to determine user satisfaction.</com:Description>
+                </str:Concept>
+                <str:Concept id="VALUATION">
+                    <com:Name xml:lang="en">Valuation</com:Name>
+                    <com:Description xml:lang="en">The definition of the price per unit, for goods and services flows and asset stocks.</com:Description>
+                </str:Concept>
+                <str:Concept id="VIS_AREA_XXX">
+                    <com:Name xml:lang="en">Counterpart reference area</com:Name>
+                    <com:Description xml:lang="en">The secondary area (as opposed to "reference area") to which the measured data is in relation.</com:Description>
+                </str:Concept>
+            </str:ConceptScheme>
+        </str:ConceptSchemes>
+        <str:MetadataStructures>
+            <str:MetadataStructure agencyID="ESTAT" id="ESMS_MSD" isExternalReference="false" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataStructure=ESTAT:ESMS_MSD(3.0)" version="3.0">
+                <com:Name xml:lang="en">Euro-SDMX Metadata Structure Definition</com:Name>
+                <str:MetadataStructureComponents>
+                    <str:MetadataAttributeList>
+                        <str:MetadataAttribute id="CONTACT" maxOccurs="unbounded" minOccurs="0" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).CONTACT">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).CONTACT</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                            <str:MetadataAttribute id="CONTACT_ORGANISATION" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).CONTACT.CONTACT_ORGANISATION">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).CONTACT_ORGANISATION</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="ORGANISATION_UNIT" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).CONTACT.ORGANISATION_UNIT">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).ORGANISATION_UNIT</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="CONTACT_NAME" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).CONTACT.CONTACT_NAME">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).CONTACT_NAME</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="CONTACT_FUNCT" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).CONTACT.CONTACT_FUNCT">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).CONTACT_FUNCT</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="CONTACT_MAIL" maxOccurs="unbounded" minOccurs="0" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).CONTACT.CONTACT_MAIL">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).CONTACT_MAIL</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="CONTACT_EMAIL" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).CONTACT.CONTACT_EMAIL">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).CONTACT_EMAIL</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="CONTACT_PHONE" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).CONTACT.CONTACT_PHONE">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).CONTACT_PHONE</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="CONTACT_FAX" maxOccurs="unbounded" minOccurs="0" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).CONTACT.CONTACT_FAX">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).CONTACT_FAX</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="META_UPDATE" maxOccurs="unbounded" minOccurs="0" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).META_UPDATE">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).META_UPDATE</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="DateTime"/>
+                            </str:LocalRepresentation>
+                            <str:MetadataAttribute id="META_CERTIFIED" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).META_UPDATE.META_CERTIFIED">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).META_CERTIFIED</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="DateTime"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="META_POSTED" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).META_UPDATE.META_POSTED">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).META_POSTED</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="DateTime"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="META_LAST_UPDATE" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).META_UPDATE.META_LAST_UPDATE">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).META_LAST_UPDATE</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="DateTime"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="STAT_PRES" maxOccurs="unbounded" minOccurs="0" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).STAT_PRES">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:ESTAT_ADD_CONCEPTS(3.0).STAT_PRES</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                            <str:MetadataAttribute id="DATA_DESCR" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).STAT_PRES.DATA_DESCR">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).DATA_DESCR</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="CLASS_SYSTEM" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).STAT_PRES.CLASS_SYSTEM">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).CLASS_SYSTEM</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="COVERAGE_SECTOR" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).STAT_PRES.COVERAGE_SECTOR">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).COVERAGE_SECTOR</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="STAT_CONC_DEF" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).STAT_PRES.STAT_CONC_DEF">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).STAT_CONC_DEF</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="STAT_UNIT" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).STAT_PRES.STAT_UNIT">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).STAT_UNIT</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="STAT_POP" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).STAT_PRES.STAT_POP">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).STAT_POP</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="REF_AREA" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).STAT_PRES.REF_AREA">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).REF_AREA</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="COVERAGE_TIME" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).STAT_PRES.COVERAGE_TIME">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).COVERAGE_TIME</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="BASE_PER" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).STAT_PRES.BASE_PER">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).BASE_PER</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="UNIT_MEASURE" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).UNIT_MEASURE">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).UNIT_MEASURE</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="REF_PERIOD" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).REF_PERIOD">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).REF_PERIOD</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="INST_MANDATE" maxOccurs="unbounded" minOccurs="0" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).INST_MANDATE">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).INST_MANDATE</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                            <str:MetadataAttribute id="INST_MAN_LA_OA" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).INST_MANDATE.INST_MAN_LA_OA">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).INST_MAN_LA_OA</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="INST_MAN_SHAR" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).INST_MANDATE.INST_MAN_SHAR">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).INST_MAN_SHAR</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="CONF" maxOccurs="unbounded" minOccurs="0" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).CONF">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).CONF</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                            <str:MetadataAttribute id="CONF_POLICY" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).CONF.CONF_POLICY">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).CONF_POLICY</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="CONF_DATA_TR" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).CONF.CONF_DATA_TR">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).CONF_DATA_TR</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="REL_POLICY" maxOccurs="unbounded" minOccurs="0" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).REL_POLICY">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).REL_POLICY</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                            <str:MetadataAttribute id="REL_CAL_POLICY" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).REL_POLICY.REL_CAL_POLICY">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).REL_CAL_POLICY</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="REL_CAL_ACCESS" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).REL_POLICY.REL_CAL_ACCESS">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).REL_CAL_ACCESS</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="REL_POL_US_AC" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).REL_POLICY.REL_POL_US_AC">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).REL_POL_US_AC</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="FREQ_DISS" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).FREQ_DISS">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).FREQ_DISS</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="ACCESSIBILITY_CLARITY" maxOccurs="unbounded" minOccurs="0" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).ACCESSIBILITY_CLARITY">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:ESTAT_ADD_CONCEPTS(3.0).ACCESSIBILITY_CLARITY</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                            <str:MetadataAttribute id="NEWS_REL" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).ACCESSIBILITY_CLARITY.NEWS_REL">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).NEWS_REL</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="PUBLICATIONS" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).ACCESSIBILITY_CLARITY.PUBLICATIONS">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).PUBLICATIONS</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="ONLINE_DB" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).ACCESSIBILITY_CLARITY.ONLINE_DB">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).ONLINE_DB</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="MICRO_DAT_ACC" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).ACCESSIBILITY_CLARITY.MICRO_DAT_ACC">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).MICRO_DAT_ACC</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="DISS_OTHER" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).ACCESSIBILITY_CLARITY.DISS_OTHER">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).DISS_OTHER</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="DOC_METHOD" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).ACCESSIBILITY_CLARITY.DOC_METHOD">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).DOC_METHOD</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="QUALITY_DOC" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).ACCESSIBILITY_CLARITY.QUALITY_DOC">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).QUALITY_DOC</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="QUALITY_MGMNT" maxOccurs="unbounded" minOccurs="0" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).QUALITY_MGMNT">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).QUALITY_MGMNT</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                            <str:MetadataAttribute id="QUALITY_ASSURE" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).QUALITY_MGMNT.QUALITY_ASSURE">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).QUALITY_ASSURE</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="QUALITY_ASSMNT" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).QUALITY_MGMNT.QUALITY_ASSMNT">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).QUALITY_ASSMNT</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="RELEVANCE" maxOccurs="unbounded" minOccurs="0" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).RELEVANCE">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).RELEVANCE</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                            <str:MetadataAttribute id="USER_NEEDS" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).RELEVANCE.USER_NEEDS">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).USER_NEEDS</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="USER_SAT" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).RELEVANCE.USER_SAT">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).USER_SAT</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="COMPLETENESS" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).RELEVANCE.COMPLETENESS">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).COMPLETENESS</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="ACCURACY" maxOccurs="unbounded" minOccurs="0" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).ACCURACY">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).ACCURACY</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                            <str:MetadataAttribute id="ACCURACY_OVERALL" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).ACCURACY.ACCURACY_OVERALL">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).ACCURACY_OVERALL</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="SAMPLING_ERR" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).ACCURACY.SAMPLING_ERR">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).SAMPLING_ERR</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="NONSAMPLING_ERR" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).ACCURACY.NONSAMPLING_ERR">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).NONSAMPLING_ERR</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="TIMELINESS_PUNCT" maxOccurs="unbounded" minOccurs="0" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).TIMELINESS_PUNCT">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:ESTAT_ADD_CONCEPTS(3.0).TIMELINESS_PUNCT</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                            <str:MetadataAttribute id="TIMELINESS" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).TIMELINESS_PUNCT.TIMELINESS">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).TIMELINESS</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="PUNCTUALITY" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).TIMELINESS_PUNCT.PUNCTUALITY">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).PUNCTUALITY</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="COHER_COMPAR" maxOccurs="unbounded" minOccurs="0" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).COHER_COMPAR">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:ESTAT_ADD_CONCEPTS(3.0).COHER_COMPAR</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                            <str:MetadataAttribute id="COMPAR_GEO" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).COHER_COMPAR.COMPAR_GEO">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).COMPAR_GEO</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="COMPAR_TIME" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).COHER_COMPAR.COMPAR_TIME">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).COMPAR_TIME</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="COHER_X_DOM" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).COHER_COMPAR.COHER_X_DOM">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).COHER_X_DOM</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="COHER_INTERNAL" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).COHER_COMPAR.COHER_INTERNAL">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).COHER_INTERNAL</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="COST_BURDEN" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).COST_BURDEN">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).COST_BURDEN</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="DATA_REV" maxOccurs="unbounded" minOccurs="0" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).DATA_REV">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).DATA_REV</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                            <str:MetadataAttribute id="REV_POLICY" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).DATA_REV.REV_POLICY">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).REV_POLICY</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="REV_PRACTICE" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).DATA_REV.REV_PRACTICE">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).REV_PRACTICE</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="STAT_PROCESS" maxOccurs="unbounded" minOccurs="0" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).STAT_PROCESS">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:ESTAT_ADD_CONCEPTS(3.0).STAT_PROCESS</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                            <str:MetadataAttribute id="SOURCE_TYPE" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).STAT_PROCESS.SOURCE_TYPE">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).SOURCE_TYPE</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="FREQ_COLL" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).STAT_PROCESS.FREQ_COLL">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).FREQ_COLL</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="COLL_METHOD" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).STAT_PROCESS.COLL_METHOD">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).COLL_METHOD</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="DATA_VALIDATION" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).STAT_PROCESS.DATA_VALIDATION">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).DATA_VALIDATION</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="DATA_COMP" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).STAT_PROCESS.DATA_COMP">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).DATA_COMP</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                            <str:MetadataAttribute id="ADJUSTMENT" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).STAT_PROCESS.ADJUSTMENT">
+                                <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).ADJUSTMENT</str:ConceptIdentity>
+                                <str:LocalRepresentation>
+                                    <str:TextFormat textType="String"/>
+                                </str:LocalRepresentation>
+                            </str:MetadataAttribute>
+                        </str:MetadataAttribute>
+                        <str:MetadataAttribute id="COMMENT_DSET" maxOccurs="1" minOccurs="1" urn="urn:sdmx:org.sdmx.infomodel.metadatastructure.MetadataAttribute=ESTAT:ESMS_MSD(3.0).COMMENT_DSET">
+                            <str:ConceptIdentity>urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:SDMX_CDC(3.0).COMMENT_DSET</str:ConceptIdentity>
+                            <str:LocalRepresentation>
+                                <str:TextFormat textType="String"/>
+                            </str:LocalRepresentation>
+                        </str:MetadataAttribute>
+                    </str:MetadataAttributeList>
+                </str:MetadataStructureComponents>
+            </str:MetadataStructure>
+        </str:MetadataStructures>
+    </mes:Structures>
+</mes:Structure>
