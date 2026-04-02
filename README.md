@@ -13,3 +13,34 @@
 [Staggered Grid Example - Motion.dev](https://motion.dev/examples/js-staggered-grid?platform=js)   
 [Animated Waffle Charts with D3 and GSAP](https://www.williamrchase.com/writing/2019-10-13-animated-waffle-charts-with-d3-and-gsap)  
 
+
+
+## Conversion
+1) Set your environement:  
+    ```bash
+    python -m venv .venv_hf
+    .\.venv_hf\Scripts\activate.bat
+    pip install -r requirements.txt
+    ```
+2) Set your Hugging Face token and repository in `.env`.  
+3) Smoke run:  
+    ```bash
+    python .\db-hf-normalization.py --hetus-root .\hetus\2020 --max-files 1 --overwrite
+    ```
+4) Full run:  
+    ```bash
+    python .\db-hf-normalization.py --hetus-root .\hetus --overwrite
+    ```
+5) Validation:  
+    ```bash
+    python -c "import pandas as pd; f=pd.read_csv('hf_export/intermediate/files.csv'); print('all_lossless=', (f['lossless_validated']=='true').all()); print('rows_match=', (f['rows_long']==f['rows_expected_long']).all()); print('files=', len(f))"
+    ```
+    And you should see:  
+    ```
+    all_lossless= True
+    rows_match= True
+    ```
+6) To push to Hugging Face:  
+    ```bash
+    python .\db-hf-normalization.py --hetus-root .\hetus --overwrite --push-to-hub
+    ```
