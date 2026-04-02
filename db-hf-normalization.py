@@ -543,6 +543,56 @@ def build_dataset_dict(
 	)
 
 
+def has_uniform_split_features(dataset_dict: DatasetDict) -> bool:
+	"""Return True when all splits share the same feature schema."""
+	split_names = list(dataset_dict.keys())
+	if not split_names:
+		return True
+
+	base_features = dataset_dict[split_names[0]].features
+	return all(dataset_dict[split].features == base_features for split in split_names[1:])
+
+
+def push_dataset_dict_safely(
+	dataset_dict: DatasetDict,
+	repo_id: str,
+	token: str,
+	private: bool,
+) -> None:
+	"""Push DatasetDict to Hub, handling mixed split schemas when needed.
+
+	Hugging Face Hub requires splits inside one config to share the same feature
+	schema. This project intentionally uses three different tables/schemas
+	(`observations`, `files`, `metadata`). If schemas differ, push one config per
+	split while keeping each split's schema intact.
+	"""
+	if has_uniform_split_features(dataset_dict):
+		dataset_dict.push_to_hub(repo_id=repo_id, token=token, private=private)
+		logging.info("Pushed dataset to Hugging Face Hub as a single config: %s", repo_id)
+		return
+
+	logging.warning(
+		"Split schemas differ; publishing one Hub config per split "
+		"(observations/files/metadata)."
+	)
+
+	for index, split_name_raw in enumerate(dataset_dict.keys()):
+		split_name = str(split_name_raw)
+		dataset_dict[split_name_raw].push_to_hub(
+			repo_id=repo_id,
+			token=token,
+			private=private,
+			config_name=split_name,
+			split="train",
+			set_default=index == 0,
+		)
+		logging.info(
+			"Pushed split '%s' to Hub config '%s' (split='train').",
+			split_name,
+			split_name,
+		)
+
+
 def main() -> None:
 	logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 	args = parse_args()
@@ -590,8 +640,13 @@ def main() -> None:
 				"Set your token in the environment or in .env."
 			)
 
-		dataset_dict.push_to_hub(repo_id=repo_id, token=token, private=args.private)
-		logging.info("Pushed dataset to Hugging Face Hub: %s", repo_id)
+		push_dataset_dict_safely(
+			dataset_dict=dataset_dict,
+			repo_id=repo_id,
+			token=token,
+			private=args.private,
+		)
+		logging.info("Completed push to Hugging Face Hub: %s", repo_id)
 
 
 if __name__ == "__main__":

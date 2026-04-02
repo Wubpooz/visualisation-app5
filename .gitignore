@@ -3,3 +3,4 @@
 venv/
 .venv_hf/
 __pycache__/
+hf_export/

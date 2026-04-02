@@ -33,7 +33,7 @@
     ```
 5) Validation:  
     ```bash
-    python -c "import pandas as pd; f=pd.read_csv('hf_export/intermediate/files.csv'); print('all_lossless=', (f['lossless_validated']=='true').all()); print('rows_match=', (f['rows_long']==f['rows_expected_long']).all()); print('files=', len(f))"
+    python -c "import pandas as pd; f=pd.read_csv('hf_export/intermediate/files.csv'); s=f['lossless_validated']; print('all_lossless=', s.astype(str).str.strip().str.lower().eq('true').all()); print('rows_match=', (f['rows_long']==f['rows_expected_long']).all()); print('files=', len(f))"
     ```
     And you should see:  
     ```
@@ -43,4 +43,11 @@
 6) To push to Hugging Face:  
     ```bash
     python .\db-hf-normalization.py --hetus-root .\hetus --overwrite --push-to-hub
+    ```
+    Since the three tables have different schemas, the script publishes one Hub
+    config per table: `observations`, `files`, `metadata`.
+
+7) Load from Hugging Face (example):  
+    ```bash
+    python -c "from datasets import load_dataset; print(load_dataset('Wupbooz/hetus-time-use', 'observations', split='train'))"
     ```
