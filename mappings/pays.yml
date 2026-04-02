@@ -1,759 +1,507 @@
 EU:
   name: "European Union (EU6-1958, EU9-1973, EU10-1981, EU12-1986, EU15-1995, EU25-2004, EU27-2007, EU28-2013, EU27-2020)"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 EA:
   name: "Euro area (EA11-1999, EA12-2001, EA13-2007, EA15-2008, EA16-2009, EA17-2011, EA18-2014, EA19-2015, EA20-2023)"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BE:
   name: "Belgium"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BG:
   name: "Bulgaria"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CZ:
   name: "Czechia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 DK:
   name: "Denmark"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 DE:
   name: "Germany"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 EE:
   name: "Estonia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 IE:
   name: "Ireland"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 EL:
   name: "Greece"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 ES:
   name: "Spain"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 FR:
   name: "France"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 FX:
   name: "Metropolitan France"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 YT:
   name: "Mayotte (FR - part of EU as of 01.01.2014)"
   description: "Obsolete code, to be removed from dissemination"
 HR:
   name: "Croatia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 IT:
   name: "Italy"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CY:
   name: "Cyprus"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 LV:
   name: "Latvia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 LT:
   name: "Lithuania"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 LU:
   name: "Luxembourg"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 HU:
   name: "Hungary"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MT:
   name: "Malta"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 NL:
   name: "Netherlands"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 AT:
   name: "Austria"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 PL:
   name: "Poland"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 PT:
   name: "Portugal"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 RO:
   name: "Romania"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SI:
   name: "Slovenia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SK:
   name: "Slovakia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 FI:
   name: "Finland"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SE:
   name: "Sweden"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 IS:
   name: "Iceland"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 LI:
   name: "Liechtenstein"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 NO:
   name: "Norway"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CH:
   name: "Switzerland"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 UK:
   name: "United Kingdom"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BA:
   name: "Bosnia and Herzegovina"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 ME:
   name: "Montenegro"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MD:
   name: "Moldova"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MK:
   name: "North Macedonia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 GE:
   name: "Georgia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 AL:
   name: "Albania"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 RS:
   name: "Serbia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 TR:
   name: "Türkiye"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 UA:
   name: "Ukraine"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 XK:
   name: "Kosovo*"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 AD:
   name: "Andorra"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BY:
   name: "Belarus"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 GG:
   name: "Guernsey"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 JE:
   name: "Jersey"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CQ:
   name: "Sark"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 FO:
   name: "Faroes"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 GI:
   name: "Gibraltar"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 VA:
   name: "Holy See"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 IM:
   name: "Isle of Man"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MC:
   name: "Monaco"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 RU:
   name: "Russia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SM:
   name: "San Marino"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SJ:
   name: "Svalbard and Jan Mayen"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 AO:
   name: "Angola"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CM:
   name: "Cameroon"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CF:
   name: "Central African Republic"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 TD:
   name: "Chad"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CG:
   name: "Congo"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CD:
   name: "Democratic Republic of the Congo"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 GQ:
   name: "Equatorial Guinea"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 GA:
   name: "Gabon"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 ST:
   name: "São Tomé and Príncipe"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BI:
   name: "Burundi"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 KM:
   name: "Comoros"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 DJ:
   name: "Djibouti"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 ER:
   name: "Eritrea"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 ET:
   name: "Ethiopia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 KE:
   name: "Kenya"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MG:
   name: "Madagascar"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MW:
   name: "Malawi"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MU:
   name: "Mauritius"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MZ:
   name: "Mozambique"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 RW:
   name: "Rwanda"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SC:
   name: "Seychelles"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SO:
   name: "Somalia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 UG:
   name: "Uganda"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 TZ:
   name: "Tanzania"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 ZM:
   name: "Zambia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 ZW:
   name: "Zimbabwe"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 DZ:
   name: "Algeria"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 EG:
   name: "Egypt"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 LY:
   name: "Libya"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MA:
   name: "Morocco"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SS:
   name: "South Sudan"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SD:
   name: "Sudan"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 TN:
   name: "Tunisia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 EH:
   name: "Western Sahara"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BW:
   name: "Botswana"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 LS:
   name: "Lesotho"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 NA:
   name: "Namibia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 ZA:
   name: "South Africa"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SZ:
   name: "Eswatini"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BJ:
   name: "Benin"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BF:
   name: "Burkina Faso"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CV:
   name: "Cabo Verde"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CI:
   name: "Côte d’Ivoire"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 GM:
   name: "Gambia, The"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 GH:
   name: "Ghana"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 GN:
   name: "Guinea"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 GW:
   name: "Guinea-Bissau"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 LR:
   name: "Liberia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 ML:
   name: "Mali"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MR:
   name: "Mauritania"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 NE:
   name: "Niger"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 NG:
   name: "Nigeria"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SH:
   name: "Saint Helena, Ascension and Tristan da Cunha"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SN:
   name: "Senegal"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SL:
   name: "Sierra Leone"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 TG:
   name: "Togo"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BM:
   name: "Bermuda"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CA:
   name: "Canada"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 GL:
   name: "Greenland"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 PM:
   name: "Saint Pierre and Miquelon"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 US:
   name: "United States"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 AI:
   name: "Anguilla"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 AG:
   name: "Antigua and Barbuda"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 AW:
   name: "Aruba"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BS:
   name: "Bahamas"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BB:
   name: "Barbados"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BQ:
   name: "Bonaire, Saint Eustatius and Saba"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 VG:
   name: "British Virgin Islands"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 KY:
   name: "Cayman Islands"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CU:
   name: "Cuba"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CW:
   name: "Curaçao"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 DM:
   name: "Dominica"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 DO:
   name: "Dominican Republic"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 GD:
   name: "Grenada"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 HT:
   name: "Haiti"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 JM:
   name: "Jamaica"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MS:
   name: "Montserrat"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 AN:
   name: "Netherlands Antilles"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 PR:
   name: "Puerto Rico"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BL:
   name: "Saint Barthélemy"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 KN:
   name: "Saint Kitts and Nevis"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 LC:
   name: "Saint Lucia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MF:
   name: "Saint Martin"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 VC:
   name: "Saint Vincent and the Grenadines"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SX:
   name: "Sint Maarten"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 TT:
   name: "Trinidad and Tobago"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 TC:
   name: "Turks and Caicos Islands"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 VI:
   name: "US Virgin Islands"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BZ:
   name: "Belize"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CP:
   name: "Clipperton"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CR:
   name: "Costa Rica"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SV:
   name: "El Salvador"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 GT:
   name: "Guatemala"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 HN:
   name: "Honduras"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MX:
   name: "Mexico"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 NI:
   name: "Nicaragua"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 PA:
   name: "Panama"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 AR:
   name: "Argentina"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BO:
   name: "Bolivia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BR:
   name: "Brazil"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CL:
   name: "Chile"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CO:
   name: "Colombia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 EC:
   name: "Ecuador"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 FK:
   name: "Falkland Islands"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 GY:
   name: "Guyana"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 PY:
   name: "Paraguay"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 PE:
   name: "Peru"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SR:
   name: "Suriname"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 UY:
   name: "Uruguay"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 VE:
   name: "Venezuela"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 KZ:
   name: "Kazakhstan"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 KG:
   name: "Kyrgyzstan"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 TJ:
   name: "Tajikistan"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 TM:
   name: "Turkmenistan"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 UZ:
   name: "Uzbekistan"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CN:
   name: "China"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 HK:
   name: "Hong Kong"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MO:
   name: "Macao"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 JP:
   name: "Japan"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MN:
   name: "Mongolia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 KP:
   name: "North Korea"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 KR:
   name: "South Korea"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 TW:
   name: "Taiwan"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 AF:
   name: "Afghanistan"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BD:
   name: "Bangladesh"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BT:
   name: "Bhutan"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 IO:
   name: "British Indian Ocean Territory"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 IN:
   name: "India"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 IR:
   name: "Iran"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MV:
   name: "Maldives"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 NP:
   name: "Nepal"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 PK:
   name: "Pakistan"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 LK:
   name: "Sri Lanka"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BN:
   name: "Brunei Darussalam"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 KH:
   name: "Cambodia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 ID:
   name: "Indonesia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 LA:
   name: "Laos"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MY:
   name: "Malaysia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MM:
   name: "Myanmar/Burma"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 PH:
   name: "Philippines"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SG:
   name: "Singapore"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 TH:
   name: "Thailand"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 TL:
   name: "Timor-Leste"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 VN:
   name: "Viet Nam"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 AM:
   name: "Armenia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 AZ:
   name: "Azerbaijan"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BH:
   name: "Bahrain"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 IQ:
   name: "Iraq"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 IL:
   name: "Israel"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 JO:
   name: "Jordan"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 KW:
   name: "Kuwait"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 LB:
   name: "Lebanon"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 PS:
   name: "Palestine*"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 OM:
   name: "Oman"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 QA:
   name: "Qatar"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SA:
   name: "Saudi Arabia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SY:
   name: "Syria"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 AE:
   name: "United Arab Emirates"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 YE:
   name: "Yemen"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 AU:
   name: "Australia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CX:
   name: "Christmas Island"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CC:
   name: "Cocos (Keeling) Islands"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 HM:
   name: "Heard Island and McDonald Islands"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 NF:
   name: "Norfolk Island"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 NZ:
   name: "New Zealand"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 FJ:
   name: "Fiji"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 NC:
   name: "New Caledonia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 PG:
   name: "Papua New Guinea"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 SB:
   name: "Solomon Islands"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 VU:
   name: "Vanuatu"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 GU:
   name: "Guam"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 KI:
   name: "Kiribati"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MH:
   name: "Marshall Islands"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 FM:
   name: "Federated States of Micronesia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 NR:
   name: "Nauru"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 MP:
   name: "Northern Mariana Islands"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 PW:
   name: "Palau"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 AS:
   name: "American Samoa"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 CK:
   name: "Cook Islands"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 PF:
   name: "French Polynesia"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 NU:
   name: "Niue"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 PN:
   name: "Pitcairn Islands"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 WS:
   name: "Samoa"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 TK:
   name: "Tokelau"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 TO:
   name: "Tonga"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 TV:
   name: "Tuvalu"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 WF:
   name: "Wallis and Futuna"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 UM:
   name: "United States Minor Outlying Islands"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 AQ:
   name: "Antarctica"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 BV:
   name: "Bouvet Island"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 GS:
   name: "South Georgia and the South Sandwich Islands"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 TF:
   name: "French Southern and Antarctic Lands"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 FZ:
   name: "Franc Zone"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
 IF:
   name: "Investment Facility"
-  description: "Standard code, follows Eurostat Standard Code List Guidelines"
