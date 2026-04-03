@@ -1,7 +1,7 @@
 schema_version: '1.0'
 generated_at_utc: '2026-04-02T16:55:00+00:00'
 source:
-  file: mappings/pays.yml
+  file: hetus/2020/DSDs/ESTAT+TUS_20EDUC+1.0.xml
   codelist_id: GEO
   agency_id: ESTAT
   version: '25.2'

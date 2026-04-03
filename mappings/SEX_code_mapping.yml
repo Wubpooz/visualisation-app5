@@ -1,7 +1,7 @@
 schema_version: '1.0'
 generated_at_utc: '2026-04-02T00:00:00+00:00'
 source:
-  file: 'untitled:Untitled-2'
+  file: hetus/2020/DSDs/ESTAT+TUS_20EDUC+1.0.xml
   codelist_id: SEX
   agency_id: ESTAT
   version: '1.13'
@@ -22,10 +22,6 @@ codes:
       en: Total
       de: Insgesamt
       fr: Total
-    is_aggregate: false
-    aggregate_components: []
-    aggregate_exclusions: []
-    explan_label: {}
   M:
     kind: sex_code
     level: standard
@@ -34,10 +30,6 @@ codes:
       en: Males
       de: Männer
       fr: Hommes
-    is_aggregate: false
-    aggregate_components: []
-    aggregate_exclusions: []
-    explan_label: {}
   F:
     kind: sex_code
     level: standard
@@ -46,10 +38,6 @@ codes:
       en: Females
       de: Frauen
       fr: Femmes
-    is_aggregate: false
-    aggregate_components: []
-    aggregate_exclusions: []
-    explan_label: {}
   DIFF:
     kind: sex_code
     level: aggregate_or_special
@@ -58,9 +46,6 @@ codes:
       en: Absolute difference between males and females
       de: Absolute Differenz zwischen Männern und Frauen
       fr: Différence absolue entre hommes et femmes
-    is_aggregate: false
-    aggregate_components: []
-    aggregate_exclusions: []
     explan_label:
       en: Code not associated with the concept of the code list, but following Eurostat Standard Code List Guidelines
   NAP:
@@ -71,10 +56,6 @@ codes:
       en: Not applicable
       de: Nicht anwendbar
       fr: Non applicable
-    is_aggregate: false
-    aggregate_components: []
-    aggregate_exclusions: []
-    explan_label: {}
   NRP:
     kind: sex_code
     level: standard
@@ -83,10 +64,6 @@ codes:
       en: No response
       de: Keine Antwort
       fr: Sans réponse
-    is_aggregate: false
-    aggregate_components: []
-    aggregate_exclusions: []
-    explan_label: {}
   UNK:
     kind: sex_code
     level: standard
@@ -95,17 +72,9 @@ codes:
       en: Unknown
       de: Unbekannt
       fr: Inconnu
-    is_aggregate: false
-    aggregate_components: []
-    aggregate_exclusions: []
-    explan_label: {}
   '-':
     kind: sex_code
     level: wildcard
     urn: urn:sdmx:org.sdmx.infomodel.codelist.Codelist=ESTAT:SEX(1.13).-
     name:
       en: Wildcard
-    is_aggregate: false
-    aggregate_components: []
-    aggregate_exclusions: []
-    explan_label: {}
