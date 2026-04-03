@@ -1,0 +1,128 @@
+schema_version: '1.0'
+generated_at_utc: '2026-04-02T15:27:38.174690+00:00'
+source:
+  file: hetus/2020/DSDs/ESTAT+TUS_20EDUC+1.0.xml
+  codelist_id: WSTATUS
+  agency_id: ESTAT
+  version: '12.0'
+  urn: urn:sdmx:org.sdmx.infomodel.codelist.Codelist=ESTAT:WSTATUS(12.0)
+  name:
+    en: Labour force and employment status
+    de: Erwerbsbevölkerung und Beschäftigungsstatus
+    fr: Forces de travail et statut d'emploi
+  description:
+    en: This code list describes the activity and working status of individuals. It contains information on their position in relation to the labour market (employed, unemployed, or inactive), their professional status (based on the ICSE classification), their working time (full-time or part-time). It also provides information on special sub-groups of the previously described population (e.g. farm labour force, retired persons, students, disabled persons, etc.).
+code_count: 91
+codes:
+  EDUC:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).EDUC
+    name:
+      en: Students
+      de: Studenten
+      fr: Étudiants
+  EMP:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).EMP
+    name:
+      en: Employed persons
+      de: Erwerbstätige
+      fr: Personnes occupées
+  EMP_FT:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).EMP_FT
+    name:
+      en: Employed persons working full-time
+      de: Vollzeitbeschäftigte
+      fr: Personnes occupées à plein temps
+  EMP_PT:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).EMP_PT
+    name:
+      en: Employed persons working part-time
+      de: Teilzeitbeschäftigte
+      fr: Personnes occupées à temps partiel 
+  EMP_UNK:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).EMP_UNK
+    name:
+      en: Employed persons - unknown
+      de: Erwerbstätige - unbekannt
+      fr: Personnes occupées - inconnu
+  HOME:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).HOME
+    name:
+      en: Homemakers
+      de: Hausfrauen und -männer
+      fr: Personnes s'occupant du foyer
+  LEAV:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).LEAV
+    name:
+      en: Employed persons on temporary leave from work
+      de: Vorübergehend beurlaubte Erwerbstätige
+      fr: Personnes occupées en congé temporaire
+  NEMP:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NEMP
+    name:
+      en: Not employed persons
+      de: Nicht erwerbstätige Personen
+      fr: Personnes non occupées
+  NSAL:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).NSAL
+    name:
+      en: Employed persons except employees
+      de: Erwerbstätige ausgenommen Arbeitnehmer
+      fr: Personnes occupées sauf salariés
+  OTH:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).OTH
+    name:
+      en: Others
+      de: Sonstige
+      fr: Autres
+  POP:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).POP
+    name:
+      en: Population
+      de: Bevölkerung
+      fr: Population
+  RET:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).RET
+    name:
+      en: Retired persons
+      de: Rentner
+      fr: Retraités
+  SAL:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).SAL
+    name:
+      en: Employees
+      de: Arbeitnehmer
+      fr: Salariés
+  UNE:
+    kind: status_code
+    level: code
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:WSTATUS(12.0).UNE
+    name:
+      en: Unemployed persons
+      de: Erwerbslose
+      fr: Chômeurs
