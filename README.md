@@ -66,3 +66,17 @@ Notes:
 - `--geo DE` is a good default for full 2000/2010/2020 coverage.
 - For a private dataset repo, set `HF_TOKEN` in `.env` (or environment).
 - You can also run against local exported data with `--local-dataset-dir .\hf_export\hf_dataset`.
+
+## Harmonization audit (ACL00 vs ACL18 + nullability)
+
+Generate a compatibility report to inspect:
+- ACL00/ACL18 overlap and incompatibilities
+- strict-null and wave-specific fields
+- cross-wave domain overlap for dimension columns
+- suggested merge candidates for wave-specific fields
+
+```bash
+python .\hf_harmonization_audit.py --local-dataset-dir .\hf_export\hf_dataset --output-json .\hf_export\harmonization_audit_report.json --output-md .\hf_export\harmonization_audit_report.md
+```
+
+If `--local-dataset-dir` does not exist, the script falls back to loading from Hugging Face (`--repo-id`, `--config`, `--split`).
