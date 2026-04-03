@@ -90,15 +90,15 @@ Automatic mapping (reviewed and accepted):
 
 
 Manual review:  
-- AC0A → AC0_X_021
-- AC111 → AC1A
+- AC0A → AC0_X_021 ✔️
+- AC111 → AC1A ?
 - AC1A → ?
 - AC1B → ?
-- AC1_2_TR → ?
-- AC1_TR → AC11-12
-- AC21A → ?
-- AC31A → ?
-- AC32A → ?
+- AC1_2_TR → AC1_2 ✔️
+- AC1_TR → AC11-12 ✔️
+- AC21A → AC21_X_212 ✔️
+- AC31A → AC31_X_312 ✔️
+- AC32A → AC32_X_321 ✔️
 - AC33A → ?
 - AC34A → ?
 - AC37_39 → ?
@@ -111,16 +111,15 @@ Manual review:
 - AC4-8NSP → ?
 - AC51A → ?
 - AC51B → ?
-- AC6A → ?
-- AC7A → ?
-- AC7B → ?
-- AC90NSP → ?
-- AC913 → ?
-- AC99NSP → ?
-- AC9A → ?
-- AC9B → ?
-- AC9C → ?
-- AC9D → ?
-- AC9E → ?
-- NSP → ?
-
+- AC6A → AC6_X_611 ✔️
+- AC7A → AC72 ✔️
+- AC7B → AC71 + AC731 + AC732 => HAVE To **create AC71_731_732**  
+- AC90NSP → AC900 ✔️
+- AC913 → AC910 ✔️
+- AC99NSP → AC999 ✔️
+- AC9A → AC9_X_910 ✔️
+- AC9B → AC920 ✔️
+- AC9C → AC939 or AC938_939 (if childcare included)
+- AC9D → AC940-980 ✔️
+- AC9E → AC910_920 ✔️
+- NSP → AC9 ✔️ (approximate)
