@@ -1,0 +1,44 @@
+schema_version: '1.0'
+generated_at_utc: '2026-04-03T06:34:11.3443716Z'
+source:
+  file: hetus/2020/DSDs/ESTAT+TUS_20EDUC+1.0.xml
+  codelist_id: UNIT
+  agency_id: ESTAT
+  version: '64.0'
+  urn: urn:sdmx:org.sdmx.infomodel.codelist.Codelist=ESTAT:UNIT(64.0)
+  name:
+    en: "Unit of measure used"
+    de: "Maßeinheit"
+    fr: "Unité de mesure"
+code_count: 3
+codes:
+  "TIME_SP":
+    kind: unit_code
+    level: standard
+    urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:UNIT(64.0).TIME_SP
+    name:
+      en: "Time spent (hh:mm)"
+      de: "Vergehende Zeit (hh:mm)"
+      fr: "Temps passé (hh:mm)"
+    explan_label:
+      en: "Code not associated with the concept of the code list, but following Eurostat Standard Code List Guidelines"
+  "PTP_TIME":
+      kind: unit_code
+      level: standard
+      urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:UNIT(64.0).PTP_TIME
+      name:
+        en: "Participation time (hh:mm)"
+        de: "Teilnahmezeit (hh:mm)"
+        fr: "Temps de participation (hh:mm)"
+      explan_label:
+        en: "Code not associated with the concept of the code list, but following Eurostat Standard Code List Guidelines"
+  "PTP_RT":
+      kind: unit_code
+      level: standard
+      urn: urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:UNIT(64.0).PTP_RT
+      name:
+        en: "Participation rate (%)"
+        de: "Teilnahmerate (%)"
+        fr: "Taux de participation (%)"
+      explan_label:
+        en: "Code not associated with the concept of the code list, but following Eurostat Standard Code List Guidelines"
