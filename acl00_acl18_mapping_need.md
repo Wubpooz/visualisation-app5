@@ -64,3 +64,63 @@ AC02, AC22, AC313, AC331, AC332, AC342, AC343, AC344, AC733, AC811, AC82, AC83, 
 
 ### Needs manual review (ambiguous / aggregate / NSP-like)
 AC0A, AC1A, AC1B, AC1_2_TR, AC1_TR, AC21A, AC31A, AC32A, AC33A, AC34A, AC37_39, AC38A, AC38B, AC3_TR, AC3_X_38, AC4-8, AC4-8A, AC4-8NSP, AC51A, AC51B, AC6A, AC7A, AC7B, AC90NSP, AC913, AC99NSP, AC9A, AC9B, AC9C, AC9D, AC9E, NSP
+
+
+
+## Final Mapping Decision
+⚠️ In ACL00, main and second jobs are separately tagged, while in ACL18 they are combined.  
+
+Automatic mapping (reviewed and accepted):  
+- AC02 → AC02 ✔️
+- AC22 → AC22 ✔️
+- AC313 → AC312 ✔️
+- AC331 → AC331 ✔️
+- AC332 → AC332 ✔️
+- AC342 → AC342 ✔️
+- AC343 → AC343 ✔️
+- AC344 → AC344 ✔️
+- AC733 → AC733 ✔️
+- AC811 → AC811 ✔️ (minor description change)
+- AC82 → AC82 ✔️ (minor description change)
+- AC83 → AC83 ✔️ (minor description change)
+- AC938 → AC938 ✔️ (minor description change)
+- AC_NP_MAIN → AC_NP_MAIN ✔️
+- AC_NP_SEC → AC_NP_SEC ✔️
+- AC_PNP_MAIN → AC_PNP_MAIN ✔️
+
+
+Manual review:  
+- AC0A → AC0_X_021
+- AC111 → AC1A
+- AC1A → ?
+- AC1B → ?
+- AC1_2_TR → ?
+- AC1_TR → AC11-12
+- AC21A → ?
+- AC31A → ?
+- AC32A → ?
+- AC33A → ?
+- AC34A → ?
+- AC37_39 → ?
+- AC38A → ?
+- AC38B → ?
+- AC3_TR → ?
+- AC3_X_38 → ?
+- AC4-8 → ?
+- AC4-8A → ?
+- AC4-8NSP → ?
+- AC51A → ?
+- AC51B → ?
+- AC6A → ?
+- AC7A → ?
+- AC7B → ?
+- AC90NSP → ?
+- AC913 → ?
+- AC99NSP → ?
+- AC9A → ?
+- AC9B → ?
+- AC9C → ?
+- AC9D → ?
+- AC9E → ?
+- NSP → ?
+
