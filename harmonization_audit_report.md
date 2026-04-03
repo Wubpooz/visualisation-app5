@@ -10,6 +10,8 @@ Generated at: `2026-04-03T09:41:40.978424+00:00`
 
 - Non-missing counts: `acl00=1397370`, `acl18=275148`, `both=0`
 - Raw code overlap: `shared=16`, `acl00_only=53`, `acl18_only=40`
+Exact string overlap: 16 codes only
+(AC0, AC01, AC03, AC2, AC212, AC321, AC35, AC36, AC38, AC511, AC52, AC611, AC81, AC812, AC936, TOTAL)
 
 | wave | rows | acl00_non_missing | acl18_non_missing | both_non_missing |
 | --- | --- | --- | --- | --- |
