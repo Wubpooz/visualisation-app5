@@ -9,6 +9,7 @@
 [HETUS Guidelines 2020](https://ec.europa.eu/eurostat/documents/3859598/11597606/KS-GQ-20-011-EN-N.pdf/2567be02-f395-f1d0-d64d-d375192d6f10?t=1607360062000)  
 [HETUS data delivery guidelines 2020](https://ec.europa.eu/eurostat/documents/9986036/16055682/HETUS+wave+2020+-+Data+delivery+guidelines.pdf/a549a7cf-695a-2415-f990-61b302dab9fc?t=1675438030799)  
 [HETUS Data Delivery Guidelines](https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/KS-GQ-20-011)  
+[Codes Activités](https://ec.europa.eu/eurostat/databrowser/bulk?lang=en&selectedTab=codeList#:~:text=ACCIDENT&text=ACL00,tsv%20%7C%20sdmx%202.1)
 
 
 ## Animation Reference
