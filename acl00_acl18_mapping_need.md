@@ -91,26 +91,37 @@ Automatic mapping (reviewed and accepted):
 
 Manual review:  
 - AC0A → AC0_X_021 ✔️
-- AC111 → AC1A ?
-- AC1A → ?
-- AC1B → ?
+- AC1A → AC111 ✔️
+- AC1B → AC12 ✔️ (minor description change)
+- AC100 → AC1 ✔️ (broader)
+- AC11 → AC11 ✔️ (broader, includes main and second jobs)
+- AC111 → AC111 ✔️ (broader, includes main and second jobs)
+- AC112 → AC121 ✔️ (broader, includes main and second jobs)
+- AC12 → AC11 ✔️ (broader, includes main and second jobs)
+- AC121 → AC111 ✔️ (broader, includes main and second jobs)
+- AC122 → AC121 ✔️ (broader, includes main and second jobs)
+- AC13 → AC12 ✔️
+- AC130 → AC129 ✔️
+- AC131 → AC121 ✔️ (broader, includes main and second jobs)
+- AC139 → AC129 ✔️ (broader but acceptable)
 - AC1_2_TR → AC1_2 ✔️
 - AC1_TR → AC11-12 ✔️
 - AC21A → AC21_X_212 ✔️
 - AC31A → AC31_X_312 ✔️
 - AC32A → AC32_X_321 ✔️
-- AC33A → ?
-- AC34A → ?
-- AC37_39 → ?
-- AC38A → ?
-- AC38B → ?
-- AC3_TR → ?
-- AC3_X_38 → ?
-- AC4-8 → ?
-- AC4-8A → ?
-- AC4-8NSP → ?
-- AC51A → ?
-- AC51B → ?
+- AC33A → AC33 ✔️ (incomplete but enough)
+- AC34A → AC341_349 ✔️ (good enough)
+- AC340 → AC349 ✔️
+- AC37_39 → AC37 ✔️ (broader but acceptable)
+- AC38A → AC38_X_382-383 ✔️
+- AC38B → AC382_383 ✔️
+- AC3_TR → AC3_713_936 ✔️ (broader but acceptable)
+- AC3_X_38 → AC3_713_X_38 ✔️ (broader but acceptable)
+- AC4-8 → AC4-8_998_X_713 ✔️ (broader but acceptable)
+- AC4-8A → AC4-8_998_X_713_821 ✔️ (broader but acceptable)
+- AC4-8NSP → AC998 ✔️
+- AC51A → AC512_513_519 ✔️ (broader but acceptable)
+- AC51B → AC519 ✔️
 - AC6A → AC6_X_611 ✔️
 - AC7A → AC72 ✔️
 - AC7B → AC71 + AC731 + AC732 => HAVE To **create AC71_731_732**  
