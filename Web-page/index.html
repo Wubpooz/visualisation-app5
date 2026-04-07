@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time Use Survey - Visualisation</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/dist/plot.umd.min.js"></script>
+</head>
+<body>
+
+  <h1>Time Spend Analysis</h1>
+  <p class="research-question">As a social species how is the loneliness epidemic happening and can we see it in the evolution of our time use?</p>
+  <p class="subtitle">Simulated data - years 2000, 2010, 2020 - age groups 18-25, 25-35, 35-45</p>
+
+  <div class="intro-text">
+    <p>
+      This visualisation explores how people across different age groups distribute their daily time across nine activity categories
+      (eating, study, sleeping, paid work, household chores and family care, personal care, voluntary work, social life, travel
+      and leisure) over three survey waves: 2000, 2010, and 2020.
+    </p>
+    <p>
+      Each data point encodes: the <strong>activity category</strong>, the <strong>age group</strong> (18-25, 25-35, 35-45),
+      the <strong>survey year</strong>, the <strong>total time spent</strong> in hours, and the <strong>social context</strong>
+      of that time (alone, shared with others, or other).
+    </p>
+  </div>
+
+  <!-- Charts -->
+  <div class="charts-grid">
+
+    <!-- Chart 1 + category filter sidebar -->
+    <div class="chart-card chart-with-sidebar">
+      <div class="chart-main">
+        <h2 id="chart1Title"></h2>
+        <div id="chart1"></div>
+        <p class="encoding-note">
+          <strong>Mark:</strong> line + dot.
+          <strong>X axis:</strong> survey year (quantitative).
+          <strong>Y axis:</strong> total hours spent on the selected activity (quantitative, domain 0-10 h).
+          <strong>Color (stroke / fill):</strong> age group - one line per age group, allowing comparison of how the same activity evolved differently across generations over time.
+          <strong>Tooltip:</strong> exact hours on hover.
+          <strong>Text label:</strong> age group name anchored to the last data point.
+        </p>
+      </div>
+      <div class="chart-sidebar">
+        <label class="group-label">Categorie</label>
+        <div class="radio-group" id="categoryRadio"></div>
+      </div>
+    </div>
+
+    <!-- Chart 2 + age gap filter sidebar -->
+    <div class="chart-card chart-with-sidebar">
+      <div class="chart-main">
+        <h2>Time repartition : Alone vs Shared</h2>
+        <div id="chart2"></div>
+        <p class="note">Filtered by selected category and selected age group.</p>
+        <p class="encoding-note">
+          <strong>Mark:</strong> stacked bar (barY).
+          <strong>X axis:</strong> survey year (ordinal band).
+          <strong>Y axis:</strong> percentage of time (0-100 %).
+          <strong>Color (fill):</strong> social context - Alone, Shared, Other - stacked to always reach 100 %, making it easy to spot whether the selected activity is becoming more solitary or more social over time.
+          <strong>Tooltip:</strong> exact percentage per segment on hover.
+        </p>
+      </div>
+      <div class="chart-sidebar">
+        <label class="group-label">Age gap</label>
+        <select id="ageGapSelect">
+          <option value="18-25">18-25</option>
+          <option value="25-35">25-35</option>
+          <option value="35-45">35-45</option>
+        </select>
+      </div>
+    </div>
+    <!-- Chart 3 + year filter sidebar -->
+    <div class="chart-card chart-with-sidebar">
+      <div class="chart-main">
+        <h2 id="chart3Title">Repartition of time spend (Year 2020)</h2>
+        <div id="chart3"></div>
+        <p class="note">Distribution of all activities for the selected year, faceted by age group.</p>
+        <p class="encoding-note">
+          <strong>Mark:</strong> waffle (waffleY) - each cell represents 1 % of daily time.
+          <strong>Facet (fx):</strong> age group - one 10x10 waffle grid per group, enabling at-a-glance comparison of how priorities differ between generations.
+          <strong>Color (fill):</strong> activity category (Tableau10 palette).
+          <strong>Y (multiple = 10):</strong> percentage of total daily time allocated to each activity.
+          <strong>Tooltip:</strong> activity name and percentage on hover.
+        </p>
+      </div>
+      <div class="chart-sidebar">
+        <label class="group-label">Year</label>
+        <select id="yearSelect">
+          <option value="2000">2000</option>
+          <option value="2010">2010</option>
+          <option value="2020" selected>2020</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
