@@ -107,3 +107,13 @@ Push updated split to Hugging Face Hub:
 ```bash
 python .\add_unified_acl18_column.py --repo-id Bluefir/hetus-time-use --config observations --push-to-hub --target-repo-id Bluefir/hetus-time-use --target-config observations --target-split train
 ```
+
+## Plot unified ACL categories with YAML labels
+
+Use `plot_unified_acl_categories.py` to plot a few selected unified ACL18 activity codes with descriptions from `mappings/activities_ACL18.yml`:
+
+```bash
+python .\plot_unified_acl_categories.py --local-dataset-dir .\hf_export\hf_dataset --yml-file .\mappings\activities_ACL18.yml --categories AC11-12,AC0_X_021 --geo DE --sex T --unit TIME_SP --output .\hf_export\unified_acl_categories.png
+```
+
+If `--categories` is omitted, the script selects the top categories by mean minutes automatically.
