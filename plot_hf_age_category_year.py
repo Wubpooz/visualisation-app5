@@ -21,8 +21,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--repo-id",
         type=str,
-        default=os.environ.get("HF_DATASET_REPO", "Wupbooz/hetus-time-use"),
-        help="HF dataset repository id (default: env HF_DATASET_REPO or Wupbooz/hetus-time-use)",
+        default=os.environ.get("HF_DATASET_REPO", "Bluefir/hetus-time-use"),
+        help="HF dataset repository id (default: env HF_DATASET_REPO or Bluefir/hetus-time-use)",
     )
     parser.add_argument(
         "--config",

@@ -52,7 +52,7 @@
 
 7) Load from Hugging Face (example):  
     ```bash
-    python -c "from datasets import load_dataset; print(load_dataset('Wupbooz/hetus-time-use', 'observations', split='train'))"
+    python -c "from datasets import load_dataset; print(load_dataset('Bluefir/hetus-time-use', 'observations', split='train'))"
     ```
 
 ## Quick chart: time by age/category/year
@@ -60,7 +60,7 @@
 Generate a small graph from the published HF dataset (`observations` config):
 
 ```bash
-python .\plot_hf_age_category_year.py --repo-id Wupbooz/hetus-time-use --geo DE --sex T --unit TIME_SP --max-categories 4 --output .\hf_export\age_category_by_year.png
+python .\plot_hf_age_category_year.py --repo-id Bluefir/hetus-time-use --geo DE --sex T --unit TIME_SP --max-categories 4 --output .\hf_export\age_category_by_year.png
 ```
 
 Notes:
@@ -81,3 +81,29 @@ python .\hf_harmonization_audit.py --local-dataset-dir .\hf_export\hf_dataset --
 ```
 
 If `--local-dataset-dir` does not exist, the script falls back to loading from Hugging Face (`--repo-id`, `--config`, `--split`).
+
+## Add `unified_acl_codes` column (ACL18 harmonized)
+
+Use `add_unified_acl18_column.py` to create a new `unified_acl_codes` column in the `observations` table:
+- if `acl18` is present, keep it;
+- otherwise map `acl00` using **Full Review and Mappings** from `acl00_acl18_mapping_need.md`.
+- Mapping is embedded in the script and has been validated against the markdown source.
+- After processing, the script prints statistics for rows with `acl18`, rows with mapped `acl00`, unmapped `acl00`, and unique code counts.
+
+Small local smoke run:
+
+```bash
+python .\add_unified_acl18_column.py --local-dataset-dir .\hf_export\hf_dataset --config observations --max-rows 2000 --output-dir .\hf_export\hf_dataset_unified_acl_smoke
+```
+
+Full local run:
+
+```bash
+python .\add_unified_acl18_column.py --local-dataset-dir .\hf_export\hf_dataset --config observations --output-dir .\hf_export\hf_dataset_unified_acl
+```
+
+Push updated split to Hugging Face Hub:
+
+```bash
+python .\add_unified_acl18_column.py --repo-id Bluefir/hetus-time-use --config observations --push-to-hub --target-repo-id Bluefir/hetus-time-use --target-config observations --target-split train
+```
