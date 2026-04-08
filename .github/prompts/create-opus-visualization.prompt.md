@@ -3,7 +3,6 @@ name: "Create APP5 D3 Visualization"
 description: "Build a gorgeous static desktop HTML/CSS/JS (D3) page for the Europe time-use dataset using design.md: area bump, detailed line chart, and waffle chart."
 argument-hint: "Optional extra creative direction (visual mood, storytelling tone, animation intensity)"
 agent: "agent"
-model: ['Claude Opus 4.5 (copilot)', 'Claude Sonnet 4.5 (copilot)']
 ---
 
 Use the **feature-dev** skill for implementation rigor and **frontend-design** for high-quality visual design.
