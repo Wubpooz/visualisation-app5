@@ -35,42 +35,40 @@ However, we choose to discard these categories since we couldn't find a way to f
 - Y30-64 from ACL18 with 3780 rows
 - Y_GE60 from ACL18 with 3780 rows
 
-### Categories
-Catégories ancrage :  
-| Code  | Description       | N rows |
-| ----- | ----------------- | ------ |
-| AC01  | Sleeping          | 24 918 |
-| AC72  | Computing         | 26 925 |
-| AC321 | Cleaning dwelling | 25 926 |
-| AC812 | Reading books     | 24 918 |
 
-Détail de tendances :   
+### Categories
+Catégories très larges :  
+- Personal care/rest → AC01, AC02/AC021
+- Work → AC1_2
+- Domestic/family → AC321, AC382_383
+- Leisure/media → AC72, AC812
+- Social life → AC512_513_519, AC52
+- Walking → AC611
+- Commuting → AC910
+
+
 | Code          | Description                                         | N rows | Commentaire                                                                      |
 | ------------- | --------------------------------------------------- | ------ | -------------------------------------------------------------------------------- |
-| AC72          | Computing                                           | 26 925 | Très bon signal "modernité numérique", souvent différenciant selon âge/année.   |
-| AC512_513_519 | Socialising with others (visits, celebrations and other) | 35 979 | Signal social plus robuste que AC519 seul, disponible sur les trois vagues.      |
-| AC52          | Entertainment and culture                           | 24 918 | Bon proxy de loisirs hors numérique, lisible sur l’ensemble des années.         |
-| AC611         | Walking and hiking                                  | 24 918 | Indicateur utile de mobilité douce et de loisirs actifs selon âge/période.      |
-| AC321         | Cleaning dwelling                                   | 25 926 | Activité domestique concrète, utile pour contraste avec loisirs/travail.         |
+| AC01          | Sleeping                                            | 24 918 | _Stable_                                                                         |
+| AC02 + AC021  | Eating                                              | 57 312 | _Stable_                                                                         |
+| AC812         | Reading books                                       | 24 918 | Montre une baisse progressive de la lecture de livres.                           |
+| AC72          | Computing                                           | 26 925 | Très bon signal "modernité numérique", souvent différenciant selon âge/année.    |
+| AC512_513_519 | Socialising with others (visits, celebrations etc)  | 35 979 | Signal social plus robuste que AC519 seul, disponible sur les trois vagues.      |
+| AC52          | Entertainment and culture                           | 24 918 | Bon proxy de loisirs hors numérique, lisible sur l’ensemble des années.          |
+| AC611         | Walking and hiking                                  | 24 918 | Indicateur utile de mobilité douce et de loisirs actifs selon âge/période.       |
+| AC321         | Cleaning dwelling                                   | 25 926 | _Activité domestique concrète, utile pour contraste avec loisirs/travail._       |
 | AC382_383     | Teaching, reading, playing and talking with child   | 24 918 | Très pertinent pour une lecture "temps partagé/familial".                        |
 | AC1_2         | Employment and study                                | 21 315 | Remplace AC111 par un bloc stable sur les trois années pour structurer le récit. |
 | AC910         | Travel to/from work                                 | 24 918 | Très utile avec AC1_2 pour analyser l’effet mobilité/emploi.                     |
+
+In _underline_ the categories that will be excluded from the detailed line chart because they are not interesting to analyze in detail (sleep, eating, etc).  
+
 
 Catégories à éviter ou mettre en "Autres" :  
 - Agrégats trop larges : AC4-8_998_X_713, AC3_713_*, AC9, etc.
 - Codes peu interprétables / non spécifiés : AC900, AC998, AC999, vide
 - Codes techniques productifs : AC_NP_*, AC_PNP_*
 
-Catégories très larges :  
-- Personal care/rest → AC01
-- Work/obligations → AC1_2, AC910
-- Domestic/family → AC321, AC382_383
-- Leisure/media → AC72, AC812, AC52
-- Social life → AC512_513_519
-
-
-**choose interesting ones for the detailed chart?**  
-**exclude sleep, eating, etc for the detailed chart bcs not interesting?**  
 
 
 ### Alone and shared time
