@@ -4,7 +4,7 @@ Sorted by `count_star()` in descending order. The `alone/shared/other` column is
 
 | count_star() | unified_acl_codes | meaning | alone/shared/other/none |
 | ---: | --- | --- | --- |
-| 57024 | TOTAL | Total |  |
+| 57024 | TOTAL | Total | none |
 | 47544 | AC02 | Eating |  none|
 | 47526 | AC82 | TV, video and DVD | alone |
 | 35979 | AC512_513_519 | Socialising with others (visits, celebrations and other) | shared |
