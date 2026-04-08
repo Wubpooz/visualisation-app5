@@ -36,15 +36,45 @@ However, we choose to discard these categories since we couldn't find a way to f
 - Y_GE60 from ACL18 with 3780 rows
 
 ### Categories
-top10?  
-regroup?  
-choose interesting ones for the detailed chart?  
-exclude sleep, eating, etc for the detailed chart bcs not interesting?  
+Catégories ancrage :  
+| Code  | Description       | N rows |
+| ----- | ----------------- | ------ |
+| AC02  | Eating            | 47 544 |
+| AC82  | TV, video and DVD | 47 526 |
+| AC01  | Sleeping          | 24 918 |
+| AC812 | Reading books     | 24 918 |
 
-dans la page html : eating,study,sleeping,paid work",household chores and family care, personal care, voluntary work,social life,travel and leisure
+Détail de tendances :   
+| Code      | Description                                 | N rows | Commentaire                                                                   |
+| --------- | ------------------------------------------- | ------ | ----------------------------------------------------------------------------- |
+| AC72      | Computing                                   | 26 925 | Très bon signal "modernité numérique", souvent différenciant selon âge/année. |
+| AC519     | Other or unspecified social life            | 29 256 | Forte valeur pour comparer sociabilité (seul/partagé).                        |
+| AC53      | Resting - time out                          | 29 256 | Bon indicateur de rythme de vie / récupération.                               |
+| AC83      | Radio and recordings                        | 29 274 | Complément média intéressant face à TV/vidéo.                                 |
+| AC321     | Cleaning dwelling                           | 25 926 | Activité domestique concrète, utile pour contraste avec loisirs/travail.      |
+| AC382_383 | Teaching/reading/playing/talking with child | 24 918 | Très pertinent pour une lecture "temps partagé/familial".                     |
+| AC111     | Working time in main and second job         | 20 202 | Ancre "obligation/emploi", essentielle pour structurer le récit.              |
+| AC910     | Travel to/from work                         | 24 918 | Très utile avec AC111 pour analyser l’effet mobilité/emploi.                  |
+
+Catégories à éviter ou mettre en "Autres" :  
+- Agrégats trop larges : AC4-8_998_X_713, AC3_713_*, AC1_2, etc.
+- Codes peu interprétables / non spécifiés : AC900, AC998, AC999, vide
+- Codes techniques productifs : AC_NP_*, AC_PNP_*
+
+Catégories très larges :  
+- Personal care → AC01, AC02
+- Work/obligations → AC111, AC910
+- Domestic/family → AC321, AC382_383
+- Leisure/media → AC82, AC72, AC812
+- Social life → AC519
+
+
+**choose interesting ones for the detailed chart?**  
+**exclude sleep, eating, etc for the detailed chart bcs not interesting?**  
+
 
 ### Alone and shared time
-exclude sleep, eating?  paidwork
+exclude sleep, eating?  
 
 
 ## Interactivity
