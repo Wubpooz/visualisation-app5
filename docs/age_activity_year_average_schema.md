@@ -2,6 +2,8 @@
 
 Ce document decrit la structure du fichier `hf_export/age_activity_year_average.json` genere par `extract_json-data.py`.
 
+Par defaut, le script ne filtre plus sur `geo` ni sur `sex`: il agrege toutes les valeurs disponibles pour ces deux dimensions, sauf si un filtre explicite est passe en ligne de commande.
+
 ## Objectif du fichier
 
 Le JSON contient:
@@ -25,6 +27,7 @@ root
 |  |- config
 |  |- split
 |  |- local_dataset_dir
+|  |- load_mode
 |  |- activity_category_source
 |- extraction
 |  |- include_partial_categories
@@ -40,9 +43,18 @@ root
 |  |- "65+"
 |- activity_categories
 |- summary
+|  |- source_rows
 |  |- filtered_rows
 |  |- aggregated_rows_with_data
 |  |- output_records
+|  |- filter_diagnostics
+|  |  |- after_geo
+|  |  |- after_sex
+|  |  |- after_unit
+|  |  |- after_freq
+|  |  |- after_age_group
+|  |  |- after_activity_category
+|  |  |- after_minutes_year
 |- values
    |- "2000"
    |  |- "10-24"
@@ -64,7 +76,7 @@ root
 | `years` | `array<number>` | Annees presentes dans l'extraction. |
 | `age_groups` | `array<string>` | Groupes d'age harmonises presents dans le resultat. |
 | `age_group_source_codes` | `object<string, array<string>>` | Mapping entre groupes harmonises et codes source. |
-| `activity_categories` | `array<string>` | Categories d'activite exportees dans chaque noeud `values`. |
+| `activity_categories` | `array<string>` | Categories d'activite exportees dans chaque noeud `values`, y compris les categories fusionnees comme `AC02 + AC021`. |
 | `summary` | `object` | Statistiques globales de l'extraction. |
 | `values` | `object` | Resultat final indexe par `annee`, puis `groupe d'age`. |
 
@@ -77,7 +89,8 @@ root
   "repo_id": "Bluefir/hetus-time-use",
   "config": "observations",
   "split": "train",
-  "local_dataset_dir": "hf_export\\hf_dataset_unified_acl",
+  "local_dataset_dir": null,
+  "load_mode": "remote_parquet_batches",
   "activity_category_source": "unified_acl_codes"
 }
 ```
@@ -85,7 +98,8 @@ root
 - `repo_id`: dataset Hugging Face utilise.
 - `config`: configuration chargee.
 - `split`: split charge.
-- `local_dataset_dir`: dataset local utilise s'il existe.
+- `local_dataset_dir`: dataset local utilise s'il existe, sinon `null`.
+- `load_mode`: mode de lecture effectivement utilise (`local_save_to_disk` ou `remote_parquet_batches`).
 - `activity_category_source`: colonne utilisee pour identifier les categories d'activite.
 
 ### `extraction`
@@ -108,15 +122,29 @@ root
 
 ```json
 {
-  "filtered_rows": 1281,
-  "aggregated_rows_with_data": 108,
-  "output_records": 108
+  "source_rows": 1680915,
+  "filtered_rows": 42660,
+  "aggregated_rows_with_data": 120,
+  "output_records": 120,
+  "filter_diagnostics": {
+    "after_geo": 1680915,
+    "after_sex": 1680915,
+    "after_unit": 496120,
+    "after_freq": 496120,
+    "after_age_group": 63048,
+    "after_activity_category": 59466,
+    "after_minutes_year": 42660
+  }
 }
 ```
 
+- `source_rows`: nombre de lignes scannees dans le split/config cible.
 - `filtered_rows`: nombre de lignes source apres application des filtres de l'extraction.
 - `aggregated_rows_with_data`: nombre de combinaisons `annee x age x categorie` ayant des donnees.
 - `output_records`: nombre total de blocs categorie exportes dans `values`.
+- `filter_diagnostics`: detail des reductions successives provoquees par chaque filtre.
+
+Avec les valeurs par defaut actuelles, `after_geo` et `after_sex` restent egaux a `source_rows`, car aucune restriction n'est appliquee sur ces deux dimensions.
 
 ## Structure de `values`
 
@@ -193,6 +221,7 @@ shared_pct + alone_pct + other_pct = 100.000
 ### Categories d'activite exportees
 
 - `AC01`
+- `AC02 + AC021`
 - `AC812`
 - `AC72`
 - `AC512_513_519`

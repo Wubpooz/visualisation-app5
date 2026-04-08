@@ -9,7 +9,8 @@ from pathlib import Path
 from typing import Any, cast
 
 import pandas as pd
-from datasets import Dataset, DatasetDict, load_dataset, load_from_disk
+import pyarrow.parquet as pq
+from datasets import Dataset, DatasetDict, load_dataset_builder, load_from_disk
 from huggingface_hub import hf_hub_download, list_repo_files
 
 from add_unified_acl18_column import ACL00_TO_ACL18_MAPPING
@@ -28,8 +29,19 @@ AGE_GROUP_MAPPING = {
     for source_code in source_codes
 }
 
+ACTIVITY_CATEGORY_GROUPS: dict[str, tuple[str, ...]] = {
+    "AC02 + AC021": ("AC02", "AC021"),
+}
+
+ACTIVITY_CATEGORY_ALIASES = {
+    source_code: category
+    for category, source_codes in ACTIVITY_CATEGORY_GROUPS.items()
+    for source_code in source_codes
+}
+
 DEFAULT_ACTIVITY_CATEGORIES = [
     "AC01",
+    "AC02 + AC021",
     "AC812",
     "AC72",
     "AC512_513_519",
@@ -42,6 +54,33 @@ DEFAULT_ACTIVITY_CATEGORIES = [
 ]
 
 SOCIAL_CONTEXT_ORDER = ["shared", "alone", "other"]
+DATASET_CONFIG_ALIASES = {
+    "observation": "observations",
+}
+REMOTE_BATCH_COLUMNS = [
+    "duration_minutes",
+    "age",
+    "geo",
+    "sex",
+    "unit",
+    "freq",
+    "time_period_year",
+    "time_period",
+    "unified_acl_codes",
+    "acl18",
+    "acl00",
+]
+FILTER_DIAGNOSTIC_KEYS = [
+    "source_rows",
+    "after_geo",
+    "after_sex",
+    "after_unit",
+    "after_freq",
+    "after_age_group",
+    "after_activity_category",
+    "after_minutes_year",
+]
+UNFILTERED_DIMENSION_TOKENS = {"", "*", "ALL"}
 
 
 def parse_args() -> argparse.Namespace:
@@ -61,7 +100,10 @@ def parse_args() -> argparse.Namespace:
         "--config",
         type=str,
         default="observations",
-        help="Dataset config to load (default: observations).",
+        help=(
+            "Dataset config to load (default: observations; the alias 'observation' "
+            "is normalized to 'observations')."
+        ),
     )
     parser.add_argument(
         "--split",
@@ -76,6 +118,15 @@ def parse_args() -> argparse.Namespace:
         help="Environment variable holding the HF token for private repos.",
     )
     parser.add_argument(
+        "--batch-size",
+        type=int,
+        default=100_000,
+        help=(
+            "Rows per parquet batch when scanning a remote HF split incrementally "
+            "(default: 100000)."
+        ),
+    )
+    parser.add_argument(
         "--local-dataset-dir",
         type=Path,
         default=Path("hf_export") / "hf_dataset_unified_acl",
@@ -87,14 +138,20 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--geo",
         type=str,
-        default="DE",
-        help="Geography filter (default: DE).",
+        default="ALL",
+        help=(
+            "Geography filter. Use a code like DE, a comma-separated list like DE,FR, "
+            "or ALL/* for no geo filter (default: ALL)."
+        ),
     )
     parser.add_argument(
         "--sex",
         type=str,
-        default="T",
-        help="Sex filter (default: T).",
+        default="ALL",
+        help=(
+            "Sex filter. Use a code like T, a comma-separated list like T,F, "
+            "or ALL/* for no sex filter (default: ALL)."
+        ),
     )
     parser.add_argument(
         "--unit",
@@ -147,8 +204,48 @@ def normalize_text(value: Any) -> str:
     return "" if text.lower() == "nan" else text
 
 
-def load_observations(args: argparse.Namespace) -> pd.DataFrame:
-    token = os.environ.get(args.token_env, "").strip() or None
+def normalize_activity_category(value: Any) -> str:
+    code = normalize_text(value)
+    if code == "":
+        return ""
+    return ACTIVITY_CATEGORY_ALIASES.get(code, code)
+
+
+def unique_preserving_order(values: list[str]) -> list[str]:
+    return list(dict.fromkeys(values))
+
+
+def parse_dimension_filter(raw_value: str) -> set[str] | None:
+    normalized_values = unique_preserving_order(
+        [normalize_text(part) for part in raw_value.split(",") if normalize_text(part)]
+    )
+    if not normalized_values:
+        return None
+    if any(value.upper() in UNFILTERED_DIMENSION_TOKENS for value in normalized_values):
+        return None
+    return set(normalized_values)
+
+
+def canonicalize_config_name(config_name: str) -> str:
+    raw_config = config_name.strip()
+    return DATASET_CONFIG_ALIASES.get(raw_config.lower(), raw_config)
+
+
+def empty_filter_diagnostics() -> dict[str, int]:
+    return {key: 0 for key in FILTER_DIAGNOSTIC_KEYS}
+
+
+def merge_filter_diagnostics(
+    total: dict[str, int],
+    current: dict[str, int],
+) -> None:
+    for key in FILTER_DIAGNOSTIC_KEYS:
+        total[key] += int(current.get(key, 0))
+
+
+def load_local_observations(args: argparse.Namespace) -> pd.DataFrame:
+    if not args.local_dataset_dir or not args.local_dataset_dir.exists():
+        raise FileNotFoundError(f"Local dataset not found: {args.local_dataset_dir}")
 
     if args.local_dataset_dir and args.local_dataset_dir.exists():
         local_data = load_from_disk(str(args.local_dataset_dir))
@@ -164,22 +261,29 @@ def load_observations(args: argparse.Namespace) -> pd.DataFrame:
 
         return cast(pd.DataFrame, dataset.to_pandas())
 
-    try:
-        dataset = load_dataset(args.repo_id, args.config, split=args.split, token=token)
-        return cast(pd.DataFrame, dataset.to_pandas())
-    except Exception as exc:
-        print(
-            "Warning: load_dataset failed for the remote dataset; "
-            "falling back to direct parquet download. "
-            f"Reason: {exc}"
-        )
-        return load_remote_parquet_observations(args, token)
+    raise FileNotFoundError(f"Local dataset not found: {args.local_dataset_dir}")
 
 
-def load_remote_parquet_observations(
+def resolve_remote_split_row_count(
     args: argparse.Namespace,
     token: str | None,
-) -> pd.DataFrame:
+) -> int | None:
+    builder = load_dataset_builder(args.repo_id, args.config, token=token)
+    if args.split not in builder.info.splits:
+        available = ", ".join(sorted(builder.info.splits))
+        raise KeyError(
+            f"Split '{args.split}' not found in dataset config '{args.config}'. "
+            f"Available splits: {available}"
+        )
+
+    split_info = builder.info.splits[args.split]
+    return int(split_info.num_examples) if split_info.num_examples is not None else None
+
+
+def list_remote_parquet_files(
+    args: argparse.Namespace,
+    token: str | None,
+) -> list[str]:
     repo_files = list_repo_files(args.repo_id, repo_type="dataset", token=token)
     parquet_files = sorted(
         path
@@ -188,13 +292,34 @@ def load_remote_parquet_observations(
         and Path(path).name.startswith(f"{args.split}-")
         and path.endswith(".parquet")
     )
-    if not parquet_files:
-        raise FileNotFoundError(
-            "No parquet shard found for the requested dataset config/split: "
-            f"config={args.config} split={args.split}"
-        )
+    if parquet_files:
+        return parquet_files
 
-    frames: list[pd.DataFrame] = []
+    available_configs = sorted(
+        {
+            Path(path).parts[0]
+            for path in repo_files
+            if path.endswith(".parquet") and len(Path(path).parts) > 1
+        }
+    )
+    available_config_text = ", ".join(available_configs) if available_configs else "none"
+    raise FileNotFoundError(
+        "No parquet shard found for the requested dataset config/split: "
+        f"config={args.config} split={args.split}. Available configs: {available_config_text}"
+    )
+
+
+def aggregate_remote_observations(
+    args: argparse.Namespace,
+    token: str | None,
+) -> tuple[pd.DataFrame, str, dict[str, int]]:
+    expected_source_rows = resolve_remote_split_row_count(args, token)
+    parquet_files = list_remote_parquet_files(args, token)
+    summaries: list[pd.DataFrame] = []
+    diagnostics = empty_filter_diagnostics()
+    category_source = "derived_from_acl00_acl18"
+    validated_batch = False
+
     for parquet_file in parquet_files:
         local_path = hf_hub_download(
             repo_id=args.repo_id,
@@ -202,9 +327,54 @@ def load_remote_parquet_observations(
             repo_type="dataset",
             token=token,
         )
-        frames.append(pd.read_parquet(local_path))
+        parquet_reader = pq.ParquetFile(local_path)
+        batch_columns = [
+            column_name
+            for column_name in REMOTE_BATCH_COLUMNS
+            if column_name in parquet_reader.schema_arrow.names
+        ]
 
-    return pd.concat(frames, ignore_index=True)
+        for batch in parquet_reader.iter_batches(columns=batch_columns, batch_size=args.batch_size):
+            batch_df = batch.to_pandas()
+            if not validated_batch:
+                validate_required_columns(batch_df)
+                validated_batch = True
+
+            filtered_batch, batch_category_source, batch_diagnostics = prepare_filtered_data(
+                batch_df,
+                args,
+            )
+            merge_filter_diagnostics(diagnostics, batch_diagnostics)
+            if batch_category_source == "unified_acl_codes":
+                category_source = batch_category_source
+            if not filtered_batch.empty:
+                summaries.append(summarize_minutes(filtered_batch))
+
+    if not validated_batch:
+        raise ValueError("No parquet batch could be read for the requested dataset config/split.")
+
+    if expected_source_rows is not None and diagnostics["source_rows"] != expected_source_rows:
+        raise ValueError(
+            "The incremental parquet scan did not cover the full requested split. "
+            f"Expected {expected_source_rows} rows, scanned {diagnostics['source_rows']}."
+        )
+
+    return combine_aggregated_minutes(summaries), category_source, diagnostics
+
+
+def extract_observations(
+    args: argparse.Namespace,
+) -> tuple[pd.DataFrame, str, dict[str, int], str]:
+    token = os.environ.get(args.token_env, "").strip() or None
+
+    if args.local_dataset_dir and args.local_dataset_dir.exists():
+        df = load_local_observations(args)
+        validate_required_columns(df)
+        filtered, category_source, diagnostics = prepare_filtered_data(df, args)
+        return aggregate_minutes(filtered), category_source, diagnostics, "local_save_to_disk"
+
+    grouped, category_source, diagnostics = aggregate_remote_observations(args, token)
+    return grouped, category_source, diagnostics, "remote_parquet_batches"
 
 
 def validate_required_columns(df: pd.DataFrame) -> None:
@@ -251,11 +421,11 @@ def build_years(df: pd.DataFrame) -> pd.Series:
 def prepare_filtered_data(
     df: pd.DataFrame,
     args: argparse.Namespace,
-) -> tuple[pd.DataFrame, str]:
+) -> tuple[pd.DataFrame, str, dict[str, int]]:
     working = df.copy()
     activity_categories, category_source = build_activity_categories(working)
 
-    working["activity_category"] = activity_categories
+    working["activity_category"] = activity_categories.map(normalize_activity_category)
     working["age_raw"] = working["age"].map(normalize_text)
     working["age_group"] = working["age_raw"].map(lambda age: AGE_GROUP_MAPPING.get(age, ""))
     working["minutes"] = pd.to_numeric(working["duration_minutes"], errors="coerce")
@@ -269,33 +439,94 @@ def prepare_filtered_data(
     else:
         working["freq_norm"] = ""
 
-    filtered = working[
-        (working["geo_norm"] == args.geo)
-        & (working["sex_norm"] == args.sex)
-        & (working["unit_norm"] == args.unit)
-        & (working["freq_norm"].isin(["", "A"]))
-        & (working["age_group"] != "")
+    geo_filters = parse_dimension_filter(args.geo)
+    sex_filters = parse_dimension_filter(args.sex)
+
+    if geo_filters is None:
+        geo_mask = pd.Series(True, index=working.index)
+    else:
+        geo_mask = working["geo_norm"].isin(geo_filters)
+
+    if sex_filters is None:
+        sex_mask = geo_mask
+    else:
+        sex_mask = geo_mask & working["sex_norm"].isin(sex_filters)
+
+    unit_mask = sex_mask & (working["unit_norm"] == args.unit)
+    freq_mask = unit_mask & (working["freq_norm"].isin(["", "A"]))
+    age_group_mask = freq_mask & (working["age_group"] != "")
+    activity_category_mask = (
+        age_group_mask
         & (working["activity_category"] != "")
         & (working["activity_category"] != "TOTAL")
-        & working["minutes"].notna()
-        & working["year"].notna()
-    ][["year", "age_group", "activity_category", "minutes", "age_raw"]].copy()
+    )
+    final_mask = activity_category_mask & working["minutes"].notna() & working["year"].notna()
+
+    filtered = working[final_mask][["year", "age_group", "activity_category", "minutes", "age_raw"]].copy()
+    filter_diagnostics = {
+        "source_rows": int(len(working)),
+        "after_geo": int(geo_mask.sum()),
+        "after_sex": int(sex_mask.sum()),
+        "after_unit": int(unit_mask.sum()),
+        "after_freq": int(freq_mask.sum()),
+        "after_age_group": int(age_group_mask.sum()),
+        "after_activity_category": int(activity_category_mask.sum()),
+        "after_minutes_year": int(final_mask.sum()),
+    }
 
     filtered["year"] = filtered["year"].astype(int)
-    return filtered, category_source
+    return filtered, category_source, filter_diagnostics
 
 
-def aggregate_minutes(filtered: pd.DataFrame) -> pd.DataFrame:
+def summarize_minutes(filtered: pd.DataFrame) -> pd.DataFrame:
     grouped = (
         filtered.groupby(["year", "age_group", "activity_category"], as_index=False)
         .agg(
-            average_minutes=("minutes", "mean"),
+            total_minutes=("minutes", "sum"),
             observation_count=("minutes", "size"),
+        )
+    )
+    return grouped
+
+
+def combine_aggregated_minutes(summaries: list[pd.DataFrame]) -> pd.DataFrame:
+    if not summaries:
+        return pd.DataFrame(
+            columns=[
+                "year",
+                "age_group",
+                "activity_category",
+                "average_minutes",
+                "observation_count",
+                "total_minutes",
+            ]
+        )
+
+    combined = pd.concat(summaries, ignore_index=True)
+    grouped = (
+        combined.groupby(["year", "age_group", "activity_category"], as_index=False)
+        .agg(
+            total_minutes=("total_minutes", "sum"),
+            observation_count=("observation_count", "sum"),
         )
         .sort_values(["year", "age_group", "activity_category"])
         .reset_index(drop=True)
     )
-    return grouped
+    grouped["average_minutes"] = grouped["total_minutes"] / grouped["observation_count"]
+    return grouped[
+        [
+            "year",
+            "age_group",
+            "activity_category",
+            "average_minutes",
+            "observation_count",
+            "total_minutes",
+        ]
+    ]
+
+
+def aggregate_minutes(filtered: pd.DataFrame) -> pd.DataFrame:
+    return combine_aggregated_minutes([summarize_minutes(filtered)])
 
 
 def select_categories(
@@ -311,14 +542,20 @@ def select_categories(
         selected = selected[selected["activity_category"].isin(eligible_categories)].copy()
 
     available_categories = set(selected["activity_category"].astype(str).tolist())
-    requested_categories = [code.strip() for code in args.categories.split(",") if code.strip()]
+    requested_categories = unique_preserving_order(
+        [
+            normalize_activity_category(code)
+            for code in args.categories.split(",")
+            if code.strip()
+        ]
+    )
     using_default_categories = not args.all_categories and not requested_categories
 
     if args.all_categories:
         categories = sorted(available_categories)
         missing_categories: list[str] = []
     else:
-        desired_categories = requested_categories or DEFAULT_ACTIVITY_CATEGORIES
+        desired_categories = unique_preserving_order(requested_categories or DEFAULT_ACTIVITY_CATEGORIES)
         categories = [code for code in desired_categories if code in available_categories]
         missing_categories = [code for code in desired_categories if code not in available_categories]
 
@@ -367,6 +604,8 @@ def merge_with_complete_grid(
         how="left",
     )
     merged["observation_count"] = merged["observation_count"].fillna(0).astype(int)
+    if "total_minutes" in merged.columns:
+        merged["total_minutes"] = merged["total_minutes"].fillna(0.0)
     return merged.sort_values(["year", "age_group", "activity_category"]).reset_index(drop=True)
 
 
@@ -512,7 +751,7 @@ def validate_social_context_sums(values: dict[str, dict[str, dict[str, Any]]]) -
 
 def build_payload(
     args: argparse.Namespace,
-    filtered: pd.DataFrame,
+    filtered_row_count: int,
     extracted: pd.DataFrame,
     years: list[int],
     age_groups: list[str],
@@ -521,6 +760,8 @@ def build_payload(
     missing_default_categories: list[str],
     using_default_categories: bool,
     social_percentages: dict[tuple[int, str], dict[str, float]],
+    filter_diagnostics: dict[str, int],
+    load_mode: str,
 ) -> dict[str, Any]:
     values = build_values_index(extracted, social_percentages)
     validate_social_context_sums(values)
@@ -531,7 +772,12 @@ def build_payload(
             "repo_id": args.repo_id,
             "config": args.config,
             "split": args.split,
-            "local_dataset_dir": str(args.local_dataset_dir) if args.local_dataset_dir else None,
+            "local_dataset_dir": (
+                str(args.local_dataset_dir)
+                if args.local_dataset_dir and args.local_dataset_dir.exists()
+                else None
+            ),
+            "load_mode": load_mode,
             "activity_category_source": category_source,
         },
         "extraction": {
@@ -548,9 +794,15 @@ def build_payload(
         },
         "activity_categories": categories,
         "summary": {
-            "filtered_rows": int(len(filtered)),
+            "source_rows": int(filter_diagnostics["source_rows"]),
+            "filtered_rows": int(filtered_row_count),
             "aggregated_rows_with_data": int((extracted["observation_count"] > 0).sum()),
             "output_records": int(len(extracted)),
+            "filter_diagnostics": {
+                key: int(filter_diagnostics[key])
+                for key in FILTER_DIAGNOSTIC_KEYS
+                if key != "source_rows"
+            },
         },
         "values": values,
     }
@@ -564,20 +816,19 @@ def save_payload(payload: dict[str, Any], output_path: Path) -> None:
 
 def main() -> None:
     args = parse_args()
-    df = load_observations(args)
-    validate_required_columns(df)
+    args.config = canonicalize_config_name(args.config)
 
-    filtered, category_source = prepare_filtered_data(df, args)
-    if filtered.empty:
+    grouped_all, category_source, filter_diagnostics, load_mode = extract_observations(args)
+    filtered_row_count = int(filter_diagnostics["after_minutes_year"])
+    if filtered_row_count == 0:
         raise ValueError(
             "No rows left after filtering. Try another geo/sex/unit combination, "
             "or use a local harmonized dataset."
         )
 
-    grouped = aggregate_minutes(filtered)
     social_context_map = load_social_context_map(args.social_context_markdown)
     grouped, years, categories, missing_default_categories, using_default_categories = select_categories(
-        grouped,
+        grouped_all,
         args,
     )
 
@@ -588,7 +839,7 @@ def main() -> None:
     ]
     extracted = merge_with_complete_grid(grouped, years, age_groups, categories)
     social_percentages = compute_social_context_percentages(
-        grouped=aggregate_minutes(filtered),
+        grouped=grouped_all,
         years=years,
         age_groups=age_groups,
         social_context_map=social_context_map,
@@ -596,7 +847,7 @@ def main() -> None:
 
     payload = build_payload(
         args=args,
-        filtered=filtered,
+        filtered_row_count=filtered_row_count,
         extracted=extracted,
         years=years,
         age_groups=age_groups,
@@ -605,6 +856,8 @@ def main() -> None:
         missing_default_categories=missing_default_categories,
         using_default_categories=using_default_categories,
         social_percentages=social_percentages,
+        filter_diagnostics=filter_diagnostics,
+        load_mode=load_mode,
     )
     save_payload(payload, args.output_json)
 
@@ -615,11 +868,16 @@ def main() -> None:
         )
 
     print(f"Saved JSON extraction: {args.output_json.resolve()}")
+    print(f"Load mode: {load_mode}")
     print(f"Category source: {category_source}")
     print(f"Years included: {years}")
     print(f"Age groups included: {age_groups}")
     print(f"Categories extracted: {categories}")
-    print(f"Rows used after filtering: {len(filtered)}")
+    print(
+        "Filter diagnostics: "
+        + ", ".join(f"{key}={filter_diagnostics[key]}" for key in FILTER_DIAGNOSTIC_KEYS)
+    )
+    print(f"Rows used after filtering: {filtered_row_count}")
 
 
 if __name__ == "__main__":

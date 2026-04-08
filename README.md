@@ -55,6 +55,19 @@
     python -c "from datasets import load_dataset; print(load_dataset('Bluefir/hetus-time-use', 'observations', split='train'))"
     ```
 
+## Export age/category/year JSON
+
+Generate the JSON summary used by the frontend:
+
+```bash
+python .\extract_json-data.py
+```
+
+Notes:
+- By default, `extract_json-data.py` keeps all available `geo` and `sex` values.
+- To restrict the extraction, pass explicit filters such as `--geo DE` or `--sex T`.
+- The script scans the remote `observations/train` parquet shards incrementally, so it can process the full HF split without loading all 1.68M rows in RAM at once.
+
 ## Quick chart: time by age/category/year
 
 Generate a small graph from the published HF dataset (`observations` config):
