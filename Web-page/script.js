@@ -91,16 +91,17 @@ let selectedYear     = 2020;
 // ─────────────────────────────────────────────────────────────
 //  4. BUILD RADIO BUTTONS
 // ─────────────────────────────────────────────────────────────
-const CATEGORY_ICONS = {
-  "eating":                              "🍽️",
-  "study":                               "📚",
-  "sleeping":                            "😴",
-  "paid work":                           "💼",
-  "household chores and family care":    "🏠",
-  "personal care":                       "🧴",
-  "voluntary work":                      "🤝",
-  "social life":                         "👥",
-  "travel and leisure":                  "✈️"
+
+const CATEGORY_IMAGES = {
+  "eating":                              "categorie/eat.png",
+  "study":                               "categorie/study.png",
+  "sleeping":                            "categorie/sleep.png",
+  "paid work":                           "categorie/paidWork.png",
+  "household chores and family care":    "categorie/householdchores.png",
+  "personal care":                       "categorie/personal-care-product.png",
+  "voluntary work":                      "categorie/voluntary-work.png",
+  "social life":                         "categorie/social-life.png",
+  "travel and leisure":                  "categorie/airplane-around-earth.png"
 };
 
 const radioContainer = document.getElementById("categoryRadio");
@@ -109,9 +110,10 @@ CATEGORIES.forEach(cat => {
   lbl.dataset.value = cat;
   if (cat === selectedCategory) lbl.classList.add("selected");
 
-  const icon = document.createElement("span");
+  const icon = document.createElement("img");
   icon.className = "cat-icon";
-  icon.textContent = CATEGORY_ICONS[cat] || "";
+  icon.src = CATEGORY_IMAGES[cat] || "";
+  icon.alt = cat;
 
   const text = document.createElement("span");
   text.className = "cat-text";

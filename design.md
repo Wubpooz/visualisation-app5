@@ -41,8 +41,11 @@ regroup?
 choose interesting ones for the detailed chart?  
 exclude sleep, eating, etc for the detailed chart bcs not interesting?  
 
+dans la page html : eating,study,sleeping,paid work",household chores and family care, personal care, voluntary work,social life,travel and leisure
+
 ### Alone and shared time
-exclude sleep, eating?  
+exclude sleep, eating?  paidwork
 
 
 ## Interactivity
+
