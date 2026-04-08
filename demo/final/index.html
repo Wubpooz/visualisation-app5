@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APP5 | Europe Time-Use Atlas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&family=Spline+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="hero reveal">
+      <p class="eyebrow">APP5 &middot; EUROPE TIME-USE DATASET</p>
+      <h1>How Europe spends a day</h1>
+      <p class="subtitle">
+        A desktop storytelling view for the <strong>whole of Europe</strong>, showing how daily time-use patterns shift across age groups and years.
+      </p>
+    </header>
 
+    <section class="viz-card reveal" id="area-section">
+      <div class="section-header">
+        <div>
+          <h2>Category flow by age group</h2>
+          <p class="section-copy">
+            Bands reorder each year by importance. Thickness reflects share of average minutes in the selected age group.
+          </p>
+        </div>
+        <div id="age-tabs-primary" class="tab-row" role="tablist" aria-label="Age group selector for category flow"></div>
+      </div>
+      <div class="chart-wrap">
+        <svg id="area-bump-chart" role="img" aria-label="Area bump chart of category shares over time"></svg>
+      </div>
+      <div id="category-legend-top" class="legend"></div>
+      <p id="area-annotation" class="annotation"></p>
+    </section>
+
+    <section class="viz-card reveal" id="line-section">
+      <div class="section-header">
+        <div>
+          <h2>Detailed trend by category</h2>
+          <p class="section-copy">
+            Pick one category and compare percentage trajectories for each age group, with direct end labels.
+          </p>
+        </div>
+      </div>
+      <div id="category-selector" class="chip-row" role="tablist" aria-label="Category selector for detailed chart"></div>
+      <div class="chart-wrap">
+        <svg id="line-chart" role="img" aria-label="Line chart by age group for selected category"></svg>
+      </div>
+      <div id="age-legend" class="legend"></div>
+      <p id="line-annotation" class="annotation"></p>
+    </section>
+
+    <section class="viz-card reveal" id="waffle-section">
+      <div class="section-header">
+        <div>
+          <h2>Alone / shared / other time repartition</h2>
+          <p class="section-copy">
+            Each waffle grid is 100 cells per year and always displays percentages for the selected age group.
+          </p>
+        </div>
+      </div>
+      <div class="chart-wrap">
+        <svg id="waffle-chart" role="img" aria-label="Waffle charts of alone, shared, and other time shares by year"></svg>
+      </div>
+      <div id="waffle-legend" class="legend"></div>
+      <p id="waffle-annotation" class="annotation"></p>
+      <div id="age-tabs-waffle" class="tab-row tab-row-bottom" role="tablist" aria-label="Age group selector for waffle chart"></div>
+    </section>
+  </main>
+
+  <div id="tooltip" class="tooltip" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
