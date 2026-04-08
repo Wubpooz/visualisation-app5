@@ -4,6 +4,7 @@ import argparse
 import json
 import os
 from datetime import datetime, timezone
+from math import floor
 from pathlib import Path
 from typing import Any, cast
 
@@ -39,6 +40,8 @@ DEFAULT_ACTIVITY_CATEGORIES = [
     "AC1_2",
     "AC910",
 ]
+
+SOCIAL_CONTEXT_ORDER = ["shared", "alone", "other"]
 
 
 def parse_args() -> argparse.Namespace:
@@ -123,6 +126,15 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=Path("hf_export") / "age_activity_year_average.json",
         help="Output JSON path.",
+    )
+    parser.add_argument(
+        "--social-context-markdown",
+        type=Path,
+        default=Path("docs") / "observations-count-by-unified-acl-codes.md",
+        help=(
+            "Markdown file listing unified ACL codes with their alone/shared/other/none "
+            "classification."
+        ),
     )
     return parser.parse_args()
 
@@ -258,9 +270,13 @@ def prepare_filtered_data(
         working["freq_norm"] = ""
 
     filtered = working[
-        (working["freq_norm"].isin(["", "A"]))
+        (working["geo_norm"] == args.geo)
+        & (working["sex_norm"] == args.sex)
+        & (working["unit_norm"] == args.unit)
+        & (working["freq_norm"].isin(["", "A"]))
         & (working["age_group"] != "")
         & (working["activity_category"] != "")
+        & (working["activity_category"] != "TOTAL")
         & working["minutes"].notna()
         & working["year"].notna()
     ][["year", "age_group", "activity_category", "minutes", "age_raw"]].copy()
@@ -360,32 +376,138 @@ def rounded_float(value: Any) -> float | None:
     return round(float(value), 3)
 
 
-def build_records(df: pd.DataFrame) -> list[dict[str, Any]]:
-    records: list[dict[str, Any]] = []
-    for row in df.itertuples(index=False):
-        records.append(
-            {
-                "year": int(row.year),
-                "age_group": str(row.age_group),
-                "activity_category": str(row.activity_category),
+def load_social_context_map(markdown_path: Path) -> dict[str, str]:
+    if not markdown_path.exists():
+        raise FileNotFoundError(f"Social context markdown file not found: {markdown_path}")
+
+    social_context_map: dict[str, str] = {}
+    for raw_line in markdown_path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line.startswith("|"):
+            continue
+        if "unified_acl_codes" in line or "---" in line:
+            continue
+
+        parts = [part.strip() for part in line.strip("|").split("|")]
+        if len(parts) < 4:
+            continue
+
+        code = parts[1].strip()
+        social_context = parts[3].strip().lower()
+        if code == "(blank)" or social_context == "none":
+            continue
+        if social_context not in SOCIAL_CONTEXT_ORDER:
+            continue
+
+        social_context_map[code] = social_context
+
+    if not social_context_map:
+        raise ValueError(
+            f"No alone/shared/other activity mapping could be parsed from {markdown_path}"
+        )
+
+    return social_context_map
+
+
+def allocate_percentage_units(context_minutes: dict[str, float]) -> dict[str, float]:
+    total_minutes = sum(context_minutes.values())
+    if total_minutes <= 0:
+        raise ValueError("Cannot compute social context percentages from a zero total.")
+
+    target_units = 100_000
+    raw_units = {
+        context: context_minutes[context] * target_units / total_minutes
+        for context in SOCIAL_CONTEXT_ORDER
+    }
+    base_units = {context: int(floor(raw_units[context])) for context in SOCIAL_CONTEXT_ORDER}
+    remainder_units = target_units - sum(base_units.values())
+    ranked_contexts = sorted(
+        SOCIAL_CONTEXT_ORDER,
+        key=lambda context: (raw_units[context] - base_units[context], context_minutes[context]),
+        reverse=True,
+    )
+    for index in range(remainder_units):
+        base_units[ranked_contexts[index % len(ranked_contexts)]] += 1
+
+    return {
+        context: base_units[context] / 1000.0
+        for context in SOCIAL_CONTEXT_ORDER
+    }
+
+
+def compute_social_context_percentages(
+    grouped: pd.DataFrame,
+    years: list[int],
+    age_groups: list[str],
+    social_context_map: dict[str, str],
+) -> dict[tuple[int, str], dict[str, float]]:
+    social_df = grouped[grouped["activity_category"].isin(social_context_map)].copy()
+    if social_df.empty:
+        raise ValueError("No activity category from the social context markdown is present in the filtered data.")
+
+    social_df["social_context"] = social_df["activity_category"].map(social_context_map)
+    social_totals = (
+        social_df.groupby(["year", "age_group", "social_context"], as_index=False)["average_minutes"]
+        .sum()
+        .sort_values(["year", "age_group", "social_context"])
+    )
+    totals_lookup = {
+        (int(row.year), str(row.age_group), str(row.social_context)): float(row.average_minutes)
+        for row in social_totals.itertuples(index=False)
+    }
+
+    percentages: dict[tuple[int, str], dict[str, float]] = {}
+    for year in years:
+        for age_group in age_groups:
+            minutes_by_context = {
+                context: totals_lookup.get((year, age_group, context), 0.0)
+                for context in SOCIAL_CONTEXT_ORDER
+            }
+            percentages[(year, age_group)] = allocate_percentage_units(minutes_by_context)
+
+    return percentages
+
+
+def build_values_index(
+    extracted: pd.DataFrame,
+    social_percentages: dict[tuple[int, str], dict[str, float]],
+) -> dict[str, dict[str, dict[str, Any]]]:
+    values: dict[str, dict[str, dict[str, Any]]] = {}
+    grouped_nodes = extracted.groupby(["year", "age_group"], sort=True)
+
+    for (year, age_group), node_df in grouped_nodes:
+        year_key = str(int(year))
+        age_key = str(age_group)
+        pct = social_percentages[(int(year), age_key)]
+        node: dict[str, Any] = {
+            "shared_pct": pct["shared"],
+            "alone_pct": pct["alone"],
+            "other_pct": pct["other"],
+        }
+
+        for row in node_df.itertuples(index=False):
+            node[str(row.activity_category)] = {
                 "average_minutes": rounded_float(row.average_minutes),
                 "observation_count": int(row.observation_count),
             }
-        )
-    return records
 
+        values.setdefault(year_key, {})[age_key] = node
 
-def build_values_index(records: list[dict[str, Any]]) -> dict[str, dict[str, dict[str, dict[str, Any]]]]:
-    values: dict[str, dict[str, dict[str, dict[str, Any]]]] = {}
-    for record in records:
-        year_key = str(record["year"])
-        age_group = str(record["age_group"])
-        category = str(record["activity_category"])
-        values.setdefault(year_key, {}).setdefault(age_group, {})[category] = {
-            "average_minutes": record["average_minutes"],
-            "observation_count": record["observation_count"],
-        }
     return values
+
+
+def validate_social_context_sums(values: dict[str, dict[str, dict[str, Any]]]) -> None:
+    for year, year_values in values.items():
+        for age_group, node in year_values.items():
+            pct_sum = round(
+                float(node["shared_pct"]) + float(node["alone_pct"]) + float(node["other_pct"]),
+                3,
+            )
+            if pct_sum != 100.0:
+                raise ValueError(
+                    "Social context percentages must sum to 100. "
+                    f"Got {pct_sum} for year={year}, age_group={age_group}."
+                )
 
 
 def build_payload(
@@ -398,15 +520,13 @@ def build_payload(
     category_source: str,
     missing_default_categories: list[str],
     using_default_categories: bool,
+    social_percentages: dict[tuple[int, str], dict[str, float]],
 ) -> dict[str, Any]:
-    records = build_records(extracted)
+    values = build_values_index(extracted, social_percentages)
+    validate_social_context_sums(values)
+
     return {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
-        "filters": {
-            "geo": args.geo,
-            "sex": args.sex,
-            "unit": args.unit,
-        },
         "dataset": {
             "repo_id": args.repo_id,
             "config": args.config,
@@ -430,10 +550,9 @@ def build_payload(
         "summary": {
             "filtered_rows": int(len(filtered)),
             "aggregated_rows_with_data": int((extracted["observation_count"] > 0).sum()),
-            "output_records": int(len(records)),
+            "output_records": int(len(extracted)),
         },
-        "records": records,
-        "values": build_values_index(records),
+        "values": values,
     }
 
 
@@ -456,6 +575,7 @@ def main() -> None:
         )
 
     grouped = aggregate_minutes(filtered)
+    social_context_map = load_social_context_map(args.social_context_markdown)
     grouped, years, categories, missing_default_categories, using_default_categories = select_categories(
         grouped,
         args,
@@ -467,6 +587,12 @@ def main() -> None:
         if age_group in set(grouped["age_group"].astype(str).tolist())
     ]
     extracted = merge_with_complete_grid(grouped, years, age_groups, categories)
+    social_percentages = compute_social_context_percentages(
+        grouped=aggregate_minutes(filtered),
+        years=years,
+        age_groups=age_groups,
+        social_context_map=social_context_map,
+    )
 
     payload = build_payload(
         args=args,
@@ -478,6 +604,7 @@ def main() -> None:
         category_source=category_source,
         missing_default_categories=missing_default_categories,
         using_default_categories=using_default_categories,
+        social_percentages=social_percentages,
     )
     save_payload(payload, args.output_json)
 
