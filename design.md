@@ -22,7 +22,6 @@ Latest, in another section is a waffle chart for the time repartition between al
 ## Data choices
 ### Age groups
 **Decision:**  
-- TOTAL
 - 10-24 (ACL10: Y15-20, Y20-24; ACL18: Y10-14, Y15-24) + Y15-29 (we loose some accuracy but there is only 4000 datapoints, so not skeewing it a lot with 24+)
 - 25-44 (ACL10: Y25-44; ACL18: Y25-34, Y30-44, Y35-44)
 - 45-64 (ACL10: Y45-64; ACL18: Y45-54, Y45-64, Y55-64)
@@ -30,6 +29,7 @@ Latest, in another section is a waffle chart for the time repartition between al
 
 We checked and the values in all of the age categories are unique.  
 However, we choose to discard these categories since we couldn't find a way to fit them in the groups we defined above:  
+- TOTAL
 - Y20-74 from ACL10 with 21510 rows
 - Y15-64 from ACL18 with 3780 rows
 - Y30-64 from ACL18 with 3780 rows
