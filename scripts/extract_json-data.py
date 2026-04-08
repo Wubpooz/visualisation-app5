@@ -13,7 +13,7 @@ import pyarrow.parquet as pq
 from datasets import Dataset, DatasetDict, load_dataset_builder, load_from_disk
 from huggingface_hub import hf_hub_download, list_repo_files
 
-from add_unified_acl18_column import ACL00_TO_ACL18_MAPPING
+from scripts.add_unified_acl18_column import ACL00_TO_ACL18_MAPPING
 
 AGE_GROUP_SOURCE_CODES: dict[str, tuple[str, ...]] = {
     "10-24": ("Y15-20", "Y20-24", "Y10-14", "Y15-24", "Y15-29"),
