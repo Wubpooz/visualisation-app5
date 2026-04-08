@@ -96,6 +96,21 @@
         </select>
       </div>
     </div>
+
+    <!-- Chart 4 : Pie chart (shares selectedYear with chart 3) -->
+    <div class="chart-card">
+      <h2 id="chart4Title">Activity distribution — pie chart (Year 2020)</h2>
+      <div id="chart4" class="pie-grid"></div>
+      <p class="note">Same data as the waffle chart — year controlled by the selector above.</p>
+      <p class="encoding-note">
+        <strong>Mark:</strong> arc (D3 pie layout).
+        <strong>Facet:</strong> one pie per age group (18-25, 25-35, 35-45).
+        <strong>Angle:</strong> percentage of total daily time per activity.
+        <strong>Color (fill):</strong> activity category (Tableau10 palette).
+        <strong>Tooltip:</strong> category name and percentage on hover.
+      </p>
+    </div>
+
   </div>
 
   <script src="script.js"></script>

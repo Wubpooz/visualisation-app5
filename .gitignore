@@ -4,3 +4,5 @@ venv/
 .venv_hf/
 __pycache__/
 hf_export/
+node_modules/
+.observablehq/

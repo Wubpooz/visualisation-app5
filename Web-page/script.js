@@ -273,6 +273,105 @@ function render() {
   renderChart1();
   renderChart2();
   renderChart3();
+  renderChart4();
+}
+
+// ─────────────────────────────────────────────────────────────
+//  6. PIE CHART  (D3)
+// ─────────────────────────────────────────────────────────────
+const COLOR_SCHEME = d3.schemeTableau10;
+
+// Map each category to a fixed color index (same order as CATEGORIES)
+const categoryColor = Object.fromEntries(
+  CATEGORIES.map((cat, i) => [cat, COLOR_SCHEME[i % COLOR_SCHEME.length]])
+);
+
+function renderChart4() {
+  const container = clearChart("chart4");
+  document.getElementById("chart4Title").textContent =
+    `Activity distribution \u2014 pie chart (Year ${selectedYear})`;
+
+  const radius  = 130;
+  const width   = radius * 2 + 20;
+  const height  = radius * 2 + 60; // extra space for age-gap label below
+
+  const pie  = d3.pie().value(d => d.pct_temps).sort(null);
+  const arc  = d3.arc().innerRadius(0).outerRadius(radius);
+  const arcH = d3.arc().innerRadius(0).outerRadius(radius + 10); // hover expand
+
+  // Tooltip div (shared)
+  let tooltip = document.getElementById("pie-tooltip");
+  if (!tooltip) {
+    tooltip = document.createElement("div");
+    tooltip.id = "pie-tooltip";
+    tooltip.className = "pie-tooltip";
+    document.body.appendChild(tooltip);
+  }
+
+  const dataByYear    = data.filter(d => d.annee === selectedYear);
+  const dataWafflePct = buildWaffleData(dataByYear);
+
+  AGE_GAPS.forEach(age => {
+    const slices = dataWafflePct.filter(d => d.age_gap === age);
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "pie-wrapper";
+
+    const svg = d3.create("svg")
+      .attr("width", width)
+      .attr("height", height);
+
+    const g = svg.append("g")
+      .attr("transform", `translate(${width / 2}, ${radius + 10})`);
+
+    g.selectAll("path")
+      .data(pie(slices))
+      .join("path")
+        .attr("d", arc)
+        .attr("fill", d => categoryColor[d.data.categorie])
+        .attr("stroke", "#fff")
+        .attr("stroke-width", 1.5)
+        .on("mouseover", function(event, d) {
+          d3.select(this).attr("d", arcH);
+          tooltip.style.display = "block";
+          tooltip.innerHTML =
+            `<strong>${CATEGORY_ICONS[d.data.categorie] || ""} ${d.data.categorie}</strong><br>${d.data.pct_temps} %`;
+        })
+        .on("mousemove", function(event) {
+          tooltip.style.left  = (event.pageX + 12) + "px";
+          tooltip.style.top   = (event.pageY - 28) + "px";
+        })
+        .on("mouseout", function() {
+          d3.select(this).attr("d", arc);
+          tooltip.style.display = "none";
+        });
+
+    // Age-group label below the pie
+    svg.append("text")
+      .attr("x", width / 2)
+      .attr("y", height - 8)
+      .attr("text-anchor", "middle")
+      .attr("font-size", "13px")
+      .attr("font-weight", "600")
+      .attr("fill", "#343a40")
+      .text(age);
+
+    wrapper.appendChild(svg.node());
+    container.appendChild(wrapper);
+  });
+
+  // Legend
+  const legend = document.createElement("div");
+  legend.className = "pie-legend";
+  CATEGORIES.forEach(cat => {
+    const item = document.createElement("div");
+    item.className = "pie-legend-item";
+    item.innerHTML =
+      `<span class="pie-legend-swatch" style="background:${categoryColor[cat]}"></span>` +
+      `<span>${CATEGORY_ICONS[cat] || ""} ${cat}</span>`;
+    legend.appendChild(item);
+  });
+  container.appendChild(legend);
 }
 
 // Initial render
