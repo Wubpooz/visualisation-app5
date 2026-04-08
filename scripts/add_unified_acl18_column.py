@@ -45,7 +45,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--local-dataset-dir",
         type=Path,
-        default=script_root / "hf_export" / "hf_dataset",
+        default=script_root.parent / "hf_export" / "hf_dataset",
         help=(
             "Optional local DatasetDict path created by save_to_disk. "
             "If it exists and contains --config, it is used instead of Hub download."
@@ -69,7 +69,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=script_root / "hf_export" / "hf_dataset_unified_acl",
+        default=script_root.parent / "hf_export" / "hf_dataset_unified_acl",
         help="Directory where the updated dataset is saved locally (default: hf_export/hf_dataset_unified_acl).",
     )
     parser.add_argument(

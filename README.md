@@ -28,11 +28,11 @@
 2) Set your Hugging Face token and repository in `.env`.  
 3) Smoke run:  
     ```bash
-    python .\db-hf-normalization.py --hetus-root .\hetus\2020 --max-files 1 --overwrite
+    python .\scripts\db-hf-normalization.py --hetus-root .\hetus\2020 --max-files 1 --overwrite
     ```
 4) Full run:  
     ```bash
-    python .\db-hf-normalization.py --hetus-root .\hetus --overwrite
+    python .\scripts\db-hf-normalization.py --hetus-root .\hetus --overwrite
     ```
 5) Validation:  
     ```bash
@@ -45,7 +45,7 @@
     ```
 6) To push to Hugging Face:  
     ```bash
-    python .\db-hf-normalization.py --hetus-root .\hetus --overwrite --push-to-hub
+    python .\scripts\db-hf-normalization.py --hetus-root .\hetus --overwrite --push-to-hub
     ```
     Since the three tables have different schemas, the script publishes one Hub
     config per table: `observations`, `files`, `metadata`.
@@ -60,12 +60,32 @@
 Generate the JSON summary used by the frontend:
 
 ```bash
-python .\extract_json-data.py
+python .\scripts\extract_json-data.py
+```
+
+Prerequisites:
+- Install dependencies first: `pip install -r requirements.txt`
+- If the dataset repository is private, set `HF_TOKEN` in `.env` or in your shell environment.
+- If you have a local export already, use `--local-dataset-dir` to read the saved dataset instead of downloading remote parquet shards.
+
+Examples:
+
+```bash
+python .\scripts\extract_json-data.py --repo-id Bluefir/hetus-time-use --config observations --split train
+```
+
+```bash
+python .\scripts\extract_json-data.py --geo DE --sex T --unit TIME_SP
+```
+
+```bash
+python .\scripts\extract_json-data.py --local-dataset-dir .\hf_export\hf_dataset_unified_acl
 ```
 
 Notes:
 - By default, `extract_json-data.py` keeps all available `geo` and `sex` values.
 - To restrict the extraction, pass explicit filters such as `--geo DE` or `--sex T`.
+- If `--local-dataset-dir` exists, the script will use the local save-to-disk dataset first.
 - The script scans the remote `observations/train` parquet shards incrementally, so it can process the full HF split without loading all 1.68M rows in RAM at once.
 
 ## Quick chart: time by age/category/year
@@ -73,7 +93,7 @@ Notes:
 Generate a small graph from the published HF dataset (`observations` config):
 
 ```bash
-python .\plot_hf_age_category_year.py --repo-id Bluefir/hetus-time-use --geo DE --sex T --unit TIME_SP --max-categories 4 --output .\hf_export\age_category_by_year.png
+python .\scripts\plot_hf_age_category_year.py --repo-id Bluefir/hetus-time-use --geo DE --sex T --unit TIME_SP --max-categories 4 --output .\hf_export\age_category_by_year.png
 ```
 
 Notes:
@@ -90,7 +110,7 @@ Generate a compatibility report to inspect:
 - suggested merge candidates for wave-specific fields
 
 ```bash
-python .\hf_harmonization_audit.py --local-dataset-dir .\hf_export\hf_dataset --output-json .\hf_export\harmonization_audit_report.json --output-md .\hf_export\harmonization_audit_report.md
+python .\scripts\hf_harmonization_audit.py --local-dataset-dir .\hf_export\hf_dataset --output-json .\hf_export\harmonization_audit_report.json --output-md .\hf_export\harmonization_audit_report.md
 ```
 
 If `--local-dataset-dir` does not exist, the script falls back to loading from Hugging Face (`--repo-id`, `--config`, `--split`).
@@ -106,19 +126,19 @@ Use `add_unified_acl18_column.py` to create a new `unified_acl_codes` column in 
 Small local smoke run:
 
 ```bash
-python .\add_unified_acl18_column.py --local-dataset-dir .\hf_export\hf_dataset --config observations --max-rows 2000 --output-dir .\hf_export\hf_dataset_unified_acl_smoke
+python .\scripts\add_unified_acl18_column.py --local-dataset-dir .\hf_export\hf_dataset --config observations --max-rows 2000 --output-dir .\hf_export\hf_dataset_unified_acl_smoke
 ```
 
 Full local run:
 
 ```bash
-python .\add_unified_acl18_column.py --local-dataset-dir .\hf_export\hf_dataset --config observations --output-dir .\hf_export\hf_dataset_unified_acl
+python .\scripts\add_unified_acl18_column.py --local-dataset-dir .\hf_export\hf_dataset --config observations --output-dir .\hf_export\hf_dataset_unified_acl
 ```
 
 Push updated split to Hugging Face Hub:
 
 ```bash
-python .\add_unified_acl18_column.py --repo-id Bluefir/hetus-time-use --config observations --push-to-hub --target-repo-id Bluefir/hetus-time-use --target-config observations --target-split train
+python .\scripts\add_unified_acl18_column.py --repo-id Bluefir/hetus-time-use --config observations --push-to-hub --target-repo-id Bluefir/hetus-time-use --target-config observations --target-split train
 ```
 
 ## Plot unified ACL categories with YAML labels
@@ -126,7 +146,7 @@ python .\add_unified_acl18_column.py --repo-id Bluefir/hetus-time-use --config o
 Use `plot_unified_acl_categories.py` to plot a few selected unified ACL18 activity codes with descriptions from `mappings/activities_ACL18.yml`:
 
 ```bash
-python .\plot_unified_acl_categories.py --local-dataset-dir .\hf_export\hf_dataset --yml-file .\mappings\activities_ACL18.yml --categories AC11-12,AC0_X_021 --geo DE --sex T --unit TIME_SP --output .\hf_export\unified_acl_categories.png
+python .\scripts\plot_unified_acl_categories.py --local-dataset-dir .\hf_export\hf_dataset --yml-file .\mappings\activities_ACL18.yml --categories AC11-12,AC0_X_021 --geo DE --sex T --unit TIME_SP --output .\hf_export\unified_acl_categories.png
 ```
 
 If `--categories` is omitted, the script selects the top categories by mean minutes automatically.

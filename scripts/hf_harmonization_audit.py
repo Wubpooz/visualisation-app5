@@ -35,6 +35,8 @@ PROVENANCE_COLUMNS = {
 
 
 def parse_args() -> argparse.Namespace:
+    script_root = Path(__file__).resolve().parent
+    repo_root = script_root.parent
     parser = argparse.ArgumentParser(
         description=(
             "Audit cross-wave harmonization compatibility in HETUS observations, "
@@ -68,19 +70,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--local-dataset-dir",
         type=Path,
-        default=Path("hf_export") / "hf_dataset",
+        default=repo_root / "hf_export" / "hf_dataset",
         help="Optional local dataset path created by save_to_disk (default: hf_export/hf_dataset)",
     )
     parser.add_argument(
         "--output-json",
         type=Path,
-        default=Path("hf_export") / "harmonization_audit_report.json",
+        default=repo_root / "hf_export" / "harmonization_audit_report.json",
         help="Output JSON report path.",
     )
     parser.add_argument(
         "--output-md",
         type=Path,
-        default=Path("hf_export") / "harmonization_audit_report.md",
+        default=repo_root / "hf_export" / "harmonization_audit_report.md",
         help="Output Markdown report path.",
     )
     parser.add_argument(

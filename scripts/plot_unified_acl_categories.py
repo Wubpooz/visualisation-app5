@@ -11,6 +11,9 @@ import pandas as pd
 import yaml
 from datasets import Dataset, load_dataset, load_from_disk
 
+script_root = Path(__file__).resolve().parent
+repo_root = script_root.parent
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -46,7 +49,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--local-dataset-dir",
         type=Path,
-        default=Path("hf_export") / "hf_dataset_unified_acl",
+        default=repo_root / "hf_export" / "hf_dataset_unified_acl",
         help=(
             "Optional local dataset path containing unified_acl_codes. "
             "If the dataset exists and contains unified_acl_codes it is used; "
@@ -56,7 +59,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--yml-file",
         type=Path,
-        default=Path("mappings") / "activities_ACL18.yml",
+        default=repo_root / "mappings" / "activities_ACL18.yml",
         help="ACL18 YAML file containing category codes and descriptions.",
     )
     parser.add_argument(
@@ -95,7 +98,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("hf_export") / "unified_acl_categories.png",
+        default=repo_root / "hf_export" / "unified_acl_categories.png",
         help="Output PNG path.",
     )
     return parser.parse_args()

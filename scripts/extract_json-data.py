@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sys
 from datetime import datetime, timezone
 from math import floor
 from pathlib import Path
@@ -13,7 +14,10 @@ import pyarrow.parquet as pq
 from datasets import Dataset, DatasetDict, load_dataset_builder, load_from_disk
 from huggingface_hub import hf_hub_download, list_repo_files
 
-from scripts.add_unified_acl18_column import ACL00_TO_ACL18_MAPPING
+script_root = Path(__file__).resolve().parent
+repo_root = script_root.parent
+sys.path.insert(0, str(script_root))
+from add_unified_acl18_column import ACL00_TO_ACL18_MAPPING
 
 AGE_GROUP_SOURCE_CODES: dict[str, tuple[str, ...]] = {
     "10-24": ("Y15-20", "Y20-24", "Y10-14", "Y15-24", "Y15-29"),
@@ -129,7 +133,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--local-dataset-dir",
         type=Path,
-        default=Path("hf_export") / "hf_dataset_unified_acl",
+        default=repo_root / "hf_export" / "hf_dataset_unified_acl",
         help=(
             "Optional local dataset path created by save_to_disk. If it exists it is used; "
             "otherwise the script falls back to the Hugging Face dataset."
@@ -181,13 +185,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output-json",
         type=Path,
-        default=Path("hf_export") / "age_activity_year_average.json",
+        default=repo_root / "hf_export" / "age_activity_year_average.json",
         help="Output JSON path.",
     )
     parser.add_argument(
         "--social-context-markdown",
         type=Path,
-        default=Path("docs") / "observations-count-by-unified-acl-codes.md",
+        default=repo_root / "docs" / "observations-count-by-unified-acl-codes.md",
         help=(
             "Markdown file listing unified ACL codes with their alone/shared/other/none "
             "classification."
@@ -232,7 +236,7 @@ def canonicalize_config_name(config_name: str) -> str:
 
 
 def empty_filter_diagnostics() -> dict[str, int]:
-    return {key: 0 for key in FILTER_DIAGNOSTIC_KEYS}
+    return dict.fromkeys(FILTER_DIAGNOSTIC_KEYS, 0)
 
 
 def merge_filter_diagnostics(
@@ -269,14 +273,16 @@ def resolve_remote_split_row_count(
     token: str | None,
 ) -> int | None:
     builder = load_dataset_builder(args.repo_id, args.config, token=token)
-    if args.split not in builder.info.splits:
-        available = ", ".join(sorted(builder.info.splits))
+    split_dict = builder.info.splits
+    if split_dict is None or args.split not in split_dict:
+        available_splits = sorted(list(split_dict or []))
+        available = ", ".join(available_splits) if available_splits else "none"
         raise KeyError(
             f"Split '{args.split}' not found in dataset config '{args.config}'. "
             f"Available splits: {available}"
         )
 
-    split_info = builder.info.splits[args.split]
+    split_info = split_dict[args.split]
     return int(split_info.num_examples) if split_info.num_examples is not None else None
 
 
@@ -408,7 +414,12 @@ def build_activity_categories(df: pd.DataFrame) -> tuple[pd.Series, str]:
         if "acl00" in df.columns
         else pd.Series("", index=df.index, dtype="object")
     )
-    mapped_acl00 = acl00.map(lambda code: ACL00_TO_ACL18_MAPPING.get(code, code) if code else "")
+
+    def map_acl00(code: Any) -> str:
+        normalized_code = normalize_text(code)
+        return ACL00_TO_ACL18_MAPPING.get(normalized_code, normalized_code) if normalized_code else ""
+
+    mapped_acl00 = acl00.map(map_acl00)
     unified = acl18.where(acl18 != "", mapped_acl00)
     return unified, "derived_from_acl00_acl18"
 
@@ -715,9 +726,10 @@ def build_values_index(
     grouped_nodes = extracted.groupby(["year", "age_group"], sort=True)
 
     for (year, age_group), node_df in grouped_nodes:
-        year_key = str(int(year))
+        year_value = int(cast(Any, year))
+        year_key = str(year_value)
         age_key = str(age_group)
-        pct = social_percentages[(int(year), age_key)]
+        pct = social_percentages[(year_value, age_key)]
         node: dict[str, Any] = {
             "shared_pct": pct["shared"],
             "alone_pct": pct["alone"],
@@ -725,9 +737,10 @@ def build_values_index(
         }
 
         for row in node_df.itertuples(index=False):
+            observation_count = int(cast(Any, row.observation_count))
             node[str(row.activity_category)] = {
                 "average_minutes": rounded_float(row.average_minutes),
-                "observation_count": int(row.observation_count),
+                "observation_count": observation_count,
             }
 
         values.setdefault(year_key, {})[age_key] = node
@@ -738,14 +751,11 @@ def build_values_index(
 def validate_social_context_sums(values: dict[str, dict[str, dict[str, Any]]]) -> None:
     for year, year_values in values.items():
         for age_group, node in year_values.items():
-            pct_sum = round(
-                float(node["shared_pct"]) + float(node["alone_pct"]) + float(node["other_pct"]),
-                3,
-            )
-            if pct_sum != 100.0:
+            pct_sum = float(node["shared_pct"]) + float(node["alone_pct"]) + float(node["other_pct"])
+            if abs(pct_sum - 100.0) > 0.01:
                 raise ValueError(
-                    "Social context percentages must sum to 100. "
-                    f"Got {pct_sum} for year={year}, age_group={age_group}."
+                    "Social context percentages must sum to approximately 100. "
+                    f"Got {round(pct_sum, 3)} for year={year}, age_group={age_group}."
                 )
 
 

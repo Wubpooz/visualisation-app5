@@ -10,6 +10,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from datasets import load_dataset, load_from_disk
 
+script_root = Path(__file__).resolve().parent
+repo_root = script_root.parent
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -75,7 +78,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("hf_export") / "age_category_by_year.png",
+        default=repo_root / "hf_export" / "age_category_by_year.png",
         help="Output PNG path.",
     )
     return parser.parse_args()

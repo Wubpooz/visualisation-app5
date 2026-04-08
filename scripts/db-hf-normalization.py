@@ -53,19 +53,20 @@ class WaveInput:
 
 def parse_args() -> argparse.Namespace:
 	script_root = Path(__file__).resolve().parent
+	repo_root = script_root.parent
 	parser = argparse.ArgumentParser(
 		description="Convert HETUS TSV+metadata files to a Hugging Face dataset."
 	)
 	parser.add_argument(
 		"--hetus-root",
 		type=Path,
-		default=script_root / "hetus",
-		help="Root directory containing HETUS wave folders (default: ./hetus).",
+		default=repo_root / "hetus",
+		help="Root directory containing HETUS wave folders (default: ../hetus).",
 	)
 	parser.add_argument(
 		"--output-dir",
 		type=Path,
-		default=script_root / "hf_export",
+		default=repo_root / "hf_export",
 		help="Output directory for intermediate files and saved HF dataset.",
 	)
 	parser.add_argument(
