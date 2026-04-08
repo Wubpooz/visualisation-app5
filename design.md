@@ -72,8 +72,8 @@ Catégories à éviter ou mettre en "Autres" :
 
 
 ### Alone and shared time
-exclude sleep, eating?  
-
+- Alone: Computing (AC72), Cleaning dwelling (AC321), Travel to/from work (AC910)
+- Shared: Socialising with others (AC512_513_519), Entertainment and culture (AC52), Teaching, reading, playing and talking with child (AC382_383), AC1_2 (Employment and study), Walking and hiking (AC611)
 
 ## Interactivity
 
