@@ -227,8 +227,8 @@ const AG_COLORS = {
 const LINE_CATS = CATEGORIES.filter(c => c !== "AC01" && c !== "AC02 + AC021");
 
 const WAFFLE_COLORS = {
-  alone:  "#5B8C5A",
-  shared: "#D4764E",
+  alone:  "#D4764E",
+  shared: "#5B8C5A",
   other:  "#9B95B0"
 };
 
@@ -674,18 +674,11 @@ function drawLine() {
   const endPositions = [];
 
   lines.forEach(({ ag, pts }, gi) => {
-    const path = svg.append("path")
+    svg.append("path")
       .datum(pts)
       .attr("class", `line-path lp-${safeId(ag)}`)
       .attr("d", lineFn)
       .attr("stroke", AG_COLORS[ag]);
-
-    /* animate drawing */
-    const len = path.node().getTotalLength();
-    path.attr("stroke-dasharray", len)
-        .attr("stroke-dashoffset", len)
-        .transition().delay(gi * 120).duration(700).ease(d3.easeCubicOut)
-        .attr("stroke-dashoffset", 0);
 
     /* dots */
     svg.selectAll(null).data(pts).join("circle")

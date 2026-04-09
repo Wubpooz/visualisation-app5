@@ -81,9 +81,7 @@ header {
   padding: var(--sp-xl) var(--sp-md) var(--sp-lg);
   position: relative;
 }
-header::after {
-  content: '';
-  display: block;
+.header-divider {
   width: 56px;
   height: 3px;
   background: var(--accent);
@@ -106,6 +104,16 @@ header .subtitle {
   max-width: 620px;
   margin: 0 auto;
   font-weight: 400;
+}
+
+header .problem-question {
+  max-width: 760px;
+  margin: var(--sp-md) auto 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: 1.35;
+  font-style: italic;
+  color: var(--text);
 }
 
 header .meta {
@@ -425,6 +433,7 @@ svg text { user-select: none; }
   stroke-width: 2.5px;
   stroke-linecap: round;
   stroke-linejoin: round;
+  stroke-dasharray: 6 8;
   transition: opacity 0.22s ease;
 }
 .line-path.dimmed { opacity: 0.12; }
