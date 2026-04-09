@@ -14,19 +14,19 @@
 - Did you add anything else to help communicate?
 
 **Know your context:**  
-- AUDIENCE:
+- Audience:
   - What do they want to know? 
   - What do they need to do? 
     accept | agree | begin | believe | change | collaborate | commence | 
     create | defend | desire | differentiate | do | empathize | empower | 
     encourage | engage | establish | examine | facilitate | familiarize | form 
     | implement | include...
-- MESSAGE: In a single sentence find what your message is, and in 3 minutes find what your audience needs to know.
+- Message: In a single sentence find what your message is, and in 3 minutes find what your audience needs to know.
 
 **Use signs to illustrate and prompt recognition**:  
-  ICON: Physically resembles what it stands for
-  INDEX: Implies / points to something (correlation)
-  SYMBOL: Points to something; relationship has to be learned
+  Icon: Physically resembles what it stands for
+  Index: Implies / points to something (correlation)
+  Symbol: Points to something; relationship has to be learned
 
 
 Descriptive titles and annotations can be the difference between a chart and a story  
@@ -44,4 +44,4 @@ Indicate that scroll is possible.
 
 ### Acknowledgements
 pk pas de catégorie other for time spent
-axis can't be fixed
+axis can't be the same height but have the same step size
