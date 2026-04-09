@@ -658,7 +658,14 @@ function drawLine() {
   svg.append("g").attr("class", "axis")
     .attr("transform", `translate(0,${h})`).call(
       d3.axisBottom(x).tickValues(YEARS).tickFormat(d3.format("d")).tickSize(0)
-    ).call(g => g.select(".domain").attr("stroke", "#D4CFC4"));
+    ).call(g => {
+      g.select(".domain").attr("stroke", "#D4CFC4");
+      g.selectAll(".tick text")
+        .attr("dy", "1.05em")
+        .attr("text-anchor", d => (
+          d === YEARS[0] ? "start" : d === YEARS[YEARS.length - 1] ? "end" : "middle"
+        ));
+    });
 
   svg.append("g").attr("class", "axis").call(
     d3.axisLeft(yS).tickValues(yTicks).tickFormat(d => `${d.toFixed(1)}%`).tickSize(-w)
