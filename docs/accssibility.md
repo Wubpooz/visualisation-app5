@@ -1,0 +1,18 @@
+**Findings**
+1. High: Keyboard access is effectively broken. In script.js and script.js every tab button blurs itself on focus, and script.js blurs again on click. A runtime Tab test on the localhost page left the active element on BODY, so keyboard users cannot reliably reach or operate the age and category filters.
+
+2. High: Core chart details are mouse-only and not exposed to assistive tech. The bump ribbons, line dots, and waffle cells only publish values through mouseenter and mouseleave handlers at script.js, script.js, and script.js. The clickable legend is built from plain divs at script.js and script.js. Runtime checks found 10 legend items with tabIndex -1, 300 waffle cells with no keyboard focusability, and both SVGs with no aria-label, title, or desc, so screen-reader and keyboard users miss the same information mouse users get.
+
+3. High: Contrast is not sufficient. The light text token used for the header meta and footer at style.css and style.css measures only 2.72:1 against the background. Active category chips use white text at style.css on category fills applied in script.js and script.js; measured failures include Computing 1.95:1, Socialising 1.84:1, Walking 2.52:1, and Childcare 2.38:1. Several graphical colors defined at script.js, script.js, and script.js also fall below 3:1 against the page background, so the page is not yet low-vision safe and is not robust enough to call colorblind-friendly.
+
+4. High: The main bump chart is misleading relative to its own description. The explanatory copy says width reflects share of time at index.html, but the chart actually applies a square-root transform in script.js. The later note at script.js admits the transform, but only after the chart is rendered. That conflicts with the course guidance on graphical integrity and the warning against misleading area comparisons.
+
+5. Medium: The page still misses baseline structural and motion accommodations. The document is wrapped in a generic container starting at index.html with no main landmark or skip link, smooth scrolling is forced globally at style.css, reveal animation is always on at style.css, and chart navigation triggers smooth scroll at script.js with no reduced-motion fallback. The footer also still states “Designed for desktop viewing” at index.html, which undercuts an accessibility claim.
+
+**Coverage**
+I reviewed every PDF under classes, docs, and hetus. The site-facing constraints come mainly from Polytech - Information Visualization Project 2026.pdf, week3-2026-01-26-Lecture-ColorAndPerception.pdf, week5-2026-02-25-DesignStorytelling.pdf, week5-2026-02-25-HowToLieWithStatistics.pdf, and session2-Tutorial Sketching.pdf. Those PDFs emphasize descriptive titles, subtitles, sources, annotations, high luminance contrast, few clearly distinguishable colors, truthful encodings, labels or captions, minimal decoration, and interaction feedback. The HETUS and data-delivery PDFs are methodological data documents, not extra website accessibility standards, and they do not change the verdict above.
+
+The page does satisfy some brief items already: it has a descriptive title, subtitle, section headings, explanatory notes, and a data source at index.html, index.html, and index.html. But as it stands, it is not accessible, does not have enough contrast, is not sufficiently colorblind-safe, and does not fully follow the relevant PDF guidance. No code changes were made; this was an audit of the live page and source.
+
+1. I can patch the page to fix the keyboard semantics, chart accessibility, reduced-motion behavior, and contrast failures.
+2. I can also turn this into a PDF-by-PDF compliance matrix if you need something more formal for submission.
