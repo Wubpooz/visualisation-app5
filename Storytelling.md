@@ -50,7 +50,7 @@ First Chart (streamgraph of categories by age group and survey year):
 - Message: Tracking how daily activities shifted across four generations and two decades in Europe revealed the rise of computing and evolving social patterns. Despite the digital surge, however, most activities remained remarkably stable, with clear age-based specificities.
 - Age group pills
 - Graph
-- Graph comment: Categories reorder vertically as their prominence shifts across survey years. Category bands widths follow a square-root scale to ensure that small categories remain visible. Hover or focus for actual share of the day values.
+- Graph comment: Categories reorder vertically as their prominence shifts across survey years. Category bands widths follow a square-root scale to ensure that small categories remain visible. Hover or focus for actual share of the day values. The focus is on the most prominent categories for the whole survey.
 - Annotations:  
   - For young Europeans, there was a significant shift in their time use as computing time became prominent from 2000 to 2010 before falling back in 2020. By 2020, socialising time nearly doubled, possibly reflecting expanded digital social interactions, while commuting dropped sharply (which could reflect changing work patterns or a survey limitation).
   - Early-to-mid adult Europeans show the most balanced distribution. Computing rose sharply from 2000 to 2010 too, while commuting remained very high. Childcare climbed steadily during this two-decade period.
@@ -64,7 +64,7 @@ Second Chart (line chart by category):
 - Title: Every Life Stage Carries Its Own Pattern
 - Message: The youngest cohort embraced computing and socialising, while older Europeans maintained traditional activities like walking and reading. The early to mid adults clearly show that childcare takes a central role in their daily lives. The data suggests a complex interplay between technology adoption and enduring lifestyle habits across generations. 
 - Graph
-- Graph comment: Pick a category to compare how its share of daily time evolved for each age group between 2000 and 2020. Hover or focus for actual share of the day values at each point on the line.
+- Graph comment: Pick a category to compare how its share of daily time evolved for each age group between 2000 and 2020. Hover or focus for actual share of the day values at each point on the line. Graph steps are consistent across categories to allow for direct comparison of trends and magnitudes. 
 - Category pills (left)
 - Annotations:
   - **Reading books** stagnated across most age groups, but the 65+ cohort bucked the trend with an increase from 10.5 to 15.3 min/day by 2020. The gap between oldest and youngest readers widened, likely due to a shift in technology adoption.
@@ -97,8 +97,3 @@ Acknowledgments:
 Data: Eurostat HETUS (Harmonised European Time Use Surveys) · Covers participating European countries across three survey waves (2000, 2010, 2020)  
 
 Built with D3.js  
-
-
-### Acknowledgements
-pk pas de catégorie other for time spent
-axes can't be the same height but should have the same step size
