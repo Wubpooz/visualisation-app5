@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Europe Spends Its Time — 2000–2020</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- ======= HEADER ======= -->
+    <header class="reveal">
+      <p class="meta">Eurostat · Harmonised European Time Use Surveys · Whole of Europe · 2000 – 2020</p>
+      <h1>How Europe<br>Spends Its Time</h1>
+      <p class="subtitle">Tracking how daily activities shifted across four generations and two transformative decades — from the rise of computing to evolving social patterns.</p>
+    </header>
+
+    <!-- ======= AREA BUMP ======= -->
+    <section id="bump-section">
+      <div class="section-header reveal">
+        <h2>The Landscape of a Day</h2>
+        <p>Each band represents a category of daily activity. Width reflects its share of time; vertical position shows relative importance. Categories reorder as their prominence shifts across survey years.</p>
+      </div>
+      <div class="age-tabs reveal reveal-delay-1" id="bump-tabs"></div>
+      <div class="chart-wrap reveal reveal-delay-2">
+        <div id="bump-chart"></div>
+      </div>
+      <div class="legend reveal reveal-delay-3" id="bump-legend"></div>
+      <p class="chart-note reveal reveal-delay-3" id="bump-note"></p>
+    </section>
+
+    <!-- ======= LINE CHART ======= -->
+    <section id="line-section">
+      <div class="section-header reveal">
+        <h2>Activity Deep Dive</h2>
+        <p>Pick a category to compare how its share of daily time evolved for each age group between 2000 and 2020.</p>
+      </div>
+      <div class="cat-buttons reveal reveal-delay-1" id="cat-buttons"></div>
+      <div class="chart-wrap reveal reveal-delay-2">
+        <div id="line-chart"></div>
+      </div>
+      <div class="legend" id="line-legend"></div>
+      <p class="chart-note reveal reveal-delay-3" id="line-note"></p>
+    </section>
+
+    <!-- ======= WAFFLE ======= -->
+    <section id="waffle-section">
+      <div class="section-header reveal">
+        <h2>Alone, Shared, or Other?</h2>
+        <p>How daily time divides between solitary, social, and other contexts across survey years. Each square represents one percentage point.</p>
+      </div>
+      <div class="age-tabs reveal reveal-delay-1" id="waffle-tabs"></div>
+      <div class="chart-wrap reveal reveal-delay-2">
+        <div id="waffle-chart"></div>
+      </div>
+      <p class="chart-note reveal reveal-delay-3" id="waffle-note">
+        <strong>Alone</strong> activities include computing, cleaning, and commuting.
+        <strong>Shared</strong> activities include socialising, entertainment, childcare, walking, and employment.
+        Classification derived from the modal social context of each activity across all survey waves, ignoring unclassified entries.
+      </p>
+    </section>
+
+    <!-- ======= FOOTER ======= -->
+    <footer class="reveal">
+      <p>Data: Eurostat HETUS (Harmonised European Time Use Surveys) · Covers participating European countries across three survey waves (2000, 2010, 2020)</p>
+      <p style="margin-top:4px">Built with D3.js · Designed for desktop viewing</p>
+    </footer>
+
+  </div>
+
+  <div id="tooltip"></div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

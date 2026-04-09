@@ -1,0 +1,418 @@
+/* ==========================================================
+   FOUNDATIONS
+   ========================================================== */
+
+:root {
+  /* palette */
+  --bg:          #F7F3EB;
+  --text:        #1A1612;
+  --text-muted:  #6B6258;
+  --text-light:  #9B9488;
+  --accent:      #C75B39;
+  --rule:        #D4CFC4;
+
+  /* type */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+
+  /* spacing */
+  --sp-xs: 0.5rem;
+  --sp-sm: 1rem;
+  --sp-md: 2rem;
+  --sp-lg: 4rem;
+  --sp-xl: 6rem;
+}
+
+*,*::before,*::after { margin:0; padding:0; box-sizing:border-box; }
+
+html { font-size:16px; scroll-behavior:smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background-color: var(--bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================
+   LAYOUT
+   ========================================================== */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--sp-md);
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+  text-align: center;
+  padding: var(--sp-xl) var(--sp-md) var(--sp-lg);
+  position: relative;
+}
+header::after {
+  content: '';
+  display: block;
+  width: 56px;
+  height: 3px;
+  background: var(--accent);
+  margin: var(--sp-md) auto 0;
+  border-radius: 2px;
+}
+
+header h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 5vw, 3.6rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  margin-bottom: var(--sp-sm);
+}
+
+header .subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 620px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+header .meta {
+  font-size: 0.72rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: var(--sp-sm);
+  font-weight: 500;
+}
+
+/* ---------- SECTIONS ---------- */
+
+section {
+  padding: var(--sp-lg) 0;
+  position: relative;
+}
+section + section {
+  border-top: 1px solid var(--rule);
+}
+
+.section-header { margin-bottom: var(--sp-md); }
+
+.section-header h2 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+.section-header p {
+  color: var(--text-muted);
+  max-width: 680px;
+  font-size: 0.92rem;
+}
+
+/* ==========================================================
+   TABS & BUTTONS
+   ========================================================== */
+
+.age-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: var(--sp-md);
+  flex-wrap: wrap;
+}
+
+.age-tabs button {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 7px 22px;
+  border: 1.5px solid var(--rule);
+  border-radius: 100px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+.age-tabs button:hover {
+  border-color: var(--text);
+  color: var(--text);
+}
+.age-tabs button.active {
+  background: var(--text);
+  border-color: var(--text);
+  color: var(--bg);
+}
+
+.cat-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: var(--sp-md);
+}
+
+.cat-buttons button {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 7px 18px;
+  border: 1.5px solid var(--rule);
+  border-radius: 100px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.22s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.cat-buttons button:hover {
+  border-color: var(--text);
+  color: var(--text);
+}
+.cat-buttons button.active {
+  color: #fff;
+}
+.cat-buttons button .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ==========================================================
+   CHART CONTAINERS
+   ========================================================== */
+
+.chart-wrap {
+  padding: var(--sp-sm) 0;
+  overflow: hidden;
+}
+
+.chart-wrap svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ==========================================================
+   LEGEND
+   ========================================================== */
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-xs) var(--sp-md);
+  margin-top: var(--sp-sm);
+  padding: var(--sp-xs) 0;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.legend-item:hover { opacity: 1 !important; }
+
+.legend-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+/* ==========================================================
+   TOOLTIP
+   ========================================================== */
+
+#tooltip {
+  position: fixed;
+  pointer-events: none;
+  background: rgba(26,22,18,0.92);
+  color: #F7F3EB;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.15s, transform 0.15s;
+  max-width: 280px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.22);
+  font-variant-numeric: tabular-nums;
+}
+#tooltip.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+#tooltip .tt-title {
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+/* ==========================================================
+   CHART-NOTE
+   ========================================================== */
+
+.chart-note {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  margin-top: var(--sp-sm);
+  font-style: italic;
+  max-width: 750px;
+  line-height: 1.55;
+}
+.chart-note strong {
+  color: var(--text);
+  font-style: normal;
+}
+
+/* ==========================================================
+   WAFFLE
+   ========================================================== */
+
+.waffle-row {
+  display: flex;
+  gap: var(--sp-md);
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: var(--sp-sm) 0;
+}
+
+.waffle-year { text-align: center; }
+
+.waffle-year-label {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.waffle-pcts {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 8px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+.waffle-pcts span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.waffle-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 3px;
+}
+
+.waffle-cell {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  cursor: default;
+}
+.waffle-cell:hover {
+  transform: scale(1.25);
+  z-index: 2;
+  position: relative;
+}
+.waffle-cell.dimmed { opacity: 0.3; }
+
+.waffle-legend {
+  display: flex;
+  gap: var(--sp-md);
+  justify-content: center;
+  margin-top: var(--sp-md);
+}
+.waffle-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.waffle-legend-swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+/* ==========================================================
+   SVG CHART ELEMENTS
+   ========================================================== */
+
+svg text { user-select: none; }
+
+.bump-area {
+  transition: opacity 0.22s ease;
+  cursor: pointer;
+}
+.bump-area.dimmed  { opacity: 0.15 !important; }
+.bump-area.bright  { opacity: 1 !important; }
+
+.line-path {
+  fill: none;
+  stroke-width: 2.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: opacity 0.22s ease;
+}
+.line-path.dimmed { opacity: 0.12; }
+
+.line-dot {
+  transition: r 0.18s ease, opacity 0.18s ease;
+}
+
+.axis text {
+  font-family: var(--font-body);
+  font-size: 11px;
+  fill: var(--text-muted);
+}
+.axis line, .axis .domain {
+  stroke: var(--rule);
+}
+
+/* ==========================================================
+   SCROLL REVEAL
+   ========================================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.22,1,0.36,1),
+              transform 0.75s cubic-bezier(0.22,1,0.36,1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.18s; }
+.reveal-delay-3 { transition-delay: 0.30s; }
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+footer {
+  text-align: center;
+  padding: var(--sp-lg) var(--sp-md);
+  color: var(--text-light);
+  font-size: 0.78rem;
+  border-top: 1px solid var(--rule);
+  line-height: 1.5;
+}
