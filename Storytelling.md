@@ -65,7 +65,7 @@ _line_
 
 &nbsp;  
 Third Chart:  
-- Title: Alone, Shared, or Other?
+- Title: Digital Isolation, or New Social Norms?  
 - Message: How daily time divides between solitary, social, and other contexts across survey years. Each square represents one percentage point.
 - Graph & legend
 - Annotation: **Alone** activities include computing, cleaning, and commuting. **Shared** activities include socialising, entertainment, childcare, walking, and employment. Classification derived from the modal social context of each activity across all survey waves, ignoring unclassified entries.
