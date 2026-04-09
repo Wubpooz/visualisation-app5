@@ -646,10 +646,13 @@ function drawLine() {
 
   /* ---- scales ---- */
   const allPct = lines.flatMap(l => l.pts.map(p => p.pct));
-  const yMax = Math.max(d3.max(allPct) * 1.15, 1);
+  const yStep = 0.5;
+  const maxPct = d3.max(allPct);
+  const yMax = Math.max(Math.ceil(maxPct / yStep) * yStep, yStep);
+  const yTicks = d3.range(0, yMax + yStep / 2, yStep);
 
   const x = d3.scaleLinear().domain([2000, 2020]).range([0, w]);
-  const yS = d3.scaleLinear().domain([0, yMax]).range([h, 0]).nice();
+  const yS = d3.scaleLinear().domain([0, yMax]).range([h, 0]);
 
   /* ---- grid ---- */
   svg.append("g").attr("class", "axis")
@@ -658,7 +661,7 @@ function drawLine() {
     ).call(g => g.select(".domain").attr("stroke", "#D4CFC4"));
 
   svg.append("g").attr("class", "axis").call(
-    d3.axisLeft(yS).ticks(5).tickFormat(d => d.toFixed(0) + "%").tickSize(-w)
+    d3.axisLeft(yS).tickValues(yTicks).tickFormat(d => `${d.toFixed(1)}%`).tickSize(-w)
   ).call(g => {
     g.select(".domain").remove();
     g.selectAll(".tick line").attr("stroke", "#E8E4DA");
