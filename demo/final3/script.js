@@ -309,6 +309,60 @@ function spreadLabels(positions, minGap) {
   return positions;
 }
 
+let noteHeightResizeTimer = null;
+
+function scrollToInstant(y) {
+  const root = document.documentElement;
+  const prev = root.style.scrollBehavior;
+  root.style.scrollBehavior = "auto";
+  window.scrollTo(0, y);
+  root.style.scrollBehavior = prev;
+}
+
+function renderBumpNote(ag) {
+  d3.select("#bump-note").html(BUMP_NOTES[ag] || "");
+}
+
+function lockBumpNoteHeight() {
+  const note = document.getElementById("bump-note");
+  if (!note) return;
+
+  const width = note.getBoundingClientRect().width;
+  if (!width) return;
+
+  const currentHtml = note.innerHTML;
+  const measure = note.cloneNode(false);
+  measure.removeAttribute("id");
+  measure.style.position = "absolute";
+  measure.style.visibility = "hidden";
+  measure.style.pointerEvents = "none";
+  measure.style.left = "-99999px";
+  measure.style.top = "0";
+  measure.style.width = `${width}px`;
+  measure.style.minHeight = "0";
+  measure.style.height = "auto";
+
+  document.body.appendChild(measure);
+
+  let maxHeight = 0;
+  Object.values(BUMP_NOTES).forEach(html => {
+    measure.innerHTML = html;
+    maxHeight = Math.max(maxHeight, Math.ceil(measure.getBoundingClientRect().height));
+  });
+
+  measure.remove();
+  note.innerHTML = currentHtml;
+  note.style.minHeight = `${maxHeight}px`;
+}
+
+function scheduleBumpNoteHeightLock() {
+  if (noteHeightResizeTimer) window.clearTimeout(noteHeightResizeTimer);
+  noteHeightResizeTimer = window.setTimeout(() => {
+    noteHeightResizeTimer = null;
+    lockBumpNoteHeight();
+  }, 120);
+}
+
 // ===========================================================
 // 6. TOOLTIP
 // ===========================================================
@@ -748,9 +802,19 @@ function buildTabs(containerId, groups, activeVal, onChange) {
     el.append("button")
       .text(g)
       .classed("active", g === activeVal)
+      .on("pointerdown", function (ev) {
+        ev.preventDefault();
+      })
+      .on("mousedown", function (ev) {
+        ev.preventDefault();
+      })
+      .on("focus", function () {
+        this.blur();
+      })
       .on("click", function () {
         el.selectAll("button").classed("active", false);
         d3.select(this).classed("active", true);
+        this.blur(); /* release focus so browser won't auto-scroll to button */
         onChange(g);
       });
   });
@@ -804,6 +868,10 @@ function selectCat(cat) {
 
 /* Age-group change: sync bump + waffle */
 function setAge(ag) {
+  /* Save scroll — chart redraws cause micro layout shifts that can nudge the
+     viewport; restore immediately after all synchronous DOM updates. */
+  const savedY = window.scrollY;
+
   state.bumpAge = ag;
   state.waffleAge = ag;
 
@@ -816,8 +884,14 @@ function setAge(ag) {
   });
 
   drawBump();
-  d3.select("#bump-note").html(BUMP_NOTES[ag]);
+  renderBumpNote(ag);
   drawWaffle();
+
+  /* Keep the viewport locked even though the page uses smooth scrolling. */
+  scrollToInstant(savedY);
+  requestAnimationFrame(() => {
+    scrollToInstant(savedY);
+  });
 }
 
 // ===========================================================
@@ -858,7 +932,19 @@ function init() {
   drawWaffle();
 
   /* notes */
-  d3.select("#bump-note").html(BUMP_NOTES[state.bumpAge]);
+  renderBumpNote(state.bumpAge);
+  lockBumpNoteHeight();
+
+  window.addEventListener("resize", scheduleBumpNoteHeightLock, { passive: true });
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener("resize", scheduleBumpNoteHeightLock, { passive: true });
+  }
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(() => {
+      lockBumpNoteHeight();
+    });
+  }
 
   /* scroll animations */
   initReveal();
