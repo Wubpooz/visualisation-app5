@@ -229,7 +229,7 @@ const LINE_CATS = CATEGORIES.filter(c => c !== "AC01" && c !== "AC02 + AC021");
 const WAFFLE_COLORS = {
   alone:  "#D4764E",
   shared: "#5B8C5A",
-  other:  "#9B95B0"
+  other:  "#a2a2a3"
 };
 
 // ===========================================================
