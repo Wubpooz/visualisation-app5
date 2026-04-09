@@ -1,0 +1,630 @@
+{
+  "generated_at_utc": "2026-04-08T16:34:07.497123+00:00",
+  "dataset": {
+    "repo_id": "Bluefir/hetus-time-use",
+    "config": "observations",
+    "split": "train",
+    "local_dataset_dir": null,
+    "load_mode": "remote_parquet_batches",
+    "activity_category_source": "unified_acl_codes"
+  },
+  "extraction": {
+    "include_partial_categories": false,
+    "all_categories": false,
+    "using_default_categories": true,
+    "missing_default_categories": [
+      "AC1_2"
+    ]
+  },
+  "years": [
+    2000,
+    2010,
+    2020
+  ],
+  "age_groups": [
+    "10-24",
+    "25-44",
+    "45-64",
+    "65+"
+  ],
+  "age_group_source_codes": {
+    "10-24": [
+      "Y15-20",
+      "Y20-24",
+      "Y10-14",
+      "Y15-24",
+      "Y15-29"
+    ],
+    "25-44": [
+      "Y25-44",
+      "Y25-34",
+      "Y30-44",
+      "Y35-44"
+    ],
+    "45-64": [
+      "Y45-64",
+      "Y45-54",
+      "Y55-64"
+    ],
+    "65+": [
+      "Y65-74",
+      "Y_GE65",
+      "Y_GE75"
+    ]
+  },
+  "activity_categories": [
+    "AC01",
+    "AC02 + AC021",
+    "AC812",
+    "AC72",
+    "AC512_513_519",
+    "AC52",
+    "AC611",
+    "AC321",
+    "AC382_383",
+    "AC910"
+  ],
+  "summary": {
+    "source_rows": 1680915,
+    "filtered_rows": 42660,
+    "aggregated_rows_with_data": 120,
+    "output_records": 120,
+    "filter_diagnostics": {
+      "after_geo": 1680915,
+      "after_sex": 1680915,
+      "after_unit": 496120,
+      "after_freq": 496120,
+      "after_age_group": 63048,
+      "after_activity_category": 59466,
+      "after_minutes_year": 42660
+    }
+  },
+  "values": {
+    "2000": {
+      "10-24": {
+        "shared_pct": 24.332,
+        "alone_pct": 74.429,
+        "other_pct": 1.239,
+        "AC01": {
+          "average_minutes": 526.19,
+          "observation_count": 42
+        },
+        "AC02 + AC021": {
+          "average_minutes": 51.381,
+          "observation_count": 84
+        },
+        "AC321": {
+          "average_minutes": 14.19,
+          "observation_count": 42
+        },
+        "AC382_383": {
+          "average_minutes": 4.929,
+          "observation_count": 42
+        },
+        "AC512_513_519": {
+          "average_minutes": 22.543,
+          "observation_count": 81
+        },
+        "AC52": {
+          "average_minutes": 10.167,
+          "observation_count": 42
+        },
+        "AC611": {
+          "average_minutes": 14.048,
+          "observation_count": 42
+        },
+        "AC72": {
+          "average_minutes": 12.167,
+          "observation_count": 42
+        },
+        "AC812": {
+          "average_minutes": 7.238,
+          "observation_count": 42
+        },
+        "AC910": {
+          "average_minutes": 21.262,
+          "observation_count": 42
+        }
+      },
+      "25-44": {
+        "shared_pct": 24.166,
+        "alone_pct": 74.88,
+        "other_pct": 0.954,
+        "AC01": {
+          "average_minutes": 497.81,
+          "observation_count": 42
+        },
+        "AC02 + AC021": {
+          "average_minutes": 51.631,
+          "observation_count": 84
+        },
+        "AC321": {
+          "average_minutes": 22.643,
+          "observation_count": 42
+        },
+        "AC382_383": {
+          "average_minutes": 13.595,
+          "observation_count": 42
+        },
+        "AC512_513_519": {
+          "average_minutes": 17.136,
+          "observation_count": 81
+        },
+        "AC52": {
+          "average_minutes": 5.857,
+          "observation_count": 42
+        },
+        "AC611": {
+          "average_minutes": 11.81,
+          "observation_count": 42
+        },
+        "AC72": {
+          "average_minutes": 6.024,
+          "observation_count": 42
+        },
+        "AC812": {
+          "average_minutes": 6.548,
+          "observation_count": 42
+        },
+        "AC910": {
+          "average_minutes": 28.881,
+          "observation_count": 42
+        }
+      },
+      "45-64": {
+        "shared_pct": 25.198,
+        "alone_pct": 73.732,
+        "other_pct": 1.07,
+        "AC01": {
+          "average_minutes": 503.0,
+          "observation_count": 42
+        },
+        "AC02 + AC021": {
+          "average_minutes": 54.155,
+          "observation_count": 84
+        },
+        "AC321": {
+          "average_minutes": 27.238,
+          "observation_count": 42
+        },
+        "AC382_383": {
+          "average_minutes": 2.524,
+          "observation_count": 42
+        },
+        "AC512_513_519": {
+          "average_minutes": 16.432,
+          "observation_count": 81
+        },
+        "AC52": {
+          "average_minutes": 4.452,
+          "observation_count": 42
+        },
+        "AC611": {
+          "average_minutes": 15.381,
+          "observation_count": 42
+        },
+        "AC72": {
+          "average_minutes": 3.81,
+          "observation_count": 42
+        },
+        "AC812": {
+          "average_minutes": 8.595,
+          "observation_count": 42
+        },
+        "AC910": {
+          "average_minutes": 20.976,
+          "observation_count": 42
+        }
+      },
+      "65+": {
+        "shared_pct": 30.147,
+        "alone_pct": 68.429,
+        "other_pct": 1.424,
+        "AC01": {
+          "average_minutes": 545.81,
+          "observation_count": 42
+        },
+        "AC02 + AC021": {
+          "average_minutes": 55.869,
+          "observation_count": 84
+        },
+        "AC321": {
+          "average_minutes": 31.024,
+          "observation_count": 42
+        },
+        "AC382_383": {
+          "average_minutes": 1.429,
+          "observation_count": 42
+        },
+        "AC512_513_519": {
+          "average_minutes": 18.951,
+          "observation_count": 81
+        },
+        "AC52": {
+          "average_minutes": 3.548,
+          "observation_count": 42
+        },
+        "AC611": {
+          "average_minutes": 23.81,
+          "observation_count": 42
+        },
+        "AC72": {
+          "average_minutes": 2.286,
+          "observation_count": 42
+        },
+        "AC812": {
+          "average_minutes": 10.5,
+          "observation_count": 42
+        },
+        "AC910": {
+          "average_minutes": 2.048,
+          "observation_count": 42
+        }
+      }
+    },
+    "2010": {
+      "10-24": {
+        "shared_pct": 24.477,
+        "alone_pct": 74.073,
+        "other_pct": 1.45,
+        "AC01": {
+          "average_minutes": 536.472,
+          "observation_count": 108
+        },
+        "AC02 + AC021": {
+          "average_minutes": 54.183,
+          "observation_count": 213
+        },
+        "AC321": {
+          "average_minutes": 11.852,
+          "observation_count": 108
+        },
+        "AC382_383": {
+          "average_minutes": 2.852,
+          "observation_count": 108
+        },
+        "AC512_513_519": {
+          "average_minutes": 20.315,
+          "observation_count": 213
+        },
+        "AC52": {
+          "average_minutes": 11.019,
+          "observation_count": 108
+        },
+        "AC611": {
+          "average_minutes": 12.389,
+          "observation_count": 108
+        },
+        "AC72": {
+          "average_minutes": 45.389,
+          "observation_count": 108
+        },
+        "AC812": {
+          "average_minutes": 6.528,
+          "observation_count": 108
+        },
+        "AC910": {
+          "average_minutes": 14.278,
+          "observation_count": 108
+        }
+      },
+      "25-44": {
+        "shared_pct": 24.325,
+        "alone_pct": 74.632,
+        "other_pct": 1.043,
+        "AC01": {
+          "average_minutes": 497.667,
+          "observation_count": 54
+        },
+        "AC02 + AC021": {
+          "average_minutes": 56.685,
+          "observation_count": 108
+        },
+        "AC321": {
+          "average_minutes": 21.722,
+          "observation_count": 54
+        },
+        "AC382_383": {
+          "average_minutes": 18.148,
+          "observation_count": 54
+        },
+        "AC512_513_519": {
+          "average_minutes": 17.556,
+          "observation_count": 108
+        },
+        "AC52": {
+          "average_minutes": 7.444,
+          "observation_count": 54
+        },
+        "AC611": {
+          "average_minutes": 9.611,
+          "observation_count": 54
+        },
+        "AC72": {
+          "average_minutes": 22.0,
+          "observation_count": 54
+        },
+        "AC812": {
+          "average_minutes": 5.796,
+          "observation_count": 54
+        },
+        "AC910": {
+          "average_minutes": 29.704,
+          "observation_count": 54
+        }
+      },
+      "45-64": {
+        "shared_pct": 25.006,
+        "alone_pct": 73.862,
+        "other_pct": 1.132,
+        "AC01": {
+          "average_minutes": 499.574,
+          "observation_count": 54
+        },
+        "AC02 + AC021": {
+          "average_minutes": 60.315,
+          "observation_count": 108
+        },
+        "AC321": {
+          "average_minutes": 26.204,
+          "observation_count": 54
+        },
+        "AC382_383": {
+          "average_minutes": 3.481,
+          "observation_count": 54
+        },
+        "AC512_513_519": {
+          "average_minutes": 17.769,
+          "observation_count": 108
+        },
+        "AC52": {
+          "average_minutes": 5.593,
+          "observation_count": 54
+        },
+        "AC611": {
+          "average_minutes": 13.611,
+          "observation_count": 54
+        },
+        "AC72": {
+          "average_minutes": 15.648,
+          "observation_count": 54
+        },
+        "AC812": {
+          "average_minutes": 8.167,
+          "observation_count": 54
+        },
+        "AC910": {
+          "average_minutes": 22.259,
+          "observation_count": 54
+        }
+      },
+      "65+": {
+        "shared_pct": 29.954,
+        "alone_pct": 68.591,
+        "other_pct": 1.455,
+        "AC01": {
+          "average_minutes": 544.407,
+          "observation_count": 54
+        },
+        "AC02 + AC021": {
+          "average_minutes": 65.543,
+          "observation_count": 105
+        },
+        "AC321": {
+          "average_minutes": 26.389,
+          "observation_count": 54
+        },
+        "AC382_383": {
+          "average_minutes": 1.222,
+          "observation_count": 54
+        },
+        "AC512_513_519": {
+          "average_minutes": 22.124,
+          "observation_count": 105
+        },
+        "AC52": {
+          "average_minutes": 4.722,
+          "observation_count": 54
+        },
+        "AC611": {
+          "average_minutes": 20.278,
+          "observation_count": 54
+        },
+        "AC72": {
+          "average_minutes": 10.444,
+          "observation_count": 54
+        },
+        "AC812": {
+          "average_minutes": 10.426,
+          "observation_count": 54
+        },
+        "AC910": {
+          "average_minutes": 1.926,
+          "observation_count": 54
+        }
+      }
+    },
+    "2020": {
+      "10-24": {
+        "shared_pct": 25.838,
+        "alone_pct": 72.488,
+        "other_pct": 1.674,
+        "AC01": {
+          "average_minutes": 555.767,
+          "observation_count": 60
+        },
+        "AC02 + AC021": {
+          "average_minutes": 49.75,
+          "observation_count": 120
+        },
+        "AC321": {
+          "average_minutes": 10.167,
+          "observation_count": 60
+        },
+        "AC382_383": {
+          "average_minutes": 3.083,
+          "observation_count": 60
+        },
+        "AC512_513_519": {
+          "average_minutes": 41.267,
+          "observation_count": 120
+        },
+        "AC52": {
+          "average_minutes": 9.133,
+          "observation_count": 60
+        },
+        "AC611": {
+          "average_minutes": 12.733,
+          "observation_count": 60
+        },
+        "AC72": {
+          "average_minutes": 12.775,
+          "observation_count": 120
+        },
+        "AC812": {
+          "average_minutes": 7.817,
+          "observation_count": 60
+        },
+        "AC910": {
+          "average_minutes": 9.2,
+          "observation_count": 60
+        }
+      },
+      "25-44": {
+        "shared_pct": 26.288,
+        "alone_pct": 72.479,
+        "other_pct": 1.233,
+        "AC01": {
+          "average_minutes": 505.603,
+          "observation_count": 63
+        },
+        "AC02 + AC021": {
+          "average_minutes": 54.595,
+          "observation_count": 126
+        },
+        "AC321": {
+          "average_minutes": 19.873,
+          "observation_count": 63
+        },
+        "AC382_383": {
+          "average_minutes": 20.048,
+          "observation_count": 63
+        },
+        "AC512_513_519": {
+          "average_minutes": 30.103,
+          "observation_count": 126
+        },
+        "AC52": {
+          "average_minutes": 7.968,
+          "observation_count": 63
+        },
+        "AC611": {
+          "average_minutes": 13.746,
+          "observation_count": 63
+        },
+        "AC72": {
+          "average_minutes": 9.762,
+          "observation_count": 126
+        },
+        "AC812": {
+          "average_minutes": 7.476,
+          "observation_count": 63
+        },
+        "AC910": {
+          "average_minutes": 24.825,
+          "observation_count": 63
+        }
+      },
+      "45-64": {
+        "shared_pct": 24.827,
+        "alone_pct": 73.923,
+        "other_pct": 1.25,
+        "AC01": {
+          "average_minutes": 503.508,
+          "observation_count": 63
+        },
+        "AC02 + AC021": {
+          "average_minutes": 57.357,
+          "observation_count": 126
+        },
+        "AC321": {
+          "average_minutes": 19.937,
+          "observation_count": 63
+        },
+        "AC382_383": {
+          "average_minutes": 3.476,
+          "observation_count": 63
+        },
+        "AC512_513_519": {
+          "average_minutes": 26.349,
+          "observation_count": 126
+        },
+        "AC52": {
+          "average_minutes": 5.683,
+          "observation_count": 63
+        },
+        "AC611": {
+          "average_minutes": 15.54,
+          "observation_count": 63
+        },
+        "AC72": {
+          "average_minutes": 8.397,
+          "observation_count": 126
+        },
+        "AC812": {
+          "average_minutes": 9.619,
+          "observation_count": 63
+        },
+        "AC910": {
+          "average_minutes": 23.127,
+          "observation_count": 63
+        }
+      },
+      "65+": {
+        "shared_pct": 29.179,
+        "alone_pct": 69.425,
+        "other_pct": 1.396,
+        "AC01": {
+          "average_minutes": 542.651,
+          "observation_count": 63
+        },
+        "AC02 + AC021": {
+          "average_minutes": 65.968,
+          "observation_count": 126
+        },
+        "AC321": {
+          "average_minutes": 23.254,
+          "observation_count": 63
+        },
+        "AC382_383": {
+          "average_minutes": 0.206,
+          "observation_count": 63
+        },
+        "AC512_513_519": {
+          "average_minutes": 29.476,
+          "observation_count": 126
+        },
+        "AC52": {
+          "average_minutes": 4.952,
+          "observation_count": 63
+        },
+        "AC611": {
+          "average_minutes": 23.667,
+          "observation_count": 63
+        },
+        "AC72": {
+          "average_minutes": 6.262,
+          "observation_count": 126
+        },
+        "AC812": {
+          "average_minutes": 15.317,
+          "observation_count": 63
+        },
+        "AC910": {
+          "average_minutes": 2.492,
+          "observation_count": 63
+        }
+      }
+    }
+  }
+}

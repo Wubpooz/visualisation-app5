@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time Spend Analysis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <p class="data-source">Real data loaded with fetch() from age_activity_year_average.json</p>
+      <h1>Time Spend Analysis</h1>
+      <p class="research-question">As a social species how is the loneliness epidemic happening and can we see it in the evolution of our time use?</p>
+      <p class="subtitle">Simulated data - years 2000, 2010, 2020 - age groups 18-25, 25-35, 35-45</p>
+
+      <div class="intro-text">
+        <p>
+          This visualisation explores how people across different age groups distribute their daily time across nine activity categories
+          (eating, study, sleeping, paid work, household chores and family care, personal care, voluntary work, social life, travel
+          and leisure) over three survey waves: 2000, 2010, and 2020.
+        </p>
+        <p>
+          Each data point encodes: the <strong>activity category</strong>, the <strong>age group</strong> (18-25, 25-35, 35-45),
+          the <strong>survey year</strong>, the <strong>total time spent</strong> in hours, and the <strong>social context</strong>
+          of that time (alone, shared with others, or other).
+        </p>
+      </div>
+    </header>
+
+    <div class="status-message" id="statusMessage" hidden></div>
+
+    <main class="section-stack">
+      <section class="viz-section" aria-labelledby="section1Title">
+        <div class="section-head">
+          <div>
+            <p class="section-label">Section 1</p>
+            <h2 id="section1Title">Area Bump Chart - Partition des categories par groupe d'age</h2>
+            <p class="section-intro">Les rubans changent de rang au fil des annees selon le poids relatif de chaque activite au sein du groupe d'age selectionne. Leur epaisseur et les labels a droite correspondent au vrai pourcentage du temps passe dans la journee.</p>
+          </div>
+          <div class="control-block">
+            <span class="control-label">Groupe d'age</span>
+            <div id="bumpAgeTabs" class="tab-list" role="tablist" aria-label="Age group selector for area bump chart"></div>
+          </div>
+        </div>
+
+        <div id="bumpChart" class="chart-frame chart-frame--tall" aria-label="Area bump chart"></div>
+        <div id="categoryLegend" class="legend-list" aria-label="Activity legend"></div>
+        <p id="bumpNarrative" class="chart-description"></p>
+      </section>
+
+      <section class="viz-section" aria-labelledby="section2Title">
+        <div class="section-head section-head--stacked">
+          <div>
+            <p class="section-label">Section 2</p>
+            <h2 id="section2Title">Line Chart detaille - Tendances temporelles par categorie</h2>
+            <p class="section-intro">Une categorie a la fois, avec une ligne par groupe d'age et des labels directement poses en fin de trajectoire. L'axe Y affiche le vrai pourcentage d'une journee de 1440 minutes.</p>
+          </div>
+
+          <div class="control-block control-block--full">
+            <span class="control-label">Categorie</span>
+            <div id="categoryButtons" class="button-list" role="toolbar" aria-label="Category selector"></div>
+          </div>
+        </div>
+
+        <div id="lineChart" class="chart-frame" aria-label="Line chart by age group"></div>
+        <div id="ageLegend" class="legend-list" aria-label="Age group legend"></div>
+        <p id="lineNarrative" class="chart-description"></p>
+      </section>
+
+      <section class="viz-section" aria-labelledby="section3Title">
+        <div class="section-head">
+          <div>
+            <p class="section-label">Section 3</p>
+            <h2 id="section3Title">Stacked Bar Chart - Repartition sociale</h2>
+            <p class="section-intro">La repartition Seul / Partage / Autre provient directement des pourcentages presents dans le JSON pour chaque annee et chaque groupe d'age.</p>
+          </div>
+        </div>
+
+        <div id="socialChart" class="chart-frame" aria-label="Social distribution chart"></div>
+        <div id="socialLegend" class="legend-list" aria-label="Social distribution legend"></div>
+
+        <div class="control-block control-block--under-chart">
+          <span class="control-label">Groupe d'age</span>
+          <div id="socialAgeTabs" class="tab-list" role="tablist" aria-label="Age group selector for social chart"></div>
+        </div>
+
+        <p id="socialNarrative" class="chart-description"></p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
