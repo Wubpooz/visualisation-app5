@@ -1,0 +1,33 @@
+name: Deploy GitHub Pages from demo/final3
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'demo/final3/**'
+      - '.github/workflows/deploy-gh-pages.yml'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Prepare static site files
+        run: |
+          rm -rf public
+          mkdir -p public
+          cp -a demo/final3/. public/
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
