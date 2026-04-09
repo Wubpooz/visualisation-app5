@@ -227,8 +227,8 @@ const AG_COLORS = {
 const LINE_CATS = CATEGORIES.filter(c => c !== "AC01" && c !== "AC02 + AC021");
 
 const WAFFLE_COLORS = {
-  alone:  "#5B8C5A",
-  shared: "#D4764E",
+  alone:  "#D4764E",
+  shared: "#5B8C5A",
   other:  "#9B95B0"
 };
 
