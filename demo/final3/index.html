@@ -10,7 +10,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="container">
+
+    <main id="main-content" tabindex="-1">
 
     <!-- ======= HEADER ======= -->
     <header class="reveal">
@@ -23,7 +26,7 @@
     <section id="bump-section">
       <div class="section-header reveal">
         <h2>The Landscape of a Day</h2>
-        <p>Each band represents a category of daily activity. Width reflects its share of time; vertical position shows relative importance. Categories reorder as their prominence shifts across survey years.</p>
+        <p>Each band represents a category of daily activity. Band width follows a square-root scaled share of daily time to keep smaller categories visible, while vertical position shows relative importance. Categories reorder as their prominence shifts across survey years.</p>
       </div>
       <div class="age-tabs reveal reveal-delay-1" id="bump-tabs"></div>
       <div class="chart-wrap reveal reveal-delay-2">
@@ -64,14 +67,17 @@
       </p>
     </section>
 
+    </main>
+
     <!-- ======= FOOTER ======= -->
     <footer class="reveal">
       <p>Data: Eurostat HETUS (Harmonised European Time Use Surveys) · Covers participating European countries across three survey waves (2000, 2010, 2020)</p>
-      <p style="margin-top:4px">Built with D3.js · Designed for desktop viewing</p>
+      <p style="margin-top:4px">Built with D3.js</p>
     </footer>
 
   </div>
 
+  <div id="a11y-status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
   <div id="tooltip"></div>
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
