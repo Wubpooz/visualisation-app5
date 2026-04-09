@@ -223,6 +223,15 @@ const AG_COLORS = {
   "65+":   "#D4A843"
 };
 
+// monocolor version:
+// const AG_COLORS = {
+//   "10-24": "#2D5D9B",
+//   "25-44": "#4B7DBC",
+//   "45-64": "#75A0D7",
+//   "65+":   "#A4C4ED"
+// };
+
+
 /* Categories shown in the line-chart selector (exclude stable ones) */
 const LINE_CATS = CATEGORIES.filter(c => c !== "AC01" && c !== "AC02 + AC021");
 
@@ -237,20 +246,20 @@ const WAFFLE_COLORS = {
 // ===========================================================
 
 const BUMP_NOTES = {
-  "10-24": "For young Europeans the most dramatic shift was the <strong>explosion of computing time</strong> between 2000 and 2010, surging from under 2% to nearly 7% of tracked activities. By 2020 socialising time nearly doubled — possibly reflecting expanded digital social interactions — while commuting dropped sharply.",
-  "25-44": "Working-age Europeans show the most balanced distribution. <strong>Computing rose sharply</strong> from 2000 to 2010, while commuting remained stubbornly high. <strong>Childcare activities peak</strong> in this group — five times more than any other cohort — and climbed further by 2020.",
-  "45-64": "The 45–64 group show remarkable stability across two decades. <strong>Computing grew steadily</strong> from near-zero to a visible share, while social activities picked up in 2020. Household cleaning gradually declined, mirroring broader trends in domestic labour.",
-  "65+":   "Retirees spend the most time walking and reading, and the least commuting. <strong>Walking remained high</strong> at over 3 % of tracked time — double that of younger groups. The most striking change was the quiet <strong>rise of computing</strong> from virtually zero in 2000 to a meaningful share by 2020."
+  "10-24": "For young Europeans, there was a significant shift in their time use as computing time became prominent from 2000 to 2010 before falling back in 2020. By 2020, socialising time nearly doubled, possibly reflecting expanded digital social interactions, while commuting dropped sharply (which could reflect changing work patterns or a survey limitation).",
+  "25-44": "Early-to-mid adult Europeans show the most balanced distribution. Computing rose sharply from 2000 to 2010 too, while commuting remained very high. Childcare climbed steadily during this two-decade period.",
+  "45-64": "The middle-aged adult group shows strong stability across two decades. Computing grew steadily from near-zero to a visible share, while social activities picked up in 2020. Household cleaning gradually declined.",
+  "65+":   "Retirees spend the most time walking and reading, and the least time commuting. The most striking change was the significant rise in socialising."
 };
 
 const LINE_NOTES = {
-  "AC72":           "<strong>Computing</strong> saw the most dramatic generational shift. Young Europeans surged from 12 to 45 min/day between 2000 and 2010, then dropped back by 2020 — likely as activities split into mobile and social categories. The 65+ group showed a quieter but steady rise throughout.",
-  "AC812":          "<strong>Reading books</strong> declined across most age groups, but the 65+ cohort bucked the trend with an increase from 10.5 to 15.3 min/day by 2020. The gap between oldest and youngest readers widened dramatically.",
-  "AC512_513_519":  "<strong>Socialising</strong> remained relatively stable until 2020, when all age groups — especially 10–24 year-olds — saw sharp increases, perhaps reflecting expanded survey definitions of social interaction.",
-  "AC52":           "<strong>Entertainment and culture</strong> stayed remarkably stable across two decades and age groups, hovering between 4 and 11 min/day — a quiet constant amid rapid change.",
+  "AC72":           "<strong>Computing</strong> saw the most dramatic generational shift. Young Europeans surged from 12 to 45 min/day between 2000 and 2010, then dropped back by 2020. This is likely due to activities splitting into mobile and social categories. The 65+ group showed a very small rise in computer use, reflecting slower technology adoption.",
+  "AC812":          "<strong>Reading books</strong> stagnated across most age groups, but the 65+ cohort bucked the trend with an increase from 10.5 to 15.3 min/day by 2020. The gap between oldest and youngest readers widened, likely due to a shift in technology adoption.",
+  "AC512_513_519":  "<strong>Socialising</strong> unexpectedly increased sharply for the 10-24 year-olds as well as the 65+ cohorts, especially in 2020. This perhaps reflects an expanded survey definition of social interaction that includes more digital forms and a post-COVID craving for socializing.",
+  "AC52":           "<strong>Entertainment and culture</strong> stayed remarkably stable across two decades and age groups, hovering between 5 and 11 min/day. The small decline for the youngest group may reflect a shift from traditional media to computing-based entertainment.",
   "AC611":          "<strong>Walking & hiking</strong> shows a clear age gradient: older Europeans walk significantly more. The 65+ group consistently spent 20+ min/day walking, roughly double the rate of younger groups.",
-  "AC321":          "<strong>Cleaning</strong> time gradually decreased for most groups, with the 65+ cohort maintaining the highest levels throughout. The decline is sharpest for 25–44-year-olds.",
-  "AC382_383":      "<strong>Childcare activities</strong> peak sharply for the 25–44 group and are nearly zero for 65+. The 25–44 group saw a notable increase from 13.6 to 20 min/day by 2020.",
+  "AC321":          "<strong>Cleaning</strong> time gradually decreased for most groups, with the 65+ cohort maintaining the highest levels throughout.",
+  "AC382_383":      "<strong>Childcare activities</strong> are significantly higher (five times) for the 25-44 group and are nearly zero for 65+. The 25-44 group saw a notable increase from 13.6 to 20 min/day by 2020 while the 10-24 year-olds showed a small decrease, maybe indicating that Europeans are having children at an older age.",
   "AC910":          "<strong>Commuting</strong> time is near-zero for retirees but substantial for working-age groups. Younger Europeans saw a marked decline by 2020, while the 25–44 group maintained the highest commute times."
 };
 
@@ -439,7 +448,8 @@ function drawBump() {
     .attr("id", "bump-desc")
     .text("Area bump chart where category width is square-root scaled from daily share. Use legend buttons or chart focus to inspect category values by year.");
 
-  const svg = svgRoot.append("g").attr("transform", `translate(${m.l},${m.t})`);
+  const bodyShift = (m.r - m.l) / 2;
+  const svg = svgRoot.append("g").attr("transform", `translate(${m.l + bodyShift},${m.t})`);
 
   /* ---- compute snapshots at real years ---- */
   const snapshots = YEARS.map(year => {
@@ -571,11 +581,27 @@ function drawBump() {
       .text(CAT_LABELS[cat]);
   });
 
-  /* ---- scale note ---- */
-  svg.append("text")
-    .attr("x", 0).attr("y", h + 32)
-    .attr("font-size", "10px").attr("fill", "#9B9488")
-    .text("Band widths use a √ scale so small categories remain visible. Hover or focus for actual values.");
+  /* ---- graph comment ---- */
+  const bumpComment = svg.append("text")
+    .attr("x", 0)
+    .attr("y", h + 16)
+    .attr("font-size", "10px")
+    .attr("fill", "#9B9488");
+
+  bumpComment.append("tspan")
+    .attr("x", 0)
+    .attr("dy", 0)
+    .text("Categories reorder vertically as their prominence shifts across survey years.");
+
+  bumpComment.append("tspan")
+    .attr("x", 0)
+    .attr("dy", 12)
+    .text("Category band widths follow a square-root scale to ensure small categories remain visible. Hover or focus for actual share-of-the-day values.");
+
+  bumpComment.append("tspan")
+    .attr("x", 0)
+    .attr("dy", 12)
+    .text("The focus is on the most prominent categories for the whole survey.");
 }
 
 function bumpHover(cat, ev) {
@@ -614,7 +640,7 @@ function drawLine() {
   const el = d3.select("#line-chart");
   el.html("");
 
-  const W = 960, H = 400;
+  const W = 960, H = 540;
   const m = { t: 24, r: 105, b: 44, l: 58 };
   const w = W - m.l - m.r, h = H - m.t - m.b;
   const cat = state.lineCat;
@@ -762,6 +788,28 @@ function drawLine() {
     .attr("y1", 0).attr("y2", h)
     .attr("stroke", "#1A1612").attr("stroke-width", 1)
     .attr("stroke-dasharray", "4 3").attr("opacity", 0);
+
+  /* ---- graph comment ---- */
+  const lineComment = svg.append("text")
+    .attr("x", 0)
+    .attr("y", h + 40)
+    .attr("font-size", "10px")
+    .attr("fill", "#9B9488");
+
+  lineComment.append("tspan")
+    .attr("x", 0)
+    .attr("dy", 0)
+    .text("Pick a category to compare how its share of daily time evolved for each age group between 2000 and 2020.");
+
+  lineComment.append("tspan")
+    .attr("x", 0)
+    .attr("dy", 16)
+    .text("Hover or focus for actual share-of-the-day values at each point on the line.");
+
+  lineComment.append("tspan")
+    .attr("x", 0)
+    .attr("dy", 16)
+    .text("Graph steps are consistent across categories to allow direct comparison of trends and magnitudes.");
 
   /* note */
   d3.select("#line-note").html(LINE_NOTES[cat] || "");

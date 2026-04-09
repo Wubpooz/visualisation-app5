@@ -19,7 +19,7 @@
     <header class="reveal">
       <p class="meta">Eurostat · Harmonised European Time Use Surveys · Whole of Europe · 2000 – 2020</p>
       <h1>How Europe<br>Spends Its Time</h1>
-      <p class="subtitle">Tracking how daily activities shifted across four generations and two transformative decades — from the rise of computing to evolving social patterns.</p>
+      <!-- <p class="subtitle">Tracking how daily activities shifted across four generations and two transformative decades — from the rise of computing to evolving social patterns.</p> -->
       <div class="header-divider" aria-hidden="true"></div>
       <p class="problem-question">As a social species, how is the loneliness epidemic happening, and can we see it in the evolution of our time use?</p>
     </header>
@@ -27,8 +27,8 @@
     <!-- ======= AREA BUMP ======= -->
     <section id="bump-section">
       <div class="section-header reveal">
-        <h2>The Landscape of a Day</h2>
-        <p>Each band represents a category of daily activity. Band width follows a square-root scaled share of daily time to keep smaller categories visible, while vertical position shows relative importance. Categories reorder as their prominence shifts across survey years.</p>
+        <h2>The Daily Rhythm of Europe</h2>
+        <p>Tracking how daily activities shifted across four generations and two decades in Europe revealed the rise of computing and evolving social patterns. Despite the digital surge, however, most activities remained remarkably stable, with clear age-based specificities. Categories reorder vertically as their prominence shifts across survey years. Category band widths follow a square-root scale to ensure that small categories remain visible. Hover or focus for actual share of the day values. The focus is on the most prominent categories for the whole survey.</p>
       </div>
       <div class="age-tabs reveal reveal-delay-1" id="bump-tabs"></div>
       <div class="chart-wrap reveal reveal-delay-2">
@@ -40,32 +40,33 @@
     <!-- ======= LINE CHART ======= -->
     <section id="line-section">
       <div class="section-header reveal">
-        <h2>Activity Deep Dive</h2>
-        <p>Pick a category to compare how its share of daily time evolved for each age group between 2000 and 2020.</p>
+        <h2>Every Life Stage Carries Its Own Pattern</h2>
+        <p>The youngest cohort embraced computing and socialising, while older Europeans maintained traditional activities like walking and reading. The early to mid adults clearly show that childcare takes a central role in their daily lives. The data suggests a complex interplay between technology adoption and enduring lifestyle habits across generations. Pick a category to compare how its share of daily time evolved for each age group between 2000 and 2020. Hover or focus for actual share of the day values at each point on the line. Graph steps are consistent across categories to allow for direct comparison of trends and magnitudes.</p>
       </div>
       <div class="line-chart-layout reveal reveal-delay-2">
-        <div class="chart-wrap chart-wrap-line">
-          <div id="line-chart"></div>
+        <div class="chart-wrap chart-wrap-line" style="display: flex; width: 100%;">
+          <div class="cat-buttons cat-buttons-side" id="cat-buttons" style="margin-top: 0.8rem; margin-right: 0.2rem;"></div>
+          <div id="line-chart" style="width: 100%;"></div>
         </div>
-        <div class="cat-buttons cat-buttons-side" id="cat-buttons"></div>
       </div>
-      <p class="chart-note reveal reveal-delay-3" id="line-note"></p>
+      <p class="chart-note reveal reveal-delay-3" id="line-note" style="margin-top: 2.5rem;"></p>
     </section>
 
     <!-- ======= WAFFLE ======= -->
     <section id="waffle-section">
       <div class="section-header reveal">
-        <h2>Alone, Shared, or Other?</h2>
-        <p>How daily time divides between solitary, social, and other contexts across survey years. Each square represents one percentage point.</p>
+        <h2>Digital Isolation or New Social Behaviors?</h2>
+        <p>Despite the widely reported loneliness epidemic, our data show that Europeans are not spending more time alone. In fact, time spent alone decreased for the two youngest groups, remained stable for the middle-aged group, and only increased slightly for the oldest age groups. The oldest group is the most socially active despite always being cited as the most vulnerable to loneliness. This inconsistency may be a reflection of the survey's limitations in capturing the quality of social interactions, an oversight in our classification of alone vs shared activities, or a sign that the loneliness epidemic is more about the quality of social interactions than the quantity.</p>
       </div>
       <div class="age-tabs reveal reveal-delay-1" id="waffle-tabs"></div>
       <div class="chart-wrap reveal reveal-delay-2">
         <div id="waffle-chart"></div>
       </div>
       <p class="chart-note reveal reveal-delay-3" id="waffle-note">
+        How daily time divides between solitary, social, and other contexts across survey years. Each square represents one percentage point.
         <strong>Alone</strong> activities include computing, cleaning, and commuting.
-        <strong>Shared</strong> activities include socialising, entertainment, childcare, walking, and employment.
-        Classification derived from the modal social context of each activity across all survey waves, ignoring unclassified entries.
+        <strong>Shared</strong> activities include socialising, entertainment, childcare, and employment.
+        Classification is derived from the modal social context of each activity across all survey waves, ignoring unclassified entries.
       </p>
     </section>
 

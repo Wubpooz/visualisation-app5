@@ -86,8 +86,8 @@ Third Chart (waffle chart, alone vs shared by age group):
 - Graph
 - Graph comment: 
   How daily time divides between solitary, social, and other contexts across survey years. Each square represents one percentage point.
+- Annotations:
   **Alone** activities include computing, cleaning, and commuting. **Shared** activities include socialising, entertainment, childcare, and employment. Classification is derived from the modal social context of each activity across all survey waves, ignoring unclassified entries.
-- Annotations: Nothing
 
 _line_
 

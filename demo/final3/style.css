@@ -135,7 +135,7 @@ section + section {
   border-top: 1px solid var(--rule);
 }
 
-.section-header { margin-bottom: var(--sp-md); }
+.section-header { margin-bottom: 1.4rem; }
 
 .section-header h2 {
   font-family: var(--font-display);
@@ -145,8 +145,9 @@ section + section {
 }
 .section-header p {
   color: var(--text-muted);
-  max-width: 680px;
+  /* max-width: 680px; */
   font-size: 0.92rem;
+  margin-bottom: 1rem;
 }
 
 /* ==========================================================
@@ -156,8 +157,9 @@ section + section {
 .age-tabs {
   display: flex;
   gap: 6px;
-  margin-bottom: var(--sp-md);
+  margin-bottom: 0.85rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .age-tabs button {
@@ -246,7 +248,7 @@ section + section {
    ========================================================== */
 
 .chart-wrap {
-  padding: var(--sp-sm) 0;
+  padding: 0.35rem 0 1rem;
   overflow: hidden;
 }
 
@@ -261,12 +263,15 @@ section + section {
   flex: 1 1 auto;
   min-width: 0;
   margin-bottom: 0;
+  overflow: visible;
 }
 
-.chart-wrap svg {
+.chart-wrap svg,
+.chart-wrap-line svg {
   display: block;
   width: 100%;
   height: auto;
+  overflow: visible;
 }
 
 /* ==========================================================
@@ -351,10 +356,13 @@ section + section {
 .chart-note {
   font-size: 0.84rem;
   color: var(--text-muted);
-  margin-top: var(--sp-sm);
+  margin-top: 0.85rem;
+  margin-left: auto;
+  margin-right: auto;
   font-style: italic;
   max-width: 750px;
   line-height: 1.55;
+  text-align: center;
 }
 .chart-note strong {
   color: var(--text);
@@ -370,7 +378,7 @@ section + section {
   gap: var(--sp-md);
   justify-content: center;
   flex-wrap: nowrap;
-  padding: var(--sp-sm) 0;
+  padding: 0.4rem 0;
 }
 
 .waffle-year { text-align: center; }
@@ -426,7 +434,7 @@ section + section {
   display: flex;
   gap: var(--sp-md);
   justify-content: center;
-  margin-top: var(--sp-md);
+  margin-top: var(--sp-sm);
 }
 .waffle-legend-item {
   display: flex;
