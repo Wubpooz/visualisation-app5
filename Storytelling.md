@@ -46,11 +46,13 @@ _line_
 _problematic_: As a social species, how is the loneliness epidemic happening, and can we see it in the evolution of our time use?  
 
 &nbsp;  
-First Chart:  
-- Title: The Landscape of a Day
-- Message: Each band represents a category of daily activity. Band width follows a square-root scaled share of daily time to keep smaller categories visible, while vertical position shows relative importance. Categories reorder as their prominence shifts across survey years.
-- Graph & legend
-- Annotations:
+First Chart (streamgraph of categories by age group and survey year):  
+- Title: The Daily Rhythm of Europe
+- Message: 
+- Age group pills
+- Graph
+- Graph comment: Categories reorder vertically as their prominence shifts across survey years. Category bands widths follow a square-root scale to ensure that small categories remain visible. Hover or focus for actual values.
+- Annotations:  
   - For young Europeans the most dramatic shift was the **explosion of computing time** between 2000 and 2010, surging from under 2% to nearly 7% of tracked activities. By 2020 socialising time nearly doubled — possibly reflecting expanded digital social interactions — while commuting dropped sharply.
   - Working-age Europeans show the most balanced distribution. **Computing rose sharply** from 2000 to 2010, while commuting remained stubbornly high. **Childcare activities peak** in this group — five times more than any other cohort — and climbed further by 2020.
   - The 45–64 group show remarkable stability across two decades. **Computing grew steadily** from near-zero to a visible share, while social activities picked up in 2020. Household cleaning gradually declined, mirroring broader trends in domestic labour.
@@ -59,21 +61,31 @@ First Chart:
 _line_  
 
 &nbsp;  
-Second Chart:  
+Second Chart (line chart by category):  
 - Title: Activity Deep Dive
 - Message: Pick a category to compare how its share of daily time evolved for each age group between 2000 and 2020.
-- Graph & legend
+- Graph
+- Graph comment: 
+- Category pills
 - Annotations:
+  - **Reading books** declined across most age groups, but the 65+ cohort bucked the trend with an increase from 10.5 to 15.3 min/day by 2020. The gap between oldest and youngest readers widened dramatically.
+  - **Socialising** remained relatively stable until 2020, when all age groups — especially 10–24 year-olds — saw sharp increases, perhaps reflecting expanded survey definitions of social interaction.
   - **Entertainment and culture** stayed remarkably stable across two decades and age groups, hovering between 4 and 11 min/day — a quiet constant amid rapid change.
+  - **Walking & hiking** shows a clear age gradient: older Europeans walk significantly more. The 65+ group consistently spent 20+ min/day walking, roughly double the rate of younger groups.
+  - **Cleaning** time gradually decreased for most groups, with the 65+ cohort maintaining the highest levels throughout. The decline is sharpest for 25–44-year-olds.
+  - **Childcare activities** peak sharply for the 25–44 group and are nearly zero for 65+. The 25–44 group saw a notable increase from 13.6 to 20 min/day by 2020.
+  - **Commute time** is near-zero for retirees but substantial for working-age groups. Younger Europeans saw a marked decline by 2020, while the 25–44 group maintained the highest commute times.
 
 _line_  
 
 &nbsp;  
-Third Chart:  
+Third Chart (waffle chart, alone vs shared by age group):  
 - Title: Digital Isolation, or New Social Norms?  
 - Message: How daily time divides between solitary, social, and other contexts across survey years. Each square represents one percentage point.
-- Graph & legend
-- Annotation: **Alone** activities include computing, cleaning, and commuting. **Shared** activities include socialising, entertainment, childcare, walking, and employment. Classification derived from the modal social context of each activity across all survey waves, ignoring unclassified entries.
+- Age group pills
+- Graph
+- Graph comment: **Alone** activities include computing, cleaning, and commuting. **Shared** activities include socialising, entertainment, childcare, walking, and employment. Classification derived from the modal social context of each activity across all survey waves, ignoring unclassified entries.
+- Annotation: 
 
 
 _line_
