@@ -44,7 +44,7 @@ const DATA = {
       },
       "45-64": {
         shared_pct:25.198, alone_pct:73.732, other_pct:1.07,
-        "AC01":{average_minutes:503.0},
+        "AC01":{average_minutes:503},
         "AC02 + AC021":{average_minutes:54.155},
         "AC321":{average_minutes:27.238},
         "AC382_383":{average_minutes:2.524},
@@ -92,7 +92,7 @@ const DATA = {
         "AC512_513_519":{average_minutes:17.556},
         "AC52":{average_minutes:7.444},
         "AC611":{average_minutes:9.611},
-        "AC72":{average_minutes:22.0},
+        "AC72":{average_minutes:22},
         "AC812":{average_minutes:5.796},
         "AC910":{average_minutes:29.704}
       },
@@ -271,7 +271,7 @@ const state = {
 
 function getMin(year, ag, cat) {
   const v = DATA.values[String(year)];
-  return v && v[ag] && v[ag][cat] ? v[ag][cat].average_minutes : 0;
+  return v?.[ag]?.[cat] ? v[ag][cat].average_minutes : 0;
 }
 
 function totalMin(year, ag) {
@@ -297,7 +297,7 @@ function roundTo100(vals) {
 }
 
 /* CSS-safe class suffix */
-function safeId(s) { return s.replace(/[^a-zA-Z0-9]/g, "_"); }
+function safeId(s) { return s.replaceAll(/[^a-zA-Z0-9]/g, "_"); }
 
 /* Push overlapping labels apart (greedy top-down) */
 function spreadLabels(positions, minGap) {
@@ -315,7 +315,7 @@ function scrollToInstant(y) {
   const root = document.documentElement;
   const prev = root.style.scrollBehavior;
   root.style.scrollBehavior = "auto";
-  window.scrollTo(0, y);
+  globalThis.scrollTo(0, y);
   root.style.scrollBehavior = prev;
 }
 
@@ -356,11 +356,35 @@ function lockBumpNoteHeight() {
 }
 
 function scheduleBumpNoteHeightLock() {
-  if (noteHeightResizeTimer) window.clearTimeout(noteHeightResizeTimer);
-  noteHeightResizeTimer = window.setTimeout(() => {
+  if (noteHeightResizeTimer) globalThis.clearTimeout(noteHeightResizeTimer);
+  noteHeightResizeTimer = globalThis.setTimeout(() => {
     noteHeightResizeTimer = null;
     lockBumpNoteHeight();
   }, 120);
+}
+
+function prefersReducedMotion() {
+  return globalThis.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+
+function getPreferredScrollBehavior() {
+  return prefersReducedMotion() ? "auto" : "smooth";
+}
+
+function getElementTipPoint(el) {
+  const rect = el.getBoundingClientRect();
+  return {
+    clientX: rect.left + rect.width / 2,
+    clientY: rect.top + rect.height / 2
+  };
+}
+
+function activationKeyPressed(ev) {
+  return ev.key === "Enter" || ev.key === " ";
+}
+
+function announce(message) {
+  d3.select("#a11y-status").text(message);
 }
 
 // ===========================================================
@@ -374,12 +398,17 @@ function showTip(html, ev) {
   moveTip(ev);
 }
 function moveTip(ev) {
+  if (!ev || typeof ev.clientX !== "number" || typeof ev.clientY !== "number") {
+    tooltip.style("left", "14px").style("top", "14px");
+    return;
+  }
+
   const pad = 14;
   let x = ev.clientX + pad;
   let y = ev.clientY + pad;
   const rect = tooltip.node().getBoundingClientRect();
-  if (x + rect.width > window.innerWidth - pad) x = ev.clientX - rect.width - pad;
-  if (y + rect.height > window.innerHeight - pad) y = ev.clientY - rect.height - pad;
+  if (x + rect.width > globalThis.innerWidth - pad) x = ev.clientX - rect.width - pad;
+  if (y + rect.height > globalThis.innerHeight - pad) y = ev.clientY - rect.height - pad;
   tooltip.style("left", x + "px").style("top", y + "px");
 }
 function hideTip() { tooltip.classed("visible", false); }
@@ -397,10 +426,20 @@ function drawBump() {
   const w = W - m.l - m.r, h = H - m.t - m.b;
   const ag = state.bumpAge;
 
-  const svg = el.append("svg")
+  const svgRoot = el.append("svg")
     .attr("viewBox", `0 0 ${W} ${H}`)
     .attr("preserveAspectRatio", "xMidYMid meet")
-    .append("g").attr("transform", `translate(${m.l},${m.t})`);
+    .attr("aria-labelledby", "bump-title bump-desc");
+
+  svgRoot.append("title")
+    .attr("id", "bump-title")
+    .text(`The landscape of a day for age group ${ag}`);
+
+  svgRoot.append("desc")
+    .attr("id", "bump-desc")
+    .text("Area bump chart where category width is square-root scaled from daily share. Use legend buttons or chart focus to inspect category values by year.");
+
+  const svg = svgRoot.append("g").attr("transform", `translate(${m.l},${m.t})`);
 
   /* ---- compute snapshots at real years ---- */
   const snapshots = YEARS.map(year => {
@@ -463,6 +502,9 @@ function drawBump() {
   });
 
   order.forEach((cat, i) => {
+    const canSelect = cat !== "AC01" && cat !== "AC02 + AC021";
+    const ariaSummary = YEARS.map(yr => `${yr}: ${fmt(share(yr, ag, cat))}%`).join(", ");
+
     svg.append("path")
       .attr("class", `bump-area ba-${safeId(cat)}`)
       .attr("d", ribbonPath(cat))
@@ -470,11 +512,28 @@ function drawBump() {
       .attr("stroke", "#F7F3EB")
       .attr("stroke-width", 0.8)
       .attr("opacity", 0)
+      .attr("tabindex", 0)
+      .attr("role", canSelect ? "button" : "img")
+      .attr("aria-label", canSelect
+        ? `${CAT_LABELS[cat]}. ${ariaSummary}. Press Enter to open this activity in the deep-dive chart.`
+        : `${CAT_LABELS[cat]}. ${ariaSummary}.`)
       .on("mouseenter", function (ev) { bumpHover(cat, ev); })
       .on("mousemove", function (ev) { moveTip(ev); })
       .on("mouseleave", function ()  { bumpUnhover(); })
+      .on("focus", function () {
+        bumpHover(cat, getElementTipPoint(this));
+      })
+      .on("blur", function () {
+        bumpUnhover();
+      })
+      .on("keydown", function (ev) {
+        if (canSelect && activationKeyPressed(ev)) {
+          ev.preventDefault();
+          selectCat(cat);
+        }
+      })
       .on("click", function () {
-        if (cat !== "AC01" && cat !== "AC02 + AC021") selectCat(cat);
+        if (canSelect) selectCat(cat);
       })
       .transition().delay(i * 35).duration(450).ease(d3.easeCubicOut)
       .attr("opacity", 0.82);
@@ -497,7 +556,7 @@ function drawBump() {
   });
 
   /* ---- end labels (with collision avoidance) ---- */
-  const last = snapshots[snapshots.length - 1];
+  const last = snapshots.at(-1);
   const labelPos = last.map(d => ({
     cat: d.cat,
     y: y((d.y0 + d.y1) / 2)
@@ -516,7 +575,7 @@ function drawBump() {
   svg.append("text")
     .attr("x", 0).attr("y", h + 32)
     .attr("font-size", "10px").attr("fill", "#9B9488")
-    .text("Band widths use a √ scale so small categories remain visible. Hover for actual values.");
+    .text("Band widths use a √ scale so small categories remain visible. Hover or focus for actual values.");
 }
 
 function bumpHover(cat, ev) {
@@ -560,10 +619,20 @@ function drawLine() {
   const w = W - m.l - m.r, h = H - m.t - m.b;
   const cat = state.lineCat;
 
-  const svg = el.append("svg")
+  const svgRoot = el.append("svg")
     .attr("viewBox", `0 0 ${W} ${H}`)
     .attr("preserveAspectRatio", "xMidYMid meet")
-    .append("g").attr("transform", `translate(${m.l},${m.t})`);
+    .attr("aria-labelledby", "line-title line-desc");
+
+  svgRoot.append("title")
+    .attr("id", "line-title")
+    .text(`Activity deep dive for ${CAT_LABELS[cat]}`);
+
+  svgRoot.append("desc")
+    .attr("id", "line-desc")
+    .text("Line chart comparing age groups from 2000 to 2020. Focus any data point to hear minutes and share values.");
+
+  const svg = svgRoot.append("g").attr("transform", `translate(${m.l},${m.t})`);
 
   /* ---- data ---- */
   const lines = AGE_GROUPS.map(ag => ({
@@ -618,6 +687,9 @@ function drawLine() {
       .attr("r", 4.5)
       .attr("fill", AG_COLORS[ag])
       .attr("stroke", "#F7F3EB").attr("stroke-width", 2)
+      .attr("tabindex", 0)
+      .attr("role", "button")
+      .attr("aria-label", d => `${ag}, ${d.year}. ${CAT_LABELS[cat]}: ${fmt(d.min)} minutes, ${fmt(d.pct)} percent.`)
       .on("mouseenter", function (ev, d) {
         showTip(
           `<div class="tt-title">${ag} · ${d.year}</div>` +
@@ -625,11 +697,31 @@ function drawLine() {
           `Share of tracked time: <strong>${fmt(d.pct)}%</strong>`, ev
         );
       })
+      .on("focus", function (ev, d) {
+        showTip(
+          `<div class="tt-title">${ag} · ${d.year}</div>` +
+          `${CAT_LABELS[cat]}: <strong>${fmt(d.min)}</strong> min/day<br>` +
+          `Share of tracked time: <strong>${fmt(d.pct)}%</strong>`,
+          getElementTipPoint(this)
+        );
+      })
+      .on("keydown", function (ev, d) {
+        if (!activationKeyPressed(ev)) return;
+
+        ev.preventDefault();
+        showTip(
+          `<div class="tt-title">${ag} · ${d.year}</div>` +
+          `${CAT_LABELS[cat]}: <strong>${fmt(d.min)}</strong> min/day<br>` +
+          `Share of tracked time: <strong>${fmt(d.pct)}%</strong>`,
+          getElementTipPoint(this)
+        );
+      })
+      .on("blur", hideTip)
       .on("mousemove", moveTip)
       .on("mouseleave", hideTip);
 
     /* collect end position */
-    const last = pts[pts.length - 1];
+    const last = pts.at(-1);
     endPositions.push({ ag, y: yS(last.pct), color: AG_COLORS[ag] });
   });
 
@@ -650,7 +742,7 @@ function drawLine() {
     .attr("fill", "transparent").attr("cursor", "crosshair")
     .on("mousemove", function (ev) {
       const [mx] = d3.pointer(ev, this);
-      const yr = YEARS.reduce((p, c) => Math.abs(x.invert(mx) - c) < Math.abs(x.invert(mx) - p) ? c : p);
+      const yr = YEARS.reduce((p, c) => Math.abs(x.invert(mx) - c) < Math.abs(x.invert(mx) - p) ? c : p, YEARS[0]);
       lineHover(yr, ev);
     })
     .on("mouseleave", lineUnhover);
@@ -699,7 +791,28 @@ function drawWaffle() {
     for (let i = 0; i < sq[2]; i++) cells.push("other");
     cells.reverse();       // alone at bottom
 
-    const col = row.append("div").attr("class", "waffle-year");
+    const tipHtml =
+      `<div class="tt-title">${yr} · ${ag}</div>` +
+      `Alone: <strong>${fmt(alone)}%</strong><br>` +
+      `Shared: <strong>${fmt(shared)}%</strong><br>` +
+      `Other: <strong>${fmt(other)}%</strong>`;
+
+    const col = row.append("div")
+      .attr("class", "waffle-year")
+      .attr("tabindex", 0)
+      .attr("role", "img")
+      .attr("aria-label", `${yr}, ${ag}. Alone ${fmt(alone)} percent, shared ${fmt(shared)} percent, other ${fmt(other)} percent.`)
+      .on("focus", function () {
+        showTip(tipHtml, getElementTipPoint(this));
+      })
+      .on("keydown", function (ev) {
+        if (!activationKeyPressed(ev)) return;
+
+        ev.preventDefault();
+        showTip(tipHtml, getElementTipPoint(this));
+      })
+      .on("blur", hideTip);
+
     col.append("div").attr("class", "waffle-year-label").text(yr);
 
     const grid = col.append("div").attr("class", "waffle-grid");
@@ -714,12 +827,7 @@ function drawWaffle() {
           d3.selectAll(".waffle-cell").classed("dimmed", function () {
             return this.dataset.type !== type;
           });
-          showTip(
-            `<div class="tt-title">${yr} · ${ag}</div>` +
-            `Alone: <strong>${fmt(alone)}%</strong><br>` +
-            `Shared: <strong>${fmt(shared)}%</strong><br>` +
-            `Other: <strong>${fmt(other)}%</strong>`, ev
-          );
+          showTip(tipHtml, ev);
         })
         .on("mousemove", moveTip)
         .on("mouseleave", function () {
@@ -754,13 +862,23 @@ function buildBumpLegend() {
   const el = d3.select("#bump-legend");
   el.html("");
   CATEGORIES.forEach(cat => {
-    const item = el.append("div")
-      .attr("class", "legend-item")
+    const canSelect = cat !== "AC01" && cat !== "AC02 + AC021";
+
+    const item = el.append("button")
+      .attr("type", "button")
+      .attr("class", "legend-item legend-item-button")
       .attr("data-cat", cat)
+      .attr("aria-label", canSelect
+        ? `Highlight ${CAT_LABELS[cat]} and open it in the deep-dive chart`
+        : `Highlight ${CAT_LABELS[cat]}`)
       .on("mouseenter", function (ev) { bumpHover(cat, ev); })
+      .on("focus", function () {
+        bumpHover(cat, getElementTipPoint(this));
+      })
       .on("mouseleave", bumpUnhover)
+      .on("blur", bumpUnhover)
       .on("click", function () {
-        if (cat !== "AC01" && cat !== "AC02 + AC021") selectCat(cat);
+        if (canSelect) selectCat(cat);
       });
 
     item.append("div").attr("class", "legend-swatch")
@@ -791,23 +909,29 @@ function buildLineLegend() {
 function buildTabs(containerId, groups, activeVal, onChange) {
   const el = d3.select(`#${containerId}`);
   el.html("");
+  el.attr("role", "group")
+    .attr(
+      "aria-label",
+      containerId === "bump-tabs"
+        ? "Select age group for the landscape chart"
+        : "Select age group for the alone, shared, or other chart"
+    );
+
   groups.forEach(g => {
     el.append("button")
+      .attr("type", "button")
+      .attr("aria-pressed", g === activeVal ? "true" : "false")
       .text(g)
       .classed("active", g === activeVal)
-      .on("pointerdown", function (ev) {
-        ev.preventDefault();
-      })
-      .on("mousedown", function (ev) {
-        ev.preventDefault();
-      })
-      .on("focus", function () {
-        this.blur();
-      })
       .on("click", function () {
-        el.selectAll("button").classed("active", false);
-        d3.select(this).classed("active", true);
-        this.blur(); /* release focus so browser won't auto-scroll to button */
+        el.selectAll("button")
+          .classed("active", false)
+          .attr("aria-pressed", "false");
+
+        d3.select(this)
+          .classed("active", true)
+          .attr("aria-pressed", "true");
+
         onChange(g);
       });
   });
@@ -816,12 +940,22 @@ function buildTabs(containerId, groups, activeVal, onChange) {
 function buildCatButtons() {
   const el = d3.select("#cat-buttons");
   el.html("");
+  el.attr("role", "group").attr("aria-label", "Select activity category for deep-dive line chart");
+
   LINE_CATS.forEach(cat => {
     const btn = el.append("button")
+      .attr("type", "button")
+      .attr("aria-pressed", cat === state.lineCat ? "true" : "false")
       .classed("active", cat === state.lineCat)
       .on("click", function () {
-        el.selectAll("button").classed("active", false);
-        d3.select(this).classed("active", true);
+        el.selectAll("button")
+          .classed("active", false)
+          .attr("aria-pressed", "false");
+
+        d3.select(this)
+          .classed("active", true)
+          .attr("aria-pressed", "true");
+
         /* set bg colour on active */
         el.selectAll("button.active").each(function () {
           const c = this.dataset.cat;
@@ -850,20 +984,32 @@ function styleActiveBtn() {
 
 function selectCat(cat) {
   state.lineCat = cat;
-  d3.selectAll("#cat-buttons button").classed("active", function () {
-    return this.dataset.cat === cat;
-  });
+
+  d3.selectAll("#cat-buttons button")
+    .classed("active", function () {
+      return this.dataset.cat === cat;
+    })
+    .attr("aria-pressed", function () {
+      return this.dataset.cat === cat ? "true" : "false";
+    });
+
   styleActiveBtn();
   drawLine();
+
   /* scroll line section into view */
-  document.getElementById("line-section").scrollIntoView({ behavior: "smooth", block: "start" });
+  document.getElementById("line-section").scrollIntoView({
+    behavior: getPreferredScrollBehavior(),
+    block: "start"
+  });
+
+  announce(`${CAT_LABELS[cat]} selected in activity deep dive.`);
 }
 
 /* Age-group change: sync bump + waffle */
 function setAge(ag) {
   /* Save scroll — chart redraws cause micro layout shifts that can nudge the
      viewport; restore immediately after all synchronous DOM updates. */
-  const savedY = window.scrollY;
+  const savedY = globalThis.scrollY;
 
   state.bumpAge = ag;
   state.waffleAge = ag;
@@ -871,9 +1017,14 @@ function setAge(ag) {
   /* update both tab sets */
   d3.selectAll("#bump-tabs button").classed("active", function () {
     return d3.select(this).text() === ag;
+  }).attr("aria-pressed", function () {
+    return d3.select(this).text() === ag ? "true" : "false";
   });
+
   d3.selectAll("#waffle-tabs button").classed("active", function () {
     return d3.select(this).text() === ag;
+  }).attr("aria-pressed", function () {
+    return d3.select(this).text() === ag ? "true" : "false";
   });
 
   drawBump();
@@ -885,6 +1036,8 @@ function setAge(ag) {
   requestAnimationFrame(() => {
     scrollToInstant(savedY);
   });
+
+  announce(`Age group ${ag} selected.`);
 }
 
 // ===========================================================
@@ -892,6 +1045,11 @@ function setAge(ag) {
 // ===========================================================
 
 function initReveal() {
+  if (prefersReducedMotion()) {
+    document.querySelectorAll(".reveal").forEach(el => el.classList.add("visible"));
+    return;
+  }
+
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -928,16 +1086,14 @@ function init() {
   renderBumpNote(state.bumpAge);
   lockBumpNoteHeight();
 
-  window.addEventListener("resize", scheduleBumpNoteHeightLock, { passive: true });
-  if (window.visualViewport) {
-    window.visualViewport.addEventListener("resize", scheduleBumpNoteHeightLock, { passive: true });
+  globalThis.addEventListener("resize", scheduleBumpNoteHeightLock, { passive: true });
+  if (globalThis.visualViewport) {
+    globalThis.visualViewport.addEventListener("resize", scheduleBumpNoteHeightLock, { passive: true });
   }
 
-  if (document.fonts && document.fonts.ready) {
-    document.fonts.ready.then(() => {
-      lockBumpNoteHeight();
-    });
-  }
+  document.fonts?.ready?.then(() => {
+    lockBumpNoteHeight();
+  });
 
   /* scroll animations */
   initReveal();
