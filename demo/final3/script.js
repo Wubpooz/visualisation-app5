@@ -605,18 +605,11 @@ function drawLine() {
   const endPositions = [];
 
   lines.forEach(({ ag, pts }, gi) => {
-    const path = svg.append("path")
+    svg.append("path")
       .datum(pts)
       .attr("class", `line-path lp-${safeId(ag)}`)
       .attr("d", lineFn)
       .attr("stroke", AG_COLORS[ag]);
-
-    /* animate drawing */
-    const len = path.node().getTotalLength();
-    path.attr("stroke-dasharray", len)
-        .attr("stroke-dashoffset", len)
-        .transition().delay(gi * 120).duration(700).ease(d3.easeCubicOut)
-        .attr("stroke-dashoffset", 0);
 
     /* dots */
     svg.selectAll(null).data(pts).join("circle")
