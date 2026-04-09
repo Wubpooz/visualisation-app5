@@ -41,7 +41,7 @@ Indicate that scroll is possible.
 ## Story
 _pre-title_: Eurostat · Harmonised European Time Use Surveys · Whole of Europe · 2000 – 2020  
 _title_: How Europe Spends Its Time  
-_subtitle_: Tracking how daily activities shifted across four generations and two transformative decades — from the rise of computing to evolving social patterns.  
+_subtitle_: Tracking how daily activities shifted across four generations and two decades. From the rise of computing to evolving social patterns.  
 _line_   
 _problematic_: As a social species, how is the loneliness epidemic happening, and can we see it in the evolution of our time use?  
 
@@ -50,7 +50,11 @@ First Chart:
 - Title: The Landscape of a Day
 - Message: Each band represents a category of daily activity. Band width follows a square-root scaled share of daily time to keep smaller categories visible, while vertical position shows relative importance. Categories reorder as their prominence shifts across survey years.
 - Graph & legend
-- Annotation: For young Europeans the most dramatic shift was the **explosion of computing time** between 2000 and 2010, surging from under 2% to nearly 7% of tracked activities. By 2020 socialising time nearly doubled — possibly reflecting expanded digital social interactions — while commuting dropped sharply.
+- Annotations:
+  - For young Europeans the most dramatic shift was the **explosion of computing time** between 2000 and 2010, surging from under 2% to nearly 7% of tracked activities. By 2020 socialising time nearly doubled — possibly reflecting expanded digital social interactions — while commuting dropped sharply.
+  - Working-age Europeans show the most balanced distribution. **Computing rose sharply** from 2000 to 2010, while commuting remained stubbornly high. **Childcare activities peak** in this group — five times more than any other cohort — and climbed further by 2020.
+  - The 45–64 group show remarkable stability across two decades. **Computing grew steadily** from near-zero to a visible share, while social activities picked up in 2020. Household cleaning gradually declined, mirroring broader trends in domestic labour.
+  - Retirees spend the most time walking and reading, and the least commuting. **Walking remained high** at over 3 % of tracked time — double that of younger groups. The most striking change was the quiet **rise of computing** from virtually zero in 2000 to a meaningful share by 2020.
 
 _line_  
 
@@ -59,7 +63,8 @@ Second Chart:
 - Title: Activity Deep Dive
 - Message: Pick a category to compare how its share of daily time evolved for each age group between 2000 and 2020.
 - Graph & legend
-- Annotation: **Entertainment and culture** stayed remarkably stable across two decades and age groups, hovering between 4 and 11 min/day — a quiet constant amid rapid change.
+- Annotations:
+  - **Entertainment and culture** stayed remarkably stable across two decades and age groups, hovering between 4 and 11 min/day — a quiet constant amid rapid change.
 
 _line_  
 
