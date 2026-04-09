@@ -65,7 +65,7 @@ Second Chart (line chart by category):
 - Message: The youngest cohort embraced computing and socialising, while older Europeans maintained traditional activities like walking and reading. The early to mid-adults clearly showed that childcare takes a central role in their daily lives. The data suggests a complex interplay between technology adoption and enduring lifestyle habits across generations. 
 - Graph
 - Graph comment: Pick a category to compare how its share of daily time evolved for each age group between 2000 and 2020. Hover or focus for actual share of the day values at each point on the line.
-- Category pills
+- Category pills (left)
 - Annotations:
   - **Reading books** stagnated across most age groups, but the 65+ cohort bucked the trend with an increase from 10.5 to 15.3 min/day by 2020. The gap between oldest and youngest readers widened, likely due to a shift in technology adoption.
   - **Computing** saw the most dramatic generational shift. Young Europeans surged from 12 to 45 min/day between 2000 and 2010, then dropped back by 2020. This is likely due to activities spliting into mobile and social categories. The 65+ group showed a very small rise in computer use, reflecting slower technology adoption.  
@@ -80,13 +80,14 @@ _line_
 
 &nbsp;  
 Third Chart (waffle chart, alone vs shared by age group):  
-- Title: Digital Isolation, or New Social Norms?  
-- Message: How daily time divides between solitary, social, and other contexts across survey years. Each square represents one percentage point.
+- Title: Digital Isolation or New Social Behaviors?  
+- Message: Despite the proven loneliness epidemic, our data shows that Europeans are not spending more time alone. In fact, time spent alone decreased for the two youngest groups, remained stable for the middled-age group and only increased slightly for the oldest age groups. The oldest group is the most socially active despite them always being cited as the most vulnerable to loneliness. This inconsistency may either be a reflection of the survey's limitations in capturing the quality of social interactions, an oversight in our classification of alone vs shared activities, or a sign that the loneliness epidemic is more about the quality of social interactions than the quantity.
 - Age group pills
 - Graph
-- Graph comment: **Alone** activities include computing, cleaning, and commuting. **Shared** activities include socialising, entertainment, childcare, walking, and employment. Classification derived from the modal social context of each activity across all survey waves, ignoring unclassified entries.
-- Annotation: 
-
+- Graph comment: 
+  How daily time divides between solitary, social, and other contexts across survey years. Each square represents one percentage point.
+  **Alone** activities include computing, cleaning, and commuting. **Shared** activities include socialising, entertainment, childcare and employment. Classification derived from the modal social context of each activity across all survey waves, ignoring unclassified entries.
+- Annotations: Nothing
 
 _line_
 
