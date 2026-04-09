@@ -7,11 +7,11 @@ import sys
 from datetime import datetime, timezone
 from math import floor
 from pathlib import Path
-from typing import Any, cast
+from typing import Any
 
 import pandas as pd
 import pyarrow.parquet as pq
-from datasets import Dataset, DatasetDict, load_dataset_builder, load_from_disk
+from datasets import DatasetDict, load_dataset_builder, load_from_disk
 from huggingface_hub import hf_hub_download, list_repo_files
 
 script_root = Path(__file__).resolve().parent
@@ -27,6 +27,7 @@ AGE_GROUP_SOURCE_CODES: dict[str, tuple[str, ...]] = {
 }
 
 AGE_GROUP_ORDER = ["10-24", "25-44", "45-64", "65+"]
+
 AGE_GROUP_MAPPING = {
     source_code: age_group
     for age_group, source_codes in AGE_GROUP_SOURCE_CODES.items()
@@ -43,49 +44,17 @@ ACTIVITY_CATEGORY_ALIASES = {
     for source_code in source_codes
 }
 
-DEFAULT_ACTIVITY_CATEGORIES = [
-    "AC01",
-    "AC02 + AC021",
-    "AC812",
-    "AC72",
-    "AC512_513_519",
-    "AC52",
-    "AC611",
-    "AC321",
-    "AC382_383",
-    "AC1_2",
-    "AC910",
-]
+DEFAULT_ACTIVITY_CATEGORIES = ["AC01","AC02 + AC021","AC812","AC72","AC512_513_519","AC52","AC611","AC321","AC382_383","AC1_2","AC910",]
 
 SOCIAL_CONTEXT_ORDER = ["shared", "alone", "other"]
-DATASET_CONFIG_ALIASES = {
-    "observation": "observations",
-}
-REMOTE_BATCH_COLUMNS = [
-    "duration_minutes",
-    "age",
-    "geo",
-    "sex",
-    "unit",
-    "freq",
-    "time_period_year",
-    "time_period",
-    "unified_acl_codes",
-    "acl18",
-    "acl00",
-]
-FILTER_DIAGNOSTIC_KEYS = [
-    "source_rows",
-    "after_geo",
-    "after_sex",
-    "after_unit",
-    "after_freq",
-    "after_age_group",
-    "after_activity_category",
-    "after_minutes_year",
-]
-UNFILTERED_DIMENSION_TOKENS = {"", "*", "ALL"}
 
+DATASET_CONFIG_ALIASES = {"observation": "observations"}
+
+REMOTE_BATCH_COLUMNS = ["duration_minutes","age","geo","sex","unit","freq","time_period_year","time_period","unified_acl_codes","acl18","acl00",]
+
+FILTER_DIAGNOSTIC_KEYS = ["source_rows","after_geo","after_sex","after_unit","after_freq","after_age_group","after_activity_category","after_minutes_year",]
+
+UNFILTERED_DIMENSION_TOKENS = {"", "*", "ALL"}
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -199,7 +168,6 @@ def parse_args() -> argparse.Namespace:
     )
     return parser.parse_args()
 
-
 def normalize_text(value: Any) -> str:
     if value is None or pd.isna(value):
         return ""
@@ -207,17 +175,14 @@ def normalize_text(value: Any) -> str:
     text = str(value).strip()
     return "" if text.lower() == "nan" else text
 
-
 def normalize_activity_category(value: Any) -> str:
     code = normalize_text(value)
     if code == "":
         return ""
     return ACTIVITY_CATEGORY_ALIASES.get(code, code)
 
-
 def unique_preserving_order(values: list[str]) -> list[str]:
     return list(dict.fromkeys(values))
-
 
 def parse_dimension_filter(raw_value: str) -> set[str] | None:
     normalized_values = unique_preserving_order(
@@ -229,16 +194,6 @@ def parse_dimension_filter(raw_value: str) -> set[str] | None:
         return None
     return set(normalized_values)
 
-
-def canonicalize_config_name(config_name: str) -> str:
-    raw_config = config_name.strip()
-    return DATASET_CONFIG_ALIASES.get(raw_config.lower(), raw_config)
-
-
-def empty_filter_diagnostics() -> dict[str, int]:
-    return dict.fromkeys(FILTER_DIAGNOSTIC_KEYS, 0)
-
-
 def merge_filter_diagnostics(
     total: dict[str, int],
     current: dict[str, int],
@@ -246,27 +201,22 @@ def merge_filter_diagnostics(
     for key in FILTER_DIAGNOSTIC_KEYS:
         total[key] += int(current.get(key, 0))
 
-
 def load_local_observations(args: argparse.Namespace) -> pd.DataFrame:
     if not args.local_dataset_dir or not args.local_dataset_dir.exists():
         raise FileNotFoundError(f"Local dataset not found: {args.local_dataset_dir}")
 
-    if args.local_dataset_dir and args.local_dataset_dir.exists():
-        local_data = load_from_disk(str(args.local_dataset_dir))
-        if isinstance(local_data, DatasetDict):
-            if args.config not in local_data:
-                available = ", ".join(str(key) for key in local_data.keys())
-                raise KeyError(
-                    f"Config '{args.config}' not found in local dataset. Available: {available}"
-                )
-            dataset = local_data[args.config]
-        else:
-            dataset = cast(Dataset, local_data)
+    local_data = load_from_disk(str(args.local_dataset_dir))
+    if isinstance(local_data, DatasetDict):
+        if args.config not in local_data:
+            available = ", ".join(str(key) for key in local_data.keys())
+            raise KeyError(
+                f"Config '{args.config}' not found in local dataset. Available: {available}"
+            )
+        dataset = local_data[args.config]
+    else:
+        dataset = local_data
 
-        return cast(pd.DataFrame, dataset.to_pandas())
-
-    raise FileNotFoundError(f"Local dataset not found: {args.local_dataset_dir}")
-
+    return dataset.to_pandas()
 
 def resolve_remote_split_row_count(
     args: argparse.Namespace,
@@ -284,7 +234,6 @@ def resolve_remote_split_row_count(
 
     split_info = split_dict[args.split]
     return int(split_info.num_examples) if split_info.num_examples is not None else None
-
 
 def list_remote_parquet_files(
     args: argparse.Namespace,
@@ -314,7 +263,6 @@ def list_remote_parquet_files(
         f"config={args.config} split={args.split}. Available configs: {available_config_text}"
     )
 
-
 def aggregate_remote_observations(
     args: argparse.Namespace,
     token: str | None,
@@ -322,10 +270,11 @@ def aggregate_remote_observations(
     expected_source_rows = resolve_remote_split_row_count(args, token)
     parquet_files = list_remote_parquet_files(args, token)
     summaries: list[pd.DataFrame] = []
-    diagnostics = empty_filter_diagnostics()
+    diagnostics = {key: 0 for key in FILTER_DIAGNOSTIC_KEYS}
     category_source = "derived_from_acl00_acl18"
     validated_batch = False
 
+    # Stream remote parquet shards so the full split never needs to fit in memory.
     for parquet_file in parquet_files:
         local_path = hf_hub_download(
             repo_id=args.repo_id,
@@ -367,7 +316,6 @@ def aggregate_remote_observations(
 
     return combine_aggregated_minutes(summaries), category_source, diagnostics
 
-
 def extract_observations(
     args: argparse.Namespace,
 ) -> tuple[pd.DataFrame, str, dict[str, int], str]:
@@ -377,11 +325,15 @@ def extract_observations(
         df = load_local_observations(args)
         validate_required_columns(df)
         filtered, category_source, diagnostics = prepare_filtered_data(df, args)
-        return aggregate_minutes(filtered), category_source, diagnostics, "local_save_to_disk"
+        return (
+            combine_aggregated_minutes([summarize_minutes(filtered)]),
+            category_source,
+            diagnostics,
+            "local_save_to_disk",
+        )
 
     grouped, category_source, diagnostics = aggregate_remote_observations(args, token)
     return grouped, category_source, diagnostics, "remote_parquet_batches"
-
 
 def validate_required_columns(df: pd.DataFrame) -> None:
     required = {"duration_minutes", "age", "geo", "sex", "unit"}
@@ -396,7 +348,6 @@ def validate_required_columns(df: pd.DataFrame) -> None:
         raise KeyError(
             "Dataset must contain 'unified_acl_codes' or one of 'acl00'/'acl18' to identify activities."
         )
-
 
 def build_activity_categories(df: pd.DataFrame) -> tuple[pd.Series, str]:
     if "unified_acl_codes" in df.columns:
@@ -423,45 +374,29 @@ def build_activity_categories(df: pd.DataFrame) -> tuple[pd.Series, str]:
     unified = acl18.where(acl18 != "", mapped_acl00)
     return unified, "derived_from_acl00_acl18"
 
-
-def build_years(df: pd.DataFrame) -> pd.Series:
-    source_column = "time_period_year" if "time_period_year" in df.columns else "time_period"
-    return pd.to_numeric(df[source_column], errors="coerce")
-
-
 def prepare_filtered_data(
     df: pd.DataFrame,
     args: argparse.Namespace,
 ) -> tuple[pd.DataFrame, str, dict[str, int]]:
     working = df.copy()
     activity_categories, category_source = build_activity_categories(working)
+    source_column = "time_period_year" if "time_period_year" in working.columns else "time_period"
 
     working["activity_category"] = activity_categories.map(normalize_activity_category)
-    working["age_raw"] = working["age"].map(normalize_text)
-    working["age_group"] = working["age_raw"].map(lambda age: AGE_GROUP_MAPPING.get(age, ""))
+    working["age_group"] = working["age"].map(normalize_text).map(AGE_GROUP_MAPPING).fillna("")
     working["minutes"] = pd.to_numeric(working["duration_minutes"], errors="coerce")
-    working["year"] = build_years(working)
+    working["year"] = pd.to_numeric(working[source_column], errors="coerce")
     working["geo_norm"] = working["geo"].map(normalize_text)
     working["sex_norm"] = working["sex"].map(normalize_text)
     working["unit_norm"] = working["unit"].map(normalize_text)
 
-    if "freq" in working.columns:
-        working["freq_norm"] = working["freq"].map(normalize_text)
-    else:
-        working["freq_norm"] = ""
+    working["freq_norm"] = working["freq"].map(normalize_text) if "freq" in working.columns else ""
 
     geo_filters = parse_dimension_filter(args.geo)
     sex_filters = parse_dimension_filter(args.sex)
 
-    if geo_filters is None:
-        geo_mask = pd.Series(True, index=working.index)
-    else:
-        geo_mask = working["geo_norm"].isin(geo_filters)
-
-    if sex_filters is None:
-        sex_mask = geo_mask
-    else:
-        sex_mask = geo_mask & working["sex_norm"].isin(sex_filters)
+    geo_mask = working["geo_norm"].isin(geo_filters) if geo_filters is not None else pd.Series(True, index=working.index)
+    sex_mask = geo_mask & working["sex_norm"].isin(sex_filters) if sex_filters is not None else geo_mask
 
     unit_mask = sex_mask & (working["unit_norm"] == args.unit)
     freq_mask = unit_mask & (working["freq_norm"].isin(["", "A"]))
@@ -473,7 +408,7 @@ def prepare_filtered_data(
     )
     final_mask = activity_category_mask & working["minutes"].notna() & working["year"].notna()
 
-    filtered = working[final_mask][["year", "age_group", "activity_category", "minutes", "age_raw"]].copy()
+    filtered = working.loc[final_mask, ["year", "age_group", "activity_category", "minutes"]].copy()
     filter_diagnostics = {
         "source_rows": int(len(working)),
         "after_geo": int(geo_mask.sum()),
@@ -488,7 +423,6 @@ def prepare_filtered_data(
     filtered["year"] = filtered["year"].astype(int)
     return filtered, category_source, filter_diagnostics
 
-
 def summarize_minutes(filtered: pd.DataFrame) -> pd.DataFrame:
     grouped = (
         filtered.groupby(["year", "age_group", "activity_category"], as_index=False)
@@ -498,7 +432,6 @@ def summarize_minutes(filtered: pd.DataFrame) -> pd.DataFrame:
         )
     )
     return grouped
-
 
 def combine_aggregated_minutes(summaries: list[pd.DataFrame]) -> pd.DataFrame:
     if not summaries:
@@ -534,11 +467,6 @@ def combine_aggregated_minutes(summaries: list[pd.DataFrame]) -> pd.DataFrame:
             "total_minutes",
         ]
     ]
-
-
-def aggregate_minutes(filtered: pd.DataFrame) -> pd.DataFrame:
-    return combine_aggregated_minutes([summarize_minutes(filtered)])
-
 
 def select_categories(
     grouped: pd.DataFrame,
@@ -585,46 +513,27 @@ def select_categories(
     selected = selected[selected["activity_category"].isin(categories)].copy()
     return selected, years, categories, missing_categories, using_default_categories
 
-
-def build_complete_grid(
-    years: list[int],
-    age_groups: list[str],
-    categories: list[str],
-) -> pd.DataFrame:
-    return pd.DataFrame(
-        [
-            (year, age_group, category)
-            for year in years
-            for age_group in age_groups
-            for category in categories
-        ],
-        columns=["year", "age_group", "activity_category"],
-    )
-
-
 def merge_with_complete_grid(
     grouped: pd.DataFrame,
     years: list[int],
     age_groups: list[str],
     categories: list[str],
 ) -> pd.DataFrame:
-    complete_grid = build_complete_grid(years, age_groups, categories)
-    merged = complete_grid.merge(
-        grouped,
-        on=["year", "age_group", "activity_category"],
-        how="left",
+    # Keep missing year/age/category combinations explicit in the exported JSON.
+    merged = (
+        grouped.set_index(["year", "age_group", "activity_category"])
+        .reindex(
+            pd.MultiIndex.from_product(
+                [years, age_groups, categories],
+                names=["year", "age_group", "activity_category"],
+            )
+        )
+        .reset_index()
     )
     merged["observation_count"] = merged["observation_count"].fillna(0).astype(int)
     if "total_minutes" in merged.columns:
         merged["total_minutes"] = merged["total_minutes"].fillna(0.0)
-    return merged.sort_values(["year", "age_group", "activity_category"]).reset_index(drop=True)
-
-
-def rounded_float(value: Any) -> float | None:
-    if pd.isna(value):
-        return None
-    return round(float(value), 3)
-
+    return merged
 
 def load_social_context_map(markdown_path: Path) -> dict[str, str]:
     if not markdown_path.exists():
@@ -632,7 +541,7 @@ def load_social_context_map(markdown_path: Path) -> dict[str, str]:
 
     social_context_map: dict[str, str] = {}
     for raw_line in markdown_path.read_text(encoding="utf-8").splitlines():
-        line = raw_line.strip()
+        line =   raw_line.strip()
         if not line.startswith("|"):
             continue
         if "unified_acl_codes" in line or "---" in line:
@@ -658,8 +567,8 @@ def load_social_context_map(markdown_path: Path) -> dict[str, str]:
 
     return social_context_map
 
-
 def allocate_percentage_units(context_minutes: dict[str, float]) -> dict[str, float]:
+    # Round to three decimals while preserving an exact 100.0 total.
     total_minutes = sum(context_minutes.values())
     if total_minutes <= 0:
         raise ValueError("Cannot compute social context percentages from a zero total.")
@@ -684,39 +593,34 @@ def allocate_percentage_units(context_minutes: dict[str, float]) -> dict[str, fl
         for context in SOCIAL_CONTEXT_ORDER
     }
 
-
 def compute_social_context_percentages(
     grouped: pd.DataFrame,
     years: list[int],
     age_groups: list[str],
     social_context_map: dict[str, str],
 ) -> dict[tuple[int, str], dict[str, float]]:
-    social_df = grouped[grouped["activity_category"].isin(social_context_map)].copy()
+    social_df = grouped[grouped["activity_category"].isin(social_context_map)]
     if social_df.empty:
         raise ValueError("No activity category from the social context markdown is present in the filtered data.")
 
-    social_df["social_context"] = social_df["activity_category"].map(social_context_map)
     social_totals = (
-        social_df.groupby(["year", "age_group", "social_context"], as_index=False)["average_minutes"]
+        social_df.assign(social_context=social_df["activity_category"].map(social_context_map))
+        .groupby(["year", "age_group", "social_context"])["average_minutes"]
         .sum()
-        .sort_values(["year", "age_group", "social_context"])
+        .unstack(fill_value=0.0)
+        .reindex(
+            pd.MultiIndex.from_product([years, age_groups], names=["year", "age_group"]),
+            fill_value=0.0,
+        )
+        .reindex(columns=SOCIAL_CONTEXT_ORDER, fill_value=0.0)
     )
-    totals_lookup = {
-        (int(row.year), str(row.age_group), str(row.social_context)): float(row.average_minutes)
-        for row in social_totals.itertuples(index=False)
+
+    return {
+        (int(year), str(age_group)): allocate_percentage_units(
+            {context: float(row[context]) for context in SOCIAL_CONTEXT_ORDER}
+        )
+        for (year, age_group), row in social_totals.iterrows()
     }
-
-    percentages: dict[tuple[int, str], dict[str, float]] = {}
-    for year in years:
-        for age_group in age_groups:
-            minutes_by_context = {
-                context: totals_lookup.get((year, age_group, context), 0.0)
-                for context in SOCIAL_CONTEXT_ORDER
-            }
-            percentages[(year, age_group)] = allocate_percentage_units(minutes_by_context)
-
-    return percentages
-
 
 def build_values_index(
     extracted: pd.DataFrame,
@@ -726,7 +630,7 @@ def build_values_index(
     grouped_nodes = extracted.groupby(["year", "age_group"], sort=True)
 
     for (year, age_group), node_df in grouped_nodes:
-        year_value = int(cast(Any, year))
+        year_value = int(year)
         year_key = str(year_value)
         age_key = str(age_group)
         pct = social_percentages[(year_value, age_key)]
@@ -737,16 +641,14 @@ def build_values_index(
         }
 
         for row in node_df.itertuples(index=False):
-            observation_count = int(cast(Any, row.observation_count))
             node[str(row.activity_category)] = {
-                "average_minutes": rounded_float(row.average_minutes),
-                "observation_count": observation_count,
+                "average_minutes": None if pd.isna(row.average_minutes) else round(float(row.average_minutes), 3),
+                "observation_count": int(row.observation_count),
             }
 
         values.setdefault(year_key, {})[age_key] = node
 
     return values
-
 
 def validate_social_context_sums(values: dict[str, dict[str, dict[str, Any]]]) -> None:
     for year, year_values in values.items():
@@ -757,7 +659,6 @@ def validate_social_context_sums(values: dict[str, dict[str, dict[str, Any]]]) -
                     "Social context percentages must sum to approximately 100. "
                     f"Got {round(pct_sum, 3)} for year={year}, age_group={age_group}."
                 )
-
 
 def build_payload(
     args: argparse.Namespace,
@@ -817,16 +718,15 @@ def build_payload(
         "values": values,
     }
 
-
 def save_payload(payload: dict[str, Any], output_path: Path) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8") as handle:
         json.dump(payload, handle, ensure_ascii=False, indent=2)
 
-
 def main() -> None:
     args = parse_args()
-    args.config = canonicalize_config_name(args.config)
+    raw_config = args.config.strip()
+    args.config = DATASET_CONFIG_ALIASES.get(raw_config.lower(), raw_config)
 
     grouped_all, category_source, filter_diagnostics, load_mode = extract_observations(args)
     filtered_row_count = int(filter_diagnostics["after_minutes_year"])
@@ -842,11 +742,8 @@ def main() -> None:
         args,
     )
 
-    age_groups = [
-        age_group
-        for age_group in AGE_GROUP_ORDER
-        if age_group in set(grouped["age_group"].astype(str).tolist())
-    ]
+    present_age_groups = set(grouped["age_group"].astype(str))
+    age_groups = [age_group for age_group in AGE_GROUP_ORDER if age_group in present_age_groups]
     extracted = merge_with_complete_grid(grouped, years, age_groups, categories)
     social_percentages = compute_social_context_percentages(
         grouped=grouped_all,
@@ -888,7 +785,6 @@ def main() -> None:
         + ", ".join(f"{key}={filter_diagnostics[key]}" for key in FILTER_DIAGNOSTIC_KEYS)
     )
     print(f"Rows used after filtering: {filtered_row_count}")
-
 
 if __name__ == "__main__":
     main()
