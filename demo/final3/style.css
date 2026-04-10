@@ -512,16 +512,23 @@ svg text { user-select: none; }
 .reveal-delay-2 { transition-delay: 0.18s; }
 .reveal-delay-3 { transition-delay: 0.30s; }
 
-@media (max-width: 520px) {
-  .line-chart-layout {
+@media (max-width: 768px) {
+  .chart-wrap-line {
     flex-direction: column;
+    gap: var(--sp-sm);
   }
 
   .cat-buttons-side {
     width: 100%;
-    flex-basis: auto;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    margin-top: var(--sp-sm);
+    flex: 0 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    margin-top: 0;
+    margin-right: 0 !important;
+  }
+
+  .waffle-row {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
