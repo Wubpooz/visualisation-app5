@@ -1057,6 +1057,10 @@ function styleActiveBtn() {
 }
 
 function selectCat(cat) {
+  /* Preserve viewport position because note/chart redraw can trigger layout
+     shifts that cause browser scroll anchoring jumps. */
+  const savedY = globalThis.scrollY;
+
   state.lineCat = cat;
 
   d3.selectAll("#cat-buttons button")
@@ -1069,6 +1073,11 @@ function selectCat(cat) {
 
   styleActiveBtn();
   drawLine();
+
+  scrollToInstant(savedY);
+  requestAnimationFrame(() => {
+    scrollToInstant(savedY);
+  });
 
   announce(`${CAT_LABELS[cat]} selected in activity deep dive.`);
 }
