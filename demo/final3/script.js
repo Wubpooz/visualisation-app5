@@ -396,6 +396,17 @@ function announce(message) {
   d3.select("#a11y-status").text(message);
 }
 
+function lineTooltipHtml(ageGroup, cat, highlightYear = null) {
+  const rows = YEARS.map(year => {
+    const min = getMin(year, ageGroup, cat);
+    const pct = share(year, ageGroup, cat);
+    const yearLabel = year === highlightYear ? `<strong>${year}</strong>` : `${year}`;
+    return `${yearLabel}: <strong>${fmt(min)}</strong> min/day (<strong>${fmt(pct)}%</strong>)`;
+  }).join("<br>");
+
+  return `<div class="tt-title">${ageGroup} · ${CAT_LABELS[cat]}</div>${rows}`;
+}
+
 // ===========================================================
 // 6. TOOLTIP
 // ===========================================================
@@ -727,30 +738,16 @@ function drawLine() {
       .attr("role", "button")
       .attr("aria-label", d => `${ag}, ${d.year}. ${CAT_LABELS[cat]}: ${fmt(d.min)} minutes, ${fmt(d.pct)} percent.`)
       .on("mouseenter", function (ev, d) {
-        showTip(
-          `<div class="tt-title">${ag} · ${d.year}</div>` +
-          `${CAT_LABELS[cat]}: <strong>${fmt(d.min)}</strong> min/day<br>` +
-          `Share of tracked time: <strong>${fmt(d.pct)}%</strong>`, ev
-        );
+        showTip(lineTooltipHtml(ag, cat, d.year), ev);
       })
       .on("focus", function (ev, d) {
-        showTip(
-          `<div class="tt-title">${ag} · ${d.year}</div>` +
-          `${CAT_LABELS[cat]}: <strong>${fmt(d.min)}</strong> min/day<br>` +
-          `Share of tracked time: <strong>${fmt(d.pct)}%</strong>`,
-          getElementTipPoint(this)
-        );
+        showTip(lineTooltipHtml(ag, cat, d.year), getElementTipPoint(this));
       })
       .on("keydown", function (ev, d) {
         if (!activationKeyPressed(ev)) return;
 
         ev.preventDefault();
-        showTip(
-          `<div class="tt-title">${ag} · ${d.year}</div>` +
-          `${CAT_LABELS[cat]}: <strong>${fmt(d.min)}</strong> min/day<br>` +
-          `Share of tracked time: <strong>${fmt(d.pct)}%</strong>`,
-          getElementTipPoint(this)
-        );
+        showTip(lineTooltipHtml(ag, cat, d.year), getElementTipPoint(this));
       })
       .on("blur", hideTip)
       .on("mousemove", moveTip)
