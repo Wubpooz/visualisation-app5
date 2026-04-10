@@ -1070,12 +1070,6 @@ function selectCat(cat) {
   styleActiveBtn();
   drawLine();
 
-  /* scroll line section into view */
-  document.getElementById("line-section").scrollIntoView({
-    behavior: getPreferredScrollBehavior(),
-    block: "start"
-  });
-
   announce(`${CAT_LABELS[cat]} selected in activity deep dive.`);
 }
 
