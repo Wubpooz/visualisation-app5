@@ -778,7 +778,8 @@ function drawLine() {
       const yr = YEARS.reduce((p, c) => Math.abs(x.invert(mx) - c) < Math.abs(x.invert(mx) - p) ? c : p, YEARS[0]);
       lineHover(yr, ev);
     })
-    .on("mouseleave", lineUnhover);
+    .on("mouseleave", lineUnhover)
+    .lower();
 
   /* vertical hover line (hidden initially) */
   svg.append("line").attr("class", "hover-rule")
