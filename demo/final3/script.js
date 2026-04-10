@@ -725,7 +725,25 @@ function drawLine() {
       .datum(pts)
       .attr("class", `line-path lp-${safeId(ag)}`)
       .attr("d", lineFn)
-      .attr("stroke", AG_COLORS[ag]);
+      .attr("stroke", AG_COLORS[ag])
+      .attr("tabindex", 0)
+      .attr("role", "button")
+      .attr("aria-label", `${ag}. ${CAT_LABELS[cat]} trend across 2000, 2010, and 2020.`)
+      .on("mouseenter", function (ev) {
+        showTip(lineTooltipHtml(ag, cat), ev);
+      })
+      .on("mousemove", moveTip)
+      .on("mouseleave", hideTip)
+      .on("focus", function () {
+        showTip(lineTooltipHtml(ag, cat), getElementTipPoint(this));
+      })
+      .on("keydown", function (ev) {
+        if (!activationKeyPressed(ev)) return;
+
+        ev.preventDefault();
+        showTip(lineTooltipHtml(ag, cat), getElementTipPoint(this));
+      })
+      .on("blur", hideTip);
 
     /* dots */
     svg.selectAll(null).data(pts).join("circle")
